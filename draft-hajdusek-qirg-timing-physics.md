@@ -3,7 +3,7 @@ title: "Timing Regimes in Quantum Networks and their Physical Underpinnigs"
 abbrev: "TODO - Abbreviation"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-hajdusek-qirg-timing-physics
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -42,7 +42,7 @@ TODO Abstract
 
 --- middle
 
-## Prologue
+# Prologue
 
 In 1982, Digital Equipment Corporation, Intel, and Xerox published  __The Ethernet: A Local Area Network Data Link Layer and Physical Layer Specifications__. This 120-page document specifies pretty much everything: diameter of the coaxial cable, its impedance, dispersion, maximum cable length, voltages and currents, signal rise times, etc. The types of physical connectors allowed. How a bit is encoded in the signal. How a frame is demarcated. How collisions are detected. The format of messages. Addressing. Multicasting. Polynomials for error correction. It's ALL there.
 
@@ -74,16 +74,15 @@ Some of these can only be achieved using high-quality hardware, while others are
 ## A. Interferometric Stabilization
 
 Entanglement distribution in quantum networks is performed by entanglement swapping (ES) on photonic qubits.
-Central to photonic ES is the Hong-Ou-Mandel (HOM) interference [1,2], regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
+Central to photonic ES is the Hong-Ou-Mandel (HOM) interference [HOM87], regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
 We begin by introducing the notation used, giving a brief overview of the effect, as well as discussing how to quantify the effect.
 We then continue with a discussion of the requirements that must be satisfied in order to observe the effect.
+For an great tutorial on the HOM effect, we recommend [BRAN17].
 
 ### A.1. Hong-Ou-Mandel interference
 
-Consider two photons incident on a beamsplitter (BS) with reflectivity $r$.
-We label the input modes $a$ and $b$.
-The output modes of the BS are labelled with $a$ and $b$ as well, with the understanding that output mode $a$ corresponds to the input mode $a$ being transmitted.
-Similarly for output mode $b$, as shown in the Figure below.
+Consider two photons incident on a 50:50 beamsplitter (BS).
+We label the input modes $a$ and $b$, and the output modes $c$ and $d$.
 
 <p align="center">
   <img src="Figures/HOM.svg"/>
@@ -142,9 +141,44 @@ where $\rho_{s_1s_2}^{\text{deph}}$ is a fully dephased state obtained by settin
 
 In the following subsections, we address and quantify how distinguishable photons affect the visibility of the HOM interference.
 
+### A.2. Polarization
+
+We now consider the case when the input photons differ in their polarization degree of photons.
+The maximum probability of a coincidence detection is obtained for orthogonally polarized photons, for example when $j=H$ and $k=V$.
+The output state of the two photons is
+$$|\psi ^{\text{out}}\rangle _{ab} = \frac{1}{2} \left( |1;H\rangle_a |1;V\rangle_a + |1;V\rangle_a |1;H\rangle_b - |1;H\rangle_a |1;V\rangle_b - |1;H\rangle_b |1;V\rangle_b \right).$$
+We can immediately see that $p _{\text{coin}} ^{\text{max}}=1/2$.
+
+In general, the two input photons will have polarizations given by two unit vectors, $j=\vec{\epsilon}$ and $k=\vec{\epsilon}'$.
+The output state can be written as
+$$|\psi ^{\text{out}}\rangle _{ab} = \frac{1}{2} \left( |1;\vec{\epsilon}\rangle_a |1;\vec{\epsilon}'\rangle_a + |1;\vec{\epsilon}'\rangle_a |1;\vec{\epsilon}\rangle_b - |1;\vec{\epsilon}\rangle_a |1;\vec{\epsilon}'\rangle_b - |1;\vec{\epsilon}\rangle_b |1;\vec{\epsilon}'\rangle_b \right).$$
+The projection operators corresponding to a detection even at detector $i$ ($i=a,b$), is given by
+$$\hat{P}_i = |1;\vec{\epsilon}\rangle_i \langle 1;\vec{\epsilon}|_i + |1;\vec{\epsilon}'\rangle_i \langle 1;\vec{\epsilon}'|_i.$$
+Either a $\vec{\epsilon}$-polarized or a $\vec{\epsilon}'$-polarized photon is detected in the output mode $i$.
+The probability of coincidence is then
+$$p _{\text{coin}} = \langle\psi ^{\text{out}}| _{ab} \hat{P}_a \otimes \hat{P}_b |\psi ^{\text{out}}\rangle _{ab} = \frac{1}{2} \left( 1 - \left| \langle\vec{\epsilon}'|\vec{\epsilon}\rangle \right|^2 \right) = \frac{1}{2} \sin^2\theta,$$
+where the overlap between the polarization unit vectors is parametrized by $\theta$, and can be written as $\langle\vec{\epsilon}'|\vec{\epsilon}\rangle = \cos\theta$.
+
+Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
+
+Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to __drift__ during its transmission and change its state from the one that the photon possessed immediately after emission.
+
+This issue is mainly relevant in non-polarization-maintaining single-mode fibers.
+
+We can define the corresponding visibility as a function of the nagle between the two polarization vectors,
+$$V(\theta) = 1 - 2 p_{\text{coin}} = \cos^2\theta.$$
+When the photons have identical polarization, $\theta=0$, the visibility reaches its maximum of $V=1$.
+On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, $\theta=\pm\pi/2$, visibility is $V=0$.
+The visibility $V(\theta)$ and the probability of a coincidence detection $p_{\text{coin}}$ are both displayed in the Figure below.
+
 --- back
 
 # Acknowledgments
 {:numbered="false"}
 
 TODO acknowledge.
+
+# References
+
+* [HOM87]: C.K. Hong, Z.Y. Ou, and L. Mandel, Measurement of subpicosecond time intervals between two photons by interference, [*Phys. Rev. Lett.* __59__, 2044 (1987)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044).
+* [BRAN17] A. M. Branczyk, Hong-Ou-Mandel Interference, [*arXiv:1711.00080* (2017)](https://arxiv.org/abs/1711.00080).
