@@ -455,7 +455,7 @@ In the majority of cases, we are interested in performing measurements in the Be
 Required unitary $\hat{U}^{\dagger}$ is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in $|0\rangle$, as shown in the Figure below, where we have dropped the $\hat{Z}$ label indicating the measurement basis.
 
 <p align="center">
-  <img src="Figures/D1-measurement_2qubit.svg" width="250"/>
+  <img src="Figures/D2-measurement_2qubit.svg" width="250"/>
 </p>
 
 ### D.2. Measurements on quantum memories
@@ -502,7 +502,7 @@ Horizontal polarization gets transmitted through the PBS, while vertical polariz
 This setup is shown in the figure below.
 
 <p align="center">
-  <img src="Figures/D3-2detector_polarization.svg" width="300"/>
+  <img src="Figures/D3-2detector_polarization.svg" width="600"/>
 </p>
 
 General pure state of a polarization-encoded qubit can be written as
@@ -511,7 +511,7 @@ This is directly equivalent to expressing the qubit state in the computational b
 The table below summarizes this equivalence.
 
 <p align="center">
-  <img src="Figures/D3-polarization_table.svg" width="600"/>
+  <img src="Figures/D3-polarization_table.svg" width="700"/>
 </p>
 
 The Figure below shows the Poincaré sphere along with the position of the polarization states.
