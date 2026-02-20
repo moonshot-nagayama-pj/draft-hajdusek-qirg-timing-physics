@@ -318,15 +318,6 @@ Figure below displays the visibility and probability of coincidence for this cas
   <img src="Figures/A4-visibility_temporal.svg" width="400"/>
 </p>
 
-### Photon emission time jitter
-Photon emission is fundamentally a __non-deterministic__ process, owing to the Heisenberg uncertainty principle $\Delta E \Delta t \geq \hbar/2$.
-Following our discussion in Section A.3 (Spectral distinguishability), it is desirable for the emitted photons to be spectrally pure, which corresponds to small $\Delta E$.
-This on the other hand results in a large uncertainty of the emission time, given by $\Delta t$.
-Therefore, even if the two remote nodes commence their atom excitation procedure in a perfectly synchronized fashion, they will likely emit their photons at slightly different times, leading to photon emission time jitter, $J_{\text{emission}}$, and finite difference of arrival $\tau$ at the BSA.
-
-The amount of emission time jitter depends on the physical system used to implement the emissive memory.
-For example, recent trapped ions experiment [3] characterized the emission probability as a function of time, leading to a Poissonian distribution with standard deviation of approximately 10 $\mu\text{s}$.
-
 # B. Detector Timing Windows
 
 In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
