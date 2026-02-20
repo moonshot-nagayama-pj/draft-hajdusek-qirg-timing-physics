@@ -290,7 +290,7 @@ Even for photons with identical spectral amplitude functions, different arrival 
 If the times of arrival are too different as shown in the Figure below, the probability of a coincidence detection will reach its maximum value of 1/2, and the visibility will vanish.
 
 <p align="center">
-  <img src="Figures/B-distinguishability_temporal.svg" width="800"/>
+  <img src="Figures/A4-distinguishability_temporal.svg" width="800"/>
 </p>
 
 Without loss of generality we assume that photon $b$ is delayed by a time $\tau$, which transforms its creation operator,
@@ -315,7 +315,7 @@ $$V(\tau^{\prime}) = e^{-\frac{1}{2}\tau^{\prime 2}}.$$
 Figure below displays the visibility and probability of coincidence for this case.
 
 <p align="center">
-  <img src="Figures/B-visibility_temporal.svg" width="400"/>
+  <img src="Figures/A4-visibility_temporal.svg" width="400"/>
 </p>
 
 ### Photon emission time jitter
