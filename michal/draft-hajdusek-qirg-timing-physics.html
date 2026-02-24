@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta content="Common,Latin" name="scripts">
 <meta content="initial-scale=1.0" name="viewport">
-<title>TODO - Your title</title>
-<meta content="Your Name Here" name="author">
+<title>Timing Regimes in Quantum Networks and their Physical Underpinnigs</title>
+<meta content="Michal Hajdusek" name="author">
 <meta content="
        TODO Abstract 
     " name="description">
@@ -13,7 +13,7 @@
 <meta content="next generation" name="keyword">
 <meta content="unicorn" name="keyword">
 <meta content="sparkling distributed ledger" name="keyword">
-<meta content="draft-todo-yourname-protocol-latest" name="ietf.draft">
+<meta content="draft-hajdusek-qirg-timing-physics" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.31.0
     Python 3.12.12
@@ -28,7 +28,7 @@
     requests 2.32.5
     wcwidth 0.3.0
 -->
-<link href="draft-todo-yourname-protocol.xml" rel="alternate" type="application/rfc+xml">
+<link href="draft-hajdusek-qirg-timing-physics.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
 <style type="text/css">@font-face {
   font-family: 'Lora';
@@ -1050,8 +1050,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <td class="right">February 2026</td>
 </tr></thead>
 <tfoot><tr>
-<td class="left">Here</td>
-<td class="center">Expires 20 August 2026</td>
+<td class="left">Hajdusek</td>
+<td class="center">Expires 28 August 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1061,25 +1061,25 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">WG Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-todo-yourname-protocol-latest</dd>
+<dd class="internet-draft">draft-hajdusek-qirg-timing-physics</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-02-16" class="published">16 February 2026</time>
+<time datetime="2026-02-24" class="published">24 February 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-08-20">20 August 2026</time></dd>
+<dd class="expires"><time datetime="2026-08-28">28 August 2026</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
-      <div class="author-name">Y. N. Here</div>
-<div class="org">Your Organization Here</div>
+      <div class="author-name">M. Hajdusek</div>
+<div class="org">Keio University</div>
 </div>
 </dd>
 </dl>
 </div>
-<h1 id="title">TODO - Your title</h1>
+<h1 id="title">Timing Regimes in Quantum Networks and their Physical Underpinnigs</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">TODO Abstract<a href="#section-abstract-1" class="pilcrow">¶</a></p>
@@ -1091,7 +1091,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
         The latest revision of this draft can be found at <span><a href="https://example.com/LATEST">https://example.com/LATEST</a></span>.
-        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-todo-yourname-protocol/">https://datatracker.ietf.org/doc/draft-todo-yourname-protocol/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
+        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-hajdusek-qirg-timing/">https://datatracker.ietf.org/doc/draft-hajdusek-qirg-timing/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
 <p id="section-note.1-3">
         Discussion of this document takes place on the
         WG Working Group mailing list (<span><a href="mailto:WG@example.com">mailto:WG@example.com</a></span>),
@@ -1118,7 +1118,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 20 August 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 28 August 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1148,101 +1148,115 @@ svg :is([fill="white"], [fill^="#fff"]) {
         </h2>
 <nav class="toc"><ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.1">
-            <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="auto internal xref">1</a>.  <a href="#name-introduction" class="internal xref">Introduction</a></p>
+            <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="auto internal xref">1</a>.  <a href="#name-prologue" class="internal xref">Prologue</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-conventions-and-definitions" class="internal xref">Conventions and Definitions</a></p>
+            <p id="section-toc.1-1.2.1"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-introduction" class="internal xref">Introduction</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.1">
+                <p id="section-toc.1-1.2.2.1.1" class="keepWithNext"><a href="#section-2.1" class="auto internal xref">2.1</a>.  <a href="#name-goals" class="internal xref">Goals</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.2">
+                <p id="section-toc.1-1.2.2.2.1" class="keepWithNext"><a href="#section-2.2" class="auto internal xref">2.2</a>.  <a href="#name-non-goals" class="internal xref">Non-Goals</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
-</li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
-</li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
-</li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
-</li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
 </li>
         </ul>
 </nav>
 </section>
 </div>
-<div id="introduction">
+<div id="prologue">
 <section id="section-1">
-      <h2 id="name-introduction">
-<a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
+      <h2 id="name-prologue">
+<a href="#section-1" class="section-number selfRef">1. </a><a href="#name-prologue" class="section-name selfRef">Prologue</a>
       </h2>
-<p id="section-1-1">TODO Introduction<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-1">In 1982, Digital Equipment Corporation, Intel, and Xerox published  <strong>The Ethernet: A Local Area Network Data Link Layer and Physical Layer Specifications</strong>. This 120-page document specifies pretty much everything: diameter of the coaxial cable, its impedance, dispersion, maximum cable length, voltages and currents, signal rise times, etc. The types of physical connectors allowed. How a bit is encoded in the signal. How a frame is demarcated. How collisions are detected. The format of messages. Addressing. Multicasting. Polynomials for error correction. It's ALL there.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">Equally importantly, it specifies <strong>timing requirements</strong>.  For example, the rise time for a signal on the coaxial cable shall be 25 $\pm$ 5 nanoseconds. The total worst-case round-trip delay is calculated in a table to be 46.38 microseconds. How the entries in that table are combined to produce that number is fairly obvious; however, the numerical entries themselves are mostly unjustified in the specification itself, only stated. One exception is the statement, "Rise and fall times meet 10,000 series ECL requirements," referring to a specific series of well-known digital emitter-coupled logic parts, and hence incorporating a great deal of prior knowledge and work by reference.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">In the quantum world, we are starting from first principles. Hence, we must begin at the beginning. We want to have specifications like Ethernet's, but first we must describe how the entries in e.g. the physical propagation delay budget are determined. The role of this document is to provide the underpinnings that give a shared understanding of how the basic numbers are determined and how they can be combined in a particular system design.<a href="#section-1-3" class="pilcrow">¶</a></p>
+<p id="section-1-4">Thanks, DIX Ethernet creators, for showing the way!<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="conventions-and-definitions">
+<div id="introduction">
 <section id="section-2">
-      <h2 id="name-conventions-and-definitions">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-conventions-and-definitions" class="section-name selfRef">Conventions and Definitions</a>
+      <h2 id="name-introduction">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-2-1">The key words "<span class="bcp14">MUST</span>", "<span class="bcp14">MUST NOT</span>", "<span class="bcp14">REQUIRED</span>", "<span class="bcp14">SHALL</span>", "<span class="bcp14">SHALL NOT</span>", "<span class="bcp14">SHOULD</span>", "<span class="bcp14">SHOULD NOT</span>", "<span class="bcp14">RECOMMENDED</span>", "<span class="bcp14">NOT RECOMMENDED</span>",
-"<span class="bcp14">MAY</span>", and "<span class="bcp14">OPTIONAL</span>" in this document are to be interpreted as
-described in BCP 14 <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</span> <span>[<a href="#RFC8174" class="cite xref">RFC8174</a>]</span> when, and only when, they
-appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-1">Quantum networks that distribute end-to-end entanglement involve a number of tasks with varying demands on timing precision and jitter. The design of a quantum network will involve a layered protocol architecture where different layers take responsibility for meeting these differing constraints. This document describes the various timing regimes, from most to least stringent, in order to assist the process of making key design decisions.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-2">The range of time scales of interest extends from ensuring the sub-wavelength stability of optical paths up to batch monitoring of the operation of the network itself. Light with a wavelength of 1.5 micrometers (common in communications, including quantum communications) has a frequency of approximately 200 THz (2E+14 Hz), for a cycle time of 5E-15 seconds.  Ranging from sub-wavelength stabilization through background operations such as routing, therefore, covers some 16 or more decimal orders of magnitude.  Add in a 24-hour thermal drift that must be compensated for in many cases, and we reach twenty decimal orders of magnitude from the bottom to the top. Naturally, meeting this range of demands requires the use of a variety of mechanisms.  This document avoids specifying solutions to the problems, and instead presents the functions and how their requirements are calculated (or measured).  Thus, each individual network design should apply the methods introduced here and present a numerical summary of the resulting values, after which corresponding solutions can be proposed and implemented.<a href="#section-2-2" class="pilcrow">¶</a></p>
+<p id="section-2-3">Summary of timing regimes:<a href="#section-2-3" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2-4.1">
+          <p id="section-2-4.1.1"><strong>Interferometric stabilization:</strong> photon wavepacket overlap, technology dependent, roughly nanoseconds.<a href="#section-2-4.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.2">
+          <p id="section-2-4.2.1"><strong>Detector timing windoes:</strong> opening and closing of detector timing windows, detector recovery time: nanoseconds to microseconds.<a href="#section-2-4.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.3">
+          <p id="section-2-4.3.1"><strong>Measurement basis selection (if required in BSA):</strong> performance will constrain entanglement attempt rate.<a href="#section-2-4.3.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.4">
+          <p id="section-2-4.4.1"><strong>Optical switch control:</strong> switching of trains of wave packets.<a href="#section-2-4.4.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.5">
+          <p id="section-2-4.5.1"><strong>Pre-configured event-driven tasks:</strong> timing-triggered or measurement-triggered execution of quantum circuits, microseconds<a href="#section-2-4.5.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.6">
+          <p id="section-2-4.6.1"><strong>Urgent but not synchronization-critical tasks:</strong> execution of classical code that processes RuleSet messages and selects or creates new quantum circuits for execution, milliseconds<a href="#section-2-4.6.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.7">
+          <p id="section-2-4.7.1"><strong>Host-side application-level tasks:</strong> post-measurement operations, milliseconds<a href="#section-2-4.7.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-4.8">
+          <p id="section-2-4.8.1"><strong>Background tasks:</strong> link tomography calculations, routing table updates, seconds to minutes<a href="#section-2-4.8.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<p id="section-2-5">Some of these can only be achieved using high-quality hardware, while others are software tasks. Detailed analysis of these regimes will affect core software design in each network node type.<a href="#section-2-5" class="pilcrow">¶</a></p>
+<div id="goals">
+<section id="section-2.1">
+        <h3 id="name-goals">
+<a href="#section-2.1" class="section-number selfRef">2.1. </a><a href="#name-goals" class="section-name selfRef">Goals</a>
+        </h3>
+<ul class="normal">
+<li class="normal" id="section-2.1-1.1">
+            <p id="section-2.1-1.1.1">Identify and provide introduction to the physical principles related to timing regimes in quantum networks.<a href="#section-2.1-1.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-2.1-1.2">
+            <p id="section-2.1-1.2.1">Provide justification behind specific design choices discussed in our other documents.<a href="#section-2.1-1.2.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
 </section>
 </div>
-<div id="security-considerations">
-<section id="section-3">
-      <h2 id="name-security-considerations">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
-      </h2>
-<p id="section-3-1">TODO Security<a href="#section-3-1" class="pilcrow">¶</a></p>
+<div id="non-goals">
+<section id="section-2.2">
+        <h3 id="name-non-goals">
+<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-non-goals" class="section-name selfRef">Non-Goals</a>
+        </h3>
+<ul class="normal">
+<li class="normal" id="section-2.2-1.1">
+            <p id="section-2.2-1.1.1">Detailed physical derivations.<a href="#section-2.2-1.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-2.2-1.2">
+            <p id="section-2.2-1.2.1">Exhaustive coverage of all existing quantum platforms and technologies.<a href="#section-2.2-1.2.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
 </section>
 </div>
-<div id="iana-considerations">
-<section id="section-4">
-      <h2 id="name-iana-considerations">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
-      </h2>
-<p id="section-4-1">This document has no IANA actions.<a href="#section-4-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="sec-normative-references">
-<section id="section-5">
-      <h2 id="name-normative-references">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
-      </h2>
-<dl class="references">
-<dt id="RFC2119">[RFC2119]</dt>
-      <dd>
-<span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC8174">[RFC8174]</dt>
-    <dd>
-<span class="refAuthor">Leiba, B.</span>, <span class="refTitle">"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 8174</span>, <span class="seriesInfo">DOI 10.17487/RFC8174</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-</dl>
-</section>
-</div>
-<div id="acknowledgments">
-<section id="appendix-A">
-      <h2 id="name-acknowledgments">
-<a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
-      </h2>
-<p id="appendix-A-1">TODO acknowledge.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
-<section id="appendix-B">
+<section id="appendix-A">
       <h2 id="name-authors-address">
 <a href="#name-authors-address" class="section-name selfRef">Author's Address</a>
       </h2>
 <address class="vcard">
-        <div dir="auto" class="left"><span class="fn nameRole">Your Name Here</span></div>
-<div dir="auto" class="left"><span class="org">Your Organization Here</span></div>
+        <div dir="auto" class="left"><span class="fn nameRole">Michal Hajdusek</span></div>
+<div dir="auto" class="left"><span class="org">Keio University</span></div>
 <div class="email">
 <span>Email:</span>
-<a href="mailto:your.email@example.com" class="email">your.email@example.com</a>
+<a href="mailto:michal@sfc.wide.ad.jp" class="email">michal@sfc.wide.ad.jp</a>
 </div>
 </address>
 </section>
