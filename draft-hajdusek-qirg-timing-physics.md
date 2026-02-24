@@ -93,6 +93,12 @@ We then continue with a discussion of the requirements that must be satisfied in
 Consider two photons incident on a beamsplitter (BS) with reflectivity $r$.
 We label the input modes by a and b, and the output modes by c and d, as shown in the figure below.
 
-<p align="center">
+<figure anchor="fig-diagram" title="Diagram Title">
+  <artset>
+    <artwork type="svg" src="Figures/HOM.svg" />
+  </artset>
+</figure>
+
+<!-- <p align="center">
   <img src="Figures/HOM.svg"/>
-</p>
+</p> -->
