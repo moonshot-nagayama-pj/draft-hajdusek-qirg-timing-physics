@@ -28,6 +28,10 @@ author:
     fullname: Michal Hajdusek
     organization: Keio University
     email: michal@sfc.wide.ad.jp
+ -  ins: R. Van Meter
+    fullname: Rodney Van Meter
+    organization: Keio University
+    email: rdv@sfc.wide.ad.jp
 
 normative:
 
