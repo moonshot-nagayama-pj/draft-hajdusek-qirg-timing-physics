@@ -1,16 +1,17 @@
 ---
+stand_alone: true
 title: "Timing Regimes in Quantum Networks and their Physical Underpinnigs"
 abbrev: "TODO - Abbreviation"
 category: info
 
 docname: draft-hajdusek-qirg-timing-physics
-submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+submissiontype: IRTF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: IRTF
+workgroup: QIRG
 keyword:
  - next generation
  - unicorn
@@ -24,14 +25,16 @@ venue:
   latest: https://example.com/LATEST
 
 author:
- -  ins: M. Hajdusek
-    fullname: Michal Hajdusek
-    organization: Keio University
-    email: michal@sfc.wide.ad.jp
- -  ins: R. Van Meter
-    fullname: Rodney Van Meter
-    organization: Keio University
-    email: rdv@sfc.wide.ad.jp
+ -
+  ins: M. Hajdusek
+  fullname: Michal Hajdusek
+  organization: Keio University
+  email: michal@sfc.wide.ad.jp
+ -
+  ins: R. Van Meter
+  fullname: Rodney Van Meter
+  organization: Keio University
+  email: rdv@sfc.wide.ad.jp
 
 normative:
 
@@ -79,6 +82,7 @@ Some of these can only be achieved using high-quality hardware, while others are
 
 * Identify and provide introduction to the physical principles related to timing regimes in quantum networks.
 * Provide justification behind specific design choices discussed in our other documents.
+* Serve as a reference for other quantum network specifications.
 
 ## Non-Goals
 
@@ -88,9 +92,10 @@ Some of these can only be achieved using high-quality hardware, while others are
 # Interferometric Stabilization
 
 Entanglement distribution in quantum networks is performed by entanglement swapping (ES) on photonic qubits.
-Central to photonic ES is the Hong-Ou-Mandel (HOM) interference [1,2], regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
+Central to photonic ES is the [Hong-Ou-Mandel (HOM) interference](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044), regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
 We begin by introducing the notation used, giving a brief overview of the effect, as well as discussing how to quantify the effect.
 We then continue with a discussion of the requirements that must be satisfied in order to observe the effect.
+This section follows quite closely this excellent [tutorial](https://arxiv.org/abs/1711.00080).
 
 ## Hong-Ou-Mandel interference
 
@@ -141,18 +146,18 @@ The probability amplitudes for the cases where both input photons are transmitte
 Perfectly indistinguishable input photons always exit the BS in the same ouput mode.
 It is this interference effect that is at the heart of quantum networking.
 
-In order to quantify the effect that distinguishability has on HOM interference, we consider the __probability of a coincidence detection__, $p_{\text{coin}}$, where one photon is detected in the BS output mode $c$, and the other photon in output mode $d$.
+In order to quantify the effect that distinguishability has on HOM interference, we consider the __probability of a coincidence detection__, $p_{\text{co}}$, where one photon is detected in the BS output mode $c$, and the other photon in output mode $d$.
 This probability is defined as
 ~~~math
-p _{\text{coin}} = \langle \psi | _{cd} P_d \otimes P_d | \psi \rangle _{cd},
+p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd},
 ~~~
 where $P_i$, for $i=c,d$, are the projection operators representing a detection of a single photon in output mode $i$ of the BS.
-For completely indistinguishable input photons that undergo the full HOM interference, we have $p _{\text{coin}}=0$.
-On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $p _{\text{coin}}=1/2$.
+For completely indistinguishable input photons that undergo the full HOM interference, we have $p _{\text{co}}=0$.
+On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $p _{\text{co}}=1/2$.
 
 An often-used measure that quantifies the degree of HOM interference is the __visibility__ $V$, defined via the probability of a coincidence detection,
 ~~~math
-V = \frac{p _{\text{coin}} ^{\text{max}} - p _{\text{coin}} ^{\text{min}}}{p _{\text{coin}}^{\text{max}}} = 1 - 2 p _{\text{coin}} ^{\text{min}},
+V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}},
 ~~~
 where we used the fact that the maximum probability of a coincidence detection is $1/2$.
 We observe that the visibility varies from $V=0$ for fully distinguishable input photons to $V=1$ for perfectly indistinguishable ones.
@@ -162,7 +167,7 @@ Consider the case when the input photons $a$, $b$ are entangled with auxiliary s
 The BSA performs ES by measuring the input photons, entangling systems $s_1$ and $s_2$ in the process.
 Fidelity of the new entangled pair is directly proportional to the visibility $V$ of the HOM interference.
 Denote by $\rho_{s_1s_2}^{\text{no-deph}}$ the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference.
-Non-ideal HOM interference can be modelled as a two-qubit dephasing [3],
+Non-ideal HOM interference can be modelled as a [two-qubit dephasing](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803),
 ~~~math
 \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}},
 ~~~
@@ -179,7 +184,7 @@ The output state of the two photons is
 ~~~math
 | \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right).
 ~~~
-We can immediately see that $p _{\text{coin}} ^{\text{max}}=1/2$.
+We can immediately see that $p _{\text{co}} ^{\text{max}}=1/2$.
 
 In general, the two input photons will have polarizations given by two unit vectors, $j=\epsilon$ and $k=\epsilon'$.
 The output state can be written as
@@ -193,13 +198,13 @@ P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \la
 Either an $\epsilon$-polarized or an $\epsilon'$-polarized photon is detected in the output mode $i$.
 The probability of coincidence is then
 ~~~math
-p _{\text{coin}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
+p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
 ~~~
 where the overlap between the polarization unit vectors is parametrized by $\theta$, and can be written as $\langle\epsilon'|\epsilon\rangle = \cos\theta$.
 
 We can define the corresponding visibility as a function of the angle between the two polarization vectors,
 ~~~math
-V(\theta) = 1 - 2 p_{\text{coin}} = \cos^2\theta.
+V(\theta) = 1 - 2 p_{\text{co}} = \cos^2\theta.
 ~~~
 When the photons have identical polarization, $\theta=0$, the visibility reaches its maximum of $V=1$.
 On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, $\theta=\pm\pi/2$, visibility is $V=0$.
@@ -225,7 +230,7 @@ The two pairs are in the following initial state,
 ~~~
 where $\theta_1$ and $\theta_2$ represent the polarization drift induced in the single-mode fiber.
 Photons $a_2$ and $b_1$ are incident onto a BS, where they undergo HOM interference.
-Following the same calculation as above, it can be shown that the probability of a coincidence event is $p_{\text{coin}} = 1/4$, regardless of the polarization drift.
+Following the same calculation as above, it can be shown that the probability of a coincidence event is $p_{\text{co}} = 1/4$, regardless of the polarization drift.
 This suggests that the visibility is insensitive to the polarization drift.
 However, the polarization drift must be tracked regardless because it affects the fidelity of the post-ES state of photons $a_1$ and $b_2$,
 $|\Psi^{\pm}\rangle_{a_1b_2} = \frac{1}{\sqrt{2}} \left( |HV\rangle_{a_1b_2} \pm e^{i(\theta_1-\theta_2)} |VH\rangle_{a_1b_2} \right).$
@@ -271,12 +276,12 @@ P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad
 ~~~
 The probability of a coincidence detection is then
 ~~~math
-p _{\text{coin}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2).
+p _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2).
 ~~~
 The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors $\epsilon$ and $\epsilon'$.
-Now, $p _{\text{coin}}$ depends on the overlap between the spectral amplitude functions.
-If the input photons are fully distinguishable, their respective spectral amplitude functions $\phi(\omega)$ and $\varphi(\omega)$ are orthogonal and the integrals vanish, meaning $p _{\text{coin}}=1/2$.
-On the other hand, for completely indistinguishable input photons we have $\phi(\omega)=\varphi(\omega)$, and due to the normalization condition we obtain $p _{\text{coin}}=0$.
+Now, $p _{\text{co}}$ depends on the overlap between the spectral amplitude functions.
+If the input photons are fully distinguishable, their respective spectral amplitude functions $\phi(\omega)$ and $\varphi(\omega)$ are orthogonal and the integrals vanish, meaning $p _{\text{co}}=1/2$.
+On the other hand, for completely indistinguishable input photons we have $\phi(\omega)=\varphi(\omega)$, and due to the normalization condition we obtain $p _{\text{co}}=0$.
 
 ### Mixed states
 
@@ -292,7 +297,7 @@ The two-photon input state can be written as
 $$\rho ^{\text{in}} _{ab} = \sum _{kk'} u_k v _{k'} |1;\phi_k\rangle_a |1;\varphi _{k'}\rangle_b \langle 1;\phi_k|_a \langle 1;\varphi _{k'}|_b.$$
 It is not necessary to repeat the entire calculation we did for pure states.
 Due to the linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $u_k$ and $v'_k$,
-$$p _{\text{coin}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2).$$
+$$p _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2).$$
 
 #### Example 1: Gaussian wave packets
 In this example, we consider input photons with Gaussian spectral amplitude functions.
@@ -302,13 +307,13 @@ The spectral amplitude functions are given by
 ~~~
 The probability of a coincidence detection is then
 ~~~math
-p _{\text{coin}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}.
+p _{\text{co}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}.
 ~~~
 
 ##### Case A (different central frequencies):
 We assume that the two spectral amplitude functions have the same standard deviation $\sigma_a=\sigma_b=\sigma$, which simplifies the expression for the probability of a coincidence detection to
 ~~~math
-p _{\text{coin}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
+p _{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
 ~~~
 We observe that for identical photons, when $\bar{\omega}_a=\bar{\omega}_b$, the probability of a coincidence detection vanishes.
 For fully distinguishable wave packets, when $\bar{\omega}_a-\bar{\omega}_b\rightarrow\infty$, the probability approaches 1/2, as expected.
@@ -320,7 +325,7 @@ V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{
 ##### Case B (different standard deviations):
 The spectral amplitude functions have the same central frequencies, $\omega_a=\omega_b$, which gives the following expression for the probability of coincidence and visibility,
 ~~~math
-p_{\text{coin}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
+p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
 ~~~
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
@@ -345,7 +350,7 @@ b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}.
 ~~~
 Two input photons with arbitrary spectral functions $\phi$ and $\varphi$, with photon $b$ arriving late, are described by
 ~~~math
-|\psi ^{\text{in}}\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
+|\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
 ~~~
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is also frequency-independent.
 Applying the same transformation rules for the input creation operators, the output state of the two photons is
@@ -354,18 +359,18 @@ Applying the same transformation rules for the input creation operators, the out
 ~~~
 For pure input states, the probability of a coincidence detection is
 ~~~math
-p ^{\text{pure}} _{\text{coincidence}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau},
+p ^{\text{pure}} _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau},
 ~~~
 while for mixed states is can be generalized to the following form,
 ~~~math
-p ^{\text{mix}} _{\text{coincidence}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}.
+p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}.
 ~~~
 
 ### Example: Gaussian wave packets
 Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by $\tau$.
 The probability of coincidence and the corresponding visibility are given by
 ~~~math
-p_{\text{coin}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2},\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
+p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 ~~~
 Figure below displays the visibility and probability of coincidence for this case.
 
@@ -378,7 +383,7 @@ Figure below displays the visibility and probability of coincidence for this cas
 
 In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
-This is not always true for real-world SPDs [4].
+This is not always true for [real-world SPDs](https://www.nature.com/articles/nphoton.2009.230).
 
 ## Detector basics
 
@@ -408,7 +413,7 @@ Describes the variation in time between the photon being absorbed and the output
   <img src="Figures/timing_jitter.svg" width="500"/>
 </p>
 
-The table below shows the above characteristics for a SNSPD [5].
+The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
 
 | Wavelength                  | 800 nm  | 1550 nm |
 |-----------------------------|---------|---------|
@@ -433,7 +438,7 @@ Reaching the requested fidelity should take priority over high generation rate.
 
 ## Separation in a train of wavepackets
 
-Current experiments on quantum repeaters use single quantum memory per QNIC [3].
+Current experiments on quantum repeaters use single quantum memory per QNIC.
 As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
 This will allow for generation of link-level entanglement in a multiplexed manner, where trains of photons, each originating from a different memory inside the same QNIC, are sent to the BSA.
 The photons making up a train must be well separated such that upon a successful BSM, the BSA can uniquely identify which two photons were measured.
@@ -449,7 +454,7 @@ General (conservative) separation time should therefore be set to
 $$T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}.$$
 
 The above discussion assumes that the photons can be generated nearly on-demand.
-This is a fair assumption in the case of quantum memories based on trapped ions [3].
+This is a fair assumption in the case of quantum memories based on [trapped ions](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
 Here, the memory must be first initialized by cooling it to its ground state, a process which takes $<1\text{ms}$.
 The memory is then excited by a laser pulse of ~ $50\mu \text{s}$ that generates a photon.
 
@@ -479,13 +484,13 @@ We will first discuss quantum measurements in general before discussing concrete
 ### Single-qubit measurements:
 For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
 Consider a general state of the qubit, $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$, where $|\alpha|^2+|\beta|^2=1$.
-Measurement in an arbitrary basis $M$ projects the initial state $|\psi\rangle$ onto one of the eigenvectors of $M$, given by $\\{|\phi\rangle,|\phi^{\perp}\rangle\\}$.
+Measurement in an arbitrary basis $M$ projects the initial state $|\psi\rangle$ onto one of the eigenvectors of $M$, given by $\{|\phi\rangle,|\phi^{\perp}\rangle\}$.
 Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state $|\psi\rangle$ and the eigenvectors of the observable $M$,
 ~~~math
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad\text{and}\quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 ~~~
-We read this notation as ``probability of the measurement outcome being the state $|\phi\rangle$, given that the initial state was $|\psi\rangle$''.
-For example, measurement in the Pauli $Z$ basis projects onto the states $\\{|0\rangle,|1\rangle\\}$, while measurement in the Pauli $X$ basis projects onto the states $\\{|+\rangle,|-\rangle\\}$.
+We read this notation as *probability of the measurement outcome being the state $|\phi\rangle$, given that the initial state was $|\psi\rangle$*.
+For example, measurement in the Pauli $Z$ basis projects onto the states $\{|0\rangle,|1\rangle\}$, while measurement in the Pauli $X$ basis projects onto the states $\{|+\rangle,|-\rangle\}$.
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $Z$ basis, which can usually be implemented in a straightforward way.
@@ -528,13 +533,13 @@ These methods vary based on the quantum technology used as the quantum memory, a
 We are mainly concerned with giving an overview of the different measurement methods, and their respective timing regimes.
 
 ### Trapped ions
-Trapped ions possess two degrees of freedom [6].
+Trapped ions possess [two degrees of freedom](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
 The first one is the motional degree of freedom, resulting from the ion oscillating around its equilibrium position in the trap.
 The second one is the internal degree of freedom, represented by the ground state $|g\rangle$ and the excited state $|e\rangle$.
 It is the latter degree of freedom which is used to encode a qubit and hence acts as a quantum memory.
 
-Measurement in the __Pauli Z__ basis is performed by __electron shelving__ via the use of a third atomic level $|r\rangle$, with much shorter life time than the excited state $|e\rangle$, $\tau_e \gg \tau_r$ [7].
-Figure below demonstrates this method works.
+Measurement in the __Pauli Z__ basis is performed by __electron shelving__ via the use of a third atomic level $|r\rangle$, with much shorter life time than the [excited state](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163) $|e\rangle$, $\tau_e \gg \tau_r$.
+Figure below demonstrates how this method works.
 
 <p align="center">
   <img src="Figures/shelving.svg" width="250"/>
@@ -544,18 +549,18 @@ The ion is illuminated by light tuned to resonate with the transition $|g\rangle
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state $|g\rangle$.
 If no fluorescence is observed, the ion is measured in the excited state $|e\rangle$.
 Hypothetically a single fluorescent photon would be sufficient, however, the fluorescent photons are only rarely captured into the measurement apparatus (typically involving lenses and a camera) and observed, and stray photons are also often captured, so a relatively long __integration time__ is used to confirm the fluorescence with high probability.  (Solid-state systems such as quantum dots and superconducting qubits also need relatively long integration times in their measurement processes.)
-Combined with laser pulses that apply a single-qubit rotation, measurement of a __single ion in an arbitrary basis__ can be performed in 1-2 ms [3].
+Combined with laser pulses that apply a single-qubit rotation, measurement of a __single ion in an arbitrary basis__ can be performed in [1-2 ms](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803).
 
 The __CNOT gate__ can be applied in two different ways.
-The original proposal is due to Cirac and Zoller [8], where the ions needed to be cooled to their collective motional ground state first.
-This approach was demonstrated experimentally using $^{40}\text{Ca}^+$ ions [9].
+The original proposal is due to [Cirac and Zoller](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091), where the ions needed to be cooled to their collective motional ground state first.
+This approach was demonstrated experimentally using [$^{40}\text{Ca}^+$ ions](https://www.nature.com/articles/nature01494).
 Execution of the gate took around 600 microseconds, with the achieved fidelity being less than 0.8.
-The second approach is due to Molmer and Sorensen [10], and is more robust against motional excitation.
+The second approach is due to [Molmer and Sorensen](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835), and is more robust against motional excitation.
 This led to high-fidelity demonstrations of $>0.99$, and gate times of around 50 microseconds.
 
 ## Measurements on photonic qubits
 
-Measurement of polarization-encoded photonic qubits can be performed with the aid of a __polarizing beam splitter__ (PBS), a __half waveplate__ (HWP), a __quarter waveplate__ (QWP), and two detectors (one detector is enough in fact but less efficient) [12].
+Measurement of polarization-encoded photonic qubits can be performed with the aid of a __polarizing beam splitter__ (PBS), a __half waveplate__ (HWP), a __quarter waveplate__ (QWP), and [two detectors](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4) (one detector is enough in fact but less efficient).
 The idea is the same as in the case of measurements performed on stationary qubits discussed above.
 Setting the HWP and QWP at particular angles applies the unitary $U ^{\dagger}$ that picks the basis of the measurement, while the PBS filters out vertical and horizontal polarizations that then get detected by the detectors placed in the output paths of the PBS.
 Horizontal polarization gets transmitted through the PBS, while vertical polarization gets reflected.
@@ -591,7 +596,7 @@ The action of the waveplates is captured by the corresponding unitary operations
   <img src="Figures/waveplates_matrix.svg" width="650"/>
 </p>
 
-The idea behind measurements in arbitrary basis $\\{|\psi\rangle, |\psi^{\perp}\rangle\\}$ is to choose the angles for the waveplates such that the following transformation is achieved,
+The idea behind measurements in arbitrary basis $\{|\psi\rangle, |\psi^{\perp}\rangle\}$ is to choose the angles for the waveplates such that the following transformation is achieved,
 ~~~math
 U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
 ~~~
@@ -615,9 +620,9 @@ In the context of timing regimes, we will focus on the following characteristics
 - __Propagation time delay:__ time required for the photon to travel across the switch.
 
 Two approaches to switching are of relevance to our discussion.
-The first approach is the *crossbar switch* with all-to-all connectivity. Such an $N\times N$ switch can be reconfigured to accomodate all possible $N!$ permutations of input-output pairs. One usual implementation of a crossbar switch is using __microelectromechanical systems (MEMS)__ relying on small movable parts such as popup micromirrors, rotating prisms or spinning holographic disks [13]. MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.
+The first approach is the *crossbar switch* with all-to-all connectivity. Such an $N\times N$ switch can be reconfigured to accomodate all possible $N!$ permutations of input-output pairs. One usual implementation of a crossbar switch is using __microelectromechanical systems (MEMS)__ relying on small movable parts such as popup micromirrors, rotating prisms or [spinning holographic disks](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748). MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.
 
-Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible $N!$ input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a connection [14]. Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the Bell basis [15]. These approaches are pictured in the figure below.
+Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible $N!$ input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a [connection](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335). Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the [Bell basis](https://ieeexplore.ieee.org/document/10821447). These approaches are pictured in the figure below.
 
 <p align="center">
   <img src="Figures/optical_switch.svg" width="625"/>
@@ -625,19 +630,19 @@ Crossbar switches are important in classical switching networks and are use in c
 
 Both of these designs consider a $2\times 2$ switch as the basic building block, which is implemented with __integrated photonics__ and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.
 
-The optical switch introduces a __propagation time delay__. For some MEMS switches, this delay can be as low as 25 nanoseconds [16]. In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but as discussed in Section A, any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch, as demonstrated in figure below,
+The optical switch introduces a __propagation time delay__. For some MEMS switches, this delay can be as low as [25 nanoseconds](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf). In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but as discussed in Section A, any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch, as demonstrated in figure below,
 
 <p align="center">
   <img src="Figures/time_delay.svg" width="425"/>
 </p>
 
-This triangular switch design was introduced in [15]. Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port $X_0$ have to traverse at least 5 switching points, while photons from input port $X_{11}$ do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to $\text{BSA}_5$. This requires photons from $X_0$ to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
+This triangular switch design was introduced by [Koyama *et.al.*](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port $X_0$ have to traverse at least 5 switching points, while photons from input port $X_{11}$ do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to $\text{BSA}_5$. This requires photons from $X_0$ to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
 
 The significance of this time delay ultimately depends on the type of photons used. Photons with longer envelopes, such as those emitted from trapped ions, may be more robust to the propagation time delays introduced by the optical switch. Photons with very short envelopes, such as the ones originating from an SPDC source, are expected to be very susceptible to any propagation time delays.
 
 In order to compensate for the propagation time delay, and ensure acceptable visibility at the BSAs, it is neccesary to adjust the path length of the photons with __optical delay lines__ (ODLs). For small enough optical switches, it may be possible to characterize the propagation time delays for given photon pairs $(X_i,X_j)$ assigned to a particular BSA prior to the opration of the switch. This would allow the ODLs to be set to precomputed configurations based on the connection request patterns. This approach will most likely not scale, at least in its general form, to larger optical switches.
 
-Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their __polarization__ changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over 230m [3], data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took __several minutes__. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.
+Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their __polarization__ changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over [230m](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803), data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took __several minutes__. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.
 
 Finally, given a set of connection requests, the optical switch must compute the state of all switch points to __route__ the photons correctly. The reconfigurably non-blocking designs proposed in [15] come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.
 
@@ -679,21 +684,28 @@ Such tasks include:
 * __Routing__: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.
 * __Malicious use monitoring__: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.
 
+--- back
+
 # References
 
-* [1] C.K. Hong, Z.Y. Ou, and L. Mandel, Measurement of subpicosecond time intervals between two photons by interference, [*Phys. Rev. Lett.* __59__, 2044 (1987)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044).
-* [2] A. M. Branczyk, Hong-Ou-Mandel Interference, [*arXiv:1711.00080* (2017)](https://arxiv.org/abs/1711.00080).
-* [3] V. Krutyanskiy _et al._, Entanglement of Trapped-Ion Qubits Separated by 230 Meters, [*Phys. Rev. Lett.* __130__, 050803](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803) (2023).
-* [4] R. H. Hadfield, Single-photon detectors for optical quantum information applications, [*Nature Photonics* __3__, 696](https://www.nature.com/articles/nphoton.2009.230) (2009).
-* [5] Single Quantum, [Link](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
-* [6] D. Leibfried, R. Blatt, C. Monroe, and D. Wineland, Quantum dynamics of single trapped ions, [*Rev. Mod. Phys.* __75__, 281 (2003)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
-* [7] C. Gardiner, and P. Zoller, The Quantum World of Ultra-Cold Atoms and Light: The Physics of Quantum-Optical Devices, [Imperial College Press, (2015)](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163).
-* [8] J.I. Cirac, and P. Zoller, Quantum Computations with Cold Trapped Ions, [*Phys. Rev. Lett.* __74__, 4091 (1995)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091).
-* [9] F. Schmidt-Kaler *et. al.*, Realization of the Cirac–Zoller controlled-NOT quantum gate, [*Nature* __422__, 408 (2003)](https://www.nature.com/articles/nature01494).
-* [10] K. Molmer, and A. Sorensen, Multiparticle Entanglement of Hot Trapped Ions, [*Phys. Rev. Lett.* __82__, 1835 (1999)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835).
-* [11] J. Benhelm *et al.*, Towards fault-tolerant quantum computing with trapped ions, [*Nature Physics* __4__ 463 (2008)](https://www.nature.com/articles/nphys961).
-* [12] J. Altepeter, D.F.V. James, and P.G. Kwiat, Qubit quantum state tomography, [*Lecture Notes in Physics* __649__, 113 (2004)](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4).
-* [13] B. E. A. Saleh, and M. C. Teich, Fundamentals of Photonics, [John Wiley & Sons, (2019)](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748).
-* [14] R. J. Drost, T. J. Moore, and M. Brodsky, Switching Networks for Pairwise-Entanglement Distribution, [*Journal of Optical Communications and Networking*, __8__, 331 (2016)](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335).
-* [15] M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [*arXiv:2405.09860* (2024)](https://arxiv.org/abs/2405.09860).
-* [16] Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
+## Normative
+
+## Informative
+
+* C.K. Hong, Z.Y. Ou, and L. Mandel, Measurement of subpicosecond time intervals between two photons by interference, [*Phys. Rev. Lett.* __59__, 2044 (1987)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044).
+* A. M. Branczyk, Hong-Ou-Mandel Interference, [*arXiv:1711.00080* (2017)](https://arxiv.org/abs/1711.00080).
+* V. Krutyanskiy _et al._, Entanglement of Trapped-Ion Qubits Separated by 230 Meters, [*Phys. Rev. Lett.* __130__, 050803](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803) (2023).
+* R. H. Hadfield, Single-photon detectors for optical quantum information applications, [*Nature Photonics* __3__, 696](https://www.nature.com/articles/nphoton.2009.230) (2009).
+* Single Quantum, [Link](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
+* D. Nadlinger, Device-independent key distribution between trapped-ion quantum network nodes, DPhil Thesis, [Oxford University (2022)](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
+* D. Leibfried, R. Blatt, C. Monroe, and D. Wineland, Quantum dynamics of single trapped ions, [*Rev. Mod. Phys.* __75__, 281 (2003)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
+* C. Gardiner, and P. Zoller, The Quantum World of Ultra-Cold Atoms and Light: The Physics of Quantum-Optical Devices, [Imperial College Press, (2015)](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163).
+* J.I. Cirac, and P. Zoller, Quantum Computations with Cold Trapped Ions, [*Phys. Rev. Lett.* __74__, 4091 (1995)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091).
+* F. Schmidt-Kaler *et. al.*, Realization of the Cirac–Zoller controlled-NOT quantum gate, [*Nature* __422__, 408 (2003)](https://www.nature.com/articles/nature01494).
+* K. Molmer, and A. Sorensen, Multiparticle Entanglement of Hot Trapped Ions, [*Phys. Rev. Lett.* __82__, 1835 (1999)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835).
+* J. Benhelm *et al.*, Towards fault-tolerant quantum computing with trapped ions, [*Nature Physics* __4__ 463 (2008)](https://www.nature.com/articles/nphys961).
+* J. Altepeter, D.F.V. James, and P.G. Kwiat, Qubit quantum state tomography, [*Lecture Notes in Physics* __649__, 113 (2004)](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4).
+* B. E. A. Saleh, and M. C. Teich, Fundamentals of Photonics, [John Wiley & Sons, (2019)](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748).
+* R. J. Drost, T. J. Moore, and M. Brodsky, Switching Networks for Pairwise-Entanglement Distribution, [*Journal of Optical Communications and Networking*, __8__, 331 (2016)](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335).
+* M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [*arXiv:2405.09860* (2024)](https://arxiv.org/abs/2405.09860).
+* Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
