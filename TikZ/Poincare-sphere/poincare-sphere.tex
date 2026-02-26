@@ -1,0 +1,122 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{3d}
+\usetikzlibrary{decorations.markings}
+\usepackage[outline]{contour}
+\contourlength{1pt}
+
+\colorlet{myred}{red!70!black}
+\colorlet{myblue}{blue!70!black}
+\colorlet{mygreen}{green!60!black}
+
+\pgfmathsetmacro\xx{1/sqrt(2)}
+\pgfmathsetmacro\xy{1/sqrt(6)}
+\pgfmathsetmacro\zz{sqrt(2/3)}
+
+\tikzset
+{%
+isometric/.style={x={(-\xx cm,-\xy cm)},y={(\xx cm,-\xy cm)},z={(0cm,\zz cm)}},
+% arrows
+my arrow/.style 2 args={decoration={markings,mark=at position #1 with {\node[right] {$#2$}; \arrow{stealth}}}, postaction={decorate}},
+}
+
+\begin{document}
+\begin{tikzpicture}[isometric,scale=2]
+
+\begin{scope}
+
+\draw[myred!50,dashed,thick] (0.1,0,0) -- (-0.81,0,0);
+
+\begin{scope}[canvas is yz plane at x=-0.1]
+  \draw[] (135:1) arc (135:-45:1);
+  \draw[black!50,dashed] (-50:1) arc (-50:-215:1);
+\end{scope}
+
+\begin{scope}[canvas is yz plane at x=0.1]
+  \draw[] (0,0) circle (1cm);
+  \draw[mygreen,dashed] (0,0) -- (1,0);
+  \draw[mygreen,thick] (0,0) -- ({sin(60)},{cos(60)});
+  \draw[mygreen] (0:0.5) arc (0:30:0.5) node[midway,xshift={5pt}] {$\alpha$};
+\end{scope}
+
+\draw[myred,thick] (1.25,0,0) node[below] {light} -- (0.1,0,0);
+
+\draw[] (0.1,{cos(135)},{sin(135)}) -- (-0.1,{cos(135)},{sin(135)});
+\draw[] (0.1,{cos(-45)},{sin(-45)}) -- (-0.1,{cos(-45)},{sin(-45)});
+
+\draw[myred,-latex,thick] (-0.81,0,0) -- (-1.25,0,0);
+
+\begin{scope}[canvas is yz plane at x=0]
+  \draw[mygreen,-latex] ({sin(60)},{cos(60)}) -- ({1.35*sin(60)},{1.35*cos(60)}) node[below,xshift={7pt},yshift={-2pt}] {\contour{white}{fast axis}};
+\end{scope}
+
+\draw[mygreen,dashed] (0.1,1,0) -- (-0.1,1,0);
+\draw[mygreen,thick] (0.1,{sin(60)},{cos(60)}) -- (-0.1,{sin(60)},{cos(60)});
+
+% \draw[-latex] (0,1,0) -- (0,1.35,0) node[below] {\contour{white}{$|H\rangle$}};
+
+\node[above,font=\bfseries] at (0,0,1.75) {Waveplate orientation};
+
+\end{scope}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{scope}[xshift={2.7cm}]
+% axes dashed
+\draw[black!30, dashed, very thin] (-1,0,0) -- (1,0,0) coordinate (X);
+\draw[black!30, dashed, very thin] (0,-1,0) -- (0,1,0) coordinate (Y);
+\draw[black!30, dashed, very thin] (0,0,-1) -- (0,0,0) coordinate (Z);
+
+% equator back
+\begin{scope}[canvas is xy plane at z=0]
+  \draw[black!50, dashed, very thin] (315:1) arc (315:135:1);
+\end{scope}
+
+% yz meridian back
+\begin{scope}[canvas is yz plane at x=0]
+  \draw[black!50, dashed, very thin] (-45:1) arc (-45:-225:1);
+\end{scope}
+
+% xz meridian
+\begin{scope}[canvas is xz plane at y=0]
+    \draw[black!50, dashed, very thin] (-45:1) arc (-45:-225:1);
+  \draw[fill=gray!20,draw=none,opacity=0.6] (0,0,0) circle (1);
+  \draw[] (-45:1) arc (-45: 135:1);
+  \draw[mygreen,dashed] (0,0) -- (0,1);
+  \draw[mygreen,thick] (0,0) -- ({cos(30)},sin{30});
+  \draw[mygreen] (30:0.5) arc (30:90:0.5) node[midway, xshift={-6pt}, yshift={4pt}] {$2\alpha$};
+\end{scope}
+
+% equator front
+\begin{scope}[canvas is xy plane at z=0]
+  \draw (-45:1) arc (-45:135:1);
+\end{scope}
+
+% yz meridian front
+\begin{scope}[canvas is yz plane at x=0]
+  \draw[] (-45:1) arc (-45: 135:1);
+\end{scope}
+
+% sphere
+\draw (0,0,0) circle (1cm);
+
+% dots
+\fill[black] (0,0,1) circle (0.5pt) node[left,xshift={2pt},yshift={6pt}] {\contour{white}{$|H\rangle$}};
+\fill[black] (0,0,-1) circle (0.5pt) node[below,xshift={2pt}] {\contour{white}{$|V\rangle$}};
+\fill[black] (1,0,0) circle (0.5pt) node[above,xshift={-8pt}] {\contour{white}{$|D\rangle$}};
+\fill[black] (-1,0,0) circle (0.5pt) node[right] {\contour{white}{$|A\rangle$}};
+\fill[black] (0,1,0) circle (0.5pt) node[above] {\contour{white}{$|R\rangle$}};
+\fill[black] (0,-1,0) circle (0.5pt) node[left] {\contour{white}{$|L\rangle$}};
+
+\node[above,font=\bfseries] at (0,0,1.75) {Poincar\'{e} sphere};
+
+\draw[-latex] (1,0,0) -- (1.5,0,0) node[left] {$x$};
+\draw[-latex] (0,1,0) -- (0,1.5,0) node[right] {$y$};
+\draw[-latex] (0,0,1) -- (0,0,1.5) node[above] {$z$};
+
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,86 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings,
+decorations.pathmorphing,
+arrows,
+positioning,
+calc,
+patterns}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+
+\begin{document}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(pi^(1/4)*#2^(1/2))*exp(-((x-#1)^2)/#2)}%
+}
+
+\definecolor{myRed}{RGB}{204,0,0}
+\definecolor{myBlue}{RGB}{0,102,204}
+
+\def\meanA{-2.5}
+\def\meanB{2.5}
+\def\varA{7}
+\def\varB{7}
+
+\def\meanC{0}
+\def\meanD{0}
+\def\varC{15}
+\def\varD{1}
+
+\begin{tikzpicture}
+
+  \begin{scope}
+  \begin{axis}[
+    domain=-15:15,
+    samples=101,
+    ticks=none,
+    hide y axis,
+    axis x line*=bottom,
+    xlabel={Frequency},
+    axis line style={thick, -latex},
+    title={Different central frequencies},
+    height=5cm,
+    width=10cm]
+
+  \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanA,\varA)};
+  \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanB,\varB)};
+  \addplot [
+    pattern=north west lines,
+    pattern color=black,
+    draw=none,
+    domain=-5:5,
+    stack plots=y] {min(gauss(\meanA,\varA),gauss(\meanB,\varB)) } \closedcycle;
+  
+
+  \end{axis}
+  \end{scope}
+
+  \begin{scope}[xshift=300]
+  \begin{axis}[
+    domain=-15:15,
+    samples=101,
+    ticks=none,
+    hide y axis,
+    axis x line*=bottom,
+    xlabel={Frequency},
+    axis line style={thick, -latex},
+    title={Differrent standard deviations},
+    height=5cm,
+    width=10cm]
+
+  \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanC,\varC)};
+  \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanD,\varD)};
+  \addplot [
+    pattern=north west lines,
+    pattern color=black,
+    draw=none,
+    domain=-5:5,
+    stack plots=y] {min(gauss(\meanC,\varC),gauss(\meanD,\varD)) } \closedcycle;
+  
+  \end{axis}
+  \end{scope}
+
+\end{tikzpicture}
+
+\end{document}

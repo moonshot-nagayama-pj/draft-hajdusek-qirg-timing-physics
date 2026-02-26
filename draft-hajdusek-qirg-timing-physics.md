@@ -206,7 +206,7 @@ On the other hand, when the photons are fully distinguishable and their polariza
 The visibility $V(\theta)$ and the probability of a coincidence detection $p_{\text{coin}}$ are both displayed in the figure below.
 
 <p align="center">
-  <img src="Figures/visibility_polarization.svg" width="400"/>
+  <img src="Figures/visibility-polarization.svg" width="400"/>
 </p>
 
 Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
@@ -243,7 +243,7 @@ The two photons may have different central frequencies $\bar{\omega}_a$ and $\ba
 The input photons may be distinguishable even if $\bar{\omega}_a = \bar{\omega}_b$, provided that the shape of the wave packet is different, as shown in the Figure below.
 
 <p align="center">
-  <img src="Figures/distinguishability_spectral.svg" width="800"/>
+  <img src="Figures/distinguishability-spectral.svg" width="850"/>
 </p>
 
 In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.
@@ -325,7 +325,7 @@ p_{\text{coin}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
 <p align="center">
-  <img src="Figures/visibility_spectral.svg" width="800"/>
+  <img src="Figures/visibility-spectral.svg" width="850"/>
 </p>
 
 ## Wave Packet Overlap
@@ -362,20 +362,15 @@ p ^{\text{mix}} _{\text{coincidence}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_
 ~~~
 
 ### Example: Gaussian wave packets
-Consider two identical wavepackets, which arrive at the BS with a time difference given by $\tau$.
-The probability of coincidence is given by
+Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by $\tau$.
+The probability of coincidence and the corresponding visibility are given by
 ~~~math
-p_{\text{coin}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right) = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\tau^{\prime 2}} \right),
-~~~
-where we have defined a dimensionless time rescaled by the standard deviation of the spectral amplitude function of the photon, $\tau^{\prime} = \sigma\tau$.
-The corresponding visibility is given by
-~~~math
-V(\tau^{\prime}) = e^{-\frac{1}{2}\tau^{\prime 2}}.
+p_{\text{coin}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2},\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 ~~~
 Figure below displays the visibility and probability of coincidence for this case.
 
 <p align="center">
-  <img src="Figures/visibility_temporal.svg" width="400"/>
+  <img src="Figures/visibility-temporal.svg" width="400"/>
 </p>
 
 
@@ -513,7 +508,7 @@ and
 This is pictured in the Figure below.
 
 <p align="center">
-  <img src="Figures/measurement_1qubit.svg" width="500"/>
+  <img src="Figures/measurement-1qubit.svg" width="500"/>
 </p>
 
 ### Two-qubit measurements:
@@ -523,7 +518,7 @@ In the majority of cases, we are interested in performing measurements in the Be
 Required unitary $U ^{\dagger}$ is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in $|0\rangle$, as shown in the Figure below, where we have dropped the $Z$ label indicating the measurement basis.
 
 <p align="center">
-  <img src="Figures/measurement_2qubit.svg" width="250"/>
+  <img src="Figures/measurement-2qubit.svg" width="250"/>
 </p>
 
 ## Measurements on quantum memories
