@@ -373,6 +373,50 @@ Table of Contents
    P   = |1;ϵ⟩  ⟨1;ϵ|   + |1;ϵ′⟩  ⟨1;ϵ′|
      i        i       i         i        i
 
+   Either an ε-polarized or an ε'-polarized photon is detected in the
+   output mode i.  The probability of coincidence is then
+
+                                  1 ⎛              2 ⎞   1    2
+   p    = ⟨ψ|    P   ⊗P   |ψ⟩   = ─ ⎝ 1 - ⎢ ⟨ϵ′|ϵ⟩⎢  ⎠ = ─ sin θ
+     co       cd   c    d    cd   2                      2
+
+   where the overlap between the polarization unit vectors is
+   parametrized by θ, and can be written as
+
+   ⟨ϵ′|ϵ⟩= cosθ
+
+   We can define the corresponding visibility as a function of the angle
+   between the two polarization vectors,
+
+                         2
+   V(θ) = 1 - 2 p   = cos θ
+                 co
+
+   When the photons have identical polarization, θ=0, the visibility
+   reaches its maximum of V=1.  On the other hand, when the photons are
+   fully distinguishable and their polarization vectors are orthogonal,
+   visibility is V=0.  The visibility V(θ) and the probability of a
+   coincidence detection p_c are both displayed in the figure below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   Ensuring that the two input photons are indistinguishable in their
+   polarization degree of freedom is critical for proper operation of
+   the BSA.  Care must be therefore taken to characterize the photons
+   just before they are incident onto the BS, as it is possible for the
+   polarization of a photon to *drift* during its transmission and
+   change its state from the one that the photon possessed immediately
+   after emission.  This is often the case in fiber-based quantum
+   networks, where polarization of photons is particularly sensitive to
+   mechanical stresses and temperature gradients affecting the fiber.
+   This issue may be sidestepped by using polarization-maintaining
+   fibers that are designed to suppress coupling between linearly-
+   polarized orthogonal states of light.  However, these incur
+   prohibitive costs for long-distance quantum communication, and may
+   actually introduce unwanted coupling between linearly and circularly
+   polarized light.
+
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
             +=============================+=========+=========+
