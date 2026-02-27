@@ -298,9 +298,26 @@ Table of Contents
    where P_i, for i=c,d, are the projection operators representing a
    detection of a single photon in output mode i of the BS.  For
    completely indistinguishable input photons that undergo the full HOM
-   interference, we have p _c=0.  On the other hand, for fully
+   interference, we have p_c=0.  On the other hand, for fully
    distinguishable photons, the probability of a coincidence detection
-   attains its maximum value p _c=1/2.
+   attains its maximum value p_c=1/2.
+
+   An often-used measure that quantifies the degree of HOM interference
+   is the *visibility* V, defined via the probability of a coincidence
+   detection,
+
+          max        min
+       p      - p
+        c         co                  min
+   V = ───────────────── = 1 - 2 p
+               max                 co
+             p
+               co
+
+   where we used the fact that the maximum probability of a coincidence
+   detection is 1/2.  We observe that the visibility varies from V=0 for
+   fully distinguishable input photons to V=1 for perfectly
+   indistinguishable ones.
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
