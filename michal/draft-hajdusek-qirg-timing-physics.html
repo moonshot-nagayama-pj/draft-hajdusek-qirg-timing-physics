@@ -1993,6 +1993,59 @@ Perfectly indistinguishable input photons always exit the BS in the same ouput m
 It is this interference effect that is at the heart of quantum networking.<a href="#section-3.1-17" class="pilcrow">¶</a></p>
 <p id="section-3.1-18">In order to quantify the effect that distinguishability has on HOM interference, we consider the <strong>probability of a coincidence detection</strong>, <span class="contact-name">p_c</span>, where one photon is detected in the BS output mode <span class="contact-name">c</span>, and the other photon in output mode <span class="contact-name">d</span>.
 This probability is defined as<a href="#section-3.1-18" class="pilcrow">¶</a></p>
+<div id="section-3.1-19">
+          <div class="alignLeft art-svg artwork" id="section-3.1-19.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="2.676ex" role="img" viewBox="-29.5 -791.3 9905.8 1152.1" width="23.007ex">
+              <defs>
+                <path d="M253 370l14 13c39 37 78 58 113 58c61 0 94 -54 94 -155c0 -129 -110 -298 -254 -298c-24 0 -42 4 -61 19l-24 -100c-3 -13 -5 -24 -5 -35c0 -22 11 -43 61 -43h16l-3 -12h-234l3 12c62 3 69 33 81 79l117 464c0 19 -1 33 -31 33c-8 0 -20 -2 -28 -4l-2 16l158 24 l-18 -69zM214 238l-46 -200c14 -16 34 -21 46 -21c101 0 176 173 176 285c0 63 -28 83 -51 83c-53 0 -105 -61 -125 -147Z" id="E1-STIXWEBNORMALI-1D45D" stroke-width="1"></path>
+                <path d="M363 111l12 -13c-51 -60 -113 -109 -198 -109c-97 0 -137 78 -137 155c0 140 121 297 263 297c50 0 97 -27 97 -76c0 -38 -16 -70 -54 -70c-26 0 -38 21 -38 38c0 24 29 36 29 58c0 12 -10 21 -34 21c-119 0 -176 -179 -176 -259c0 -87 49 -109 94 -109 c61 0 107 33 142 67Z" id="E1-STIXWEBNORMALI-1D450" stroke-width="1"></path>
+                <path d="M637 320h-589v66h589v-66zM637 120h-589v66h589v-66Z" id="E1-STIXWEBMAIN-3D" stroke-width="1"></path>
+                <path d="M335 713l-192 -462l191 -464h-52l-205 454v20l206 452h52Z" id="E1-STIXWEBMAIN-27E8" stroke-width="1"></path>
+                <path d="M711 439v-16c-96 -13 -121 -124 -141 -213c-29 -128 -144 -221 -268 -221l-42 -172h-81l43 172h-10c-78 0 -153 41 -153 165c0 56 32 116 32 183c0 40 -14 81 -61 86l5 16c19 2 37 2 55 2c57 0 88 -54 88 -111c0 -56 -31 -127 -31 -185c0 -75 32 -119 83 -126l100 409h81 l-100 -409c73 14 145 78 170 187c28 120 51 233 204 233h26Z" id="E1-STIXWEBNORMALI-1D713" stroke-width="1"></path>
+                <path d="M193 -189h-66v879h66v-879Z" id="E1-STIXWEBVARIANTS-7C" stroke-width="1"></path>
+                <path d="M527 668l-149 -598c-1 -3 -2 -9 -2 -12c0 -6 5 -9 15 -9c20 0 48 35 62 56l11 -12c-30 -45 -83 -105 -130 -105c-32 0 -40 23 -40 41c0 20 2 34 10 64h-5c-74 -93 -134 -105 -171 -105c-73 0 -88 74 -88 127c0 103 103 326 257 326c57 0 80 -26 81 -50h2l53 209 c1 4 2 8 2 12c0 13 -7 20 -33 20c-9 0 -20 -2 -27 -3l-4 15zM363 340c0 47 -15 71 -56 71c-99 0 -180 -200 -180 -296c0 -49 28 -66 56 -66c70 0 136 94 164 186c11 35 16 74 16 105Z" id="E1-STIXWEBNORMALI-1D451" stroke-width="1"></path>
+                <path d="M201 653h271c170 0 232 -86 232 -160c0 -98 -81 -199 -285 -199c-28 0 -50 1 -74 5c-5 0 -8 1 -12 2l-56 -223c-2 -8 -3 -15 -3 -23c0 -24 18 -39 77 -39h32l-4 -16h-341l4 16h17c77 0 97 28 106 62l125 497c2 8 4 17 4 25c0 21 -17 37 -78 37h-19zM411 613l-68 -274 c16 -4 40 -8 60 -8c102 0 182 70 182 172c0 60 -30 113 -125 113c-17 0 -32 -1 -49 -3Z" id="E1-STIXWEBNORMALI-1D443" stroke-width="1"></path>
+                <path d="M792 252c0 -205 -166 -371 -371 -371s-371 166 -371 371s166 371 371 371s371 -166 371 -371zM421 299l191 191c-52 42 -119 67 -191 67s-139 -25 -191 -67zM468 252l191 -191c42 52 67 119 67 191s-25 139 -67 191zM374 252l-191 191c-42 -52 -67 -119 -67 -191 s25 -139 67 -191zM612 14l-191 191l-191 -191c52 -42 119 -67 191 -67s139 25 191 67Z" id="E1-STIXWEBMAIN-2297" stroke-width="1"></path>
+                <path d="M323 240l-206 -453h-52l192 463l-191 463h52l205 -453v-20Z" id="E1-STIXWEBMAIN-27E9" stroke-width="1"></path>
+              </defs>
+              <g fill="black" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+                <use xlink:href="#E1-STIXWEBNORMALI-1D45D" x="0" y="0"></use>
+                <use xlink:href="#E1-STIXWEBNORMALI-1D450" transform="scale(0.707)" x="692" y="-213"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-3D" x="1161" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-27E8" x="2124" y="0"></use>
+                <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="2524" y="0"></use>
+                <g transform="translate(3236,0)">
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="0" y="0"></use>
+                  <g transform="translate(320,-226)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D450" transform="scale(0.707)" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D451" transform="scale(0.707)" x="415" y="0"></use>
+                  </g>
+                </g>
+                <g transform="translate(4327,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D443" x="0" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D450" transform="scale(0.707)" x="840" y="-213"></use>
+                </g>
+                <use xlink:href="#E1-STIXWEBMAIN-2297" x="5537" y="0"></use>
+                <g transform="translate(6602,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D443" x="0" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D451" transform="scale(0.707)" x="840" y="-213"></use>
+                </g>
+                <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="7673" y="0"></use>
+                <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="7993" y="0"></use>
+                <g transform="translate(8705,0)">
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                  <g transform="translate(400,-150)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D450" transform="scale(0.707)" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D451" transform="scale(0.707)" x="415" y="0"></use>
+                  </g>
+                </g>
+              </g>
+            </svg><a href="#section-3.1-19.1" class="pilcrow">¶</a>
+</div>
+</div>
+<p id="section-3.1-20">where <span class="contact-name">P_i</span>, for <span class="contact-name">i=c,d</span>, are the projection operators representing a detection of a single photon in output mode <span class="contact-name">i</span> of the BS.
+For completely indistinguishable input photons that undergo the full HOM interference, we have <span class="contact-name">p _c=0</span>.
+On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value <span class="contact-name">p _c=1/2</span>.<a href="#section-3.1-20" class="pilcrow">¶</a></p>
 <table class="center" id="table-1">
           <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
 <thead>
