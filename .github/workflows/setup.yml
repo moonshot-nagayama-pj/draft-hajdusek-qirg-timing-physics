@@ -91,22 +91,22 @@ jobs:
         git clone --depth=1 https://github.com/martinthomson/i-d-template lib
 
     - name: "Run i-d-template Setup"
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       with:
         make: setup
 
     - name: "Fix Lint"
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       with:
         make: fix-lint
 
     - name: "Update Venue Information"
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       with:
         make: update-venue
 
     - name: "Update GitHub Pages"
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       with:
         make: gh-pages
 
