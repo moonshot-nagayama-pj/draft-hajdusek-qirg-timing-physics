@@ -119,6 +119,7 @@ The input state can be expressed as
 ~~~
 
 where the daggered operators represent bosonic creation operators, which create a single photon in the corresponding input port of the BS.
+
 <!-- where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
 The indices $$j$$ and $$k$$ represent other properties of the photons that determine how distinguishable the photons are.
 For example, $$j$$ and $$k$$ could represent
