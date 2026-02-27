@@ -186,22 +186,22 @@ Non-ideal HOM interference can be modelled as a [two-qubit dephasing](https://jo
 \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}}
 ~~~
 
-where superscript no-deph denotes a the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference, and superscript deph denotes a fully dephased state obtained by setting all off-diagonal elements of the density matrix to zero.
+where superscript no-deph denotes a density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference, and superscript deph denotes a fully dephased state obtained by setting all off-diagonal elements of the density matrix to zero.
 
 In the following subsections, we address and quantify how distinguishable photons affect the visibility of the HOM interference.
 
-<!-- ## Polarization
+## Polarization
 
 We now consider the case when the input photons differ in their polarization degree of photons.
 The maximum probability of a coincidence detection is obtained for orthogonally polarized photons, for example when $$j=H$$ and $$k=V$$.
 Here, $$H$$ denotes horizontal polarization and $$V$$ denotes vertical polarization.
 The output state of the two photons is
 
-~~~text
+~~~math
 | \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right)
 ~~~
 
-We can immediately see that $$p _{\text{co}} ^{\text{max}}=1/2$$.
+We can observe that maximum probbility of coincidence is $$1/2$$.
 
 In general, the two input photons will have polarizations given by two unit vectors, $$j=\epsilon$$ and $$k=\epsilon'$$.
 The output state can be written as
@@ -210,7 +210,7 @@ The output state can be written as
 |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right)
 ~~~
 
-The projection operators corresponding to a detection even at detector $$i$$ ($i=a,b$) are given by
+<!--  The projection operators corresponding to a detection even at detector $$i$$ ($i=a,b$) are given by
 
 ~~~text
 P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i
