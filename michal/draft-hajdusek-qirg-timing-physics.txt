@@ -240,7 +240,22 @@ Table of Contents
 
    where the daggered operators represent bosonic creation operators,
    which create a single photon in the corresponding input port of the
-   BS.
+   BS.  The indices j and k represent other properties of the photons
+   that determine how distinguishable the photons are.  For example, j
+   and k could represent
+
+   *  polarizations (for polarization-encoded qubits),
+
+   *  spectral modes,
+
+   *  temporal modes (for time-bin encoded qubits),
+
+   *  arrival time,
+
+   *  transverse spatial mode.
+
+   The action of the BS on the input modes is represented by a unitary
+   operator U_{ab},
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
