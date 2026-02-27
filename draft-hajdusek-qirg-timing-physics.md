@@ -530,7 +530,10 @@ The size of the separation time depends on the following:
 * **Detector timing jitter:** Generation of the electric signal following absorption of a photon varies in duration, leading to a variance in timing of the detection event. This may lead to the BSA mislabelling which photons were part of a successful measurement if their wavepackets are spaced too closely.
 
 General (conservative) separation time should therefore be set to
-$$T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}.$$
+
+```text
+T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}
+```
 
 The above discussion assumes that the photons can be generated nearly on-demand.
 This is a fair assumption in the case of quantum memories based on [trapped ions](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
@@ -742,7 +745,7 @@ The optical switch introduces a **propagation time delay**. For some MEMS switch
 ~~~
 {: #time-delay title="Time delay introduced by an optical switch."}
 
-This triangular switch design was introduced by [Koyama _et.al._](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port `dollarsignX_0dollarsign` have to traverse at least 5 switching points, while photons from input port `dollarsignX_{11}dollarsign` do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to `dollarsign\text{BSA}_5dollarsign`. This requires photons from `dollarsignX_0dollarsign` to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
+This triangular switch design was introduced by [Koyama et.al.](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port `dollarsignX_0dollarsign` have to traverse at least 5 switching points, while photons from input port `dollarsignX_{11}dollarsign` do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to `dollarsign\text{BSA}_5dollarsign`. This requires photons from `dollarsignX_0dollarsign` to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
 
 The significance of this time delay ultimately depends on the type of photons used. Photons with longer envelopes, such as those emitted from trapped ions, may be more robust to the propagation time delays introduced by the optical switch. Photons with very short envelopes, such as the ones originating from an SPDC source, are expected to be very susceptible to any propagation time delays.
 
