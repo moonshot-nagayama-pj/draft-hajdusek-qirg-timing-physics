@@ -239,7 +239,10 @@ When the photons have identical polarization, `dollarsign\theta=0dollarsign`, th
 On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, `dollarsign\theta=\pm\pi/2dollarsign`, visibility is `dollarsignV=0dollarsign`.
 The visibility `dollarsignV(\theta)dollarsign` and the probability of a coincidence detection `dollarsignp_{\text{coin}}dollarsign` are both displayed in the figure below.
 
-![Visibility of polarization mismathced photons.](Figures/visibility-polarization.svg)
+~~~svg
+{::include Figures/visibility-polarization.svg}
+~~~
+{: #mismatched-photon-visibility title="Visibility of polarization mismatched photons."}
 
 Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
 Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to **drift** during its transmission and change its state from the one that the photon possessed immediately after emission.
@@ -276,7 +279,10 @@ Two input photons become distinguishable if their respective spectral amplitude 
 The two photons may have different central frequencies `dollarsign\bar{\omega}_adollarsign` and `dollarsign\bar{\omega}_bdollarsign`.
 The input photons may be distinguishable even if `dollarsign\bar{\omega}_a = \bar{\omega}_bdollarsign`, provided that the shape of the wave packet is different, as shown in the Figure below.
 
-![Spectral distibguishability of two photons.](Figures/distinguishability-spectral.svg)
+~~~svg
+{::include Figures/distinguishability-spectral.svg}
+~~~
+{: #spectral-distinguishability title="Spectral distinguishability of two photons."}
 
 In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.
 
@@ -377,7 +383,10 @@ p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2
 
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
-![Visibility for spectrally distinguishable photons.](Figures/visibility-spectral.svg)
+~~~svg
+{::include Figures/visibility-spectral.svg}
+~~~
+{: #visibility-spectral title="Visibility for spectrally distinguishable photons."}
 
 ## Wave Packet Overlap
 
@@ -386,7 +395,10 @@ In this subsection, we address this unrealistic assumption and quantify how temp
 Even for photons with identical spectral amplitude functions, different arrival times result in decreased overlap between the photons' wave packets, diminishing the visibility of the HOM interference.
 If the times of arrival are too different as shown in the Figure below, the probability of a coincidence detection will reach its maximum value of 1/2, and the visibility will vanish.
 
-![Temporal distibguishability of two photons.](Figures/distinguishability_temporal.svg)
+~~~svg
+{::include Figures/distinguishability_temporal.svg}
+~~~
+{: #disginguishability-temporable title="Temporal distinguishability of two photons."}
 
 Without loss of generality we assume that photon `dollarsignbdollarsign` is delayed by a time `dollarsign\taudollarsign`, which transforms its creation operator,
 
@@ -428,9 +440,12 @@ The probability of coincidence and the corresponding visibility are given by
 p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 ~~~
 
-Figure below displays the visibility and probability of coincidence for this case.
+The figure below displays the visibility and probability of coincidence for this case.
 
-![Visibility of temporally distinguishable photons.](Figures/visibility-temporal.svg)
+~~~svg
+{::include Figures/visibility-temporal.svg}
+~~~
+{: #visibility-temporal title="Visibility of temporally distinguishable photons."}
 
 # Detector Timing Windows
 
@@ -471,7 +486,10 @@ On the other hand, if the photon source is highly efficient, it is important to 
 * **Timing jitter:** Denoted by `dollarsignJ_{\text{timing}}dollarsign`.
 Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from `[4]`.
 
-![Timing jitter for different detectors.](Figures/timing_jitter.svg)
+~~~svg
+{::include Figures/timing_jitter.svg}
+~~~
+{: #timing-jitter title="Timing jitter for different detectors."}
 
 The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
 
@@ -582,7 +600,10 @@ and
 
 This is pictured in the Figure below.
 
-![Measurement of a single qubit.](Figures/measurement-1qubit.svg =500x100)
+~~~svg
+{::include Figures/measurement-1qubit.svg}
+~~~
+{: #measurement-1qubit title="Measurement of a single qubit."}
 
 ### Two-qubit measurements
 
@@ -591,7 +612,10 @@ This time state `dollarsign|\psi\rangledollarsign` represents a general two-qubi
 In the majority of cases, we are interested in performing measurements in the Bell basis.
 Required unitary `dollarsignU ^{\dagger}dollarsign` is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in `dollarsign|0\rangledollarsign`, as shown in the Figure below, where we have dropped the `dollarsignZdollarsign` label indicating the measurement basis.
 
-![Measurement of two qubits.](Figures/measurement-2qubit.svg =300x150)
+~~~svg
+{::include Figures/measurement-2qubit.svg}
+~~~
+{: #measurement-2qubit title="Measurement of two qubits."}
 
 ## Measurements on quantum memories
 
@@ -607,9 +631,12 @@ The second one is the internal degree of freedom, represented by the ground stat
 It is the latter degree of freedom which is used to encode a qubit and hence acts as a quantum memory.
 
 Measurement in the **Pauli Z** basis is performed by **electron shelving** via the use of a third atomic level `dollarsign|r\rangledollarsign`, with much shorter life time than the [excited state](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163) `dollarsign|e\rangledollarsign`, `dollarsign\tau_e \gg \tau_rdollarsign`.
-Figure below demonstrates how this method works.
+The figure below demonstrates how this method works.
 
-![Readout of trapped ions via shelving.](Figures/shelving.svg)
+~~~svg
+{::include Figures/shelving.svg}
+~~~
+{: #shelving title="Readout of trapped ions via shelving."}
 
 The ion is illuminated by light tuned to resonate with the transition `dollarsign|g\rangle\leftrightarrow|r\rangledollarsign`, represented by the red straight arrow in the Figure above.
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state `dollarsign|g\rangledollarsign`.
@@ -632,7 +659,10 @@ Setting the HWP and QWP at particular angles applies the unitary `dollarsignU ^{
 Horizontal polarization gets transmitted through the PBS, while vertical polarization gets reflected.
 This setup is shown in the figure below.
 
-![Measurement of polarization-encoded photons.](Figures/2detector_polarization.svg)
+~~~svg
+{::include Figures/2detector_polarization.svg}
+~~~
+{: #twodetector-polarization title="Measurement of polarization-encoded photons."}
 
 General pure state of a polarization-encoded qubit can be written as
 
@@ -643,18 +673,27 @@ General pure state of a polarization-encoded qubit can be written as
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 The table below summarizes this equivalence.
 
-![Table of polarization states.](Figures/polarization_table.svg =600x100)
+~~~svg
+{::include Figures/polarization_table.svg}
+~~~
+{: #polarization-table title="Table of polarization states."}
 
 The Figure below shows the Poincaré sphere along with the position of the polarization states.
 
-![Poincare sphere.](Figures/poincare-sphere.svg =400x250)
+~~~svg
+{::include Figures/poincare-sphere.svg}
+~~~
+{: #poincare-sphere title="Poincare sphere."}
 
 Polarization of light is manipulated by waveplates.
 Waveplate rotated by an angle `dollarsign\alphadollarsign` (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of `dollarsign2\alphadollarsign` with the horizontal state `dollarsign|H\rangledollarsign` in the horizontal plane, as shown in Figure above.
 Half waveplate rotates the polarization state by an angle `dollarsign\pidollarsign`, while a quarter waveplate rotates by an angle `dollarsign\pi/2dollarsign` in the Poincaré sphere.
 The action of the waveplates is captured by the corresponding unitary operations,
 
-![Matrix representation of waveplates.](Figures/waveplates_matrix.svg =650x50)
+~~~svg
+{::include Figures/waveplates_matrix.svg}
+~~~
+{: #waveplates-matrix title="Matrix representation of waveplates."}
 
 The idea behind measurements in arbitrary basis `dollarsign\{|\psi\rangle, |\psi^{\perp}\rangle\}dollarsign` is to choose the angles for the waveplates such that the following transformation is achieved,
 
@@ -664,7 +703,10 @@ U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \
 
 Settings for the three Pauli bases are summarized in the table below.
 
-![Table of polarization-basis measurement settings.](Figures/waveplate_angles_table.svg =300x100)
+~~~svg
+{::include Figures/waveplate_angles_table.svg}
+~~~
+{: #waveplate-angles-table title="Table of polarization-basis measurement settings."}
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
@@ -686,13 +728,19 @@ The first approach is the _crossbar switch_ with all-to-all connectivity. Such a
 
 Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible `dollarsignN!dollarsign` input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a [connection](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335). Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the [Bell basis](https://ieeexplore.ieee.org/document/10821447). These approaches are pictured in the figure below.
 
-![Optical switch.](Figures/optical_switch.svg)
+~~~svg
+{::include Figures/optical_switch.svg}
+~~~
+{: #optical-switch title="Optical switch."}
 
 Both of these designs consider a `dollarsign2\times 2dollarsign` switch as the basic building block, which is implemented with **integrated photonics** and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.
 
 The optical switch introduces a **propagation time delay**. For some MEMS switches, this delay can be as low as [25 nanoseconds](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf). In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but as discussed in Section A, any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch, as demonstrated in figure below,
 
-![Time delay introduced by an optical switch.](Figures/time_delay.svg)
+~~~svg
+{::include Figures/time_delay.svg}
+~~~
+{: #time-delay title="Time delay introduced by an optical switch."}
 
 This triangular switch design was introduced by [Koyama _et.al._](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port `dollarsignX_0dollarsign` have to traverse at least 5 switching points, while photons from input port `dollarsignX_{11}dollarsign` do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to `dollarsign\text{BSA}_5dollarsign`. This requires photons from `dollarsignX_0dollarsign` to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
 
