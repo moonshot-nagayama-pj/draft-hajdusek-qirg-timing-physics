@@ -531,9 +531,9 @@ The size of the separation time depends on the following:
 
 General (conservative) separation time should therefore be set to
 
-```text
+~~~text
 T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}
-```
+~~~
 
 The above discussion assumes that the photons can be generated nearly on-demand.
 This is a fair assumption in the case of quantum memories based on [trapped ions](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
