@@ -247,7 +247,7 @@ This is often the case in fiber-based quantum networks, where polarization of ph
 This issue may be sidestepped by using polarization-maintaining fibers that are designed to suppress coupling between linearly-polarized orthogonal states of light.
 However, these incur prohibitive costs for long-distance quantum communication, and may actually introduce unwanted coupling between linearly and circularly polarized light.
 
-<!-- ### Interference of photons from two independent EPPS
+### Interference of photons from two independent EPPS
 
 The preceding discussion was concerned with two independent pure photons of different polarization.
 In the context of quantum networking, a much more common scenario is that of two entangled pairs of photons originating from two independent EPPS nodes, where two qubits, one from each pair, are incident onto a BS and undergo HOM interference.
@@ -257,7 +257,7 @@ The two pairs are in the following initial state,
 |\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right)
 ~~~
 
-where $$\theta_1$$ and $$\theta_2$$ represent the polarization drift induced in the single-mode fiber.
+<!-- where $$\theta_1$$ and $$\theta_2$$ represent the polarization drift induced in the single-mode fiber.
 Photons $$a_2$$ and $$b_1$$ are incident onto a BS, where they undergo HOM interference.
 Following the same calculation as above, it can be shown that the probability of a coincidence event is $$p_{\text{co}} = 1/4$$, regardless of the polarization drift.
 This suggests that the visibility is insensitive to the polarization drift.
