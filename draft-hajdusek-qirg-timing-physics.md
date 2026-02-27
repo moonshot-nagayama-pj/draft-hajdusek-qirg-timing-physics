@@ -108,7 +108,7 @@ There are four possible cases that may occur:
 * Case C: both photons are reflected.
 * Case D: photon in mode $$a$$ is transmitted, while photon in mode $$b$$ is reflected.
 
-<!-- This figure shows these cases:
+This figure shows these cases:
 
 <artwork type="svg" src="Figures/HOM.svg"></artwork>
 
@@ -118,7 +118,7 @@ The input state can be expressed as
 |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab}
 ~~~
 
-where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
+<!-- where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
 The indices $$j$$ and $$k$$ represent other properties of the photons that determine how distinguishable the photons are.
 For example, $$j$$ and $$k$$ could represent
 
