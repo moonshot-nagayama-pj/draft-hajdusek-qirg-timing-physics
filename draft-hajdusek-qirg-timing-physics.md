@@ -118,8 +118,9 @@ The input state can be expressed as
 |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab}
 ~~~
 
-where a*(j) and b*(k) are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
-<!-- The indices $$j$$ and $$k$$ represent other properties of the photons that determine how distinguishable the photons are.
+where the daggered operators represent bosonic creation operators, which create a single photon in the corresponding input port of the BS.
+<!-- where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
+The indices $$j$$ and $$k$$ represent other properties of the photons that determine how distinguishable the photons are.
 For example, $$j$$ and $$k$$ could represent
 
 * polarizations (for polarization-encoded qubits),
