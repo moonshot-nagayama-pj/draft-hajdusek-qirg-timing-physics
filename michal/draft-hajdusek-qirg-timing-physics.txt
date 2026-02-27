@@ -227,6 +227,17 @@ Table of Contents
    *  Case D: photon in mode a is transmitted, while photon in mode b is
       reflected.
 
+   This figure shows these cases:
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   The input state can be expressed as
+
+             †     †
+   |ψ⟩   = a     b     | 0 ⟩
+      ab       j     k      ab
+
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
             +=============================+=========+=========+
