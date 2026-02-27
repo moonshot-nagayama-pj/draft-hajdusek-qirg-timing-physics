@@ -319,6 +319,31 @@ Table of Contents
    fully distinguishable input photons to V=1 for perfectly
    indistinguishable ones.
 
+   Visibility V plays a useful role when modelling the effects of
+   imperfect HOM interference in the context of entanglement swapping.
+   Consider the case when the input photons a, b are entangled with
+   auxiliary systems s_1 and s_2, respectively.  The BSA performs ES by
+   measuring the input photons, entangling systems s_1 and s_2 in the
+   process.  Fidelity of the new entangled pair is directly proportional
+   to the visibility V of the HOM interference.  Non-ideal HOM
+   interference can be modelled as a two-qubit dephasing
+   (https://journals.aps.org/prl/abstract/10.1103/
+   PhysRevLett.130.050803),
+
+                          no-deph                     deph
+   ρ        = V ×ρ                + (1 - V) ×ρ
+    s   s         s   s                       s   s
+      1   2         1   2                       1   2
+
+   where superscript no-deph denotes a the density matrix resulting from
+   an ideal ES at the BSA with unit visibility of the HOM interference,
+   and superscript deph denotes a fully dephased state obtained by
+   setting all off-diagonal elements of the density matrix to zero.
+
+   In the following subsections, we address and quantify how
+   distinguishable photons affect the visibility of the HOM
+   interference.
+
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
             +=============================+=========+=========+

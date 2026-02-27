@@ -2119,6 +2119,97 @@ On the other hand, for fully distinguishable photons, the probability of a coinc
 </div>
 <p id="section-3.1-23">where we used the fact that the maximum probability of a coincidence detection is <span class="contact-name">1/2</span>.
 We observe that the visibility varies from <span class="contact-name">V=0</span> for fully distinguishable input photons to <span class="contact-name">V=1</span> for perfectly indistinguishable ones.<a href="#section-3.1-23" class="pilcrow">¶</a></p>
+<p id="section-3.1-24">Visibility <span class="contact-name">V</span> plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
+Consider the case when the input photons <span class="contact-name">a</span>, <span class="contact-name">b</span> are entangled with auxiliary systems <span class="contact-name">s_1</span> and <span class="contact-name">s_2</span>, respectively.
+The BSA performs ES by measuring the input photons, entangling systems <span class="contact-name">s_1</span> and <span class="contact-name">s_2</span> in the process.
+Fidelity of the new entangled pair is directly proportional to the visibility <span class="contact-name">V</span> of the HOM interference.
+Non-ideal HOM interference can be modelled as a <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">two-qubit dephasing</a>,<a href="#section-3.1-24" class="pilcrow">¶</a></p>
+<div id="section-3.1-25">
+          <div class="alignLeft art-svg artwork" id="section-3.1-25.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="3.509ex" role="img" viewBox="0 -1078.4 15201.6 1510.9" width="35.307ex">
+              <defs>
+                <path d="M30 -183l84 336c39 157 99 226 166 259c32 16 62 29 98 29c61 0 94 -54 94 -155c0 -129 -110 -298 -254 -298c-24 0 -42 4 -61 18l-44 -189h-83zM212 238l-46 -200c14 -16 34 -21 46 -21c101 0 176 173 176 285c0 63 -28 83 -51 83c-53 0 -103 -53 -125 -147Z" id="E1-STIXWEBNORMALI-1D70C" stroke-width="1"></path>
+                <path d="M390 441l-24 -146h-15c0 64 -36 120 -92 120c-25 0 -51 -17 -51 -58c0 -55 134 -147 134 -242c0 -62 -48 -125 -135 -125c-34 0 -98 20 -110 20c-9 0 -18 -4 -30 -21h-17l25 156h16c0 -63 41 -130 104 -130c59 0 73 50 73 89c0 82 -130 132 -130 230c0 79 59 107 114 107 c43 0 63 -20 92 -20c11 0 22 10 30 20h16Z" id="E1-STIXWEBNORMALI-1D460" stroke-width="1"></path>
+                <path d="M394 0h-276v15c74 4 95 25 95 80v449c0 34 -9 49 -30 49c-10 0 -27 -5 -45 -12l-27 -10v14l179 91l9 -3v-597c0 -43 20 -61 95 -61v-15Z" id="E1-STIXWEBMAIN-31" stroke-width="1"></path>
+                <path d="M474 137l-54 -137h-391v12l178 189c94 99 130 175 130 260c0 91 -54 141 -139 141c-72 0 -107 -32 -147 -130l-21 5c21 117 85 199 208 199c113 0 185 -77 185 -176c0 -79 -39 -154 -128 -248l-165 -176h234c42 0 63 11 96 67Z" id="E1-STIXWEBMAIN-32" stroke-width="1"></path>
+                <path d="M637 320h-589v66h589v-66zM637 120h-589v66h589v-66Z" id="E1-STIXWEBMAIN-3D" stroke-width="1"></path>
+                <path d="M760 653l-4 -16c-65 -4 -106 -43 -132 -77l-441 -576h-24v571c0 58 -38 82 -99 82l4 16h294l-4 -16h-19c-65 0 -70 -37 -70 -70v-391l4 -1l280 366c19 24 38 53 38 74c0 15 -14 22 -52 22h-20l4 16h241Z" id="E1-STIXWEBNORMALI-1D449" stroke-width="1"></path>
+                <path d="M597 22l-46 -47l-231 230l-231 -230l-46 46l230 231l-230 231l47 46l230 -230l231 230l46 -45l-230 -232Z" id="E1-STIXWEBMAIN-D7" stroke-width="1"></path>
+                <path d="M485 0h-208l1 15c50 4 62 24 62 90v199c0 71 -24 101 -73 101c-33 0 -57 -12 -103 -57v-276c0 -39 14 -53 65 -57v-15h-211v15c51 4 62 20 62 79v243c0 49 -7 65 -35 65c-11 0 -22 -1 -29 -4v17c55 16 88 27 137 45l8 -3v-78h1c52 59 98 81 144 81c76 0 118 -55 118 -154 v-221c0 -54 12 -65 61 -70v-15Z" id="E1-STIXWEBMAIN-6E" stroke-width="1"></path>
+                <path d="M470 231c0 -139 -90 -241 -225 -241c-121 0 -216 99 -216 238s90 232 225 232c122 0 216 -91 216 -229zM380 204c0 68 -18 137 -50 178c-24 30 -52 50 -95 50c-69 0 -116 -59 -116 -159c0 -79 16 -151 53 -205c22 -32 54 -50 90 -50c74 0 118 70 118 186Z" id="E1-STIXWEBMAIN-6F" stroke-width="1"></path>
+                <path d="M285 194h-246v63h246v-63Z" id="E1-STIXWEBMAIN-2D" stroke-width="1"></path>
+                <path d="M491 42l-147 -52l-4 3v64c-34 -47 -72 -67 -128 -67c-111 0 -185 87 -185 215c0 142 93 255 208 255c40 0 67 -11 105 -43v156c0 41 -9 51 -46 51c-8 0 -14 0 -22 -1v16c64 17 99 27 147 44l5 -2v-567c0 -46 8 -57 44 -57c5 0 6 0 23 1v-16zM340 102v230 c0 53 -48 100 -102 100c-76 0 -125 -74 -125 -187c0 -123 54 -203 138 -203c31 0 56 11 74 32c9 10 15 21 15 28Z" id="E1-STIXWEBMAIN-64" stroke-width="1"></path>
+                <path d="M408 164l16 -7c-39 -109 -109 -167 -209 -167c-118 0 -190 89 -190 227c0 141 81 243 207 243c62 0 107 -24 139 -69c20 -28 30 -60 34 -114h-308c5 -76 10 -115 46 -163c28 -37 65 -55 111 -55c67 0 105 31 154 105zM99 309h204c-11 81 -32 115 -98 115 c-56 0 -95 -40 -106 -115Z" id="E1-STIXWEBMAIN-65" stroke-width="1"></path>
+                <path d="M159 458v-77c44 55 88 79 144 79c97 0 167 -89 167 -213c0 -145 -91 -257 -210 -257c-42 0 -65 10 -101 43v-157c0 -63 13 -74 88 -75v-18h-242v17c59 6 70 17 70 69v468c0 47 -7 57 -41 57c-9 0 -16 0 -25 -1v16c55 17 91 30 144 51zM159 334v-246c0 -30 57 -66 104 -66 c72 0 121 75 121 185c0 117 -49 193 -123 193c-46 0 -102 -36 -102 -66Z" id="E1-STIXWEBMAIN-70" stroke-width="1"></path>
+                <path d="M487 0h-212v15c58 6 68 18 68 87v198c0 70 -25 106 -74 106c-40 0 -70 -17 -112 -63v-241c0 -69 10 -81 68 -87v-15h-216v15c58 8 64 17 64 87v471c0 43 -8 51 -51 51c-4 0 -9 0 -12 -1v16l27 8c57 17 80 24 115 36l5 -3v-304c46 60 88 84 147 84c82 0 123 -54 123 -159 v-199c0 -69 6 -77 60 -87v-15Z" id="E1-STIXWEBMAIN-68" stroke-width="1"></path>
+                <path d="M636 220h-261v-261h-66v261h-261v66h261v261h66v-261h261v-66Z" id="E1-STIXWEBMAIN-2B" stroke-width="1"></path>
+                <path d="M304 -161l-12 -16c-158 90 -244 259 -244 429c0 185 87 329 247 424l9 -16c-139 -119 -170 -212 -170 -405c0 -186 30 -299 170 -416Z" id="E1-STIXWEBMAIN-28" stroke-width="1"></path>
+                <path d="M621 220h-557v66h557v-66Z" id="E1-STIXWEBMAIN-2212" stroke-width="1"></path>
+                <path d="M29 660l12 16c153 -92 244 -259 244 -429c0 -185 -88 -327 -247 -424l-9 16c142 117 170 211 170 405c0 187 -25 302 -170 416Z" id="E1-STIXWEBMAIN-29" stroke-width="1"></path>
+              </defs>
+              <g fill="black" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+                <use xlink:href="#E1-STIXWEBNORMALI-1D70C" x="0" y="0"></use>
+                <g transform="translate(502,-150)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D460" transform="scale(0.707)" x="0" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="542" y="-253"></use>
+                  <g transform="translate(669,0)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D460" transform="scale(0.707)" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="542" y="-253"></use>
+                  </g>
+                </g>
+                <use xlink:href="#E1-STIXWEBMAIN-3D" x="2219" y="0"></use>
+                <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="3182" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-D7" x="4165" y="0"></use>
+                <g transform="translate(5028,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D70C" x="0" y="0"></use>
+                  <g transform="translate(502,498)">
+                    <use xlink:href="#E1-STIXWEBMAIN-6E" transform="scale(0.707)"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6F" transform="scale(0.707)" x="500" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-2D" transform="scale(0.707)" x="1001" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-64" transform="scale(0.707)" x="1334" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-65" transform="scale(0.707)" x="1835" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-70" transform="scale(0.707)" x="2279" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-68" transform="scale(0.707)" x="2780" y="0"></use>
+                  </g>
+                  <g transform="translate(502,-149)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D460" transform="scale(0.707)" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="542" y="-253"></use>
+                    <g transform="translate(669,0)">
+                      <use xlink:href="#E1-STIXWEBNORMALI-1D460" transform="scale(0.707)" x="0" y="0"></use>
+                      <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="542" y="-253"></use>
+                    </g>
+                  </g>
+                </g>
+                <use xlink:href="#E1-STIXWEBMAIN-2B" x="8172" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-28" x="9080" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-31" x="9413" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-2212" x="10136" y="0"></use>
+                <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="11044" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-29" x="11804" y="0"></use>
+                <use xlink:href="#E1-STIXWEBMAIN-D7" x="12360" y="0"></use>
+                <g transform="translate(13223,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D70C" x="0" y="0"></use>
+                  <g transform="translate(502,498)">
+                    <use xlink:href="#E1-STIXWEBMAIN-64" transform="scale(0.707)"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-65" transform="scale(0.707)" x="500" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-70" transform="scale(0.707)" x="945" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-68" transform="scale(0.707)" x="1445" y="0"></use>
+                  </g>
+                  <g transform="translate(502,-149)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D460" transform="scale(0.707)" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="542" y="-253"></use>
+                    <g transform="translate(669,0)">
+                      <use xlink:href="#E1-STIXWEBNORMALI-1D460" transform="scale(0.707)" x="0" y="0"></use>
+                      <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="542" y="-253"></use>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg><a href="#section-3.1-25.1" class="pilcrow">¶</a>
+</div>
+</div>
+<p id="section-3.1-26">where superscript no-deph denotes a the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference, and superscript deph denotes a fully dephased state obtained by setting all off-diagonal elements of the density matrix to zero.<a href="#section-3.1-26" class="pilcrow">¶</a></p>
+<p id="section-3.1-27">In the following subsections, we address and quantify how distinguishable photons affect the visibility of the HOM interference.<a href="#section-3.1-27" class="pilcrow">¶</a></p>
 <table class="center" id="table-1">
           <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
 <thead>
