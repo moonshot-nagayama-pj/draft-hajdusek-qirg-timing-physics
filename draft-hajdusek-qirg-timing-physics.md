@@ -146,7 +146,7 @@ For a 50:50 BS when $$r=1/2$$:
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
 ~~~
 
-<!-- From this expression, we can see that when $$j=k$$, in other words when the input photons are indistinguishable, the output state has the following form,
+From this expression, we can see that when $$j=k$$, in other words when the input photons are indistinguishable, the output state has the following form,
 
 ~~~text
 |\psi\rangle _{cd} = \frac{1}{\sqrt{2}} \left( |2\rangle_c - |2\rangle_d \right)
@@ -159,7 +159,7 @@ It is this interference effect that is at the heart of quantum networking.
 In order to quantify the effect that distinguishability has on HOM interference, we consider the **probability of a coincidence detection**, $$p_{\text{co}}$$, where one photon is detected in the BS output mode $$c$$, and the other photon in output mode $$d$$.
 This probability is defined as
 
-~~~text
+<!-- ~~~text
 p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd}
 ~~~
 
