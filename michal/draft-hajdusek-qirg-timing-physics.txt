@@ -69,8 +69,9 @@ Table of Contents
      3.1.  Hong-Ou-Mandel interference
      3.2.  Polarization
        3.2.1.  Interference of photons from two independent EPPS
-     3.3.  Acceptance window
-     3.4.  Separation in a train of wavepackets
+     3.3.  Spectral distinguishability
+     3.4.  Acceptance window
+     3.5.  Separation in a train of wavepackets
    4.  Measurement basis selection
      4.1.  Measurement basics
        4.1.1.  Single-qubit measurements
@@ -452,6 +453,31 @@ Table of Contents
    compensation at the BSA takes a few minutes and is performed every 20
    minutes.
 
+3.3.  Spectral distinguishability
+
+   Another important source of distinguishability in HOM interference is
+   the spectral property of the input photons.  The photon wave packet
+   of a photon can be represented by its *spectral amplitude function*
+   ϕ(ω) that satifies the normalization condition:
+
+   ⌠         2
+   ⎮ dω|ϕ(ω)| =1
+   ⌡
+
+   Two input photons become distinguishable if their respective spectral
+   amplitude functions are not equal.  We resctrict our discussion to
+   Gaussian spectral amplitude functions but the same methods generalize
+   to arbitrary photons.  The two photons may have different central
+   frequencies or different standard deviations, as shown in the
+   Figure below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   In this subsection, we analyze the requirements in terms of the
+   photonic spectral amplitude function that lead to high visibility of
+   the HOM interference.
+
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
             +=============================+=========+=========+
@@ -466,7 +492,7 @@ Table of Contents
 
                                   Table 1
 
-3.3.  Acceptance window
+3.4.  Acceptance window
 
    In the previous Section, we used τ to denote the difference between
    the arrival time of the photons at the BSA.  However, due to emission
@@ -490,7 +516,7 @@ Table of Contents
    the entangled states.  Reaching the requested fidelity should take
    priority over high generation rate.
 
-3.4.  Separation in a train of wavepackets
+3.5.  Separation in a train of wavepackets
 
    Current experiments on quantum repeaters use single quantum memory
    per QNIC.  As quantum technologies improve, it is likely that QNICs
