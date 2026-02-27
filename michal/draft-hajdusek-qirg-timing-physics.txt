@@ -8,7 +8,7 @@ Intended status: Informational                           Keio University
 Expires: 31 August 2026                                 27 February 2026
 
 
-   Timing Regimes in Quantum Networks and their Physical Underpinnigs
+  Timing Regimes in Quantum Networks and their Physical Underpinnings
                    draft-hajdusek-qirg-timing-physics
 
 Abstract
@@ -109,15 +109,15 @@ Table of Contents
 
    Equally importantly, it specifies *timing requirements*.  For
    example, the rise time for a signal on the coaxial cable shall be 25
-   dollarsign\pmdollarsign 5 nanoseconds.  The total worst-case round-
-   trip delay is calculated in a table to be 46.38 microseconds.  How
-   the entries in that table are combined to produce that number is
-   fairly obvious; however, the numerical entries themselves are mostly
-   unjustified in the specification itself, only stated.  One exception
-   is the statement, "Rise and fall times meet 10,000 series ECL
-   requirements," referring to a specific series of well-known digital
-   emitter-coupled logic parts, and hence incorporating a great deal of
-   prior knowledge and work by reference.
+   ± 5 nanoseconds.  The total worst-case round-trip delay is calculated
+   in a table to be 46.38 microseconds.  How the entries in that table
+   are combined to produce that number is fairly obvious; however, the
+   numerical entries themselves are mostly unjustified in the
+   specification itself, only stated.  One exception is the statement,
+   "Rise and fall times meet 10,000 series ECL requirements," referring
+   to a specific series of well-known digital emitter-coupled logic
+   parts, and hence incorporating a great deal of prior knowledge and
+   work by reference.
 
    In the quantum world, we are starting from first principles.  Hence,
    we must begin at the beginning.  We want to have specifications like
@@ -221,21 +221,20 @@ Table of Contents
 3.1.  Hong-Ou-Mandel interference
 
    Consider two photons incident on a beamsplitter (BS) with
-   reflectivity dollarsignrdollarsign.  We label the input modes by
-   dollarsignadollarsign and dollarsignbdollarsign, and the output modes
-   by dollarsigncdollarsign and dollarsignddollarsign.  We are
-   interested in the observed behavior at the output modes of the BS.
-   There are four possible cases that may occur:
+   reflectivity r.  We label the input modes by a and b, and the output
+   modes by c and d.  We are interested in the observed behavior at the
+   output modes of the BS.  There are four possible cases that may
+   occur:
 
-   *  Case A: photon in mode dollarsignadollarsign is reflected, while
-      photon in mode dollarsignbdollarsign is transmitted.
+   *  Case A: photon in mode a is reflected, while photon in mode b is
+      transmitted.
 
    *  Case B: both photons are transmitted.
 
    *  Case C: both photons are reflected.
 
-   *  Case D: photon in mode dollarsignadollarsign is transmitted, while
-      photon in mode dollarsignbdollarsign is reflected.
+   *  Case D: photon in mode a is transmitted, while photon in mode b is
+      reflected.
 
    This figure shows these cases:
 
@@ -246,13 +245,11 @@ Table of Contents
 
    |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab},
 
-   where dollarsigna ^{\dagger} _jdollarsign and dollarsignb ^{\dagger}
-   _kdollarsign are the bosonic creation operators corresponding to BS
-   input modes dollarsignadollarsign and dollarsignbdollarsign,
-   respectively.  The indices dollarsignjdollarsign and
-   dollarsignkdollarsign represent other properties of the photons that
-   determine how distinguishable the photons are.  For example,
-   dollarsignjdollarsign and dollarsignkdollarsign could represent
+   where a ^{†} _j and b ^{†} _k are the bosonic creation operators
+   corresponding to BS input modes a and b, respectively.  The indices j
+   and k represent other properties of the photons that determine how
+   distinguishable the photons are.  For example, j and k could
+   represent
 
    *  polarizations (for polarization-encoded qubits),
 
@@ -265,7 +262,7 @@ Table of Contents
    *  transverse spatial mode.
 
    The action of the BS on the input modes is represented by a unitary
-   operator dollarsignU_{ab}dollarsign,
+   operator U_{ab},
 
    a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}.
 
@@ -273,13 +270,13 @@ Table of Contents
 
    |\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 
-   For a 50:50 BS when dollarsignr=1/2dollarsign, we obtain,
+   For a 50:50 BS when r=1/2, we obtain,
 
    |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 
-   From this expression, we can see that when dollarsignj=kdollarsign,
-   in other words when the input photons are indistinguishable, the
-   output state has the following form,
+   From this expression, we can see that when j=k, in other words when
+   the input photons are indistinguishable, the output state has the
+   following form,
 
    |\psi\rangle _{cd} = \frac{1}{\sqrt{2}} \left( |2\rangle_c - |2\rangle_d \right).
 
@@ -291,55 +288,48 @@ Table of Contents
 
    In order to quantify the effect that distinguishability has on HOM
    interference, we consider the *probability of a coincidence
-   detection*, dollarsignp_{\text{co}}dollarsign, where one photon is
-   detected in the BS output mode dollarsigncdollarsign, and the other
-   photon in output mode dollarsignddollarsign.  This probability is
-   defined as
+   detection*, p_{\text{co}}, where one photon is detected in the BS
+   output mode c, and the other photon in output mode d.  This
+   probability is defined as
 
    p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd},
 
-   where dollarsignP_idollarsign, for dollarsigni=c,ddollarsign, are the
-   projection operators representing a detection of a single photon in
-   output mode dollarsignidollarsign of the BS.  For completely
-   indistinguishable input photons that undergo the full HOM
-   interference, we have dollarsignp _{\text{co}}=0dollarsign.  On the
-   other hand, for fully distinguishable photons, the probability of a
-   coincidence detection attains its maximum value dollarsignp
-   _{\text{co}}=1/2dollarsign.
+   where P_i, for i=c,d, are the projection operators representing a
+   detection of a single photon in output mode i of the BS.  For
+   completely indistinguishable input photons that undergo the full HOM
+   interference, we have p _{\text{co}}=0.  On the other hand, for fully
+   distinguishable photons, the probability of a coincidence detection
+   attains its maximum value p _{\text{co}}=1/2.
 
    An often-used measure that quantifies the degree of HOM interference
-   is the *visibility* dollarsignVdollarsign, defined via the
-   probability of a coincidence detection,
+   is the *visibility* V, defined via the probability of a coincidence
+   detection,
 
    V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}},
 
    where we used the fact that the maximum probability of a coincidence
-   detection is dollarsign1/2dollarsign.  We observe that the visibility
-   varies from dollarsignV=0dollarsign for fully distinguishable input
-   photons to dollarsignV=1dollarsign for perfectly indistinguishable
-   ones.
+   detection is 1/2.  We observe that the visibility varies from V=0 for
+   fully distinguishable input photons to V=1 for perfectly
+   indistinguishable ones.
 
-   Visibility dollarsignVdollarsign plays a useful role when modelling
-   the effects of imperfect HOM interference in the context of
-   entanglement swapping.  Consider the case when the input photons
-   dollarsignadollarsign, dollarsignbdollarsign are entangled with
-   auxiliary systems dollarsigns_1dollarsign and
-   dollarsigns_2dollarsign, respectively.  The BSA performs ES by
-   measuring the input photons, entangling systems
-   dollarsigns_1dollarsign and dollarsigns_2dollarsign in the process.
-   Fidelity of the new entangled pair is directly proportional to the
-   visibility dollarsignVdollarsign of the HOM interference.  Denote by
-   dollarsign\rho_{s_1s_2}^{\text{no-deph}}dollarsign the density matrix
-   resulting from an ideal ES at the BSA with unit visibility of the HOM
-   interference.  Non-ideal HOM interference can be modelled as a two-
-   qubit dephasing (https://journals.aps.org/prl/abstract/10.1103/
+   Visibility V plays a useful role when modelling the effects of
+   imperfect HOM interference in the context of entanglement swapping.
+   Consider the case when the input photons a, b are entangled with
+   auxiliary systems s_1 and s_2, respectively.  The BSA performs ES by
+   measuring the input photons, entangling systems s_1 and s_2 in the
+   process.  Fidelity of the new entangled pair is directly proportional
+   to the visibility V of the HOM interference.  Denote by
+   ρ_{s_1s_2}^{\text{no−deph}} the density matrix resulting from an
+   ideal ES at the BSA with unit visibility of the HOM interference.
+   Non-ideal HOM interference can be modelled as a two-qubit dephasing
+   (https://journals.aps.org/prl/abstract/10.1103/
    PhysRevLett.130.050803),
 
    \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}},
 
-   where dollarsign\rho_{s_1s_2}^{\text{deph}}dollarsign is a fully
-   dephased state obtained by setting all off-diagonal elements of
-   dollarsign\rho_{s_1s_2}^{\text{no-deph}}dollarsign to zero.
+   where ρ_{s_1s_2}^{\text{deph}} is a fully dephased state obtained by
+   setting all off-diagonal elements of ρ_{s_1s_2}^{\text{no−deph}} to
+   zero.
 
    In the following subsections, we address and quantify how
    distinguishable photons affect the visibility of the HOM
@@ -350,52 +340,45 @@ Table of Contents
    We now consider the case when the input photons differ in their
    polarization degree of photons.  The maximum probability of a
    coincidence detection is obtained for orthogonally polarized photons,
-   for example when dollarsignj=Hdollarsign and dollarsignk=Vdollarsign.
-   Here, dollarsignHdollarsign denotes horizontal polarization and
-   dollarsignVdollarsign denotes vertical polarization.  The output
-   state of the two photons is
+   for example when j=H and k=V.  Here, H denotes horizontal
+   polarization and V denotes vertical polarization.  The output state
+   of the two photons is
 
    | \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right).
 
-   We can immediately see that dollarsignp _{\text{co}}
-   ^{\text{max}}=1/2dollarsign.
+   We can immediately see that p _{\text{co}} ^{\text{max}}=1/2.
 
    In general, the two input photons will have polarizations given by
-   two unit vectors, dollarsignj=\epsilondollarsign and
-   dollarsignk=\epsilon'dollarsign.  The output state can be written as
+   two unit vectors, j=ε and k=ε'.  The output state can be written as
 
    |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right).
 
    The projection operators corresponding to a detection even at
-   detector dollarsignidollarsign ($i=a,b$) are given by
+   detector i ($i=a,b$) are given by
 
    P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i.
 
-   Either an dollarsign\epsilondollarsign-polarized or an
-   dollarsign\epsilon'dollarsign-polarized photon is detected in the
-   output mode dollarsignidollarsign.  The probability of coincidence is
-   then
+   Either an ε-polarized or an ε'-polarized photon is detected in the
+   output mode i.  The probability of coincidence is then
 
-   p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
+   p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta
 
    where the overlap between the polarization unit vectors is
-   parametrized by dollarsign\thetadollarsign, and can be written as
-   dollarsign\langle\epsilon'|\epsilon\rangle = \cos\thetadollarsign.
+   parametrized by θ, and can be written as
+
+   \langle\epsilon'|\epsilon\rangle = \cos\theta
 
    We can define the corresponding visibility as a function of the angle
    between the two polarization vectors,
 
    V(\theta) = 1 - 2 p_{\text{co}} = \cos^2\theta.
 
-   When the photons have identical polarization,
-   dollarsign\theta=0dollarsign, the visibility reaches its maximum of
-   dollarsignV=1dollarsign.  On the other hand, when the photons are
+   When the photons have identical polarization, θ=0, the visibility
+   reaches its maximum of V=1.  On the other hand, when the photons are
    fully distinguishable and their polarization vectors are orthogonal,
-   dollarsign\theta=\pm\pi/2dollarsign, visibility is
-   dollarsignV=0dollarsign.  The visibility
-   dollarsignV(\theta)dollarsign and the probability of a coincidence
-   detection dollarsignp_{\text{coin}}dollarsign are both displayed in
-   the figure below.
+   θ=±π/2, visibility is V=0.  The visibility V(θ) and the probability
+   of a coincidence detection p_{\text{coin}} are both displayed in the
+   figure below.
 
    Ensuring that the two input photons are indistinguishable in their
    polarization degree of freedom is critical for proper operation of
@@ -424,18 +407,16 @@ Table of Contents
 
    |\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right),
 
-   where dollarsign\theta_1dollarsign and dollarsign\theta_2dollarsign
-   represent the polarization drift induced in the single-mode fiber.
-   Photons dollarsigna_2dollarsign and dollarsignb_1dollarsign are
-   incident onto a BS, where they undergo HOM interference.  Following
-   the same calculation as above, it can be shown that the probability
-   of a coincidence event is dollarsignp_{\text{co}} = 1/4dollarsign,
-   regardless of the polarization drift.  This suggests that the
-   visibility is insensitive to the polarization drift.  However, the
-   polarization drift must be tracked regardless because it affects the
-   fidelity of the post-ES state of photons dollarsigna_1dollarsign and
-   dollarsignb_2dollarsign, $|\Psi^{\pm}\rangle_{a_1b_2} =
-   \frac{1}{\sqrt{2}} \left( |HV\rangle_{a_1b_2} \pm
+   where θ_1 and θ_2 represent the polarization drift induced in the
+   single-mode fiber.  Photons a_2 and b_1 are incident onto a BS, where
+   they undergo HOM interference.  Following the same calculation as
+   above, it can be shown that the probability of a coincidence event is
+   p_{\text{co}} = 1/4, regardless of the polarization drift.  This
+   suggests that the visibility is insensitive to the polarization
+   drift.  However, the polarization drift must be tracked regardless
+   because it affects the fidelity of the post-ES state of photons a_1
+   and b_2, $|\Psi^{\pm}\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}
+   \left( |HV\rangle_{a_1b_2} \pm
    e^{i(\theta_1-\theta_2)} |VH\rangle_{a_1b_2} \right).$ It is
    therefore important to characterize the polarization drift at the BSA
    at regular intervals and compensate for it.  This can be done at the
@@ -451,15 +432,12 @@ Table of Contents
    Another important source of distinguishability in HOM interference is
    the spectral property of the input photons.  The photon wave packet
    of a photon can be represented by its *spectral amplitude function*
-   dollarsign\phi(\omega)dollarsign, where dollarsign\int
-   d\omega |\phi(\omega)|^2=1dollarsign.  Two input photons become
+   ϕ(ω), where ∫ dω |ϕ(ω)|^2=1.  Two input photons become
    distinguishable if their respective spectral amplitude functions are
    not equal.  The two photons may have different central frequencies
-   dollarsign\bar{\omega}_adollarsign and
-   dollarsign\bar{\omega}_bdollarsign.  The input photons may be
-   distinguishable even if dollarsign\bar{\omega}_a =
-   \bar{\omega}_bdollarsign, provided that the shape of the wave packet
-   is different, as shown in the Figure below.
+   ω̅_a and ω̅_b.  The input photons may be distinguishable even if ω̅_a
+   = ω̅_b, provided that the shape of the wave packet is different, as
+   shown in the Figure below.
 
    In this subsection, we analyze the requirements in terms of the
    photonic spectral amplitude function that lead to high visibility of
@@ -469,16 +447,13 @@ Table of Contents
 
    We begin the discussion by focusing on pure states of the input
    photons first.  Single-photon state with a spectral amplitude
-   function dollarsign\phi(\omega)dollarsign is a superposition written
-   as
+   function ϕ(ω) is a superposition written as
 
    |1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a,
 
-   where dollarsigna ^{\dagger}(\omega)dollarsign creates a photon in
-   the BS input mode dollarsignadollarsign with frequency
-   dollarsign\omegadollarsign.  Two input photons with arbitrary
-   spectral functions dollarsign\phidollarsign and
-   dollarsign\varphidollarsign are described by
+   where a ^{†}(ω) creates a photon in the BS input mode a with
+   frequency ω. Two input photons with arbitrary spectral functions ϕ
+   and φ are described by
 
    |\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0\rangle _{ab}.
 
@@ -490,8 +465,7 @@ Table of Contents
    |\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 
    The projection operators corresponding to a detection event in output
-   mode dollarsigncdollarsign and output mode dollarsignddollarsign are
-   given by
+   mode c and output mode d are given by
 
    P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega).
 
@@ -501,18 +475,14 @@ Table of Contents
 
    The form of this expression is the same as the one in subsection on
    polarization above, where the probability of a coincidence detection
-   depended on the overlap between the polarization vectors
-   dollarsign\epsilondollarsign and dollarsign\epsilon'dollarsign.  Now,
-   dollarsignp _{\text{co}}dollarsign depends on the overlap between the
-   spectral amplitude functions.  If the input photons are fully
-   distinguishable, their respective spectral amplitude functions
-   dollarsign\phi(\omega)dollarsign and
-   dollarsign\varphi(\omega)dollarsign are orthogonal and the integrals
-   vanish, meaning dollarsignp _{\text{co}}=1/2dollarsign.  On the other
-   hand, for completely indistinguishable input photons we have
-   dollarsign\phi(\omega)=\varphi(\omega)dollarsign, and due to the
-   normalization condition we obtain dollarsignp
-   _{\text{co}}=0dollarsign.
+   depended on the overlap between the polarization vectors ε and ε'.
+   Now, p _{\text{co}} depends on the overlap between the spectral
+   amplitude functions.  If the input photons are fully distinguishable,
+   their respective spectral amplitude functions ϕ(ω) and φ(ω) are
+   orthogonal and the integrals vanish, meaning p _{\text{co}}=1/2.  On
+   the other hand, for completely indistinguishable input photons we
+   have ϕ(ω)=φ(ω), and due to the normalization condition we obtain p
+   _{\text{co}}=0.
 
 3.3.2.  Mixed states
 
@@ -525,18 +495,16 @@ Table of Contents
    The mixed state of an input photon is described by the following
    density matrix, ρ_a = ∑_k u_k |1;ϕ_k〉_a〈1;ϕ_k|_a, where the state of
    the photon is a mixture of pure single-photon states with spectral
-   amplitude function dollarsign\phi_k(\omega)dollarsign, weighted by
-   probability dollarsignu_kdollarsign.  The normalization condition
-   requires that dollarsign\sum_k u_k=1dollarsign.  The two-photon input
-   state can be written as ρ ^{\text{in}} _{ab} = ∑ _{kk'} u_k v
+   amplitude function ϕ_k(ω), weighted by probability u_k.  The
+   normalization condition requires that ∑_k u_k=1.  The two-photon
+   input state can be written as ρ ^{\text{in}} _{ab} = ∑ _{kk'} u_k v
    _{k'} |1;ϕ_k〉_a |1;φ _{k'}〉_b 〈 1;ϕ_k|_a 〈 1;φ _{k'}|_b.  It is not
    necessary to repeat the entire calculation we did for pure states.
    Due to the linearity of quantum mechanics, we can immediately write
    the expression for the probability of coincidence as a sum of pure-
-   state coincidence probabilities weighted by dollarsignu_kdollarsign
-   and dollarsignv'_kdollarsign, p _{\text{co}} = \frac{1}{2} −
-   \frac{1}{2} ∑ _{kk'} u _k v _{k'} ∫ dω_1ϕ^*_k(ω_1)φ _{k'}(ω_1) ∫ dω_2
-   φ _{k'}^*(ω_2) ϕ_k(ω_2).
+   state coincidence probabilities weighted by u_k and v'_k, p
+   _{\text{co}} = \frac{1}{2} − \frac{1}{2} ∑ _{kk'} u _k v _{k'} ∫
+   dω_1ϕ^*_k(ω_1)φ _{k'}(ω_1) ∫ dω_2 φ _{k'}^*(ω_2) ϕ_k(ω_2).
 
 3.3.2.1.  Example 1: Gaussian wave packets
 
@@ -552,28 +520,24 @@ Table of Contents
 3.3.2.1.1.  Case A (different central frequencies)
 
    We assume that the two spectral amplitude functions have the same
-   standard deviation dollarsign\sigma_a=\sigma_b=\sigmadollarsign,
-   which simplifies the expression for the probability of a coincidence
-   detection to
+   standard deviation σ_a=σ_b=σ, which simplifies the expression for the
+   probability of a coincidence detection to
 
    p _{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
 
-   We observe that for identical photons, when
-   dollarsign\bar{\omega}_a=\bar{\omega}_bdollarsign, the probability of
-   a coincidence detection vanishes.  For fully distinguishable wave
-   packets, when
-   dollarsign\bar{\omega}_a-\bar{\omega}_b\rightarrow\inftydollarsign,
-   the probability approaches 1/2, as expected.  We can now define
-   visibility as a function of the difference between the central
-   frequencies dollarsign\bar{\omega}_a-\bar{\omega}_bdollarsign,
+   We observe that for identical photons, when ω̅_a=ω̅_b, the
+   probability of a coincidence detection vanishes.  For fully
+   distinguishable wave packets, when ω̅_a−ω̅_b→∞, the probability
+   approaches 1/2, as expected.  We can now define visibility as a
+   function of the difference between the central frequencies ω̅_a−ω̅_b,
 
    V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}.
 
 3.3.2.1.2.  Case B (different standard deviations)
 
    The spectral amplitude functions have the same central frequencies,
-   dollarsign\omega_a=\omega_bdollarsign, which gives the following
-   expression for the probability of coincidence and visibility,
+   ω_a=ω_b, which gives the following expression for the probability of
+   coincidence and visibility,
 
    p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
 
@@ -593,15 +557,13 @@ Table of Contents
    probability of a coincidence detection will reach its maximum value
    of 1/2, and the visibility will vanish.
 
-   Without loss of generality we assume that photon
-   dollarsignbdollarsign is delayed by a time dollarsign\taudollarsign,
-   which transforms its creation operator,
+   Without loss of generality we assume that photon b is delayed by a
+   time τ, which transforms its creation operator,
 
    b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}.
 
-   Two input photons with arbitrary spectral functions
-   dollarsign\phidollarsign and dollarsign\varphidollarsign, with photon
-   dollarsignbdollarsign arriving late, are described by
+   Two input photons with arbitrary spectral functions ϕ and φ, with
+   photon b arriving late, are described by
 
    |\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
 
@@ -623,9 +585,8 @@ Table of Contents
 3.4.1.  Example: Gaussian wave packets
 
    Consider two identical pure Gaussian wavepackets that arrive at the
-   BS with a time difference given by dollarsign\taudollarsign.  The
-   probability of coincidence and the corresponding visibility are given
-   by
+   BS with a time difference given by τ. The probability of coincidence
+   and the corresponding visibility are given by
 
    p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 
@@ -653,18 +614,16 @@ Table of Contents
       perform best in terms of photon loss rates.
 
    *  *Detection efficiency:* The overall probability that an incoming
-      photon registers a count, denoted by dollarsign\etadollarsign.
-      This efficiency can be further broken down.  Probability of losing
-      the photon before it reaches the detector is described by the
-      _coupling efficiency_, dollarsign\eta_{\text{coupling}}dollarsign.
-      The type of material and geometry of the detector determine the
-      photon _absorption efficiency_,
-      dollarsign\eta_{\text{absorption}}dollarsign.  Finally, the
-      probability that an electric signal is generated upon successful
-      absorption of a photon is described by the _registering
-      efficiency_, dollarsign\eta_{\text{registering}}dollarsign.  The
-      overall _system detection efficiency_ is given by the product of
-      these three,
+      photon registers a count, denoted by η. This efficiency can be
+      further broken down.  Probability of losing the photon before it
+      reaches the detector is described by the _coupling efficiency_,
+      η_{\text{coupling}}. The type of material and geometry of the
+      detector determine the photon _absorption efficiency_,
+      η_{\text{absorption}}. Finally, the probability that an electric
+      signal is generated upon successful absorption of a photon is
+      described by the _registering efficiency_, η_{\text{registering}}.
+      The overall _system detection efficiency_ is given by the product
+      of these three,
 
       \eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
 
@@ -675,8 +634,7 @@ Table of Contents
       Detection efficiency affects the rate at which entanglement can be
       distributed.
 
-   *  *Recovery time:* Denoted by
-      dollarsign\tau_{\text{recovery}}dollarsign and also known as
+   *  *Recovery time:* Denoted by τ_{\text{recovery}} and also known as
       'dead' time.  It is the time duration following an absorption of a
       photon during which the detector is unable to reliably detect
       another photon.  Recovery time affects the maximum detection rate.
@@ -685,11 +643,10 @@ Table of Contents
       trials will not produce a photon.  This could also be the case if
       the probability of losing the photon is high (either due to loss
       in fiber or due to low system detection efficiency
-      dollarsign\eta_{\text{sde}}dollarsign).  On the other hand, if the
-      photon source is highly efficient, it is important to ensure that
-      the separation between the wavepackets is longer than
-      dollarsign\tau_{\text{recovery}}dollarsign to ensure effcient use
-      of the generated photons.
+      η_{\text{sde}}).  On the other hand, if the photon source is
+      highly efficient, it is important to ensure that the separation
+      between the wavepackets is longer than τ_{\text{recovery}} to
+      ensure effcient use of the generated photons.
 
    *  *Dark count rate:* SPDs have a finite chance to produce an output
       electric signal even in the absence of a photon.  This may be
@@ -698,10 +655,10 @@ Table of Contents
       per second).  Dark counts decrease the fidelity of the distributed
       entangled states.
 
-   *  *Timing jitter:* Denoted by dollarsignJ_{\text{timing}}dollarsign.
-      Describes the variation in time between the photon being absorbed
-      and the output electric signal being generated.  A few example
-      profiles are shown in the Figure below taken from [4].
+   *  *Timing jitter:* Denoted by J_{\text{timing}}. Describes the
+      variation in time between the photon being absorbed and the output
+      electric signal being generated.  A few example profiles are shown
+      in the Figure below taken from [4].
 
    The table below shows the above characteristics for a SNSPD
    (https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-
@@ -723,28 +680,27 @@ Table of Contents
 
 4.2.  Acceptance window
 
-   In the previous Section, we used dollarsign\taudollarsign to denote
-   the difference between the arrival time of the photons at the BSA.
-   However, due to emission jitter it is impossible to know the precise
-   time of arrival of a photon.  The only information that is available
-   comes from the electric output signal of a detector.  Time of
-   detection is in general different from the time of photon arrival due
-   to finite time needed to generate the output signal described by the
-   timing jitter dollarsignJ_{\text{timing}}dollarsign.  Therefore, we
-   will use dollarsign\taudollarsign to denote the difference in
-   detection time of the two photons.
+   In the previous Section, we used τ to denote the difference between
+   the arrival time of the photons at the BSA.  However, due to emission
+   jitter it is impossible to know the precise time of arrival of a
+   photon.  The only information that is available comes from the
+   electric output signal of a detector.  Time of detection is in
+   general different from the time of photon arrival due to finite time
+   needed to generate the output signal described by the timing jitter
+   J_{\text{timing}}. Therefore, we will use τ to denote the difference
+   in detection time of the two photons.
 
    Measurement at the BSA is successful when the correct pattern of
-   detector clicks is observed, and the difference in detection times
-   dollarsign\taudollarsign is smaller than a given detection
-   *acceptance window*, dollarsignT_{\text{window}}dollarsign.  The size
-   of this window affects both the fidelity and the generation rate of
-   the entangled pairs that the link produces.  Large acceptance windows
-   produce high rates but low fidelity, while small acceptance windows
-   result in low rates and high fidelity.  The appropriate size of the
-   acceptance window must be chosen in order to satisfy the demands of
-   the application requesting the entangled states.  Reaching the
-   requested fidelity should take priority over high generation rate.
+   detector clicks is observed, and the difference in detection times τ
+   is smaller than a given detection *acceptance window*,
+   T_{\text{window}}. The size of this window affects both the fidelity
+   and the generation rate of the entangled pairs that the link
+   produces.  Large acceptance windows produce high rates but low
+   fidelity, while small acceptance windows result in low rates and high
+   fidelity.  The appropriate size of the acceptance window must be
+   chosen in order to satisfy the demands of the application requesting
+   the entangled states.  Reaching the requested fidelity should take
+   priority over high generation rate.
 
 4.3.  Separation in a train of wavepackets
 
@@ -757,15 +713,15 @@ Table of Contents
    must be well separated such that upon a successful BSM, the BSA can
    uniquely identify which two photons were measured.  We refer to the
    minimum separation between the photons as the *separation time*
-   dollarsignT_{\text{separation}}dollarsign.
+   T_{\text{separation}}.
 
    The size of the separation time depends on the following:
 
    *  *Wave packet shape:* Individual photons cannot have overlapping
       spatial wavepackets, which may lead to incorrect assignement of
       entangled qubits following a successful meadurement at the BSA.
-      We will use dollarsignT_{\text{photon}}dollarsign to denote the
-      length of a wavepacket in seconds.
+      We will use T_{\text{photon}} to denote the length of a wavepacket
+      in seconds.
 
    *  *Detector recovery time:* Spacing the wavepackets too close to
       each other may result in some of the photons being lost due to the
@@ -792,27 +748,25 @@ Table of Contents
    based on trapped ions (https://ora.ox.ac.uk/objects/
    uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).  Here, the memory must be
    first initialized by cooling it to its ground state, a process which
-   takes dollarsign<1\text{ms}dollarsign.  The memory is then excited by
-   a laser pulse of approximately dollarsign50\mu \text{s}dollarsign
-   that generates a photon.
+   takes <1\text{ms}. The memory is then excited by a laser pulse of
+   approximately 50μ \text{s} that generates a photon.
 
    In the case of memory-less link architectures, the picture is
    slightly different.  Here, EPPS nodes utilizing the principle of
    spontaneous parametric down-conversion (SPDC) generate entangled
    photon pairs.  Each photon is sent to a different BSA, where they are
    measured with a photon originating from a different EPPS node.  SPDC
-   is an inefficient process with success probability of around
-   dollarsign10^{-6}dollarsign per pump photon.  In system design, the
-   intensity of the pump laser is adjusted so that the average number of
-   photons is appropriate; generally this must be set below one photon
-   per time window in order to avoid polluting the signal with two-
-   photon states.  This means that most of the time windows given by the
-   separation time will not contain a photon.  However, the separation
-   time should be maintained in order to correcly identify the photons
-   that were part of a successful measurement at the BSA.  The
-   separation time governs the maximum rate at which EPPS attempts to
-   generate the entangled photon pairs, which is given by dollarsign1/
-   T_{\text{separation}}dollarsign.
+   is an inefficient process with success probability of around 10^{−6}
+   per pump photon.  In system design, the intensity of the pump laser
+   is adjusted so that the average number of photons is appropriate;
+   generally this must be set below one photon per time window in order
+   to avoid polluting the signal with two-photon states.  This means
+   that most of the time windows given by the separation time will not
+   contain a photon.  However, the separation time should be maintained
+   in order to correcly identify the photons that were part of a
+   successful measurement at the BSA.  The separation time governs the
+   maximum rate at which EPPS attempts to generate the entangled photon
+   pairs, which is given by 1/T_{\text{separation}}.
 
 5.  Measurement basis selection
 
@@ -821,21 +775,20 @@ Table of Contents
    measurements were static in the sense that we did not need to change
    the measurement basis.  Observed detection pattern determined whether
    the post-measurement state of the remote quantum systems (either
-   quantum memories or other photons) was
-   dollarsign|\Psi^+\rangledollarsign or
-   dollarsign|\Psi^-\rangledollarsign.  Projection onto two of the four
-   Bell-basis states was achieved probabilistically without actively
-   applying any transformations on the photonic qubits.  We will see in
-   this Section that the photonic BSA is a very special case in this
-   regard, and that changing the basis of the measurement is an
-   indispensable part of quantum networking.  Entanglement swapping on
-   stationary qubits stored in quantum memories is not possible without
-   applying appropriate unitaries first that change the basis of the
-   measurement.  There are also cases, where change of basis is required
-   even when dealing with only photonic qubits.  An example of this are
-   the so-called all-photonic quantum repeaters, where measurement basis
-   is conditioned on the outcomes of previous measurements, leading to
-   the requirement of very fast basis switching.
+   quantum memories or other photons) was |Ψ^+〉 or |Ψ^−〉. Projection
+   onto two of the four Bell-basis states was achieved probabilistically
+   without actively applying any transformations on the photonic qubits.
+   We will see in this Section that the photonic BSA is a very special
+   case in this regard, and that changing the basis of the measurement
+   is an indispensable part of quantum networking.  Entanglement
+   swapping on stationary qubits stored in quantum memories is not
+   possible without applying appropriate unitaries first that change the
+   basis of the measurement.  There are also cases, where change of
+   basis is required even when dealing with only photonic qubits.  An
+   example of this are the so-called all-photonic quantum repeaters,
+   where measurement basis is conditioned on the outcomes of previous
+   measurements, leading to the requirement of very fast basis
+   switching.
 
 5.1.  Measurement basics
 
@@ -847,50 +800,34 @@ Table of Contents
 
    For simplicity, we begin with measurements on a single qubit before
    generalizing to two qubit measurements.  Consider a general state of
-   the qubit, dollarsign|\psi\rangle = \alpha |0\rangle +
-   \beta |1\rangledollarsign, where
-   dollarsign|\alpha|^2+|\beta|^2=1dollarsign.  Measurement in an
-   arbitrary basis dollarsignMdollarsign projects the initial state
-   dollarsign|\psi\rangledollarsign onto one of the eigenvectors of
-   dollarsignMdollarsign, given by
-   dollarsign\{|\phi\rangle,|\phi^{\perp}\rangle\}dollarsign.
-   Probabilities of the two possible measurement outcomes are given by
-   the overlaps between the initial state
-   dollarsign|\psi\rangledollarsign and the eigenvectors of the
-   observable dollarsignMdollarsign,
+   the qubit, |ψ〉 = α |0〉 + β |1〉, where |α|^2+|β|^2=1.  Measurement in
+   an arbitrary basis M projects the initial state |ψ〉 onto one of the
+   eigenvectors of M, given by \{|ϕ〉,|ϕ^{⊥}〉}. Probabilities of the two
+   possible measurement outcomes are given by the overlaps between the
+   initial state |ψ〉 and the eigenvectors of the observable M,
 
    \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad\text{and}\quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 
-   We read this notation as _probability of the measurement outcome
-   being the state dollarsign|\phi\rangledollarsign, given that the
-   initial state was dollarsign|\psi\rangledollarsign_. For example,
-   measurement in the Pauli dollarsignZdollarsign basis projects onto
-   the states dollarsign\{|0\rangle,|1\rangle\}dollarsign, while
-   measurement in the Pauli dollarsignXdollarsign basis projects onto
-   the states dollarsign\{|+\rangle,|-\rangle\}dollarsign.
+   We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
+   For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$.
 
    It is often difficult to directly measure the qubit in an arbitrary
    basis when it comes to real-world implementation.  In such a case,
    the qubit needs to be pre-rotated by an appropriate unitary
-   operation, and then measured in the dollarsignZdollarsign basis,
-   which can usually be implemented in a straightforward way.  This
-   approach greatly simplifies the implementation of arbitrary
-   measurements.
+   operation, and then measured in the Z basis, which can usually be
+   implemented in a straightforward way.  This approach greatly
+   simplifies the implementation of arbitrary measurements.
 
-   Consider that the observable dollarsignMdollarsign is related to the
-   Pauli dollarsignZdollarsign by unitary dollarsignUdollarsign,
-   dollarsignM = U Z U ^{\dagger}dollarsign.  This means the unitary
-   dollarsignUdollarsign relates the eigenvectors of the two
-   observables,
+   Consider that the observable M is related to the Pauli Z by unitary
+   U, M = U Z U ^{†}. This means the unitary U relates the eigenvectors
+   of the two observables,
 
    |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle.
 
-   We can perform measurement in the dollarsignMdollarsign basis by
-   applying dollarsignU ^{\dagger}dollarsign to the initial state
-   dollarsign|\psi\rangledollarsign, and them measuring it in the Pauli
-   dollarsignZdollarsign basis.  This can be easily verified by
-   rewriting the above probabilities corresponding to the two
-   measurement outcomes,
+   We can perform measurement in the M basis by applying U ^{†} to the
+   initial state |ψ〉, and them measuring it in the Pauli Z basis.  This
+   can be easily verified by rewriting the above probabilities
+   corresponding to the two measurement outcomes,
 
    \text{Pr}(|\phi\rangle;|\psi\rangle) = |\langle\phi|\psi\rangle|^2 = |\langle0| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|0\rangle; U ^{\dagger}|\psi\rangle),
 
@@ -903,16 +840,13 @@ Table of Contents
 5.1.2.  Two-qubit measurements
 
    The same principle of changing the measurement basis can be
-   generalized to two qubits.  This time state
-   dollarsign|\psi\rangledollarsign represents a general two-qubit
-   state, unitary dollarsignU ^{\dagger}dollarsign acts on both qubits,
-   which are both finally measured in Pauli dollarsignZdollarsign basis.
-   In the majority of cases, we are interested in performing
-   measurements in the Bell basis.  Required unitary dollarsignU
-   ^{\dagger}dollarsign is the Hermitian conjugate of the unitary that
-   creates a Bell pair when the qubits are both initialized in
-   dollarsign|0\rangledollarsign, as shown in the Figure below, where we
-   have dropped the dollarsignZdollarsign label indicating the
+   generalized to two qubits.  This time state |ψ〉 represents a general
+   two-qubit state, unitary U ^{†} acts on both qubits, which are both
+   finally measured in Pauli Z basis.  In the majority of cases, we are
+   interested in performing measurements in the Bell basis.  Required
+   unitary U ^{†} is the Hermitian conjugate of the unitary that creates
+   a Bell pair when the qubits are both initialized in |0〉, as shown in
+   the Figure below, where we have dropped the Z label indicating the
    measurement basis.
 
 5.2.  Measurements on quantum memories
@@ -931,30 +865,27 @@ Table of Contents
    The first one is the motional degree of freedom, resulting from the
    ion oscillating around its equilibrium position in the trap.  The
    second one is the internal degree of freedom, represented by the
-   ground state dollarsign|g\rangledollarsign and the excited state
-   dollarsign|e\rangledollarsign.  It is the latter degree of freedom
-   which is used to encode a qubit and hence acts as a quantum memory.
+   ground state |g〉 and the excited state |e〉. It is the latter degree
+   of freedom which is used to encode a qubit and hence acts as a
+   quantum memory.
 
    Measurement in the *Pauli Z* basis is performed by *electron
-   shelving* via the use of a third atomic level
-   dollarsign|r\rangledollarsign, with much shorter life time than the
-   excited state (https://www.amazon.co.jp/Quantum-World-Ultra-Cold-
-   Atoms-Light/dp/1783266163) dollarsign|e\rangledollarsign,
-   dollarsign\tau_e \gg \tau_rdollarsign.  The figure below demonstrates
-   how this method works.
+   shelving* via the use of a third atomic level |r〉, with much shorter
+   life time than the excited state (https://www.amazon.co.jp/Quantum-
+   World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r.  The
+   figure below demonstrates how this method works.
 
-   The ion is illuminated by light tuned to resonate with the transition
-   dollarsign|g\rangle\leftrightarrow|r\rangledollarsign, represented by
-   the red straight arrow in the Figure above.  If fluorescence is
-   immediately observed, this corresponds to measuring the ion in the
-   ground state dollarsign|g\rangledollarsign.  If no fluorescence is
-   observed, the ion is measured in the excited state
-   dollarsign|e\rangledollarsign.  Hypothetically a single fluorescent
-   photon would be sufficient, however, the fluorescent photons are only
-   rarely captured into the measurement apparatus (typically involving
-   lenses and a camera) and observed, and stray photons are also often
-   captured, so a relatively long *integration time* is used to confirm
-   the fluorescence with high probability.  (Solid-state systems such as
+   The ion is illuminated by light tuned to resonate with the
+   transition |g〉↔|r〉, represented by the red straight arrow in the
+   Figure above.  If fluorescence is immediately observed, this
+   corresponds to measuring the ion in the ground state |g〉. If no
+   fluorescence is observed, the ion is measured in the excited
+   state |e〉. Hypothetically a single fluorescent photon would be
+   sufficient, however, the fluorescent photons are only rarely captured
+   into the measurement apparatus (typically involving lenses and a
+   camera) and observed, and stray photons are also often captured, so a
+   relatively long *integration time* is used to confirm the
+   fluorescence with high probability.  (Solid-state systems such as
    quantum dots and superconducting qubits also need relatively long
    integration times in their measurement processes.)  Combined with
    laser pulses that apply a single-qubit rotation, measurement of a
@@ -967,16 +898,14 @@ Table of Contents
    (https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091),
    where the ions needed to be cooled to their collective motional
    ground state first.  This approach was demonstrated experimentally
-   using
-   [$^{40}\text{Ca}^+dollarsignions](https://www.nature.com/articles/
-   nature01494).  Execution of the gate took around 600 microseconds,
-   with the achieved fidelity being less than 0.8.  The second approach
+   using [$^{40}\text{Ca}^+ions](https://www.nature.com/articles/
+   nature01494). Execution of the gate took around 600 microseconds,
+   with the achieved fidelity being less than 0.8. The second approach
    is due to [Molmer and
    Sorensen](https://journals.aps.org/prl/abstract/10.1103/
-   PhysRevLett.82.1835), and is more robust against motional excitation.
-   This led to high-fidelity demonstrations
-   ofdollarsign>0.99dollarsign`, and gate times of around 50
-   microseconds.
+   PhysRevLett.82.1835), and is more robust against motional
+   excitation. This led to high−fidelity demonstrations of>0.99$$, and
+   gate times of around 50 microseconds.
 
 5.3.  Measurements on photonic qubits
 
@@ -987,12 +916,12 @@ Table of Contents
    detector is enough in fact but less efficient).  The idea is the same
    as in the case of measurements performed on stationary qubits
    discussed above.  Setting the HWP and QWP at particular angles
-   applies the unitary dollarsignU ^{\dagger}dollarsign that picks the
-   basis of the measurement, while the PBS filters out vertical and
-   horizontal polarizations that then get detected by the detectors
-   placed in the output paths of the PBS.  Horizontal polarization gets
-   transmitted through the PBS, while vertical polarization gets
-   reflected.  This setup is shown in the figure below.
+   applies the unitary U ^{†} that picks the basis of the measurement,
+   while the PBS filters out vertical and horizontal polarizations that
+   then get detected by the detectors placed in the output paths of the
+   PBS.  Horizontal polarization gets transmitted through the PBS, while
+   vertical polarization gets reflected.  This setup is shown in the
+   figure below.
 
    General pure state of a polarization-encoded qubit can be written as
 
@@ -1006,19 +935,19 @@ Table of Contents
    the polarization states.
 
    Polarization of light is manipulated by waveplates.  Waveplate
-   rotated by an angle dollarsign\alphadollarsign (zero is aligned with
-   the horizontal axis) rotates the polarization state around an axis,
-   located at an angle of dollarsign2\alphadollarsign with the
-   horizontal state dollarsign|H\rangledollarsign in the horizontal
-   plane, as shown in Figure above.  Half waveplate rotates the
-   polarization state by an angle dollarsign\pidollarsign, while a
-   quarter waveplate rotates by an angle dollarsign\pi/2dollarsign in
-   the Poincaré sphere.  The action of the waveplates is captured by the
+   rotated by an angle α (zero is aligned with the horizontal axis)
+   rotates the polarization state around an axis, located at an angle of
+   2α with the horizontal state |H〉 in the horizontal plane, as shown in
+   Figure above.  Half waveplate rotates the polarization state by an
+   angle π, while a quarter waveplate rotates by an angle π/2 in the
+   Poincaré sphere.  The action of the waveplates is captured by the
    corresponding unitary operations,
 
    The idea behind measurements in arbitrary basis
-   dollarsign\{|\psi\rangle, |\psi^{\perp}\rangle\}dollarsign is to
-   choose the angles for the waveplates such that the following
+
+   \{|\psi\rangle, |\psi^{\perp}\rangle\}
+
+   is to choose the angles for the waveplates such that the following
    transformation is achieved,
 
    U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
@@ -1049,24 +978,23 @@ Table of Contents
 
    Two approaches to switching are of relevance to our discussion.  The
    first approach is the _crossbar switch_ with all-to-all connectivity.
-   Such an dollarsignN\times Ndollarsign switch can be reconfigured to
-   accomodate all possible dollarsignN!dollarsign permutations of input-
-   output pairs.  One usual implementation of a crossbar switch is using
-   *microelectromechanical systems (MEMS)* relying on small movable
-   parts such as popup micromirrors, rotating prisms or spinning
-   holographic disks (https://onlinelibrary.wiley.com/doi/
-   book/10.1002/0471213748).  MEMS have usually low insertion loss and
-   crosstalk, however due to their mechanical nature they suffer from
-   slow switching times, which range from 10 microseconds to 10
-   miliseconds.
+   Such an N× N switch can be reconfigured to accomodate all possible N!
+   permutations of input-output pairs.  One usual implementation of a
+   crossbar switch is using *microelectromechanical systems (MEMS)*
+   relying on small movable parts such as popup micromirrors, rotating
+   prisms or spinning holographic disks
+   (https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748).  MEMS
+   have usually low insertion loss and crosstalk, however due to their
+   mechanical nature they suffer from slow switching times, which range
+   from 10 microseconds to 10 miliseconds.
 
    Crossbar switches are important in classical switching networks and
    are use in classical control systems in some quantum technologies.
    In the context of quantum networks, it is often not necessary for the
-   switch to be able satisfy all possible dollarsignN!dollarsign input-
-   output permutations.  For example, the switch can be placed behind a
-   pool of entangled photon pair sources (EPPS) in order to route
-   entangled photons towards end nodes requesting a connection
+   switch to be able satisfy all possible N! input-output permutations.
+   For example, the switch can be placed behind a pool of entangled
+   photon pair sources (EPPS) in order to route entangled photons
+   towards end nodes requesting a connection
    (https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-
    8-5-331&id=340335).  Or the switch can be placed before a pool of
    Bell State Analyzers (BSA) and route input pairs of photons to the
@@ -1074,13 +1002,13 @@ Table of Contents
    (https://ieeexplore.ieee.org/document/10821447).  These approaches
    are pictured in the figure below.
 
-   Both of these designs consider a dollarsign2\times 2dollarsign switch
-   as the basic building block, which is implemented with *integrated
-   photonics* and controlled electro-optically.  Applied electric fields
-   are used to alter the refractive index of the material (such as
-   lithium niobate) to change the state of the switch from a BAR state
-   to a CROSS state.  Switching times for electro-optical switches are
-   much faster, varying from 10 nanoseconds to 10 microseconds.
+   Both of these designs consider a 2× 2 switch as the basic building
+   block, which is implemented with *integrated photonics* and
+   controlled electro-optically.  Applied electric fields are used to
+   alter the refractive index of the material (such as lithium niobate)
+   to change the state of the switch from a BAR state to a CROSS state.
+   Switching times for electro-optical switches are much faster, varying
+   from 10 nanoseconds to 10 microseconds.
 
    The optical switch introduces a *propagation time delay*. For some
    MEMS switches, this delay can be as low as 25 nanoseconds
@@ -1099,15 +1027,14 @@ Table of Contents
    This triangular switch design was introduced by Koyama et.al.
    (https://ieeexplore.ieee.org/document/10821447).  Photons entering
    the switch from different ports need to traverse vastly different
-   number of switching points.  For example, photons from input port
-   dollarsignX_0dollarsign have to traverse at least 5 switching points,
-   while photons from input port dollarsignX_{11}dollarsign do not have
-   to traverse any at all.  Furthermore, if photons from these two input
-   ports are required to undergo Bell-state measurement, both need to be
-   routed to dollarsign\text{BSA}_5dollarsign.  This requires photons
-   from dollarsignX_0dollarsign to traverse 10 switching points
-   intoducing the largest possible time delay giventhis design and size
-   of the switch.
+   number of switching points.  For example, photons from input port X_0
+   have to traverse at least 5 switching points, while photons from
+   input port X_{11} do not have to traverse any at all.  Furthermore,
+   if photons from these two input ports are required to undergo Bell-
+   state measurement, both need to be routed to \text{BSA}_5.  This
+   requires photons from X_0 to traverse 10 switching points intoducing
+   the largest possible time delay giventhis design and size of the
+   switch.
 
    The significance of this time delay ultimately depends on the type of
    photons used.  Photons with longer envelopes, such as those emitted
@@ -1120,12 +1047,11 @@ Table of Contents
    acceptable visibility at the BSAs, it is neccesary to adjust the path
    length of the photons with *optical delay lines* (ODLs).  For small
    enough optical switches, it may be possible to characterize the
-   propagation time delays for given photon pairs
-   dollarsign(X_i,X_j)dollarsign assigned to a particular BSA prior to
-   the opration of the switch.  This would allow the ODLs to be set to
-   precomputed configurations based on the connection request patterns.
-   This approach will most likely not scale, at least in its general
-   form, to larger optical switches.
+   propagation time delays for given photon pairs (X_i,X_j) assigned to
+   a particular BSA prior to the opration of the switch.  This would
+   allow the ODLs to be set to precomputed configurations based on the
+   connection request patterns.  This approach will most likely not
+   scale, at least in its general form, to larger optical switches.
 
    Further complication that arises during the operation of the switch
    is also related to maintaining indistinguishability of the photons.

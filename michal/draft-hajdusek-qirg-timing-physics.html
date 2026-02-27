@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta content="Common,Latin" name="scripts">
 <meta content="initial-scale=1.0" name="viewport">
-<title>Timing Regimes in Quantum Networks and their Physical Underpinnigs</title>
+<title>Timing Regimes in Quantum Networks and their Physical Underpinnings</title>
 <meta content="Michal Hajdusek" name="author">
 <meta content="Rodney Van Meter" name="author">
 <meta content="
@@ -1084,7 +1084,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </dd>
 </dl>
 </div>
-<h1 id="title">Timing Regimes in Quantum Networks and their Physical Underpinnigs</h1>
+<h1 id="title">Timing Regimes in Quantum Networks and their Physical Underpinnings</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">TODO Abstract<a href="#section-abstract-1" class="pilcrow">¶</a></p>
@@ -1278,7 +1278,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-prologue" class="section-name selfRef">Prologue</a>
       </h2>
 <p id="section-1-1">In 1982, Digital Equipment Corporation, Intel, and Xerox published  <strong>The Ethernet: A Local Area Network Data Link Layer and Physical Layer Specifications</strong>. This 120-page document specifies pretty much everything: diameter of the coaxial cable, its impedance, dispersion, maximum cable length, voltages and currents, signal rise times, etc. The types of physical connectors allowed. How a bit is encoded in the signal. How a frame is demarcated. How collisions are detected. The format of messages. Addressing. Multicasting. Polynomials for error correction. It's ALL there.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Equally importantly, it specifies <strong>timing requirements</strong>.  For example, the rise time for a signal on the coaxial cable shall be 25 <code>dollarsign\pmdollarsign</code> 5 nanoseconds. The total worst-case round-trip delay is calculated in a table to be 46.38 microseconds. How the entries in that table are combined to produce that number is fairly obvious; however, the numerical entries themselves are mostly unjustified in the specification itself, only stated. One exception is the statement, "Rise and fall times meet 10,000 series ECL requirements," referring to a specific series of well-known digital emitter-coupled logic parts, and hence incorporating a great deal of prior knowledge and work by reference.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-2">Equally importantly, it specifies <strong>timing requirements</strong>.  For example, the rise time for a signal on the coaxial cable shall be 25 <span class="contact-name">±</span> 5 nanoseconds. The total worst-case round-trip delay is calculated in a table to be 46.38 microseconds. How the entries in that table are combined to produce that number is fairly obvious; however, the numerical entries themselves are mostly unjustified in the specification itself, only stated. One exception is the statement, "Rise and fall times meet 10,000 series ECL requirements," referring to a specific series of well-known digital emitter-coupled logic parts, and hence incorporating a great deal of prior knowledge and work by reference.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">In the quantum world, we are starting from first principles. Hence, we must begin at the beginning. We want to have specifications like Ethernet's, but first we must describe how the entries in e.g. the physical propagation delay budget are determined. The role of this document is to provide the underpinnings that give a shared understanding of how the basic numbers are determined and how they can be combined in a particular system design.<a href="#section-1-3" class="pilcrow">¶</a></p>
 <p id="section-1-4">Thanks, DIX Ethernet creators, for showing the way!<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
@@ -1368,13 +1368,13 @@ This section follows quite closely this excellent <a href="https://arxiv.org/abs
         <h3 id="name-hong-ou-mandel-interference">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-hong-ou-mandel-interference" class="section-name selfRef">Hong-Ou-Mandel interference</a>
         </h3>
-<p id="section-3.1-1">Consider two photons incident on a beamsplitter (BS) with reflectivity <code>dollarsignrdollarsign</code>.
-We label the input modes by <code>dollarsignadollarsign</code> and <code>dollarsignbdollarsign</code>, and the output modes by <code>dollarsigncdollarsign</code> and <code>dollarsignddollarsign</code>.
+<p id="section-3.1-1">Consider two photons incident on a beamsplitter (BS) with reflectivity <span class="contact-name">r</span>.
+We label the input modes by <span class="contact-name">a</span> and <span class="contact-name">b</span>, and the output modes by <span class="contact-name">c</span> and <span class="contact-name">d</span>.
 We are interested in the observed behavior at the output modes of the BS.
 There are four possible cases that may occur:<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3.1-2.1">
-            <p id="section-3.1-2.1.1">Case A: photon in mode <code>dollarsignadollarsign</code> is reflected, while photon in mode <code>dollarsignbdollarsign</code> is transmitted.<a href="#section-3.1-2.1.1" class="pilcrow">¶</a></p>
+            <p id="section-3.1-2.1.1">Case A: photon in mode <span class="contact-name">a</span> is reflected, while photon in mode <span class="contact-name">b</span> is transmitted.<a href="#section-3.1-2.1.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-3.1-2.2">
             <p id="section-3.1-2.2.1">Case B: both photons are transmitted.<a href="#section-3.1-2.2.1" class="pilcrow">¶</a></p>
@@ -1383,7 +1383,7 @@ There are four possible cases that may occur:<a href="#section-3.1-1" class="pil
             <p id="section-3.1-2.3.1">Case C: both photons are reflected.<a href="#section-3.1-2.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-3.1-2.4">
-            <p id="section-3.1-2.4.1">Case D: photon in mode <code>dollarsignadollarsign</code> is transmitted, while photon in mode <code>dollarsignbdollarsign</code> is reflected.<a href="#section-3.1-2.4.1" class="pilcrow">¶</a></p>
+            <p id="section-3.1-2.4.1">Case D: photon in mode <span class="contact-name">a</span> is transmitted, while photon in mode <span class="contact-name">b</span> is reflected.<a href="#section-3.1-2.4.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
 <p id="section-3.1-3">This figure shows these cases:<a href="#section-3.1-3" class="pilcrow">¶</a></p>
@@ -1596,9 +1596,9 @@ There are four possible cases that may occur:<a href="#section-3.1-1" class="pil
 |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab},
 </pre><a href="#section-3.1-6" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-7">where <code>dollarsigna ^{\dagger} _jdollarsign</code> and <code>dollarsignb ^{\dagger} _kdollarsign</code> are the bosonic creation operators corresponding to BS input modes <code>dollarsignadollarsign</code> and <code>dollarsignbdollarsign</code>, respectively.
-The indices <code>dollarsignjdollarsign</code> and <code>dollarsignkdollarsign</code> represent other properties of the photons that determine how distinguishable the photons are.
-For example, <code>dollarsignjdollarsign</code> and <code>dollarsignkdollarsign</code> could represent<a href="#section-3.1-7" class="pilcrow">¶</a></p>
+<p id="section-3.1-7">where <span class="contact-name">a ^{†} _j</span> and <span class="contact-name">b ^{†} _k</span> are the bosonic creation operators corresponding to BS input modes <span class="contact-name">a</span> and <span class="contact-name">b</span>, respectively.
+The indices <span class="contact-name">j</span> and <span class="contact-name">k</span> represent other properties of the photons that determine how distinguishable the photons are.
+For example, <span class="contact-name">j</span> and <span class="contact-name">k</span> could represent<a href="#section-3.1-7" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3.1-8.1">
             <p id="section-3.1-8.1.1">polarizations (for polarization-encoded qubits),<a href="#section-3.1-8.1.1" class="pilcrow">¶</a></p>
@@ -1616,7 +1616,7 @@ For example, <code>dollarsignjdollarsign</code> and <code>dollarsignkdollarsign<
             <p id="section-3.1-8.5.1">transverse spatial mode.<a href="#section-3.1-8.5.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-3.1-9">The action of the BS on the input modes is represented by a unitary operator <code>dollarsignU_{ab}dollarsign</code>,<a href="#section-3.1-9" class="pilcrow">¶</a></p>
+<p id="section-3.1-9">The action of the BS on the input modes is represented by a unitary operator <span class="contact-name">U_{ab}</span>,<a href="#section-3.1-9" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.1-10">
 <pre>
 a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}.
@@ -1628,13 +1628,13 @@ a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagge
 |\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 </pre><a href="#section-3.1-12" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-13">For a 50:50 BS when <code>dollarsignr=1/2dollarsign</code>, we obtain,<a href="#section-3.1-13" class="pilcrow">¶</a></p>
+<p id="section-3.1-13">For a 50:50 BS when <span class="contact-name">r=1/2</span>, we obtain,<a href="#section-3.1-13" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.1-14">
 <pre>
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 </pre><a href="#section-3.1-14" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-15">From this expression, we can see that when <code>dollarsignj=kdollarsign</code>, in other words when the input photons are indistinguishable, the output state has the following form,<a href="#section-3.1-15" class="pilcrow">¶</a></p>
+<p id="section-3.1-15">From this expression, we can see that when <span class="contact-name">j=k</span>, in other words when the input photons are indistinguishable, the output state has the following form,<a href="#section-3.1-15" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.1-16">
 <pre>
 |\psi\rangle _{cd} = \frac{1}{\sqrt{2}} \left( |2\rangle_c - |2\rangle_d \right).
@@ -1643,36 +1643,36 @@ a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagge
 <p id="section-3.1-17">The probability amplitudes for the cases where both input photons are transmitted or both reflected (Cases B and C in the figure above) interfere destructively.
 Perfectly indistinguishable input photons always exit the BS in the same ouput mode.
 It is this interference effect that is at the heart of quantum networking.<a href="#section-3.1-17" class="pilcrow">¶</a></p>
-<p id="section-3.1-18">In order to quantify the effect that distinguishability has on HOM interference, we consider the <strong>probability of a coincidence detection</strong>, <code>dollarsignp_{\text{co}}dollarsign</code>, where one photon is detected in the BS output mode <code>dollarsigncdollarsign</code>, and the other photon in output mode <code>dollarsignddollarsign</code>.
+<p id="section-3.1-18">In order to quantify the effect that distinguishability has on HOM interference, we consider the <strong>probability of a coincidence detection</strong>, <span class="contact-name">p_{\text{co}}</span>, where one photon is detected in the BS output mode <span class="contact-name">c</span>, and the other photon in output mode <span class="contact-name">d</span>.
 This probability is defined as<a href="#section-3.1-18" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.1-19">
 <pre>
 p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd},
 </pre><a href="#section-3.1-19" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-20">where <code>dollarsignP_idollarsign</code>, for <code>dollarsigni=c,ddollarsign</code>, are the projection operators representing a detection of a single photon in output mode <code>dollarsignidollarsign</code> of the BS.
-For completely indistinguishable input photons that undergo the full HOM interference, we have <code>dollarsignp _{\text{co}}=0dollarsign</code>.
-On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value <code>dollarsignp _{\text{co}}=1/2dollarsign</code>.<a href="#section-3.1-20" class="pilcrow">¶</a></p>
-<p id="section-3.1-21">An often-used measure that quantifies the degree of HOM interference is the <strong>visibility</strong> <code>dollarsignVdollarsign</code>, defined via the probability of a coincidence detection,<a href="#section-3.1-21" class="pilcrow">¶</a></p>
+<p id="section-3.1-20">where <span class="contact-name">P_i</span>, for <span class="contact-name">i=c,d</span>, are the projection operators representing a detection of a single photon in output mode <span class="contact-name">i</span> of the BS.
+For completely indistinguishable input photons that undergo the full HOM interference, we have <span class="contact-name">p _{\text{co}}=0</span>.
+On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value <span class="contact-name">p _{\text{co}}=1/2</span>.<a href="#section-3.1-20" class="pilcrow">¶</a></p>
+<p id="section-3.1-21">An often-used measure that quantifies the degree of HOM interference is the <strong>visibility</strong> <span class="contact-name">V</span>, defined via the probability of a coincidence detection,<a href="#section-3.1-21" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.1-22">
 <pre>
 V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}},
 </pre><a href="#section-3.1-22" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-23">where we used the fact that the maximum probability of a coincidence detection is <code>dollarsign1/2dollarsign</code>.
-We observe that the visibility varies from <code>dollarsignV=0dollarsign</code> for fully distinguishable input photons to <code>dollarsignV=1dollarsign</code> for perfectly indistinguishable ones.<a href="#section-3.1-23" class="pilcrow">¶</a></p>
-<p id="section-3.1-24">Visibility <code>dollarsignVdollarsign</code> plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
-Consider the case when the input photons <code>dollarsignadollarsign</code>, <code>dollarsignbdollarsign</code> are entangled with auxiliary systems <code>dollarsigns_1dollarsign</code> and <code>dollarsigns_2dollarsign</code>, respectively.
-The BSA performs ES by measuring the input photons, entangling systems <code>dollarsigns_1dollarsign</code> and <code>dollarsigns_2dollarsign</code> in the process.
-Fidelity of the new entangled pair is directly proportional to the visibility <code>dollarsignVdollarsign</code> of the HOM interference.
-Denote by <code>dollarsign\rho_{s_1s_2}^{\text{no-deph}}dollarsign</code> the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference.
+<p id="section-3.1-23">where we used the fact that the maximum probability of a coincidence detection is <span class="contact-name">1/2</span>.
+We observe that the visibility varies from <span class="contact-name">V=0</span> for fully distinguishable input photons to <span class="contact-name">V=1</span> for perfectly indistinguishable ones.<a href="#section-3.1-23" class="pilcrow">¶</a></p>
+<p id="section-3.1-24">Visibility <span class="contact-name">V</span> plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
+Consider the case when the input photons <span class="contact-name">a</span>, <span class="contact-name">b</span> are entangled with auxiliary systems <span class="contact-name">s_1</span> and <span class="contact-name">s_2</span>, respectively.
+The BSA performs ES by measuring the input photons, entangling systems <span class="contact-name">s_1</span> and <span class="contact-name">s_2</span> in the process.
+Fidelity of the new entangled pair is directly proportional to the visibility <span class="contact-name">V</span> of the HOM interference.
+Denote by <span class="contact-name">ρ_{s_1s_2}^{\text{no−deph}}</span> the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference.
 Non-ideal HOM interference can be modelled as a <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">two-qubit dephasing</a>,<a href="#section-3.1-24" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.1-25">
 <pre>
 \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}},
 </pre><a href="#section-3.1-25" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-26">where <code>dollarsign\rho_{s_1s_2}^{\text{deph}}dollarsign</code> is a fully dephased state obtained by setting all off-diagonal elements of <code>dollarsign\rho_{s_1s_2}^{\text{no-deph}}dollarsign</code> to zero.<a href="#section-3.1-26" class="pilcrow">¶</a></p>
+<p id="section-3.1-26">where <span class="contact-name">ρ_{s_1s_2}^{\text{deph}}</span> is a fully dephased state obtained by setting all off-diagonal elements of <span class="contact-name">ρ_{s_1s_2}^{\text{no−deph}}</span> to zero.<a href="#section-3.1-26" class="pilcrow">¶</a></p>
 <p id="section-3.1-27">In the following subsections, we address and quantify how distinguishable photons affect the visibility of the HOM interference.<a href="#section-3.1-27" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1682,50 +1682,55 @@ Non-ideal HOM interference can be modelled as a <a href="https://journals.aps.or
 <a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-polarization" class="section-name selfRef">Polarization</a>
         </h3>
 <p id="section-3.2-1">We now consider the case when the input photons differ in their polarization degree of photons.
-The maximum probability of a coincidence detection is obtained for orthogonally polarized photons, for example when <code>dollarsignj=Hdollarsign</code> and <code>dollarsignk=Vdollarsign</code>.
-Here, <code>dollarsignHdollarsign</code> denotes horizontal polarization and <code>dollarsignVdollarsign</code> denotes vertical polarization.
+The maximum probability of a coincidence detection is obtained for orthogonally polarized photons, for example when <span class="contact-name">j=H</span> and <span class="contact-name">k=V</span>.
+Here, <span class="contact-name">H</span> denotes horizontal polarization and <span class="contact-name">V</span> denotes vertical polarization.
 The output state of the two photons is<a href="#section-3.2-1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.2-2">
 <pre>
 | \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right).
 </pre><a href="#section-3.2-2" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-3">We can immediately see that <code>dollarsignp _{\text{co}} ^{\text{max}}=1/2dollarsign</code>.<a href="#section-3.2-3" class="pilcrow">¶</a></p>
-<p id="section-3.2-4">In general, the two input photons will have polarizations given by two unit vectors, <code>dollarsignj=\epsilondollarsign</code> and <code>dollarsignk=\epsilon'dollarsign</code>.
+<p id="section-3.2-3">We can immediately see that <span class="contact-name">p _{\text{co}} ^{\text{max}}=1/2</span>.<a href="#section-3.2-3" class="pilcrow">¶</a></p>
+<p id="section-3.2-4">In general, the two input photons will have polarizations given by two unit vectors, <span class="contact-name">j=ε</span> and <span class="contact-name">k=ε'</span>.
 The output state can be written as<a href="#section-3.2-4" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.2-5">
 <pre>
 |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right).
 </pre><a href="#section-3.2-5" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-6">The projection operators corresponding to a detection even at detector <code>dollarsignidollarsign</code> ($i=a,b$) are given by<a href="#section-3.2-6" class="pilcrow">¶</a></p>
+<p id="section-3.2-6">The projection operators corresponding to a detection even at detector <span class="contact-name">i</span> ($i=a,b$) are given by<a href="#section-3.2-6" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.2-7">
 <pre>
 P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i.
 </pre><a href="#section-3.2-7" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-8">Either an <code>dollarsign\epsilondollarsign</code>-polarized or an <code>dollarsign\epsilon'dollarsign</code>-polarized photon is detected in the output mode <code>dollarsignidollarsign</code>.
+<p id="section-3.2-8">Either an <span class="contact-name">ε</span>-polarized or an <span class="contact-name">ε'</span>-polarized photon is detected in the output mode <span class="contact-name">i</span>.
 The probability of coincidence is then<a href="#section-3.2-8" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.2-9">
 <pre>
-p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
+p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta
 </pre><a href="#section-3.2-9" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-10">where the overlap between the polarization unit vectors is parametrized by <code>dollarsign\thetadollarsign</code>, and can be written as <code>dollarsign\langle\epsilon'|\epsilon\rangle = \cos\thetadollarsign</code>.<a href="#section-3.2-10" class="pilcrow">¶</a></p>
-<p id="section-3.2-11">We can define the corresponding visibility as a function of the angle between the two polarization vectors,<a href="#section-3.2-11" class="pilcrow">¶</a></p>
-<div class="lang-text sourcecode" id="section-3.2-12">
+<p id="section-3.2-10">where the overlap between the polarization unit vectors is parametrized by <span class="contact-name">θ</span>, and can be written as<a href="#section-3.2-10" class="pilcrow">¶</a></p>
+<div class="lang-text sourcecode" id="section-3.2-11">
+<pre>
+\langle\epsilon'|\epsilon\rangle = \cos\theta
+</pre><a href="#section-3.2-11" class="pilcrow">¶</a>
+</div>
+<p id="section-3.2-12">We can define the corresponding visibility as a function of the angle between the two polarization vectors,<a href="#section-3.2-12" class="pilcrow">¶</a></p>
+<div class="lang-text sourcecode" id="section-3.2-13">
 <pre>
 V(\theta) = 1 - 2 p_{\text{co}} = \cos^2\theta.
-</pre><a href="#section-3.2-12" class="pilcrow">¶</a>
+</pre><a href="#section-3.2-13" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-13">When the photons have identical polarization, <code>dollarsign\theta=0dollarsign</code>, the visibility reaches its maximum of <code>dollarsignV=1dollarsign</code>.
-On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, <code>dollarsign\theta=\pm\pi/2dollarsign</code>, visibility is <code>dollarsignV=0dollarsign</code>.
-The visibility <code>dollarsignV(\theta)dollarsign</code> and the probability of a coincidence detection <code>dollarsignp_{\text{coin}}dollarsign</code> are both displayed in the figure below.<a href="#section-3.2-13" class="pilcrow">¶</a></p>
-<p id="section-3.2-14">Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
+<p id="section-3.2-14">When the photons have identical polarization, <span class="contact-name">θ=0</span>, the visibility reaches its maximum of <span class="contact-name">V=1</span>.
+On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, <span class="contact-name">θ=±π/2</span>, visibility is <span class="contact-name">V=0</span>.
+The visibility <span class="contact-name">V(θ)</span> and the probability of a coincidence detection <span class="contact-name">p_{\text{coin}}</span> are both displayed in the figure below.<a href="#section-3.2-14" class="pilcrow">¶</a></p>
+<p id="section-3.2-15">Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
 Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to <strong>drift</strong> during its transmission and change its state from the one that the photon possessed immediately after emission.
 This is often the case in fiber-based quantum networks, where polarization of photons is particularly sensitive to mechanical stresses and temperature gradients affecting the fiber.
 This issue may be sidestepped by using polarization-maintaining fibers that are designed to suppress coupling between linearly-polarized orthogonal states of light.
-However, these incur prohibitive costs for long-distance quantum communication, and may actually introduce unwanted coupling between linearly and circularly polarized light.<a href="#section-3.2-14" class="pilcrow">¶</a></p>
+However, these incur prohibitive costs for long-distance quantum communication, and may actually introduce unwanted coupling between linearly and circularly polarized light.<a href="#section-3.2-15" class="pilcrow">¶</a></p>
 <div id="interference-of-photons-from-two-independent-epps">
 <section id="section-3.2.1">
           <h4 id="name-interference-of-photons-fro">
@@ -1739,11 +1744,11 @@ The two pairs are in the following initial state,<a href="#section-3.2.1-1" clas
 |\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right),
 </pre><a href="#section-3.2.1-2" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2.1-3">where <code>dollarsign\theta_1dollarsign</code> and <code>dollarsign\theta_2dollarsign</code> represent the polarization drift induced in the single-mode fiber.
-Photons <code>dollarsigna_2dollarsign</code> and <code>dollarsignb_1dollarsign</code> are incident onto a BS, where they undergo HOM interference.
-Following the same calculation as above, it can be shown that the probability of a coincidence event is <code>dollarsignp_{\text{co}} = 1/4dollarsign</code>, regardless of the polarization drift.
+<p id="section-3.2.1-3">where <span class="contact-name">θ_1</span> and <span class="contact-name">θ_2</span> represent the polarization drift induced in the single-mode fiber.
+Photons <span class="contact-name">a_2</span> and <span class="contact-name">b_1</span> are incident onto a BS, where they undergo HOM interference.
+Following the same calculation as above, it can be shown that the probability of a coincidence event is <span class="contact-name">p_{\text{co}} = 1/4</span>, regardless of the polarization drift.
 This suggests that the visibility is insensitive to the polarization drift.
-However, the polarization drift must be tracked regardless because it affects the fidelity of the post-ES state of photons <code>dollarsigna_1dollarsign</code> and <code>dollarsignb_2dollarsign</code>,
+However, the polarization drift must be tracked regardless because it affects the fidelity of the post-ES state of photons <span class="contact-name">a_1</span> and <span class="contact-name">b_2</span>,
 $|\Psi^{\pm}\rangle_{a_1b_2} = \frac{1}{\sqrt{2}} \left( |HV\rangle_{a_1b_2} \pm e^{i(\theta_1-\theta_2)} |VH\rangle_{a_1b_2} \right).$
 It is therefore important to characterize the polarization drift at the BSA at regular intervals and compensate for it.
 This can be done at the nodes generating the photon pairs at the cost of the BSA having to communicate polarization drift results to the ends nodes.
@@ -1759,10 +1764,10 @@ In <code>[3]</code>, the process of polarization drift characterization and comp
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-spectral-distinguishability" class="section-name selfRef">Spectral distinguishability</a>
         </h3>
 <p id="section-3.3-1">Another important source of distinguishability in HOM interference is the spectral property of the input photons.
-The photon wave packet of a photon can be represented by its <strong>spectral amplitude function</strong> <code>dollarsign\phi(\omega)dollarsign</code>, where <code>dollarsign\int d\omega |\phi(\omega)|^2=1dollarsign</code>.
+The photon wave packet of a photon can be represented by its <strong>spectral amplitude function</strong> <span class="contact-name">ϕ(ω)</span>, where <span class="contact-name">∫ dω |ϕ(ω)|^2=1</span>.
 Two input photons become distinguishable if their respective spectral amplitude functions are not equal.
-The two photons may have different central frequencies <code>dollarsign\bar{\omega}_adollarsign</code> and <code>dollarsign\bar{\omega}_bdollarsign</code>.
-The input photons may be distinguishable even if <code>dollarsign\bar{\omega}_a = \bar{\omega}_bdollarsign</code>, provided that the shape of the wave packet is different, as shown in the Figure below.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+The two photons may have different central frequencies <span class="contact-name">ω̅_a</span> and <span class="contact-name">ω̅_b</span>.
+The input photons may be distinguishable even if <span class="contact-name">ω̅_a = ω̅_b</span>, provided that the shape of the wave packet is different, as shown in the Figure below.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
 <p id="section-3.3-2">In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
 <div id="pure-states">
 <section id="section-3.3.1">
@@ -1770,14 +1775,14 @@ The input photons may be distinguishable even if <code>dollarsign\bar{\omega}_a 
 <a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-pure-states" class="section-name selfRef">Pure states</a>
           </h4>
 <p id="section-3.3.1-1">We begin the discussion by focusing on pure states of the input photons first.
-Single-photon state with a spectral amplitude function <code>dollarsign\phi(\omega)dollarsign</code> is a superposition written as<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
+Single-photon state with a spectral amplitude function <span class="contact-name">ϕ(ω)</span> is a superposition written as<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.3.1-2">
 <pre>
 |1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a,
 </pre><a href="#section-3.3.1-2" class="pilcrow">¶</a>
 </div>
-<p id="section-3.3.1-3">where <code>dollarsigna ^{\dagger}(\omega)dollarsign</code> creates a photon in the BS input mode <code>dollarsignadollarsign</code> with frequency <code>dollarsign\omegadollarsign</code>.
-Two input photons with arbitrary spectral functions <code>dollarsign\phidollarsign</code> and <code>dollarsign\varphidollarsign</code> are described by<a href="#section-3.3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-3">where <span class="contact-name">a ^{†}(ω)</span> creates a photon in the BS input mode <span class="contact-name">a</span> with frequency <span class="contact-name">ω</span>.
+Two input photons with arbitrary spectral functions <span class="contact-name">ϕ</span> and <span class="contact-name">φ</span> are described by<a href="#section-3.3.1-3" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.3.1-4">
 <pre>
 |\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0\rangle _{ab}.
@@ -1790,7 +1795,7 @@ Applying the same transformation rules for the creation operators, the output st
 |\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 </pre><a href="#section-3.3.1-6" class="pilcrow">¶</a>
 </div>
-<p id="section-3.3.1-7">The projection operators corresponding to a detection event in output mode <code>dollarsigncdollarsign</code> and output mode <code>dollarsignddollarsign</code> are given by<a href="#section-3.3.1-7" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-7">The projection operators corresponding to a detection event in output mode <span class="contact-name">c</span> and output mode <span class="contact-name">d</span> are given by<a href="#section-3.3.1-7" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.3.1-8">
 <pre>
 P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega).
@@ -1802,10 +1807,10 @@ P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad
 p _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2).
 </pre><a href="#section-3.3.1-10" class="pilcrow">¶</a>
 </div>
-<p id="section-3.3.1-11">The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors <code>dollarsign\epsilondollarsign</code> and <code>dollarsign\epsilon'dollarsign</code>.
-Now, <code>dollarsignp _{\text{co}}dollarsign</code> depends on the overlap between the spectral amplitude functions.
-If the input photons are fully distinguishable, their respective spectral amplitude functions <code>dollarsign\phi(\omega)dollarsign</code> and <code>dollarsign\varphi(\omega)dollarsign</code> are orthogonal and the integrals vanish, meaning <code>dollarsignp _{\text{co}}=1/2dollarsign</code>.
-On the other hand, for completely indistinguishable input photons we have <code>dollarsign\phi(\omega)=\varphi(\omega)dollarsign</code>, and due to the normalization condition we obtain <code>dollarsignp _{\text{co}}=0dollarsign</code>.<a href="#section-3.3.1-11" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-11">The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors <span class="contact-name">ε</span> and <span class="contact-name">ε'</span>.
+Now, <span class="contact-name">p _{\text{co}}</span> depends on the overlap between the spectral amplitude functions.
+If the input photons are fully distinguishable, their respective spectral amplitude functions <span class="contact-name">ϕ(ω)</span> and <span class="contact-name">φ(ω)</span> are orthogonal and the integrals vanish, meaning <span class="contact-name">p _{\text{co}}=1/2</span>.
+On the other hand, for completely indistinguishable input photons we have <span class="contact-name">ϕ(ω)=φ(ω)</span>, and due to the normalization condition we obtain <span class="contact-name">p _{\text{co}}=0</span>.<a href="#section-3.3.1-11" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="mixed-states">
@@ -1818,12 +1823,12 @@ Such states will inevitably arise due to imperfections in the preparation proced
 These can include other photons or quantum memories.<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
 <p id="section-3.3.2-2">The mixed state of an input photon is described by the following density matrix,
 <span class="contact-name">ρ_a = ∑_k u_k |1;ϕ_k〉_a〈1;ϕ_k|_a,</span>
-where the state of the photon is a mixture of pure single-photon states with spectral amplitude function <code>dollarsign\phi_k(\omega)dollarsign</code>, weighted by probability <code>dollarsignu_kdollarsign</code>.
-The normalization condition requires that <code>dollarsign\sum_k u_k=1dollarsign</code>.
+where the state of the photon is a mixture of pure single-photon states with spectral amplitude function <span class="contact-name">ϕ_k(ω)</span>, weighted by probability <span class="contact-name">u_k</span>.
+The normalization condition requires that <span class="contact-name">∑_k u_k=1</span>.
 The two-photon input state can be written as
 <span class="contact-name">ρ ^{\text{in}} _{ab} = ∑ _{kk'} u_k v _{k'} |1;ϕ_k〉_a |1;φ _{k'}〉_b 〈 1;ϕ_k|_a 〈 1;φ _{k'}|_b.</span>
 It is not necessary to repeat the entire calculation we did for pure states.
-Due to the linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by <code>dollarsignu_kdollarsign</code> and <code>dollarsignv'_kdollarsign</code>,
+Due to the linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by <span class="contact-name">u_k</span> and <span class="contact-name">v'_k</span>,
 <span class="contact-name">p _{\text{co}} = \frac{1}{2} − \frac{1}{2} ∑ _{kk'} u _k v _{k'} ∫ dω_1ϕ^*_k(ω_1)φ _{k'}(ω_1) ∫ dω_2 φ _{k'}^*(ω_2) ϕ_k(ω_2).</span><a href="#section-3.3.2-2" class="pilcrow">¶</a></p>
 <div id="example-1-gaussian-wave-packets">
 <section id="section-3.3.2.1">
@@ -1848,15 +1853,15 @@ p _{\text{co}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e
               <h6 id="name-case-a-different-central-fr">
 <a href="#section-3.3.2.1.1" class="section-number selfRef">3.3.2.1.1. </a><a href="#name-case-a-different-central-fr" class="section-name selfRef">Case A (different central frequencies)</a>
               </h6>
-<p id="section-3.3.2.1.1-1">We assume that the two spectral amplitude functions have the same standard deviation <code>dollarsign\sigma_a=\sigma_b=\sigmadollarsign</code>, which simplifies the expression for the probability of a coincidence detection to<a href="#section-3.3.2.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.3.2.1.1-1">We assume that the two spectral amplitude functions have the same standard deviation <span class="contact-name">σ_a=σ_b=σ</span>, which simplifies the expression for the probability of a coincidence detection to<a href="#section-3.3.2.1.1-1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.3.2.1.1-2">
 <pre>
 p _{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
 </pre><a href="#section-3.3.2.1.1-2" class="pilcrow">¶</a>
 </div>
-<p id="section-3.3.2.1.1-3">We observe that for identical photons, when <code>dollarsign\bar{\omega}_a=\bar{\omega}_bdollarsign</code>, the probability of a coincidence detection vanishes.
-For fully distinguishable wave packets, when <code>dollarsign\bar{\omega}_a-\bar{\omega}_b\rightarrow\inftydollarsign</code>, the probability approaches 1/2, as expected.
-We can now define visibility as a function of the difference between the central frequencies <code>dollarsign\bar{\omega}_a-\bar{\omega}_bdollarsign</code>,<a href="#section-3.3.2.1.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.3.2.1.1-3">We observe that for identical photons, when <span class="contact-name">ω̅_a=ω̅_b</span>, the probability of a coincidence detection vanishes.
+For fully distinguishable wave packets, when <span class="contact-name">ω̅_a−ω̅_b→∞</span>, the probability approaches 1/2, as expected.
+We can now define visibility as a function of the difference between the central frequencies <span class="contact-name">ω̅_a−ω̅_b</span>,<a href="#section-3.3.2.1.1-3" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.3.2.1.1-4">
 <pre>
 V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}.
@@ -1869,7 +1874,7 @@ V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{
               <h6 id="name-case-b-different-standard-d">
 <a href="#section-3.3.2.1.2" class="section-number selfRef">3.3.2.1.2. </a><a href="#name-case-b-different-standard-d" class="section-name selfRef">Case B (different standard deviations)</a>
               </h6>
-<p id="section-3.3.2.1.2-1">The spectral amplitude functions have the same central frequencies, <code>dollarsign\omega_a=\omega_bdollarsign</code>, which gives the following expression for the probability of coincidence and visibility,<a href="#section-3.3.2.1.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.3.2.1.2-1">The spectral amplitude functions have the same central frequencies, <span class="contact-name">ω_a=ω_b</span>, which gives the following expression for the probability of coincidence and visibility,<a href="#section-3.3.2.1.2-1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.3.2.1.2-2">
 <pre>
 p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
@@ -1893,13 +1898,13 @@ p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2
 In this subsection, we address this unrealistic assumption and quantify how temporal distinguishability affects the visibility of HOM interference.
 Even for photons with identical spectral amplitude functions, different arrival times result in decreased overlap between the photons' wave packets, diminishing the visibility of the HOM interference.
 If the times of arrival are too different as shown in the Figure below, the probability of a coincidence detection will reach its maximum value of 1/2, and the visibility will vanish.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
-<p id="section-3.4-2">Without loss of generality we assume that photon <code>dollarsignbdollarsign</code> is delayed by a time <code>dollarsign\taudollarsign</code>, which transforms its creation operator,<a href="#section-3.4-2" class="pilcrow">¶</a></p>
+<p id="section-3.4-2">Without loss of generality we assume that photon <span class="contact-name">b</span> is delayed by a time <span class="contact-name">τ</span>, which transforms its creation operator,<a href="#section-3.4-2" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.4-3">
 <pre>
 b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}.
 </pre><a href="#section-3.4-3" class="pilcrow">¶</a>
 </div>
-<p id="section-3.4-4">Two input photons with arbitrary spectral functions <code>dollarsign\phidollarsign</code> and <code>dollarsign\varphidollarsign</code>, with photon <code>dollarsignbdollarsign</code> arriving late, are described by<a href="#section-3.4-4" class="pilcrow">¶</a></p>
+<p id="section-3.4-4">Two input photons with arbitrary spectral functions <span class="contact-name">ϕ</span> and <span class="contact-name">φ</span>, with photon <span class="contact-name">b</span> arriving late, are described by<a href="#section-3.4-4" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.4-5">
 <pre>
 |\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
@@ -1929,7 +1934,7 @@ p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'}
           <h4 id="name-example-gaussian-wave-packe">
 <a href="#section-3.4.1" class="section-number selfRef">3.4.1. </a><a href="#name-example-gaussian-wave-packe" class="section-name selfRef">Example: Gaussian wave packets</a>
           </h4>
-<p id="section-3.4.1-1">Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by <code>dollarsign\taudollarsign</code>.
+<p id="section-3.4.1-1">Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by <span class="contact-name">τ</span>.
 The probability of coincidence and the corresponding visibility are given by<a href="#section-3.4.1-1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-3.4.1-2">
 <pre>
@@ -1962,11 +1967,11 @@ This is not always true for <a href="https://www.nature.com/articles/nphoton.200
             <p id="section-4.1-2.1.1"><strong>Spectral range:</strong> SPDs are sensitive over a limited range of wavelengths. This range depends on the materials used in the fabrication of the detector. Typical spectral ranges are in the near-infrared, around 1550nm, where commercial optical fibers perform best in terms of photon loss rates.<a href="#section-4.1-2.1.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.1-2.2">
-            <p id="section-4.1-2.2.1"><strong>Detection efficiency:</strong> The overall probability that an incoming photon registers a count, denoted by <code>dollarsign\etadollarsign</code>.
+            <p id="section-4.1-2.2.1"><strong>Detection efficiency:</strong> The overall probability that an incoming photon registers a count, denoted by <span class="contact-name">η</span>.
 This efficiency can be further broken down.
-Probability of losing the photon before it reaches the detector is described by the <em>coupling efficiency</em>, <code>dollarsign\eta_{\text{coupling}}dollarsign</code>.
-The type of material and geometry of the detector determine the photon <em>absorption efficiency</em>, <code>dollarsign\eta_{\text{absorption}}dollarsign</code>.
-Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the <em>registering efficiency</em>, <code>dollarsign\eta_{\text{registering}}dollarsign</code>.
+Probability of losing the photon before it reaches the detector is described by the <em>coupling efficiency</em>, <span class="contact-name">η_{\text{coupling}}</span>.
+The type of material and geometry of the detector determine the photon <em>absorption efficiency</em>, <span class="contact-name">η_{\text{absorption}}</span>.
+Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the <em>registering efficiency</em>, <span class="contact-name">η_{\text{registering}}</span>.
 The overall <em>system detection efficiency</em> is given by the product of these three,<a href="#section-4.1-2.2.1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-4.1-2.2.2">
 <pre>
@@ -1984,18 +1989,18 @@ The <em>device detection efficiency</em> is given by<a href="#section-4.1-2.2.3"
 Detection efficiency affects the rate at which entanglement can be distributed.<a href="#section-4.1-2.2.5" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.1-2.3">
-            <p id="section-4.1-2.3.1"><strong>Recovery time:</strong> Denoted by <code>dollarsign\tau_{\text{recovery}}dollarsign</code> and also known as 'dead' time.
+            <p id="section-4.1-2.3.1"><strong>Recovery time:</strong> Denoted by <span class="contact-name">τ_{\text{recovery}}</span> and also known as 'dead' time.
 It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon.
 Recovery time affects the maximum detection rate.
 If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon.
-This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency <code>dollarsign\eta_{\text{sde}}dollarsign</code>).
-On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than <code>dollarsign\tau_{\text{recovery}}dollarsign</code> to ensure effcient use of the generated photons.<a href="#section-4.1-2.3.1" class="pilcrow">¶</a></p>
+This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency <span class="contact-name">η_{\text{sde}}</span>).
+On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than <span class="contact-name">τ_{\text{recovery}}</span> to ensure effcient use of the generated photons.<a href="#section-4.1-2.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.1-2.4">
             <p id="section-4.1-2.4.1"><strong>Dark count rate:</strong> SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz (counts per second). Dark counts decrease the fidelity of the distributed entangled states.<a href="#section-4.1-2.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.1-2.5">
-            <p id="section-4.1-2.5.1"><strong>Timing jitter:</strong> Denoted by <code>dollarsignJ_{\text{timing}}dollarsign</code>.
+            <p id="section-4.1-2.5.1"><strong>Timing jitter:</strong> Denoted by <span class="contact-name">J_{\text{timing}}</span>.
 Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from <code>[4]</code>.<a href="#section-4.1-2.5.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
@@ -2039,12 +2044,12 @@ Describes the variation in time between the photon being absorbed and the output
         <h3 id="name-acceptance-window">
 <a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-acceptance-window" class="section-name selfRef">Acceptance window</a>
         </h3>
-<p id="section-4.2-1">In the previous Section, we used <code>dollarsign\taudollarsign</code> to denote the difference between the arrival time of the photons at the BSA.
+<p id="section-4.2-1">In the previous Section, we used <span class="contact-name">τ</span> to denote the difference between the arrival time of the photons at the BSA.
 However, due to emission jitter it is impossible to know the precise time of arrival of a photon.
 The only information that is available comes from the electric output signal of a detector.
-Time of detection is in general different from the time of photon arrival due to finite time needed to generate the output signal described by the timing jitter <code>dollarsignJ_{\text{timing}}dollarsign</code>.
-Therefore, we will use <code>dollarsign\taudollarsign</code> to denote the difference in detection time of the two photons.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
-<p id="section-4.2-2">Measurement at the BSA is successful when the correct pattern of detector clicks is observed, and the difference in detection times <code>dollarsign\taudollarsign</code> is smaller than a given detection <strong>acceptance window</strong>, <code>dollarsignT_{\text{window}}dollarsign</code>.
+Time of detection is in general different from the time of photon arrival due to finite time needed to generate the output signal described by the timing jitter <span class="contact-name">J_{\text{timing}}</span>.
+Therefore, we will use <span class="contact-name">τ</span> to denote the difference in detection time of the two photons.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
+<p id="section-4.2-2">Measurement at the BSA is successful when the correct pattern of detector clicks is observed, and the difference in detection times <span class="contact-name">τ</span> is smaller than a given detection <strong>acceptance window</strong>, <span class="contact-name">T_{\text{window}}</span>.
 The size of this window affects both the fidelity and the generation rate of the entangled pairs that the link produces.
 Large acceptance windows produce high rates but low fidelity, while small acceptance windows result in low rates and high fidelity.
 The appropriate size of the acceptance window must be chosen in order to satisfy the demands of the application requesting the entangled states.
@@ -2060,11 +2065,11 @@ Reaching the requested fidelity should take priority over high generation rate.<
 As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
 This will allow for generation of link-level entanglement in a multiplexed manner, where trains of photons, each originating from a different memory inside the same QNIC, are sent to the BSA.
 The photons making up a train must be well separated such that upon a successful BSM, the BSA can uniquely identify which two photons were measured.
-We refer to the minimum separation between the photons as the <strong>separation time</strong> <code>dollarsignT_{\text{separation}}dollarsign</code>.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
+We refer to the minimum separation between the photons as the <strong>separation time</strong> <span class="contact-name">T_{\text{separation}}</span>.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
 <p id="section-4.3-2">The size of the separation time depends on the following:<a href="#section-4.3-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-4.3-3.1">
-            <p id="section-4.3-3.1.1"><strong>Wave packet shape:</strong> Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use <code>dollarsignT_{\text{photon}}dollarsign</code> to denote the length of a wavepacket in seconds.<a href="#section-4.3-3.1.1" class="pilcrow">¶</a></p>
+            <p id="section-4.3-3.1.1"><strong>Wave packet shape:</strong> Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use <span class="contact-name">T_{\text{photon}}</span> to denote the length of a wavepacket in seconds.<a href="#section-4.3-3.1.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.3-3.2">
             <p id="section-4.3-3.2.1"><strong>Detector recovery time:</strong> Spacing the wavepackets too close to each other may result in some of the photons being lost due to the detector recovering following a detection event, leading to inefficient use of initially generated entangled pairs (either memory-photon or photon-photon).<a href="#section-4.3-3.2.1" class="pilcrow">¶</a></p>
@@ -2084,15 +2089,15 @@ T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{tim
 </div>
 <p id="section-4.3-6">The above discussion assumes that the photons can be generated nearly on-demand.
 This is a fair assumption in the case of quantum memories based on <a href="https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366">trapped ions</a>.
-Here, the memory must be first initialized by cooling it to its ground state, a process which takes <code>dollarsign&lt;1\text{ms}dollarsign</code>.
-The memory is then excited by a laser pulse of approximately <code>dollarsign50\mu \text{s}dollarsign</code> that generates a photon.<a href="#section-4.3-6" class="pilcrow">¶</a></p>
+Here, the memory must be first initialized by cooling it to its ground state, a process which takes <span class="contact-name">&lt;1\text{ms}</span>.
+The memory is then excited by a laser pulse of approximately <span class="contact-name">50μ \text{s}</span> that generates a photon.<a href="#section-4.3-6" class="pilcrow">¶</a></p>
 <p id="section-4.3-7">In the case of memory-less link architectures, the picture is slightly different.
 Here, EPPS nodes utilizing the principle of spontaneous parametric down-conversion (SPDC) generate entangled photon pairs.
 Each photon is sent to a different BSA, where they are measured with a photon originating from a different EPPS node.
-SPDC is an inefficient process with success probability of around <code>dollarsign10^{-6}dollarsign</code> per pump photon. In system design, the intensity of the pump laser is adjusted so that the average number of photons is appropriate; generally this must be set below one photon per time window in order to avoid polluting the signal with two-photon states.
+SPDC is an inefficient process with success probability of around <span class="contact-name">10^{−6}</span> per pump photon. In system design, the intensity of the pump laser is adjusted so that the average number of photons is appropriate; generally this must be set below one photon per time window in order to avoid polluting the signal with two-photon states.
 This means that most of the time windows given by the separation time will not contain a photon.
 However, the separation time should be maintained in order to correcly identify the photons that were part of a successful measurement at the BSA.
-The separation time governs the maximum rate at which EPPS attempts to generate the entangled photon pairs, which is given by <code>dollarsign1/T_{\text{separation}}dollarsign</code>.<a href="#section-4.3-7" class="pilcrow">¶</a></p>
+The separation time governs the maximum rate at which EPPS attempts to generate the entangled photon pairs, which is given by <span class="contact-name">1/T_{\text{separation}}</span>.<a href="#section-4.3-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2104,7 +2109,7 @@ The separation time governs the maximum rate at which EPPS attempts to generate 
       </h2>
 <p id="section-5-1">We have encountered Bell-state measurements performed by the BSA on photonic qubits that are needed for entanglement swapping.
 These measurements were static in the sense that we did not need to change the measurement basis.
-Observed detection pattern determined whether the post-measurement state of the remote quantum systems (either quantum memories or other photons) was <code>dollarsign|\Psi^+\rangledollarsign</code> or <code>dollarsign|\Psi^-\rangledollarsign</code>.
+Observed detection pattern determined whether the post-measurement state of the remote quantum systems (either quantum memories or other photons) was <span class="contact-name">|Ψ^+〉</span> or <span class="contact-name">|Ψ^−〉</span>.
 Projection onto two of the four Bell-basis states was achieved probabilistically without actively applying any transformations on the photonic qubits.
 We will see in this Section that the photonic BSA is a very special case in this regard, and that changing the basis of the measurement is an indispensable part of quantum networking.
 Entanglement swapping on stationary qubits stored in quantum memories is not possible without applying appropriate unitaries first that change the basis of the measurement.
@@ -2122,27 +2127,31 @@ An example of this are the so-called all-photonic quantum repeaters, where measu
 <a href="#section-5.1.1" class="section-number selfRef">5.1.1. </a><a href="#name-single-qubit-measurements" class="section-name selfRef">Single-qubit measurements</a>
           </h4>
 <p id="section-5.1.1-1">For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
-Consider a general state of the qubit, <code>dollarsign|\psi\rangle = \alpha |0\rangle + \beta |1\rangledollarsign</code>, where <code>dollarsign|\alpha|^2+|\beta|^2=1dollarsign</code>.
-Measurement in an arbitrary basis <code>dollarsignMdollarsign</code> projects the initial state <code>dollarsign|\psi\rangledollarsign</code> onto one of the eigenvectors of <code>dollarsignMdollarsign</code>, given by <code>dollarsign\{|\phi\rangle,|\phi^{\perp}\rangle\}dollarsign</code>.
-Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state <code>dollarsign|\psi\rangledollarsign</code> and the eigenvectors of the observable <code>dollarsignMdollarsign</code>,<a href="#section-5.1.1-1" class="pilcrow">¶</a></p>
+Consider a general state of the qubit, <span class="contact-name">|ψ〉 = α |0〉 + β |1〉</span>, where <span class="contact-name">|α|^2+|β|^2=1</span>.
+Measurement in an arbitrary basis <span class="contact-name">M</span> projects the initial state <span class="contact-name">|ψ〉</span> onto one of the eigenvectors of <span class="contact-name">M</span>, given by <span class="contact-name">\{|ϕ〉,|ϕ^{⊥}〉}</span>.
+Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state <span class="contact-name">|ψ〉</span> and the eigenvectors of the observable <span class="contact-name">M</span>,<a href="#section-5.1.1-1" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-5.1.1-2">
 <pre>
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad\text{and}\quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 </pre><a href="#section-5.1.1-2" class="pilcrow">¶</a>
 </div>
-<p id="section-5.1.1-3">We read this notation as <em>probability of the measurement outcome being the state <code>dollarsign|\phi\rangledollarsign</code>, given that the initial state was <code>dollarsign|\psi\rangledollarsign</code></em>.
-For example, measurement in the Pauli <code>dollarsignZdollarsign</code> basis projects onto the states <code>dollarsign\{|0\rangle,|1\rangle\}dollarsign</code>, while measurement in the Pauli <code>dollarsignXdollarsign</code> basis projects onto the states <code>dollarsign\{|+\rangle,|-\rangle\}dollarsign</code>.<a href="#section-5.1.1-3" class="pilcrow">¶</a></p>
+<div class="lang-text sourcecode" id="section-5.1.1-3">
+<pre>
+We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
+For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$.
+</pre><a href="#section-5.1.1-3" class="pilcrow">¶</a>
+</div>
 <p id="section-5.1.1-4">It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
-In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the <code>dollarsignZdollarsign</code> basis, which can usually be implemented in a straightforward way.
+In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the <span class="contact-name">Z</span> basis, which can usually be implemented in a straightforward way.
 This approach greatly simplifies the implementation of arbitrary measurements.<a href="#section-5.1.1-4" class="pilcrow">¶</a></p>
-<p id="section-5.1.1-5">Consider that the observable <code>dollarsignMdollarsign</code> is related to the Pauli <code>dollarsignZdollarsign</code> by unitary <code>dollarsignUdollarsign</code>, <code>dollarsignM = U Z U ^{\dagger}dollarsign</code>.
-This means the unitary <code>dollarsignUdollarsign</code> relates the eigenvectors of the two observables,<a href="#section-5.1.1-5" class="pilcrow">¶</a></p>
+<p id="section-5.1.1-5">Consider that the observable <span class="contact-name">M</span> is related to the Pauli <span class="contact-name">Z</span> by unitary <span class="contact-name">U</span>, <span class="contact-name">M = U Z U ^{†}</span>.
+This means the unitary <span class="contact-name">U</span> relates the eigenvectors of the two observables,<a href="#section-5.1.1-5" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-5.1.1-6">
 <pre>
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle.
 </pre><a href="#section-5.1.1-6" class="pilcrow">¶</a>
 </div>
-<p id="section-5.1.1-7">We can perform measurement in the <code>dollarsignMdollarsign</code> basis by applying <code>dollarsignU ^{\dagger}dollarsign</code> to the initial state <code>dollarsign|\psi\rangledollarsign</code>, and them measuring it in the Pauli <code>dollarsignZdollarsign</code> basis.
+<p id="section-5.1.1-7">We can perform measurement in the <span class="contact-name">M</span> basis by applying <span class="contact-name">U ^{†}</span> to the initial state <span class="contact-name">|ψ〉</span>, and them measuring it in the Pauli <span class="contact-name">Z</span> basis.
 This can be easily verified by rewriting the above probabilities corresponding to the two measurement outcomes,<a href="#section-5.1.1-7" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-5.1.1-8">
 <pre>
@@ -2164,9 +2173,9 @@ This can be easily verified by rewriting the above probabilities corresponding t
 <a href="#section-5.1.2" class="section-number selfRef">5.1.2. </a><a href="#name-two-qubit-measurements" class="section-name selfRef">Two-qubit measurements</a>
           </h4>
 <p id="section-5.1.2-1">The same principle of changing the measurement basis can be generalized to two qubits.
-This time state <code>dollarsign|\psi\rangledollarsign</code> represents a general two-qubit state, unitary <code>dollarsignU ^{\dagger}dollarsign</code> acts on both qubits, which are both finally measured in Pauli <code>dollarsignZdollarsign</code> basis.
+This time state <span class="contact-name">|ψ〉</span> represents a general two-qubit state, unitary <span class="contact-name">U ^{†}</span> acts on both qubits, which are both finally measured in Pauli <span class="contact-name">Z</span> basis.
 In the majority of cases, we are interested in performing measurements in the Bell basis.
-Required unitary <code>dollarsignU ^{\dagger}dollarsign</code> is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in <code>dollarsign|0\rangledollarsign</code>, as shown in the Figure below, where we have dropped the <code>dollarsignZdollarsign</code> label indicating the measurement basis.<a href="#section-5.1.2-1" class="pilcrow">¶</a></p>
+Required unitary <span class="contact-name">U ^{†}</span> is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in <span class="contact-name">|0〉</span>, as shown in the Figure below, where we have dropped the <span class="contact-name">Z</span> label indicating the measurement basis.<a href="#section-5.1.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2186,21 +2195,18 @@ We are mainly concerned with giving an overview of the different measurement met
           </h4>
 <p id="section-5.2.1-1">Trapped ions possess <a href="https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281">two degrees of freedom</a>.
 The first one is the motional degree of freedom, resulting from the ion oscillating around its equilibrium position in the trap.
-The second one is the internal degree of freedom, represented by the ground state <code>dollarsign|g\rangledollarsign</code> and the excited state <code>dollarsign|e\rangledollarsign</code>.
+The second one is the internal degree of freedom, represented by the ground state <span class="contact-name">|g〉</span> and the excited state <span class="contact-name">|e〉</span>.
 It is the latter degree of freedom which is used to encode a qubit and hence acts as a quantum memory.<a href="#section-5.2.1-1" class="pilcrow">¶</a></p>
-<p id="section-5.2.1-2">Measurement in the <strong>Pauli Z</strong> basis is performed by <strong>electron shelving</strong> via the use of a third atomic level <code>dollarsign|r\rangledollarsign</code>, with much shorter life time than the <a href="https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163">excited state</a> <code>dollarsign|e\rangledollarsign</code>, <code>dollarsign\tau_e \gg \tau_rdollarsign</code>.
+<p id="section-5.2.1-2">Measurement in the <strong>Pauli Z</strong> basis is performed by <strong>electron shelving</strong> via the use of a third atomic level <span class="contact-name">|r〉</span>, with much shorter life time than the <a href="https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163">excited state</a> <span class="contact-name">|e〉</span>, <span class="contact-name">τ_e ≫ τ_r</span>.
 The figure below demonstrates how this method works.<a href="#section-5.2.1-2" class="pilcrow">¶</a></p>
-<p id="section-5.2.1-3">The ion is illuminated by light tuned to resonate with the transition <code>dollarsign|g\rangle\leftrightarrow|r\rangledollarsign</code>, represented by the red straight arrow in the Figure above.
-If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state <code>dollarsign|g\rangledollarsign</code>.
-If no fluorescence is observed, the ion is measured in the excited state <code>dollarsign|e\rangledollarsign</code>.
+<p id="section-5.2.1-3">The ion is illuminated by light tuned to resonate with the transition <span class="contact-name">|g〉↔|r〉</span>, represented by the red straight arrow in the Figure above.
+If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state <span class="contact-name">|g〉</span>.
+If no fluorescence is observed, the ion is measured in the excited state <span class="contact-name">|e〉</span>.
 Hypothetically a single fluorescent photon would be sufficient, however, the fluorescent photons are only rarely captured into the measurement apparatus (typically involving lenses and a camera) and observed, and stray photons are also often captured, so a relatively long <strong>integration time</strong> is used to confirm the fluorescence with high probability.  (Solid-state systems such as quantum dots and superconducting qubits also need relatively long integration times in their measurement processes.)
 Combined with laser pulses that apply a single-qubit rotation, measurement of a <strong>single ion in an arbitrary basis</strong> can be performed in <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">1-2 ms</a>.<a href="#section-5.2.1-3" class="pilcrow">¶</a></p>
 <p id="section-5.2.1-4">The <strong>CNOT gate</strong> can be applied in two different ways.
 The original proposal is due to <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091">Cirac and Zoller</a>, where the ions needed to be cooled to their collective motional ground state first.
-This approach was demonstrated experimentally using [$^{40}\text{Ca}^+dollarsign<code> ions](https://www.nature.com/articles/nature01494).
-Execution of the gate took around 600 microseconds, with the achieved fidelity being less than 0.8.
-The second approach is due to [Molmer and Sorensen](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835), and is more robust against motional excitation.
-This led to high-fidelity demonstrations of </code>dollarsign&gt;0.99dollarsign`, and gate times of around 50 microseconds.<a href="#section-5.2.1-4" class="pilcrow">¶</a></p>
+This approach was demonstrated experimentally using [$^{40}\text{Ca}^+<span class="contact-name">ions](https://www.nature.com/articles/nature01494). Execution of the gate took around 600 microseconds, with the achieved fidelity being less than 0.8. The second approach is due to [Molmer and Sorensen](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835), and is more robust against motional excitation. This led to high−fidelity demonstrations of</span>&gt;0.99$$, and gate times of around 50 microseconds.<a href="#section-5.2.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2212,7 +2218,7 @@ This led to high-fidelity demonstrations of </code>dollarsign&gt;0.99dollarsign`
         </h3>
 <p id="section-5.3-1">Measurement of polarization-encoded photonic qubits can be performed with the aid of a <strong>polarizing beam splitter</strong> (PBS), a <strong>half waveplate</strong> (HWP), a <strong>quarter waveplate</strong> (QWP), and <a href="https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4">two detectors</a> (one detector is enough in fact but less efficient).
 The idea is the same as in the case of measurements performed on stationary qubits discussed above.
-Setting the HWP and QWP at particular angles applies the unitary <code>dollarsignU ^{\dagger}dollarsign</code> that picks the basis of the measurement, while the PBS filters out vertical and horizontal polarizations that then get detected by the detectors placed in the output paths of the PBS.
+Setting the HWP and QWP at particular angles applies the unitary <span class="contact-name">U ^{†}</span> that picks the basis of the measurement, while the PBS filters out vertical and horizontal polarizations that then get detected by the detectors placed in the output paths of the PBS.
 Horizontal polarization gets transmitted through the PBS, while vertical polarization gets reflected.
 This setup is shown in the figure below.<a href="#section-5.3-1" class="pilcrow">¶</a></p>
 <p id="section-5.3-2">General pure state of a polarization-encoded qubit can be written as<a href="#section-5.3-2" class="pilcrow">¶</a></p>
@@ -2225,20 +2231,26 @@ This setup is shown in the figure below.<a href="#section-5.3-1" class="pilcrow"
 The table below summarizes this equivalence.<a href="#section-5.3-4" class="pilcrow">¶</a></p>
 <p id="section-5.3-5">The Figure below shows the Poincaré sphere along with the position of the polarization states.<a href="#section-5.3-5" class="pilcrow">¶</a></p>
 <p id="section-5.3-6">Polarization of light is manipulated by waveplates.
-Waveplate rotated by an angle <code>dollarsign\alphadollarsign</code> (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of <code>dollarsign2\alphadollarsign</code> with the horizontal state <code>dollarsign|H\rangledollarsign</code> in the horizontal plane, as shown in Figure above.
-Half waveplate rotates the polarization state by an angle <code>dollarsign\pidollarsign</code>, while a quarter waveplate rotates by an angle <code>dollarsign\pi/2dollarsign</code> in the Poincaré sphere.
+Waveplate rotated by an angle <span class="contact-name">α</span> (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of <span class="contact-name">2α</span> with the horizontal state <span class="contact-name">|H〉</span> in the horizontal plane, as shown in Figure above.
+Half waveplate rotates the polarization state by an angle <span class="contact-name">π</span>, while a quarter waveplate rotates by an angle <span class="contact-name">π/2</span> in the Poincaré sphere.
 The action of the waveplates is captured by the corresponding unitary operations,<a href="#section-5.3-6" class="pilcrow">¶</a></p>
-<p id="section-5.3-7">The idea behind measurements in arbitrary basis <code>dollarsign\{|\psi\rangle, |\psi^{\perp}\rangle\}dollarsign</code> is to choose the angles for the waveplates such that the following transformation is achieved,<a href="#section-5.3-7" class="pilcrow">¶</a></p>
+<p id="section-5.3-7">The idea behind measurements in arbitrary basis<a href="#section-5.3-7" class="pilcrow">¶</a></p>
 <div class="lang-text sourcecode" id="section-5.3-8">
 <pre>
-U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
+\{|\psi\rangle, |\psi^{\perp}\rangle\}
 </pre><a href="#section-5.3-8" class="pilcrow">¶</a>
 </div>
-<p id="section-5.3-9">Settings for the three Pauli bases are summarized in the table below.<a href="#section-5.3-9" class="pilcrow">¶</a></p>
-<p id="section-5.3-10">Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
+<p id="section-5.3-9">is to choose the angles for the waveplates such that the following transformation is achieved,<a href="#section-5.3-9" class="pilcrow">¶</a></p>
+<div class="lang-text sourcecode" id="section-5.3-10">
+<pre>
+U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
+</pre><a href="#section-5.3-10" class="pilcrow">¶</a>
+</div>
+<p id="section-5.3-11">Settings for the three Pauli bases are summarized in the table below.<a href="#section-5.3-11" class="pilcrow">¶</a></p>
+<p id="section-5.3-12">Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
 Therefore, for a rotation of 45 degrees, the motor requires areound 4.5s.
-During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.<a href="#section-5.3-10" class="pilcrow">¶</a></p>
+During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.<a href="#section-5.3-12" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2261,13 +2273,13 @@ In the context of timing regimes, we will focus on the following characteristics
 </li>
       </ul>
 <p id="section-6-3">Two approaches to switching are of relevance to our discussion.
-The first approach is the <em>crossbar switch</em> with all-to-all connectivity. Such an <code>dollarsignN\times Ndollarsign</code> switch can be reconfigured to accomodate all possible <code>dollarsignN!dollarsign</code> permutations of input-output pairs. One usual implementation of a crossbar switch is using <strong>microelectromechanical systems (MEMS)</strong> relying on small movable parts such as popup micromirrors, rotating prisms or <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748">spinning holographic disks</a>. MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.<a href="#section-6-3" class="pilcrow">¶</a></p>
-<p id="section-6-4">Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible <code>dollarsignN!dollarsign</code> input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a <a href="https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&amp;id=340335">connection</a>. Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the <a href="https://ieeexplore.ieee.org/document/10821447">Bell basis</a>. These approaches are pictured in the figure below.<a href="#section-6-4" class="pilcrow">¶</a></p>
-<p id="section-6-5">Both of these designs consider a <code>dollarsign2\times 2dollarsign</code> switch as the basic building block, which is implemented with <strong>integrated photonics</strong> and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.<a href="#section-6-5" class="pilcrow">¶</a></p>
+The first approach is the <em>crossbar switch</em> with all-to-all connectivity. Such an <span class="contact-name">N× N</span> switch can be reconfigured to accomodate all possible <span class="contact-name">N!</span> permutations of input-output pairs. One usual implementation of a crossbar switch is using <strong>microelectromechanical systems (MEMS)</strong> relying on small movable parts such as popup micromirrors, rotating prisms or <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748">spinning holographic disks</a>. MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.<a href="#section-6-3" class="pilcrow">¶</a></p>
+<p id="section-6-4">Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible <span class="contact-name">N!</span> input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a <a href="https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&amp;id=340335">connection</a>. Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the <a href="https://ieeexplore.ieee.org/document/10821447">Bell basis</a>. These approaches are pictured in the figure below.<a href="#section-6-4" class="pilcrow">¶</a></p>
+<p id="section-6-5">Both of these designs consider a <span class="contact-name">2× 2</span> switch as the basic building block, which is implemented with <strong>integrated photonics</strong> and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.<a href="#section-6-5" class="pilcrow">¶</a></p>
 <p id="section-6-6">The optical switch introduces a <strong>propagation time delay</strong>. For some MEMS switches, this delay can be as low as <a href="https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf">25 nanoseconds</a>. In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but as discussed in Section A, any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch, as demonstrated in figure below,<a href="#section-6-6" class="pilcrow">¶</a></p>
-<p id="section-6-7">This triangular switch design was introduced by <a href="https://ieeexplore.ieee.org/document/10821447">Koyama et.al.</a>. Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port <code>dollarsignX_0dollarsign</code> have to traverse at least 5 switching points, while photons from input port <code>dollarsignX_{11}dollarsign</code> do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to <code>dollarsign\text{BSA}_5dollarsign</code>. This requires photons from <code>dollarsignX_0dollarsign</code> to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.<a href="#section-6-7" class="pilcrow">¶</a></p>
+<p id="section-6-7">This triangular switch design was introduced by <a href="https://ieeexplore.ieee.org/document/10821447">Koyama et.al.</a>. Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port <span class="contact-name">X_0</span> have to traverse at least 5 switching points, while photons from input port <span class="contact-name">X_{11}</span> do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to <span class="contact-name">\text{BSA}_5</span>. This requires photons from <span class="contact-name">X_0</span> to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.<a href="#section-6-7" class="pilcrow">¶</a></p>
 <p id="section-6-8">The significance of this time delay ultimately depends on the type of photons used. Photons with longer envelopes, such as those emitted from trapped ions, may be more robust to the propagation time delays introduced by the optical switch. Photons with very short envelopes, such as the ones originating from an SPDC source, are expected to be very susceptible to any propagation time delays.<a href="#section-6-8" class="pilcrow">¶</a></p>
-<p id="section-6-9">In order to compensate for the propagation time delay, and ensure acceptable visibility at the BSAs, it is neccesary to adjust the path length of the photons with <strong>optical delay lines</strong> (ODLs). For small enough optical switches, it may be possible to characterize the propagation time delays for given photon pairs <code>dollarsign(X_i,X_j)dollarsign</code> assigned to a particular BSA prior to the opration of the switch. This would allow the ODLs to be set to precomputed configurations based on the connection request patterns. This approach will most likely not scale, at least in its general form, to larger optical switches.<a href="#section-6-9" class="pilcrow">¶</a></p>
+<p id="section-6-9">In order to compensate for the propagation time delay, and ensure acceptable visibility at the BSAs, it is neccesary to adjust the path length of the photons with <strong>optical delay lines</strong> (ODLs). For small enough optical switches, it may be possible to characterize the propagation time delays for given photon pairs <span class="contact-name">(X_i,X_j)</span> assigned to a particular BSA prior to the opration of the switch. This would allow the ODLs to be set to precomputed configurations based on the connection request patterns. This approach will most likely not scale, at least in its general form, to larger optical switches.<a href="#section-6-9" class="pilcrow">¶</a></p>
 <p id="section-6-10">Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their <strong>polarization</strong> changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">230m</a>, data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took <strong>several minutes</strong>. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.<a href="#section-6-10" class="pilcrow">¶</a></p>
 <p id="section-6-11">Finally, given a set of connection requests, the optical switch must compute the state of all switch points to <strong>route</strong> the photons correctly. The reconfigurably non-blocking designs proposed in <code>[15]</code> come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.<a href="#section-6-11" class="pilcrow">¶</a></p>
 </section>
