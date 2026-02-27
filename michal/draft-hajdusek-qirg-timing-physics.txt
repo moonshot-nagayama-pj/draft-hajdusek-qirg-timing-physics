@@ -288,9 +288,9 @@ Table of Contents
 
    In order to quantify the effect that distinguishability has on HOM
    interference, we consider the *probability of a coincidence
-   detection*, p_{\text{c}}, where one photon is detected in the BS
-   output mode c, and the other photon in output mode d.  This
-   probability is defined as
+   detection*, p_c, where one photon is detected in the BS output mode
+   c, and the other photon in output mode d.  This probability is
+   defined as
 
    p   = ⟨ψ|    P  ⊗P  | ψ⟩
      c       cd  c   d     cd
@@ -306,13 +306,13 @@ Table of Contents
    is the *visibility* V, defined via the probability of a coincidence
    detection,
 
-          max        min
+          max       min
        p      - p
-        c         co                  min
-   V = ───────────────── = 1 - 2 p
-               max                 co
-             p
-               co
+        c         c                 min
+   V = ──────────────── = 1 - 2 p
+              max                 c
+            p
+              c
 
    where we used the fact that the maximum probability of a coincidence
    detection is 1/2.  We observe that the visibility varies from V=0 for
