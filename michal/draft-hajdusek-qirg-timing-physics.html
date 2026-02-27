@@ -3092,11 +3092,182 @@ However, these incur prohibitive costs for long-distance quantum communication, 
 <p id="section-3.2.1-1">The preceding discussion was concerned with two independent pure photons of different polarization.
 In the context of quantum networking, a much more common scenario is that of two entangled pairs of photons originating from two independent EPPS nodes, where two qubits, one from each pair, are incident onto a BS and undergo HOM interference.
 The two pairs are in the following initial state,<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
-<div class="lang-text sourcecode" id="section-3.2.1-2">
-<pre>
-|\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right)
-</pre><a href="#section-3.2.1-2" class="pilcrow">¶</a>
+<div id="section-3.2.1-2">
+            <div class="alignLeft art-svg artwork" id="section-3.2.1-2.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="6.676ex" role="img" viewBox="0 -1437.2 37197.5 2874.4" width="86.394ex">
+                <defs>
+                  <path d="M193 -189h-66v879h66v-879Z" id="E1-STIXWEBVARIANTS-7C" stroke-width="1"></path>
+                  <path d="M711 439v-16c-96 -13 -121 -124 -141 -213c-29 -128 -144 -221 -268 -221l-42 -172h-81l43 172h-10c-78 0 -153 41 -153 165c0 56 32 116 32 183c0 40 -14 81 -61 86l5 16c19 2 37 2 55 2c57 0 88 -54 88 -111c0 -56 -31 -127 -31 -185c0 -75 32 -119 83 -126l100 409h81 l-100 -409c73 14 145 78 170 187c28 120 51 233 204 233h26Z" id="E1-STIXWEBNORMALI-1D713" stroke-width="1"></path>
+                  <path d="M323 240l-206 -453h-52l192 463l-191 463h52l205 -453v-20Z" id="E1-STIXWEBMAIN-27E9" stroke-width="1"></path>
+                  <path d="M472 428l-91 -345s-1 -2 -1 -11c0 -11 6 -17 14 -17c10 0 25 2 64 54l12 -12c-31 -47 -85 -107 -133 -107c-33 0 -42 23 -42 55c0 13 6 34 11 50h-4c-72 -92 -134 -105 -173 -105c-63 0 -89 55 -89 119c0 132 132 332 276 332c43 0 64 -24 66 -46h1l9 33h80zM367 341 c0 41 -12 71 -50 71c-68 0 -128 -87 -162 -171c-18 -45 -28 -89 -28 -124c0 -53 31 -66 58 -66c69 0 139 95 167 190c8 26 15 66 15 100Z" id="E1-STIXWEBNORMALI-1D44E" stroke-width="1"></path>
+                  <path d="M394 0h-276v15c74 4 95 25 95 80v449c0 34 -9 49 -30 49c-10 0 -27 -5 -45 -12l-27 -10v14l179 91l9 -3v-597c0 -43 20 -61 95 -61v-15Z" id="E1-STIXWEBMAIN-31" stroke-width="1"></path>
+                  <path d="M214 382l4 -4c33 32 72 63 121 63c70 0 111 -69 111 -151c0 -121 -109 -301 -266 -301c-53 0 -94 18 -139 48l144 563c1 4 2 8 2 11c-1 13 -16 21 -29 21c-10 0 -22 -1 -30 -4l-3 16l158 24zM179 252l-55 -215c0 -7 32 -19 55 -19c122 0 188 174 188 276 c0 70 -38 92 -71 92c-72 0 -106 -89 -117 -134Z" id="E1-STIXWEBNORMALI-1D44F" stroke-width="1"></path>
+                  <path d="M474 137l-54 -137h-391v12l178 189c94 99 130 175 130 260c0 91 -54 141 -139 141c-72 0 -107 -32 -147 -130l-21 5c21 117 85 199 208 199c113 0 185 -77 185 -176c0 -79 -39 -154 -128 -248l-165 -176h234c42 0 63 11 96 67Z" id="E1-STIXWEBMAIN-32" stroke-width="1"></path>
+                  <path d="M637 320h-589v66h589v-66zM637 120h-589v66h589v-66Z" id="E1-STIXWEBMAIN-3D" stroke-width="1"></path>
+                  <path d="M963 973l-478 -1232h-32l-202 530c-17 45 -37 59 -62 59c-17 0 -43 -11 -65 -31l-12 20l156 124h19l204 -536h4l414 1066h54Z" id="E1-STIXWEBMAIN-221A" stroke-width="1"></path>
+                  <path d="M304 -161l-12 -16c-158 90 -244 259 -244 429c0 185 87 329 247 424l9 -16c-139 -119 -170 -212 -170 -405c0 -186 30 -299 170 -416Z" id="E1-STIXWEBMAIN-28" stroke-width="1"></path>
+                  <path d="M923 653l-4 -16h-18c-76 0 -97 -28 -106 -63l-123 -496c-2 -9 -4 -18 -4 -28c0 -21 19 -34 78 -34h19l-4 -16h-329l4 16h18c72 0 96 25 105 62l61 242h-280l-61 -242c-2 -6 -4 -16 -4 -24c0 -24 18 -38 77 -38h20l-4 -16h-330l4 16h18c75 0 98 28 106 62l123 496 c2 6 4 17 4 24c0 21 -16 39 -78 39h-20l4 16h330l-4 -16h-18c-79 0 -97 -28 -105 -63l-52 -217h278l53 217c2 10 4 17 4 24c0 24 -19 39 -76 39h-20l4 16h330Z" id="E1-STIXWEBNORMALI-1D43B" stroke-width="1"></path>
+                  <path d="M760 653l-4 -16c-65 -4 -106 -43 -132 -77l-441 -576h-24v571c0 58 -38 82 -99 82l4 16h294l-4 -16h-19c-65 0 -70 -37 -70 -70v-391l4 -1l280 366c19 24 38 53 38 74c0 15 -14 22 -52 22h-20l4 16h241Z" id="E1-STIXWEBNORMALI-1D449" stroke-width="1"></path>
+                  <path d="M636 220h-261v-261h-66v261h-261v66h261v261h66v-261h261v-66Z" id="E1-STIXWEBMAIN-2B" stroke-width="1"></path>
+                  <path d="M363 112l14 -13c-70 -86 -138 -110 -200 -110c-98 0 -137 84 -137 156c0 23 1 37 6 60c25 111 135 236 262 236c42 0 102 -14 102 -76c0 -127 -167 -176 -286 -182v-28c0 -64 52 -107 113 -107c42 0 90 18 126 64zM124 211h9c104 0 198 69 198 157c0 25 -19 43 -44 43 c-74 0 -134 -115 -163 -200Z" id="E1-STIXWEBNORMALI-1D452" stroke-width="1"></path>
+                  <path d="M257 566c0 -26 -22 -46 -48 -46c-29 0 -48 20 -48 46c0 25 19 50 48 50c26 0 48 -25 48 -50zM227 441l-92 -364c-1 -6 -1 -10 -1 -14c0 -7 6 -10 13 -10c22 0 28 12 64 51l13 -10c-35 -45 -85 -105 -134 -105c-28 0 -40 19 -40 46c0 12 0 31 79 338c1 2 2 9 2 12 c0 17 -8 22 -31 22c-9 0 -21 -2 -28 -4l-3 16Z" id="E1-STIXWEBNORMALI-1D456" stroke-width="1"></path>
+                  <path d="M474 472c0 -196 -143 -483 -297 -483c-95 0 -137 59 -137 179c0 174 116 500 306 500c73 0 128 -63 128 -196zM159 344h206c15 70 25 125 25 166c0 73 -10 129 -51 129c-72 0 -154 -176 -180 -295zM356 308h-207c-16 -50 -25 -117 -25 -165c0 -69 15 -125 58 -125 c67 0 127 131 158 230c7 23 13 51 16 60Z" id="E1-STIXWEBNORMALI-1D703" stroke-width="1"></path>
+                  <path d="M29 660l12 16c153 -92 244 -259 244 -429c0 -185 -88 -327 -247 -424l-9 16c142 117 170 211 170 405c0 187 -25 302 -170 416Z" id="E1-STIXWEBMAIN-29" stroke-width="1"></path>
+                  <path d="M382 -134v-30c-142 134 -243 343 -243 615c0 267 101 481 243 615v-30c-90 -110 -162 -282 -162 -585c0 -306 72 -475 162 -585Z" id="E1-STIXWEBSIZE1-28" stroke-width="1"></path>
+                  <path d="M86 1036v30c142 -134 243 -343 243 -615c0 -267 -101 -481 -243 -615v30c90 110 162 282 162 585c0 306 -72 475 -162 585Z" id="E1-STIXWEBSIZE1-29" stroke-width="1"></path>
+                  <path d="M83 -141l-10 19c55 37 83 74 83 107c0 7 -6 13 -14 13s-18 -4 -29 -4c-37 0 -58 17 -58 51s24 57 60 57c45 0 80 -35 80 -87c0 -60 -43 -123 -112 -156Z" id="E1-STIXWEBMAIN-2C" stroke-width="1"></path>
+                </defs>
+                <g fill="black" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="0" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="320" y="0"></use>
+                  <g transform="translate(1032,0)">
+                    <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                    <g transform="translate(400,-150)">
+                      <use xlink:href="#E1-STIXWEBNORMALI-1D44E" transform="scale(0.707)" x="0" y="0"></use>
+                      <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="618" y="-253"></use>
+                      <g transform="translate(713,0)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                        <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="579" y="-253"></use>
+                      </g>
+                    </g>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBMAIN-3D" x="3214" y="0"></use>
+                  <g transform="translate(3899,0)">
+                    <g transform="translate(397,0)">
+                      <rect height="60" width="1549" x="0" y="220"></rect>
+                      <use xlink:href="#E1-STIXWEBMAIN-31" x="524" y="676"></use>
+                      <g transform="translate(60,-1041)">
+                        <use xlink:href="#E1-STIXWEBMAIN-221A" x="0" y="-13"></use>
+                        <rect height="60" width="500" x="928" y="901"></rect>
+                        <use xlink:href="#E1-STIXWEBMAIN-32" x="928" y="0"></use>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(5966,0)">
+                    <use xlink:href="#E1-STIXWEBSIZE1-28" x="0" y="-201"></use>
+                    <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="468" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D43B" x="789" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="1712" y="0"></use>
+                    <g transform="translate(2473,0)">
+                      <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                      <g transform="translate(400,-150)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D44E" transform="scale(0.707)" x="0" y="0"></use>
+                        <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="618" y="-253"></use>
+                        <g transform="translate(713,0)">
+                          <use xlink:href="#E1-STIXWEBNORMALI-1D44E" transform="scale(0.707)" x="0" y="0"></use>
+                          <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="618" y="-253"></use>
+                        </g>
+                      </g>
+                    </g>
+                    <use xlink:href="#E1-STIXWEBMAIN-2B" x="4622" y="0"></use>
+                    <g transform="translate(5530,0)">
+                      <use xlink:href="#E1-STIXWEBNORMALI-1D452" x="0" y="0"></use>
+                      <g transform="translate(445,412)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D456" transform="scale(0.707)" x="0" y="0"></use>
+                        <g transform="translate(220,0)">
+                          <use xlink:href="#E1-STIXWEBNORMALI-1D703" transform="scale(0.707)" x="0" y="0"></use>
+                          <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="596" y="-253"></use>
+                        </g>
+                      </g>
+                    </g>
+                    <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="6996" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="7317" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D43B" x="8077" y="0"></use>
+                    <g transform="translate(9001,0)">
+                      <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                      <g transform="translate(400,-150)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D44E" transform="scale(0.707)" x="0" y="0"></use>
+                        <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="618" y="-253"></use>
+                        <g transform="translate(713,0)">
+                          <use xlink:href="#E1-STIXWEBNORMALI-1D44E" transform="scale(0.707)" x="0" y="0"></use>
+                          <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="618" y="-253"></use>
+                        </g>
+                      </g>
+                    </g>
+                    <use xlink:href="#E1-STIXWEBSIZE1-29" x="10928" y="-201"></use>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBMAIN-2C" x="17530" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="19947" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="20267" y="0"></use>
+                  <g transform="translate(20979,0)">
+                    <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                    <g transform="translate(400,-150)">
+                      <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                      <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="579" y="-253"></use>
+                      <g transform="translate(690,0)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                        <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="579" y="-253"></use>
+                      </g>
+                    </g>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBMAIN-3D" x="23138" y="0"></use>
+                  <g transform="translate(23824,0)">
+                    <g transform="translate(397,0)">
+                      <rect height="60" width="1549" x="0" y="220"></rect>
+                      <use xlink:href="#E1-STIXWEBMAIN-31" x="524" y="676"></use>
+                      <g transform="translate(60,-1041)">
+                        <use xlink:href="#E1-STIXWEBMAIN-221A" x="0" y="-13"></use>
+                        <rect height="60" width="500" x="928" y="901"></rect>
+                        <use xlink:href="#E1-STIXWEBMAIN-32" x="928" y="0"></use>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(25891,0)">
+                    <use xlink:href="#E1-STIXWEBSIZE1-28" x="0" y="-201"></use>
+                    <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="468" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D43B" x="789" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="1712" y="0"></use>
+                    <g transform="translate(2473,0)">
+                      <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                      <g transform="translate(400,-150)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                        <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="579" y="-253"></use>
+                        <g transform="translate(690,0)">
+                          <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                          <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="579" y="-253"></use>
+                        </g>
+                      </g>
+                    </g>
+                    <use xlink:href="#E1-STIXWEBMAIN-2B" x="4577" y="0"></use>
+                    <g transform="translate(5484,0)">
+                      <use xlink:href="#E1-STIXWEBNORMALI-1D452" x="0" y="0"></use>
+                      <g transform="translate(445,412)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D456" transform="scale(0.707)" x="0" y="0"></use>
+                        <g transform="translate(220,0)">
+                          <use xlink:href="#E1-STIXWEBNORMALI-1D703" transform="scale(0.707)" x="0" y="0"></use>
+                          <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="596" y="-253"></use>
+                        </g>
+                      </g>
+                    </g>
+                    <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="6951" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="7271" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D43B" x="8032" y="0"></use>
+                    <g transform="translate(8955,0)">
+                      <use xlink:href="#E1-STIXWEBMAIN-27E9" x="0" y="0"></use>
+                      <g transform="translate(400,-150)">
+                        <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                        <use xlink:href="#E1-STIXWEBMAIN-31" transform="scale(0.574)" x="579" y="-253"></use>
+                        <g transform="translate(690,0)">
+                          <use xlink:href="#E1-STIXWEBNORMALI-1D44F" transform="scale(0.707)" x="0" y="0"></use>
+                          <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.574)" x="579" y="-253"></use>
+                        </g>
+                      </g>
+                    </g>
+                    <use xlink:href="#E1-STIXWEBSIZE1-29" x="10837" y="-201"></use>
+                  </g>
+                </g>
+              </svg><a href="#section-3.2.1-2.1" class="pilcrow">¶</a>
 </div>
+</div>
+<p id="section-3.2.1-3">where <span class="contact-name">θ_1</span> and <span class="contact-name">θ_2</span> represent the polarization drift induced in the single-mode fiber.
+Photons <span class="contact-name">a_2</span> and <span class="contact-name">b_1</span> are incident onto a BS, where they undergo HOM interference.
+Following the same calculation as above, it can be shown that the probability of a coincidence event is <span class="contact-name">p_{c} = 1/4</span>, regardless of the polarization drift.
+This suggests that the visibility is insensitive to the polarization drift.
+However, the polarization drift must be tracked regardless because it affects the fidelity of the post-ES state of photons <span class="contact-name">a_1</span> and <span class="contact-name">b_2</span>.
+It is therefore important to characterize the polarization drift at the BSA at regular intervals and compensate for it.
+This can be done at the nodes generating the photon pairs at the cost of the BSA having to communicate polarization drift results to the ends nodes.
+Or it can be compensated for directly at the BSA using waveplates at the cost of increased complexity of the BSA.
+In <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">Krutyanskiy et.al.</a>, polarization drift characterization and compensation at the BSA takes a few minutes and is performed every 20 minutes.<a href="#section-3.2.1-3" class="pilcrow">¶</a></p>
 <table class="center" id="table-1">
             <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
 <thead>
