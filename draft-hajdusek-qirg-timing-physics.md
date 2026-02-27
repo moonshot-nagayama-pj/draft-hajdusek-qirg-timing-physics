@@ -159,15 +159,15 @@ It is this interference effect that is at the heart of quantum networking.
 In order to quantify the effect that distinguishability has on HOM interference, we consider the **probability of a coincidence detection**, $$p_c$$, where one photon is detected in the BS output mode $$c$$, and the other photon in output mode $$d$$.
 This probability is defined as
 
-<!-- ~~~text
-p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd}
+~~~math
+p _c = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd}
 ~~~
 
 where $$P_i$$, for $$i=c,d$$, are the projection operators representing a detection of a single photon in output mode $$i$$ of the BS.
-For completely indistinguishable input photons that undergo the full HOM interference, we have $$p _{\text{co}}=0$$.
-On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $$p _{\text{co}}=1/2$$.
+For completely indistinguishable input photons that undergo the full HOM interference, we have $$p _c=0$$.
+On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $$p _c=1/2$$.
 
-An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$, defined via the probability of a coincidence detection,
+<!--An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$, defined via the probability of a coincidence detection,
 
 ~~~text
 V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}}
