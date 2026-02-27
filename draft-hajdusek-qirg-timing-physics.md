@@ -263,7 +263,7 @@ $|\Psi^{\pm}\rangle_{a_1b_2} = \frac{1}{\sqrt{2}} \left( |HV\rangle_{a_1b_2} \pm
 It is therefore important to characterize the polarization drift at the BSA at regular intervals and compensate for it.
 This can be done at the nodes generating the photon pairs at the cost of the BSA having to communicate polarization drift results to the ends nodes.
 Or it can be compensated for directly at the BSA using waveplates at the cost of increased complexity of the BSA.
-In [3], the process of polarization drift characterization and compensation at the BSA takes a few minutes and is performed every 20 minutes.
+In `[3]`, the process of polarization drift characterization and compensation at the BSA takes a few minutes and is performed every 20 minutes.
 
 ## Spectral distinguishability
 
@@ -464,9 +464,9 @@ Recovery time affects the maximum detection rate.
 If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon.
 This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency `dollarsign\eta_{\text{sde}}dollarsign`).
 On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than `dollarsign\tau_{\text{recovery}}dollarsign` to ensure effcient use of the generated photons.
-* **Dark count rate:** SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz [counts per second]. Dark counts decrease the fidelity of the distributed entangled states.
+* **Dark count rate:** SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz (counts per second). Dark counts decrease the fidelity of the distributed entangled states.
 * **Timing jitter:** Denoted by `dollarsignJ_{\text{timing}}dollarsign`.
-Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from [4].
+Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from `[4]`.
 
 ![Timing jitter for different detectors.](Figures/timing_jitter.svg)
 
@@ -699,7 +699,7 @@ In order to compensate for the propagation time delay, and ensure acceptable vis
 
 Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their **polarization** changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over [230m](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803), data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took **several minutes**. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.
 
-Finally, given a set of connection requests, the optical switch must compute the state of all switch points to **route** the photons correctly. The reconfigurably non-blocking designs proposed in [15] come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.
+Finally, given a set of connection requests, the optical switch must compute the state of all switch points to **route** the photons correctly. The reconfigurably non-blocking designs proposed in `[15]` come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.
 
 # Pre-configured Event-driven Tasks
 
