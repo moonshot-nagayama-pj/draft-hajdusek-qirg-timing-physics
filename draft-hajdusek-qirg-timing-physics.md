@@ -221,10 +221,14 @@ Either an $$\epsilon$$-polarized or an $$\epsilon'$$-polarized photon is detecte
 The probability of coincidence is then
 
 ~~~text
-p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
+p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta
 ~~~
 
-where the overlap between the polarization unit vectors is parametrized by $$\theta$$, and can be written as $$\langle\epsilon'|\epsilon\rangle = \cos\theta$$.
+where the overlap between the polarization unit vectors is parametrized by $$\theta$$, and can be written as
+
+~~~text
+\langle\epsilon'|\epsilon\rangle = \cos\theta
+~~~
 
 We can define the corresponding visibility as a function of the angle between the two polarization vectors,
 
@@ -541,8 +545,10 @@ Probabilities of the two possible measurement outcomes are given by the overlaps
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad\text{and}\quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 ~~~
 
+~~~text
 We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
 For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$.
+~~~
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $$Z$$ basis, which can usually be implemented in a straightforward way.
@@ -630,7 +636,13 @@ Waveplate rotated by an angle $$\alpha$$ (zero is aligned with the horizontal ax
 Half waveplate rotates the polarization state by an angle $$\pi$$, while a quarter waveplate rotates by an angle $$\pi/2$$ in the Poincaré sphere.
 The action of the waveplates is captured by the corresponding unitary operations,
 
-The idea behind measurements in arbitrary basis $$\{|\psi\rangle, |\psi^{\perp}\rangle\}$$ is to choose the angles for the waveplates such that the following transformation is achieved,
+The idea behind measurements in arbitrary basis
+
+~~~text
+\{|\psi\rangle, |\psi^{\perp}\rangle\}
+~~~
+
+is to choose the angles for the waveplates such that the following transformation is achieved,
 
 ~~~text
 U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
