@@ -176,22 +176,21 @@ V = \frac{p_c ^{\text{max}} - p _c ^{\text{min}}}{p _c^{\text{max}}} = 1 - 2 p _
 where we used the fact that the maximum probability of a coincidence detection is $$1/2$$.
 We observe that the visibility varies from $$V=0$$ for fully distinguishable input photons to $$V=1$$ for perfectly indistinguishable ones.
 
-<!--Visibility $$V$$ plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
+Visibility $$V$$ plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
 Consider the case when the input photons $$a$$, $$b$$ are entangled with auxiliary systems $$s_1$$ and $$s_2$$, respectively.
 The BSA performs ES by measuring the input photons, entangling systems $$s_1$$ and $$s_2$$ in the process.
 Fidelity of the new entangled pair is directly proportional to the visibility $$V$$ of the HOM interference.
-Denote by $$\rho_{s_1s_2}^{\text{no-deph}}$$ the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference.
 Non-ideal HOM interference can be modelled as a [two-qubit dephasing](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803),
 
-~~~text
+~~~math
 \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}}
 ~~~
 
-where $$\rho_{s_1s_2}^{\text{deph}}$$ is a fully dephased state obtained by setting all off-diagonal elements of $$\rho_{s_1s_2}^{\text{no-deph}}$$ to zero.
+where superscript no-deph denotes a the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference, and superscript deph denotes a fully dephased state obtained by setting all off-diagonal elements of the density matrix to zero.
 
 In the following subsections, we address and quantify how distinguishable photons affect the visibility of the HOM interference.
 
-## Polarization
+<!-- ## Polarization
 
 We now consider the case when the input photons differ in their polarization degree of photons.
 The maximum probability of a coincidence detection is obtained for orthogonally polarized photons, for example when $$j=H$$ and $$k=V$$.
