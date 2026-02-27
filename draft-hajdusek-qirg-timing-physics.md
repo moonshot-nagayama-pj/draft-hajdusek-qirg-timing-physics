@@ -131,16 +131,16 @@ For example, $$j$$ and $$k$$ could represent
 Action of the BS on the input modes is the following:
 
 ~~~math
-a ^{\dagger} --> \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} --> \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
+a ^{\dagger} -> \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} -> \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
 ~~~
 
-<!--  The output state of the two photons is
+The output state of the two photons is
 
-~~~text
-|\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
+~~~math
+|\psi\rangle _{cd} = ( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} ) |0\rangle _{cd}
 ~~~
 
-For a 50:50 BS when $$r=1/2$$, we obtain,
+<!-- For a 50:50 BS when $$r=1/2$$, we obtain,
 
 ~~~text
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
