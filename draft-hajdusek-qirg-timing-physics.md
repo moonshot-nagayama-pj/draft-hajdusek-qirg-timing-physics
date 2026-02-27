@@ -140,13 +140,13 @@ The output state of the two photons is
 |\psi\rangle _{cd} = ( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} ) |0\rangle _{cd}
 ~~~
 
-<!-- For a 50:50 BS when $$r=1/2$$, we obtain,
+For a 50:50 BS when $$r=1/2$$:
 
-~~~text
+~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
 ~~~
 
-From this expression, we can see that when $$j=k$$, in other words when the input photons are indistinguishable, the output state has the following form,
+<!-- From this expression, we can see that when $$j=k$$, in other words when the input photons are indistinguishable, the output state has the following form,
 
 ~~~text
 |\psi\rangle _{cd} = \frac{1}{\sqrt{2}} \left( |2\rangle_c - |2\rangle_d \right)
