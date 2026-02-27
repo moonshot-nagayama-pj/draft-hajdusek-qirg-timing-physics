@@ -206,17 +206,17 @@ We can observe that maximum probbility of coincidence is $$1/2$$.
 In general, the two input photons will have polarizations given by two unit vectors, $$j=\epsilon$$ and $$k=\epsilon'$$.
 The output state can be written as
 
-~~~text
+~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right)
 ~~~
 
-<!--  The projection operators corresponding to a detection even at detector $$i$$ ($i=a,b$) are given by
+The projection operators corresponding to a detection even at detector $$i$$ ($i=a,b$) are given by
 
-~~~text
+~~~math
 P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i
 ~~~
 
-Either an $$\epsilon$$-polarized or an $$\epsilon'$$-polarized photon is detected in the output mode $$i$$.
+<!-- Either an $$\epsilon$$-polarized or an $$\epsilon'$$-polarized photon is detected in the output mode $$i$$.
 The probability of coincidence is then
 
 ~~~text
