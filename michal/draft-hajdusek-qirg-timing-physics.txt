@@ -243,7 +243,9 @@ Table of Contents
 
    The input state can be expressed as
 
-   |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab},
+             †     †
+   |ψ⟩   = a     b     | 0 ⟩  ,
+      ab       j     k      ab
 
    where a ^{†} _j and b ^{†} _k are the bosonic creation operators
    corresponding to BS input modes a and b, respectively.  The indices j
