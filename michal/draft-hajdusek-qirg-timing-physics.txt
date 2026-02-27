@@ -363,7 +363,15 @@ Table of Contents
    In general, the two input photons will have polarizations given by
    two unit vectors, j=ε and k=ε'.  The output state can be written as
 
-   |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right)
+        1
+|ψ⟩   = ─ ⎛ |1;ϵ⟩  |1;ϵ′⟩  + |1;ϵ′⟩  |1;ϵ⟩  - |1;ϵ⟩  |1;ϵ′⟩  - |1;ϵ⟩  |1;ϵ′⟩  ⎞
+   cd   2 ⎝      c       c         c      d        c       d        d       d ⎠
+
+   The projection operators corresponding to a detection even at
+   detector i ($i=a,b$) are given by
+
+   P   = |1;ϵ⟩  ⟨1;ϵ|   + |1;ϵ′⟩  ⟨1;ϵ′|
+     i        i       i         i        i
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
