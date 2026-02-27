@@ -267,19 +267,24 @@ This can be done at the nodes generating the photon pairs at the cost of the BSA
 Or it can be compensated for directly at the BSA using waveplates at the cost of increased complexity of the BSA.
 In [Krutyanskiy et.al.](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803), polarization drift characterization and compensation at the BSA takes a few minutes and is performed every 20 minutes.
 
-<!-- ## Spectral distinguishability
+## Spectral distinguishability
 
 Another important source of distinguishability in HOM interference is the spectral property of the input photons.
-The photon wave packet of a photon can be represented by its **spectral amplitude function** $$\phi(\omega)$$, where $$\int d\omega |\phi(\omega)|^2=1$$.
+The photon wave packet of a photon can be represented by its **spectral amplitude function** $$\phi(\omega)$$ that satifies the normalization condition:
+
+~~~math
+\int d\omega |\phi(\omega)|^2=1
+~~~
+
 Two input photons become distinguishable if their respective spectral amplitude functions are not equal.
-The two photons may have different central frequencies $$\bar{\omega}_a$$ and $$\bar{\omega}_b$$.
-The input photons may be distinguishable even if $$\bar{\omega}_a = \bar{\omega}_b$$, provided that the shape of the wave packet is different, as shown in the Figure below.
+We resctrict our discussion to Gaussian spectral amplitude functions but the same methods generalize to arbitrary photons.
+The two photons may have different central frequencies or different standard deviations, as shown in the Figure below.
 
 <artwork type="svg" src="Figures/distinguishability-spectral.svg"></artwork>
 
 In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.
 
-### Pure states
+<!-- ### Pure states
 
 We begin the discussion by focusing on pure states of the input photons first.
 Single-photon state with a spectral amplitude function $$\phi(\omega)$$ is a superposition written as
