@@ -1171,6 +1171,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-polarization" class="internal xref">Polarization</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2.2.1">
+                    <p id="section-toc.1-1.3.2.2.2.1.1"><a href="#section-3.2.1" class="auto internal xref">3.2.1</a>.  <a href="#name-interference-of-photons-fro" class="internal xref">Interference of photons from two independent EPPS</a></p>
+</li>
+                </ul>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-acceptance-window" class="internal xref">Acceptance window</a></p>
@@ -3079,38 +3084,53 @@ Care must be therefore taken to characterize the photons just before they are in
 This is often the case in fiber-based quantum networks, where polarization of photons is particularly sensitive to mechanical stresses and temperature gradients affecting the fiber.
 This issue may be sidestepped by using polarization-maintaining fibers that are designed to suppress coupling between linearly-polarized orthogonal states of light.
 However, these incur prohibitive costs for long-distance quantum communication, and may actually introduce unwanted coupling between linearly and circularly polarized light.<a href="#section-3.2-16" class="pilcrow">¶</a></p>
+<div id="interference-of-photons-from-two-independent-epps">
+<section id="section-3.2.1">
+          <h4 id="name-interference-of-photons-fro">
+<a href="#section-3.2.1" class="section-number selfRef">3.2.1. </a><a href="#name-interference-of-photons-fro" class="section-name selfRef">Interference of photons from two independent EPPS</a>
+          </h4>
+<p id="section-3.2.1-1">The preceding discussion was concerned with two independent pure photons of different polarization.
+In the context of quantum networking, a much more common scenario is that of two entangled pairs of photons originating from two independent EPPS nodes, where two qubits, one from each pair, are incident onto a BS and undergo HOM interference.
+The two pairs are in the following initial state,<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
+<div class="lang-text sourcecode" id="section-3.2.1-2">
+<pre>
+|\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right)
+</pre><a href="#section-3.2.1-2" class="pilcrow">¶</a>
+</div>
 <table class="center" id="table-1">
-          <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
+            <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
 <thead>
-            <tr>
-              <th class="text-left" rowspan="1" colspan="1">Wavelength</th>
-              <th class="text-left" rowspan="1" colspan="1">800 nm</th>
-              <th class="text-left" rowspan="1" colspan="1">1550 nm</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">System detection efficiency</td>
-              <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
-              <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
-            </tr>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">Recovery time</td>
-              <td class="text-left" rowspan="1" colspan="1">10 ns</td>
-              <td class="text-left" rowspan="1" colspan="1">20 ns</td>
-            </tr>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">Dark count rate</td>
-              <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
-              <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
-            </tr>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">Timing jitter</td>
-              <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
-              <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <th class="text-left" rowspan="1" colspan="1">Wavelength</th>
+                <th class="text-left" rowspan="1" colspan="1">800 nm</th>
+                <th class="text-left" rowspan="1" colspan="1">1550 nm</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">System detection efficiency</td>
+                <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
+                <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Recovery time</td>
+                <td class="text-left" rowspan="1" colspan="1">10 ns</td>
+                <td class="text-left" rowspan="1" colspan="1">20 ns</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Dark count rate</td>
+                <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
+                <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Timing jitter</td>
+                <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
+                <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
+              </tr>
+            </tbody>
+          </table>
+</section>
+</div>
 </section>
 </div>
 <div id="acceptance-window">

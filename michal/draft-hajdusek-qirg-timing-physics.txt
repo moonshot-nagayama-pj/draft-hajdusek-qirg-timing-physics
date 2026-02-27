@@ -68,6 +68,7 @@ Table of Contents
    3.  Interferometric Stabilization
      3.1.  Hong-Ou-Mandel interference
      3.2.  Polarization
+       3.2.1.  Interference of photons from two independent EPPS
      3.3.  Acceptance window
      3.4.  Separation in a train of wavepackets
    4.  Measurement basis selection
@@ -416,6 +417,17 @@ Table of Contents
    prohibitive costs for long-distance quantum communication, and may
    actually introduce unwanted coupling between linearly and circularly
    polarized light.
+
+3.2.1.  Interference of photons from two independent EPPS
+
+   The preceding discussion was concerned with two independent pure
+   photons of different polarization.  In the context of quantum
+   networking, a much more common scenario is that of two entangled
+   pairs of photons originating from two independent EPPS nodes, where
+   two qubits, one from each pair, are incident onto a BS and undergo
+   HOM interference.  The two pairs are in the following initial state,
+
+   |\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right)
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
