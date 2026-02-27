@@ -256,8 +256,14 @@ Table of Contents
 
    Action of the BS on the input modes is the following:
 
-     †      ┌───┐   †    ┌─┐   †        †      ┌─┐   †    ┌───┐   †
-   a   --> ╲│1-r  c   + ╲│r  d  ,     b   --> ╲│r  c   - ╲│1-r  d
+     †     ┌───┐   †    ┌─┐   †        †     ┌─┐   †    ┌───┐   †
+   a   -> ╲│1-r  c   + ╲│r  d  ,     b   -> ╲│r  c   - ╲│1-r  d
+
+   The output state of the two photons is
+
+           ┌──────┐   †     †         †     †             †     †      ┌──────┐   †     †
+|ψ⟩   = ( ╲│r(1-r)  c     c     + r c     d     - (1-r) c     d     - ╲│r(1-r)  d     d     ) |0⟩
+   cd                   j     k         k     j             j     k                 j     k      cd
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
