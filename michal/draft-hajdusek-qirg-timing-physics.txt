@@ -238,6 +238,10 @@ Table of Contents
    |ψ⟩   = a     b     | 0 ⟩
       ab       j     k      ab
 
+   where the daggered operators represent bosonic creation operators,
+   which create a single photon in the corresponding input port of the
+   BS.
+
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
             +=============================+=========+=========+
