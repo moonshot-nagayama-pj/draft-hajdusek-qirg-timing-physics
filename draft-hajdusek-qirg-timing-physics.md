@@ -114,7 +114,7 @@ These cases are shown in the figure below.
 
 The input state can be expressed as
 
-~~~math
+~~~text
 |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab},
 ~~~
 
@@ -130,25 +130,25 @@ For example, `dollarsignjdollarsign` and `dollarsignkdollarsign` could represent
 
 The action of the BS on the input modes is represented by a unitary operator `dollarsignU_{ab}dollarsign`,
 
-~~~math
+~~~text
 a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}.
 ~~~
 
 The output state of the two photons is
 
-~~~math
+~~~text
 |\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 ~~~
 
 For a 50:50 BS when `dollarsignr=1/2dollarsign`, we obtain,
 
-~~~math
+~~~text
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 ~~~
 
 From this expression, we can see that when `dollarsignj=kdollarsign`, in other words when the input photons are indistinguishable, the output state has the following form,
 
-~~~math
+~~~text
 |\psi\rangle _{cd} = \frac{1}{\sqrt{2}} \left( |2\rangle_c - |2\rangle_d \right).
 ~~~
 
@@ -159,7 +159,7 @@ It is this interference effect that is at the heart of quantum networking.
 In order to quantify the effect that distinguishability has on HOM interference, we consider the **probability of a coincidence detection**, `dollarsignp_{\text{co}}dollarsign`, where one photon is detected in the BS output mode `dollarsigncdollarsign`, and the other photon in output mode `dollarsignddollarsign`.
 This probability is defined as
 
-~~~math
+~~~text
 p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd},
 ~~~
 
@@ -169,7 +169,7 @@ On the other hand, for fully distinguishable photons, the probability of a coinc
 
 An often-used measure that quantifies the degree of HOM interference is the **visibility** `dollarsignVdollarsign`, defined via the probability of a coincidence detection,
 
-~~~math
+~~~text
 V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}},
 ~~~
 
@@ -183,7 +183,7 @@ Fidelity of the new entangled pair is directly proportional to the visibility `d
 Denote by `dollarsign\rho_{s_1s_2}^{\text{no-deph}}dollarsign` the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference.
 Non-ideal HOM interference can be modelled as a [two-qubit dephasing](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803),
 
-~~~math
+~~~text
 \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}},
 ~~~
 
@@ -198,7 +198,7 @@ The maximum probability of a coincidence detection is obtained for orthogonally 
 Here, `dollarsignHdollarsign` denotes horizontal polarization and `dollarsignVdollarsign` denotes vertical polarization.
 The output state of the two photons is
 
-~~~math
+~~~text
 | \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right).
 ~~~
 
@@ -207,20 +207,20 @@ We can immediately see that `dollarsignp _{\text{co}} ^{\text{max}}=1/2dollarsig
 In general, the two input photons will have polarizations given by two unit vectors, `dollarsignj=\epsilondollarsign` and `dollarsignk=\epsilon'dollarsign`.
 The output state can be written as
 
-~~~math
+~~~text
 |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right).
 ~~~
 
 The projection operators corresponding to a detection even at detector `dollarsignidollarsign` ($i=a,b$) are given by
 
-~~~math
+~~~text
 P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i.
 ~~~
 
 Either an `dollarsign\epsilondollarsign`-polarized or an `dollarsign\epsilon'dollarsign`-polarized photon is detected in the output mode `dollarsignidollarsign`.
 The probability of coincidence is then
 
-~~~math
+~~~text
 p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
 ~~~
 
@@ -228,7 +228,7 @@ where the overlap between the polarization unit vectors is parametrized by `doll
 
 We can define the corresponding visibility as a function of the angle between the two polarization vectors,
 
-~~~math
+~~~text
 V(\theta) = 1 - 2 p_{\text{co}} = \cos^2\theta.
 ~~~
 
@@ -250,7 +250,7 @@ The preceding discussion was concerned with two independent pure photons of diff
 In the context of quantum networking, a much more common scenario is that of two entangled pairs of photons originating from two independent EPPS nodes, where two qubits, one from each pair, are incident onto a BS and undergo HOM interference.
 The two pairs are in the following initial state,
 
-~~~math
+~~~text
 |\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right),
 ~~~
 
@@ -282,33 +282,33 @@ In this subsection, we analyze the requirements in terms of the photonic spectra
 We begin the discussion by focusing on pure states of the input photons first.
 Single-photon state with a spectral amplitude function `dollarsign\phi(\omega)dollarsign` is a superposition written as
 
-~~~math
+~~~text
 |1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a,
 ~~~
 
 where `dollarsigna ^{\dagger}(\omega)dollarsign` creates a photon in the BS input mode `dollarsignadollarsign` with frequency `dollarsign\omegadollarsign`.
 Two input photons with arbitrary spectral functions `dollarsign\phidollarsign` and `dollarsign\varphidollarsign` are described by
 
-~~~math
+~~~text
 |\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0\rangle _{ab}.
 ~~~
 
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is frequency-independent.
 Applying the same transformation rules for the creation operators, the output state of the two photons is
 
-~~~math
+~~~text
 |\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 ~~~
 
 The projection operators corresponding to a detection event in output mode `dollarsigncdollarsign` and output mode `dollarsignddollarsign` are given by
 
-~~~math
+~~~text
 P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega).
 ~~~
 
 The probability of a coincidence detection is then
 
-~~~math
+~~~text
 p _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2).
 ~~~
 
@@ -338,13 +338,13 @@ $$p _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\ome
 In this example, we consider input photons with Gaussian spectral amplitude functions.
 The spectral amplitude functions are given by
 
-~~~math
+~~~text
 \phi_i(\omega) = \frac{1}{\pi^{1/4}\sqrt{\sigma_i}} e ^{-\frac{(\omega-\bar{\omega}_i)^2}{2\sigma^2_i}},\quad\text{for } i=a,b.
 ~~~
 
 The probability of a coincidence detection is then
 
-~~~math
+~~~text
 p _{\text{co}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}.
 ~~~
 
@@ -352,7 +352,7 @@ p _{\text{co}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e
 
 We assume that the two spectral amplitude functions have the same standard deviation `dollarsign\sigma_a=\sigma_b=\sigmadollarsign`, which simplifies the expression for the probability of a coincidence detection to
 
-~~~math
+~~~text
 p _{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
 ~~~
 
@@ -360,7 +360,7 @@ We observe that for identical photons, when `dollarsign\bar{\omega}_a=\bar{\omeg
 For fully distinguishable wave packets, when `dollarsign\bar{\omega}_a-\bar{\omega}_b\rightarrow\inftydollarsign`, the probability approaches 1/2, as expected.
 We can now define visibility as a function of the difference between the central frequencies `dollarsign\bar{\omega}_a-\bar{\omega}_bdollarsign`,
 
-~~~math
+~~~text
 V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}.
 ~~~
 
@@ -368,7 +368,7 @@ V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{
 
 The spectral amplitude functions have the same central frequencies, `dollarsign\omega_a=\omega_bdollarsign`, which gives the following expression for the probability of coincidence and visibility,
 
-~~~math
+~~~text
 p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
 ~~~
 
@@ -387,32 +387,32 @@ If the times of arrival are too different as shown in the Figure below, the prob
 
 Without loss of generality we assume that photon `dollarsignbdollarsign` is delayed by a time `dollarsign\taudollarsign`, which transforms its creation operator,
 
-~~~math
+~~~text
 b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}.
 ~~~
 
 Two input photons with arbitrary spectral functions `dollarsign\phidollarsign` and `dollarsign\varphidollarsign`, with photon `dollarsignbdollarsign` arriving late, are described by
 
-~~~math
+~~~text
 |\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
 ~~~
 
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is also frequency-independent.
 Applying the same transformation rules for the input creation operators, the output state of the two photons is
 
-~~~math
+~~~text
 |\psi\rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) e^{-i\omega_2\tau} \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 ~~~
 
 For pure input states, the probability of a coincidence detection is
 
-~~~math
+~~~text
 p ^{\text{pure}} _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau},
 ~~~
 
 while for mixed states is can be generalized to the following form,
 
-~~~math
+~~~text
 p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}.
 ~~~
 
@@ -421,7 +421,7 @@ p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'}
 Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by `dollarsign\taudollarsign`.
 The probability of coincidence and the corresponding visibility are given by
 
-~~~math
+~~~text
 p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 ~~~
 
@@ -447,13 +447,13 @@ The type of material and geometry of the detector determine the photon _absorpti
 Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the _registering efficiency_, `dollarsign\eta_{\text{registering}}dollarsign`.
 The overall _system detection efficiency_ is given by the product of these three,
 
-  ~~~math
+  ~~~text
   \eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
   ~~~
 
   The _device detection efficiency_ is given by
 
-  ~~~math
+  ~~~text
   \eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
   ~~~
 
@@ -546,7 +546,7 @@ Consider a general state of the qubit, `dollarsign|\psi\rangle = \alpha |0\rangl
 Measurement in an arbitrary basis `dollarsignMdollarsign` projects the initial state `dollarsign|\psi\rangledollarsign` onto one of the eigenvectors of `dollarsignMdollarsign`, given by `dollarsign\{|\phi\rangle,|\phi^{\perp}\rangle\}dollarsign`.
 Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state `dollarsign|\psi\rangledollarsign` and the eigenvectors of the observable `dollarsignMdollarsign`,
 
-~~~math
+~~~text
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad\text{and}\quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 ~~~
 
@@ -560,20 +560,20 @@ This approach greatly simplifies the implementation of arbitrary measurements.
 Consider that the observable `dollarsignMdollarsign` is related to the Pauli `dollarsignZdollarsign` by unitary `dollarsignUdollarsign`, `dollarsignM = U Z U ^{\dagger}dollarsign`.
 This means the unitary `dollarsignUdollarsign` relates the eigenvectors of the two observables,
 
-~~~math
+~~~text
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle.
 ~~~
 
 We can perform measurement in the `dollarsignMdollarsign` basis by applying `dollarsignU ^{\dagger}dollarsign` to the initial state `dollarsign|\psi\rangledollarsign`, and them measuring it in the Pauli `dollarsignZdollarsign` basis.
 This can be easily verified by rewriting the above probabilities corresponding to the two measurement outcomes,
 
-~~~math
+~~~text
 \text{Pr}(|\phi\rangle;|\psi\rangle) = |\langle\phi|\psi\rangle|^2 = |\langle0| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|0\rangle; U ^{\dagger}|\psi\rangle),
 ~~~
 
 and
 
-~~~math
+~~~text
 \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle) = |\langle\phi^{\perp}|\psi\rangle|^2 = |\langle1| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|1\rangle; U ^{\dagger}|\psi\rangle).
 ~~~
 
@@ -633,7 +633,7 @@ This setup is shown in the figure below.
 
 General pure state of a polarization-encoded qubit can be written as
 
-~~~math
+~~~text
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle.
 ~~~
 
@@ -655,7 +655,7 @@ The action of the waveplates is captured by the corresponding unitary operations
 
 The idea behind measurements in arbitrary basis `dollarsign\{|\psi\rangle, |\psi^{\perp}\rangle\}dollarsign` is to choose the angles for the waveplates such that the following transformation is achieved,
 
-~~~math
+~~~text
 U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
 ~~~
 
