@@ -39,13 +39,12 @@ author:
 normative:
 
 informative:
-
 ...
+---
 
 --- abstract
 
 TODO Abstract
-
 
 --- middle
 
@@ -103,10 +102,12 @@ Consider two photons incident on a beamsplitter (BS) with reflectivity $r$.
 We label the input modes by $a$ and $b$, and the output modes by $c$ and $d$.
 We are interested in the observed behavior at the output modes of the BS.
 There are four possible cases that may occur:
-- Case A: photon in mode $a$ is reflected, while photon in mode $b$ is transmitted.
-- Case B: both photons are transmitted.
-- Case C: both photons are reflected.
-- Case D: photon in mode $a$ is transmitted, while photon in mode $b$ is reflected.
+
+* Case A: photon in mode $a$ is reflected, while photon in mode $b$ is transmitted.
+* Case B: both photons are transmitted.
+* Case C: both photons are reflected.
+* Case D: photon in mode $a$ is transmitted, while photon in mode $b$ is reflected.
+
 These cases are shown in the figure below.
 
 <p align="center">
@@ -114,51 +115,66 @@ These cases are shown in the figure below.
 </p>
 
 The input state can be expressed as
+
 ~~~math
 |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab},
 ~~~
+
 where $a ^{\dagger} _j$ and $b ^{\dagger} _k$ are the bosonic creation operators corresponding to BS input modes $a$ and $b$, respectively.
 The indices $j$ and $k$ represent other properties of the photons that determine how distinguishable the photons are.
 For example, $j$ and $k$ could represent
-- polarizations (for polarization-encoded qubits),
-- spectral modes,
-- temporal modes (for time-bin encoded qubits),
-- arrival time,
-- transverse spatial mode.
+
+* polarizations (for polarization-encoded qubits),
+* spectral modes,
+* temporal modes (for time-bin encoded qubits),
+* arrival time,
+* transverse spatial mode.
 
 The action of the BS on the input modes is represented by a unitary operator $U_{ab}$,
+
 ~~~math
 a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}.
 ~~~
+
 The output state of the two photons is
+
 ~~~math
 |\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 ~~~
+
 For a 50:50 BS when $r=1/2$, we obtain,
+
 ~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 ~~~
+
 From this expression, we can see that when $j=k$, in other words when the input photons are indistinguishable, the output state has the following form,
+
 ~~~math
 |\psi\rangle _{cd} = \frac{1}{\sqrt{2}} \left( |2\rangle_c - |2\rangle_d \right).
 ~~~
+
 The probability amplitudes for the cases where both input photons are transmitted or both reflected (Cases B and C in the figure above) interfere destructively.
 Perfectly indistinguishable input photons always exit the BS in the same ouput mode.
 It is this interference effect that is at the heart of quantum networking.
 
 In order to quantify the effect that distinguishability has on HOM interference, we consider the __probability of a coincidence detection__, $p_{\text{co}}$, where one photon is detected in the BS output mode $c$, and the other photon in output mode $d$.
 This probability is defined as
+
 ~~~math
 p _{\text{co}} = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd},
 ~~~
+
 where $P_i$, for $i=c,d$, are the projection operators representing a detection of a single photon in output mode $i$ of the BS.
 For completely indistinguishable input photons that undergo the full HOM interference, we have $p _{\text{co}}=0$.
 On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $p _{\text{co}}=1/2$.
 
 An often-used measure that quantifies the degree of HOM interference is the __visibility__ $V$, defined via the probability of a coincidence detection,
+
 ~~~math
 V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}},
 ~~~
+
 where we used the fact that the maximum probability of a coincidence detection is $1/2$.
 We observe that the visibility varies from $V=0$ for fully distinguishable input photons to $V=1$ for perfectly indistinguishable ones.
 
@@ -168,9 +184,11 @@ The BSA performs ES by measuring the input photons, entangling systems $s_1$ and
 Fidelity of the new entangled pair is directly proportional to the visibility $V$ of the HOM interference.
 Denote by $\rho_{s_1s_2}^{\text{no-deph}}$ the density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference.
 Non-ideal HOM interference can be modelled as a [two-qubit dephasing](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803),
+
 ~~~math
 \rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}},
 ~~~
+
 where $\rho_{s_1s_2}^{\text{deph}}$ is a fully dephased state obtained by setting all off-diagonal elements of $\rho_{s_1s_2}^{\text{no-deph}}$ to zero.
 
 In the following subsections, we address and quantify how distinguishable photons affect the visibility of the HOM interference.
@@ -181,31 +199,41 @@ We now consider the case when the input photons differ in their polarization deg
 The maximum probability of a coincidence detection is obtained for orthogonally polarized photons, for example when $j=H$ and $k=V$.
 Here, $H$ denotes horizontal polarization and $V$ denotes vertical polarization.
 The output state of the two photons is
+
 ~~~math
 | \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right).
 ~~~
+
 We can immediately see that $p _{\text{co}} ^{\text{max}}=1/2$.
 
 In general, the two input photons will have polarizations given by two unit vectors, $j=\epsilon$ and $k=\epsilon'$.
 The output state can be written as
+
 ~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right).
 ~~~
+
 The projection operators corresponding to a detection even at detector $i$ ($i=a,b$) are given by
+
 ~~~math
 P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i.
 ~~~
+
 Either an $\epsilon$-polarized or an $\epsilon'$-polarized photon is detected in the output mode $i$.
 The probability of coincidence is then
+
 ~~~math
 p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
 ~~~
+
 where the overlap between the polarization unit vectors is parametrized by $\theta$, and can be written as $\langle\epsilon'|\epsilon\rangle = \cos\theta$.
 
 We can define the corresponding visibility as a function of the angle between the two polarization vectors,
+
 ~~~math
 V(\theta) = 1 - 2 p_{\text{co}} = \cos^2\theta.
 ~~~
+
 When the photons have identical polarization, $\theta=0$, the visibility reaches its maximum of $V=1$.
 On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, $\theta=\pm\pi/2$, visibility is $V=0$.
 The visibility $V(\theta)$ and the probability of a coincidence detection $p_{\text{coin}}$ are both displayed in the figure below.
@@ -225,9 +253,11 @@ However, these incur prohibitive costs for long-distance quantum communication, 
 The preceding discussion was concerned with two independent pure photons of different polarization.
 In the context of quantum networking, a much more common scenario is that of two entangled pairs of photons originating from two independent EPPS nodes, where two qubits, one from each pair, are incident onto a BS and undergo HOM interference.
 The two pairs are in the following initial state,
+
 ~~~math
 |\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right),
 ~~~
+
 where $\theta_1$ and $\theta_2$ represent the polarization drift induced in the single-mode fiber.
 Photons $a_2$ and $b_1$ are incident onto a BS, where they undergo HOM interference.
 Following the same calculation as above, it can be shown that the probability of a coincidence event is $p_{\text{co}} = 1/4$, regardless of the polarization drift.
@@ -257,27 +287,37 @@ In this subsection, we analyze the requirements in terms of the photonic spectra
 
 We begin the discussion by focusing on pure states of the input photons first.
 Single-photon state with a spectral amplitude function $\phi(\omega)$ is a superposition written as
+
 ~~~math
 |1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a,
 ~~~
+
 where $a ^{\dagger}(\omega)$ creates a photon in the BS input mode $a$ with frequency $\omega$.
 Two input photons with arbitrary spectral functions $\phi$ and $\varphi$ are described by
+
 ~~~math
 |\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0\rangle _{ab}.
 ~~~
+
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is frequency-independent.
 Applying the same transformation rules for the creation operators, the output state of the two photons is
+
 ~~~math
 |\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 ~~~
+
 The projection operators corresponding to a detection event in output mode $c$ and output mode $d$ are given by
+
 ~~~math
 P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega).
 ~~~
+
 The probability of a coincidence detection is then
+
 ~~~math
 p _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2).
 ~~~
+
 The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors $\epsilon$ and $\epsilon'$.
 Now, $p _{\text{co}}$ depends on the overlap between the spectral amplitude functions.
 If the input photons are fully distinguishable, their respective spectral amplitude functions $\phi(\omega)$ and $\varphi(\omega)$ are orthogonal and the integrals vanish, meaning $p _{\text{co}}=1/2$.
@@ -302,31 +342,40 @@ $$p _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\ome
 #### Example 1: Gaussian wave packets
 In this example, we consider input photons with Gaussian spectral amplitude functions.
 The spectral amplitude functions are given by
+
 ~~~math
 \phi_i(\omega) = \frac{1}{\pi^{1/4}\sqrt{\sigma_i}} e ^{-\frac{(\omega-\bar{\omega}_i)^2}{2\sigma^2_i}},\quad\text{for } i=a,b.
 ~~~
+
 The probability of a coincidence detection is then
+
 ~~~math
 p _{\text{co}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}.
 ~~~
 
 ##### Case A (different central frequencies):
 We assume that the two spectral amplitude functions have the same standard deviation $\sigma_a=\sigma_b=\sigma$, which simplifies the expression for the probability of a coincidence detection to
+
 ~~~math
 p _{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
 ~~~
+
 We observe that for identical photons, when $\bar{\omega}_a=\bar{\omega}_b$, the probability of a coincidence detection vanishes.
 For fully distinguishable wave packets, when $\bar{\omega}_a-\bar{\omega}_b\rightarrow\infty$, the probability approaches 1/2, as expected.
 We can now define visibility as a function of the difference between the central frequencies $\bar{\omega}_a-\bar{\omega}_b$,
+
 ~~~math
 V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}.
 ~~~
 
 ##### Case B (different standard deviations):
+
 The spectral amplitude functions have the same central frequencies, $\omega_a=\omega_b$, which gives the following expression for the probability of coincidence and visibility,
+
 ~~~math
 p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
 ~~~
+
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
 <p align="center">
@@ -345,23 +394,32 @@ If the times of arrival are too different as shown in the Figure below, the prob
 </p>
 
 Without loss of generality we assume that photon $b$ is delayed by a time $\tau$, which transforms its creation operator,
+
 ~~~math
 b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}.
 ~~~
+
 Two input photons with arbitrary spectral functions $\phi$ and $\varphi$, with photon $b$ arriving late, are described by
+
 ~~~math
 |\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
 ~~~
+
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is also frequency-independent.
 Applying the same transformation rules for the input creation operators, the output state of the two photons is
+
 ~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) e^{-i\omega_2\tau} \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 ~~~
+
 For pure input states, the probability of a coincidence detection is
+
 ~~~math
 p ^{\text{pure}} _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau},
 ~~~
+
 while for mixed states is can be generalized to the following form,
+
 ~~~math
 p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}.
 ~~~
@@ -369,9 +427,11 @@ p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'}
 ### Example: Gaussian wave packets
 Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by $\tau$.
 The probability of coincidence and the corresponding visibility are given by
+
 ~~~math
 p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 ~~~
+
 Figure below displays the visibility and probability of coincidence for this case.
 
 <p align="center">
@@ -388,8 +448,9 @@ This is not always true for [real-world SPDs](https://www.nature.com/articles/np
 ## Detector basics
 
 Performance of SPDs can be quantified by the following characteristics,
-- __Spectral range:__ SPDs are sensitive over a limited range of wavelengths. This range depends on the materials used in the fabrication of the detector. Typical spectral ranges are in the near-infrared, around 1550nm, where commercial optical fibers perform best in terms of photon loss rates.
-- __Detection efficiency:__ The overall probability that an incoming photon registers a count, denoted by $\eta$.
+
+* __Spectral range:__ SPDs are sensitive over a limited range of wavelengths. This range depends on the materials used in the fabrication of the detector. Typical spectral ranges are in the near-infrared, around 1550nm, where commercial optical fibers perform best in terms of photon loss rates.
+* __Detection efficiency:__ The overall probability that an incoming photon registers a count, denoted by $\eta$.
 This efficiency can be further broken down.
 Probability of losing the photon before it reaches the detector is described by the *coupling efficiency*, $\eta_{\text{coupling}}$.
 The type of material and geometry of the detector determine the photon *absorption efficiency*, $\eta_{\text{absorption}}$.
@@ -399,14 +460,14 @@ $$\eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \ti
 The *device detection efficiency* is given by
 $$\eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}.$$
 Detection efficiency affects the rate at which entanglement can be distributed.
-- __Recovery time:__ Denoted by $\tau_{\text{recovery}}$ and also known as 'dead' time.
+* __Recovery time:__ Denoted by $\tau_{\text{recovery}}$ and also known as 'dead' time.
 It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon.
 Recovery time affects the maximum detection rate.
 If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon.
 This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency $\eta_{\text{sde}}$).
 On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than $\tau_{\text{recovery}}$ to ensure effcient use of the generated photons.
-- __Dark count rate:__ SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz [counts per second]. Dark counts decrease the fidelity of the distributed entangled states.
-- __Timing jitter:__ Denoted by $J_{\text{timing}}$.
+* __Dark count rate:__ SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz [counts per second]. Dark counts decrease the fidelity of the distributed entangled states.
+* __Timing jitter:__ Denoted by $J_{\text{timing}}$.
 Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from [4].
 
 <p align="center">
@@ -445,10 +506,11 @@ The photons making up a train must be well separated such that upon a successful
 We refer to the minimum separation between the photons as the __separation time__ $T_{\text{separation}}$.
 
 The size of the separation time depends on the following:
-- __Wave packet shape:__ Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use $T_{\text{photon}}$ to denote the length of a wavepacket in seconds.
-- __Detector recovery time:__ Spacing the wavepackets too close to each other may result in some of the photons being lost due to the detector recovering following a detection event, leading to inefficient use of initially generated entangled pairs (either memory-photon or photon-photon).
-- __Memory emission jitter:__ The separation between the wavepackets must take into account the probabilistic nature of photon emission from a quantum memory in order to prevent wavepacket overlap.
-- __Detector timing jitter:__ Generation of the electric signal following absorption of a photon varies in duration, leading to a variance in timing of the detection event. This may lead to the BSA mislabelling which photons were part of a successful measurement if their wavepackets are spaced too closely.
+
+* __Wave packet shape:__ Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use $T_{\text{photon}}$ to denote the length of a wavepacket in seconds.
+* __Detector recovery time:__ Spacing the wavepackets too close to each other may result in some of the photons being lost due to the detector recovering following a detection event, leading to inefficient use of initially generated entangled pairs (either memory-photon or photon-photon).
+* __Memory emission jitter:__ The separation between the wavepackets must take into account the probabilistic nature of photon emission from a quantum memory in order to prevent wavepacket overlap.
+* __Detector timing jitter:__ Generation of the electric signal following absorption of a photon varies in duration, leading to a variance in timing of the detection event. This may lead to the BSA mislabelling which photons were part of a successful measurement if their wavepackets are spaced too closely.
 
 General (conservative) separation time should therefore be set to
 $$T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}.$$
@@ -486,9 +548,11 @@ For simplicity, we begin with measurements on a single qubit before generalizing
 Consider a general state of the qubit, $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$, where $|\alpha|^2+|\beta|^2=1$.
 Measurement in an arbitrary basis $M$ projects the initial state $|\psi\rangle$ onto one of the eigenvectors of $M$, given by $\{|\phi\rangle,|\phi^{\perp}\rangle\}$.
 Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state $|\psi\rangle$ and the eigenvectors of the observable $M$,
+
 ~~~math
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad\text{and}\quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 ~~~
+
 We read this notation as *probability of the measurement outcome being the state $|\phi\rangle$, given that the initial state was $|\psi\rangle$*.
 For example, measurement in the Pauli $Z$ basis projects onto the states $\{|0\rangle,|1\rangle\}$, while measurement in the Pauli $X$ basis projects onto the states $\{|+\rangle,|-\rangle\}$.
 
@@ -498,18 +562,24 @@ This approach greatly simplifies the implementation of arbitrary measurements.
 
 Consider that the observable $M$ is related to the Pauli $Z$ by unitary $U$, $M = U Z U ^{\dagger}$.
 This means the unitary $U$ relates the eigenvectors of the two observables,
+
 ~~~math
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle.
 ~~~
+
 We can perform measurement in the $M$ basis by applying $U ^{\dagger}$ to the initial state $|\psi\rangle$, and them measuring it in the Pauli $Z$ basis.
 This can be easily verified by rewriting the above probabilities corresponding to the two measurement outcomes,
+
 ~~~math
 \text{Pr}(|\phi\rangle;|\psi\rangle) = |\langle\phi|\psi\rangle|^2 = |\langle0| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|0\rangle; U ^{\dagger}|\psi\rangle),
 ~~~
+
 and
+
 ~~~math
 \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle) = |\langle\phi^{\perp}|\psi\rangle|^2 = |\langle1| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|1\rangle; U ^{\dagger}|\psi\rangle).
 ~~~
+
 This is pictured in the Figure below.
 
 <p align="center">
@@ -571,9 +641,11 @@ This setup is shown in the figure below.
 </p>
 
 General pure state of a polarization-encoded qubit can be written as
+
 ~~~math
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle.
 ~~~
+
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the __Poincaré sphere__.
 The table below summarizes this equivalence.
 
@@ -597,9 +669,11 @@ The action of the waveplates is captured by the corresponding unitary operations
 </p>
 
 The idea behind measurements in arbitrary basis $\{|\psi\rangle, |\psi^{\perp}\rangle\}$ is to choose the angles for the waveplates such that the following transformation is achieved,
+
 ~~~math
 U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle.
 ~~~
+
 Settings for the three Pauli bases are summarized in the table below.
 
 <p align="center">
@@ -616,8 +690,9 @@ Optical switches play an essential role in distributed computing and communicati
 Their job is to guide light from a given input to the desired output.
 Optical switches have a number of important characteristics such as *insertion loss*, *crosstalk*, and *size*.
 In the context of timing regimes, we will focus on the following characteristics in this section,
-- __Switching time:__ time required to reconfigure the switch.
-- __Propagation time delay:__ time required for the photon to travel across the switch.
+
+* __Switching time:__ time required to reconfigure the switch.
+* __Propagation time delay:__ time required for the photon to travel across the switch.
 
 Two approaches to switching are of relevance to our discussion.
 The first approach is the *crossbar switch* with all-to-all connectivity. Such an $N\times N$ switch can be reconfigured to accomodate all possible $N!$ permutations of input-output pairs. One usual implementation of a crossbar switch is using __microelectromechanical systems (MEMS)__ relying on small movable parts such as popup micromirrors, rotating prisms or [spinning holographic disks](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748). MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.
