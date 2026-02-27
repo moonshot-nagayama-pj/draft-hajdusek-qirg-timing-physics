@@ -130,7 +130,7 @@ For example, $$j$$ and $$k$$ could represent
 
 The action of the BS on the input modes is represented by a unitary operator $$U_{ab}$$,
 
-~~~text
+~~~math
 a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}.
 ~~~
 
