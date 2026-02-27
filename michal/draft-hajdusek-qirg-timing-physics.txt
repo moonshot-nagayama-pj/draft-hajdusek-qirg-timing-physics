@@ -275,7 +275,10 @@ Table of Contents
    the input photons are indistinguishable, the output state has the
    following form,
 
-   |\psi\rangle _{cd} = ( |2\rangle_c - |2\rangle_d ) / \sqrt{2}
+            1
+   |ψ⟩   = ──── ( |2⟩  - |2⟩  )
+      cd    ┌─┐      c      d
+           ╲│2
 
    The probability amplitudes for the cases where both input photons are
    transmitted or both reflected (Cases B and C in the figure above)
