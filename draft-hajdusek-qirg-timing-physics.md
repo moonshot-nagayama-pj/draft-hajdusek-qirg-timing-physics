@@ -131,7 +131,7 @@ For example, $$j$$ and $$k$$ could represent
 Action of the BS on the input modes is the following:
 
 ~~~math
-a ^{\dagger} \xrightarrow{BS} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{BS} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
+a ^{\dagger} --> \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} --> \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
 ~~~
 
 <!--  The output state of the two photons is
