@@ -110,9 +110,7 @@ There are four possible cases that may occur:
 
 These cases are shown in the figure below.
 
-<p align="center">
-  <img src="Figures/HOM.svg"/>
-</p>
+![HOM interference of two photons.](Figures/HOM.svg)
 
 The input state can be expressed as
 
@@ -238,9 +236,7 @@ When the photons have identical polarization, $\theta=0$, the visibility reaches
 On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, $\theta=\pm\pi/2$, visibility is $V=0$.
 The visibility $V(\theta)$ and the probability of a coincidence detection $p_{\text{coin}}$ are both displayed in the figure below.
 
-<p align="center">
-  <img src="Figures/visibility-polarization.svg" width="400"/>
-</p>
+![Visibility of polarization mismathced photons.](Figures/visibility-polarization.svg)
 
 Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
 Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to **drift** during its transmission and change its state from the one that the photon possessed immediately after emission.
@@ -277,9 +273,7 @@ Two input photons become distinguishable if their respective spectral amplitude 
 The two photons may have different central frequencies $\bar{\omega}_a$ and $\bar{\omega}_b$.
 The input photons may be distinguishable even if $\bar{\omega}_a = \bar{\omega}_b$, provided that the shape of the wave packet is different, as shown in the Figure below.
 
-<p align="center">
-  <img src="Figures/distinguishability-spectral.svg" width="850"/>
-</p>
+![Spectral distibguishability of two photons.](Figures/distinguishability-spectral.svg)
 
 In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.
 
@@ -380,9 +374,7 @@ p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2
 
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
-<p align="center">
-  <img src="Figures/visibility-spectral.svg" width="850"/>
-</p>
+![Visibility for spectrally distinguishable photons.](Figures/visibility-spectral.svg)
 
 ## Wave Packet Overlap
 
@@ -391,9 +383,7 @@ In this subsection, we address this unrealistic assumption and quantify how temp
 Even for photons with identical spectral amplitude functions, different arrival times result in decreased overlap between the photons' wave packets, diminishing the visibility of the HOM interference.
 If the times of arrival are too different as shown in the Figure below, the probability of a coincidence detection will reach its maximum value of 1/2, and the visibility will vanish.
 
-<p align="center">
-  <img src="Figures/distinguishability_temporal.svg" width="800"/>
-</p>
+![Temporal distibguishability of two photons.](Figures/distinguishability_temporal.svg)
 
 Without loss of generality we assume that photon $b$ is delayed by a time $\tau$, which transforms its creation operator,
 
@@ -437,9 +427,7 @@ p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \
 
 Figure below displays the visibility and probability of coincidence for this case.
 
-<p align="center">
-  <img src="Figures/visibility-temporal.svg" width="400"/>
-</p>
+![Visibility of temporally distinguishable photons.](Figures/visibility-temporal.svg)
 
 # Detector Timing Windows
 
@@ -472,18 +460,16 @@ On the other hand, if the photon source is highly efficient, it is important to 
 * **Timing jitter:** Denoted by $J_{\text{timing}}$.
 Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from [4].
 
-<p align="center">
-  <img src="Figures/timing_jitter.svg" width="500"/>
-</p>
+![Timing jitter for different detectors.](Figures/timing_jitter.svg)
 
 The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
 
-| Wavelength                  | 800 nm  | 1550 nm |
-|-----------------------------|---------|---------|
-| System detection efficiency | > 90%   | > 90%   |
-| Recovery time               | 10 ns   | 20 ns   |
-| Dark count rate             | < 1 Hz  | < 1 Hz  |
-| Timing jitter               | < 15 ps | < 15 ps |
+| Wavelength | 800 nm | 1550 nm |
+| ---------- | ------ | ------- |
+| System detection efficiency | > 90% | > 90% |
+| Recovery time | 10 ns | 20 ns |
+| Dark count rate | < 1 Hz | < 1 Hz |
+| Timing jitter | < 15 ps | < 15 ps |
 
 ## Acceptance window
 
@@ -585,9 +571,7 @@ and
 
 This is pictured in the Figure below.
 
-<p align="center">
-  <img src="Figures/measurement-1qubit.svg" width="500"/>
-</p>
+![Measurement of a single qubit.](Figures/measurement-1qubit.svg =500x100)
 
 ### Two-qubit measurements
 
@@ -596,9 +580,7 @@ This time state $|\psi\rangle$ represents a general two-qubit state, unitary $U 
 In the majority of cases, we are interested in performing measurements in the Bell basis.
 Required unitary $U ^{\dagger}$ is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in $|0\rangle$, as shown in the Figure below, where we have dropped the $Z$ label indicating the measurement basis.
 
-<p align="center">
-  <img src="Figures/measurement-2qubit.svg" width="250"/>
-</p>
+![Measurement of two qubits.](Figures/measurement-2qubit.svg =300x150)
 
 ## Measurements on quantum memories
 
@@ -616,9 +598,7 @@ It is the latter degree of freedom which is used to encode a qubit and hence act
 Measurement in the **Pauli Z** basis is performed by **electron shelving** via the use of a third atomic level $|r\rangle$, with much shorter life time than the [excited state](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163) $|e\rangle$, $\tau_e \gg \tau_r$.
 Figure below demonstrates how this method works.
 
-<p align="center">
-  <img src="Figures/shelving.svg" width="250"/>
-</p>
+![Readout of trapped ions via shelving.](Figures/shelving.svg)
 
 The ion is illuminated by light tuned to resonate with the transition $|g\rangle\leftrightarrow|r\rangle$, represented by the red straight arrow in the Figure above.
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state $|g\rangle$.
@@ -641,9 +621,7 @@ Setting the HWP and QWP at particular angles applies the unitary $U ^{\dagger}$ 
 Horizontal polarization gets transmitted through the PBS, while vertical polarization gets reflected.
 This setup is shown in the figure below.
 
-<p align="center">
-  <img src="Figures/2detector_polarization.svg" width="600"/>
-</p>
+![Measurement of polarization-encoded photons.](Figures/2detector_polarization.svg)
 
 General pure state of a polarization-encoded qubit can be written as
 
@@ -654,24 +632,18 @@ General pure state of a polarization-encoded qubit can be written as
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 The table below summarizes this equivalence.
 
-<p align="center">
-  <img src="Figures/polarization_table.svg" width="600"/>
-</p>
+![Table of polarization states.](Figures/polarization_table.svg =600x100)
 
 The Figure below shows the Poincaré sphere along with the position of the polarization states.
 
-<p align="center">
-  <img src="Figures/poincare-sphere.svg" width="450"/>
-</p>
+![Poincare sphere.](Figures/poincare-sphere.svg =400x250)
 
 Polarization of light is manipulated by waveplates.
 Waveplate rotated by an angle $\alpha$ (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of $2\alpha$ with the horizontal state $|H\rangle$ in the horizontal plane, as shown in Figure above.
 Half waveplate rotates the polarization state by an angle $\pi$, while a quarter waveplate rotates by an angle $\pi/2$ in the Poincaré sphere.
 The action of the waveplates is captured by the corresponding unitary operations,
 
-<p align="center">
-  <img src="Figures/waveplates_matrix.svg" width="650"/>
-</p>
+![Matrix representation of waveplates.](Figures/waveplates_matrix.svg =650x50)
 
 The idea behind measurements in arbitrary basis $\{|\psi\rangle, |\psi^{\perp}\rangle\}$ is to choose the angles for the waveplates such that the following transformation is achieved,
 
@@ -681,9 +653,7 @@ U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \
 
 Settings for the three Pauli bases are summarized in the table below.
 
-<p align="center">
-  <img src="Figures/waveplate_angles_table.svg" width="325"/>
-</p>
+![Table of polarization-basis measurement settings.](Figures/waveplate_angles_table.svg =300x100)
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
@@ -705,17 +675,13 @@ The first approach is the _crossbar switch_ with all-to-all connectivity. Such a
 
 Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible $N!$ input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a [connection](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335). Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the [Bell basis](https://ieeexplore.ieee.org/document/10821447). These approaches are pictured in the figure below.
 
-<p align="center">
-  <img src="Figures/optical_switch.svg" width="625"/>
-</p>
+![Optical switch.](Figures/optical_switch.svg)
 
 Both of these designs consider a $2\times 2$ switch as the basic building block, which is implemented with **integrated photonics** and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.
 
 The optical switch introduces a **propagation time delay**. For some MEMS switches, this delay can be as low as [25 nanoseconds](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf). In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but as discussed in Section A, any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch, as demonstrated in figure below,
 
-<p align="center">
-  <img src="Figures/time_delay.svg" width="425"/>
-</p>
+![Time delay introduced by an optical switch.](Figures/time_delay.svg)
 
 This triangular switch design was introduced by [Koyama _et.al._](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port $X_0$ have to traverse at least 5 switching points, while photons from input port $X_{11}$ do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to $\text{BSA}_5$. This requires photons from $X_0$ to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
 
@@ -781,7 +747,7 @@ Such tasks include:
 * A. M. Branczyk, Hong-Ou-Mandel Interference, [_arXiv:1711.00080_ (2017)](https://arxiv.org/abs/1711.00080).
 * V. Krutyanskiy _et al._, Entanglement of Trapped-Ion Qubits Separated by 230 Meters, [_Phys. Rev. Lett._ **130**, 050803](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803) (2023).
 * R. H. Hadfield, Single-photon detectors for optical quantum information applications, [_Nature Photonics_ **3**, 696](https://www.nature.com/articles/nphoton.2009.230) (2009).
-* Single Quantum, [Link](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
+* Single Quantum, [Datasheet](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
 * D. Nadlinger, Device-independent key distribution between trapped-ion quantum network nodes, DPhil Thesis, [Oxford University (2022)](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
 * D. Leibfried, R. Blatt, C. Monroe, and D. Wineland, Quantum dynamics of single trapped ions, [_Rev. Mod. Phys._ **75**, 281 (2003)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
 * C. Gardiner, and P. Zoller, The Quantum World of Ultra-Cold Atoms and Light: The Physics of Quantum-Optical Devices, [Imperial College Press, (2015)](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163).
