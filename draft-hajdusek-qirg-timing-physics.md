@@ -216,28 +216,28 @@ The projection operators corresponding to a detection even at detector $$i$$ ($i
 P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i
 ~~~
 
-<!-- Either an $$\epsilon$$-polarized or an $$\epsilon'$$-polarized photon is detected in the output mode $$i$$.
+Either an $$\epsilon$$-polarized or an $$\epsilon'$$-polarized photon is detected in the output mode $$i$$.
 The probability of coincidence is then
 
-~~~text
+~~~math
 p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta
 ~~~
 
 where the overlap between the polarization unit vectors is parametrized by $$\theta$$, and can be written as
 
-~~~text
+~~~math
 \langle\epsilon'|\epsilon\rangle = \cos\theta
 ~~~
 
 We can define the corresponding visibility as a function of the angle between the two polarization vectors,
 
-~~~text
+~~~math
 V(\theta) = 1 - 2 p_{\text{co}} = \cos^2\theta
 ~~~
 
 When the photons have identical polarization, $$\theta=0$$, the visibility reaches its maximum of $$V=1$$.
-On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, $$\theta=\pm\pi/2$$, visibility is $$V=0$$.
-The visibility $$V(\theta)$$ and the probability of a coincidence detection $$p_{\text{coin}}$$ are both displayed in the figure below.
+On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, visibility is $$V=0$$.
+The visibility $$V(\theta)$$ and the probability of a coincidence detection $$p_c$$ are both displayed in the figure below.
 
 <artwork type="svg" src="Figures/visibility-polarization.svg"></artwork>
 
@@ -247,7 +247,7 @@ This is often the case in fiber-based quantum networks, where polarization of ph
 This issue may be sidestepped by using polarization-maintaining fibers that are designed to suppress coupling between linearly-polarized orthogonal states of light.
 However, these incur prohibitive costs for long-distance quantum communication, and may actually introduce unwanted coupling between linearly and circularly polarized light.
 
-### Interference of photons from two independent EPPS
+<!-- ### Interference of photons from two independent EPPS
 
 The preceding discussion was concerned with two independent pure photons of different polarization.
 In the context of quantum networking, a much more common scenario is that of two entangled pairs of photons originating from two independent EPPS nodes, where two qubits, one from each pair, are incident onto a BS and undergo HOM interference.
