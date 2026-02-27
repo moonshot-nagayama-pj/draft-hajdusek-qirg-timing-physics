@@ -130,11 +130,11 @@ For example, $$j$$ and $$k$$ could represent
 
 The action of the BS on the input modes is represented by a unitary operator $$U_{ab}$$,
 
-~~~math
+<!--  ~~~math
 a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
 ~~~
 
-<!--  The output state of the two photons is
+The output state of the two photons is
 
 ~~~text
 |\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
