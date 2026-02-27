@@ -388,15 +388,15 @@ Table of Contents
    We can define the corresponding visibility as a function of the angle
    between the two polarization vectors,
 
-                         2
-   V(θ) = 1 - 2 p   = cos θ
-                 co
+                        2
+   V(θ) = 1 - 2 p  = cos θ
+                 c
 
-   When the photons have identical polarization, θ=0, the visibility
-   reaches its maximum of V=1.  On the other hand, when the photons are
-   fully distinguishable and their polarization vectors are orthogonal,
-   visibility is V=0.  The visibility V(θ) and the probability of a
-   coincidence detection p_c are both displayed in the figure below.
+   When the photons have identical polarization, the visibility reaches
+   its maximum of 1.  On the other hand, when the photons are fully
+   distinguishable and their polarization vectors are orthogonal,
+   visibility vanishes.  The visibility and the probability of a
+   coincidence detection are both displayed in the figure below.
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics.html)
@@ -590,6 +590,9 @@ Table of Contents
 
    This is pictured in the Figure below.
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
 4.1.2.  Two-qubit measurements
 
    The same principle of changing the measurement basis can be
@@ -601,6 +604,9 @@ Table of Contents
    a Bell pair when the qubits are both initialized in |0〉, as shown in
    the Figure below, where we have dropped the Z label indicating the
    measurement basis.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
 4.2.  Measurements on quantum memories
 
@@ -627,6 +633,9 @@ Table of Contents
    life time than the excited state (https://www.amazon.co.jp/Quantum-
    World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r.  The
    figure below demonstrates how this method works.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
    The ion is illuminated by light tuned to resonate with the
    transition |g〉↔|r〉, represented by the red straight arrow in the
@@ -676,6 +685,9 @@ Table of Contents
    vertical polarization gets reflected.  This setup is shown in the
    figure below.
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
    General pure state of a polarization-encoded qubit can be written as
 
    |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle
@@ -684,8 +696,14 @@ Table of Contents
    computational basis, and can be visualized with the help of the
    *Poincaré sphere*. The table below summarizes this equivalence.
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
    The Figure below shows the Poincaré sphere along with the position of
    the polarization states.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
    Polarization of light is manipulated by waveplates.  Waveplate
    rotated by an angle α (zero is aligned with the horizontal axis)
@@ -694,7 +712,10 @@ Table of Contents
    Figure above.  Half waveplate rotates the polarization state by an
    angle π, while a quarter waveplate rotates by an angle π/2 in the
    Poincaré sphere.  The action of the waveplates is captured by the
-   corresponding unitary operations,
+   corresponding unitary operations:
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
    The idea behind measurements in arbitrary basis
 
@@ -706,6 +727,9 @@ Table of Contents
    U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle
 
    Settings for the three Pauli bases are summarized in the table below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
    Changing the basis of measurement requires mechanical rotation of the
    waveplates and coordination with the detectors.  The waveplates can
@@ -755,6 +779,9 @@ Table of Contents
    (https://ieeexplore.ieee.org/document/10821447).  These approaches
    are pictured in the figure below.
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
    Both of these designs consider a 2× 2 switch as the basic building
    block, which is implemented with *integrated photonics* and
    controlled electro-optically.  Applied electric fields are used to
@@ -775,7 +802,10 @@ Table of Contents
    issue of arrival time delay arises in the case of integrated switches
    used in paired-egress BSA pools.  The propagation delay introduced by
    the switching fabric depends on the design of the switch, as
-   demonstrated in figure below,
+   demonstrated in figure below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
    This triangular switch design was introduced by Koyama et.al.
    (https://ieeexplore.ieee.org/document/10821447).  Photons entering
