@@ -1,6 +1,6 @@
 ---
 stand_alone: true
-title: "Timing Regimes in Quantum Networks and their Physical Underpinnigs"
+title: "Timing Regimes in Quantum Networks and their Physical Underpinnings"
 abbrev: "TODO - Abbreviation"
 category: info
 
