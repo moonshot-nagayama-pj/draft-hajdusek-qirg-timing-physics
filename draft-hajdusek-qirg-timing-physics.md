@@ -108,7 +108,12 @@ There are four possible cases that may occur:
 * Case C: both photons are reflected.
 * Case D: photon in mode `dollarsignadollarsign` is transmitted, while photon in mode `dollarsignbdollarsign` is reflected.
 
-This figure shows these cases: ![HOM interference of two photons.](Figures/HOM.svg)
+This figure shows these cases:
+
+~~~svg
+{::include Figures/HOM.svg}
+~~~
+{: #hom-interference title="HOM interference of two photons."}
 
 The input state can be expressed as
 
