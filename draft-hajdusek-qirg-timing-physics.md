@@ -156,7 +156,7 @@ The probability amplitudes for the cases where both input photons are transmitte
 Perfectly indistinguishable input photons always exit the BS in the same ouput mode.
 It is this interference effect that is at the heart of quantum networking.
 
-In order to quantify the effect that distinguishability has on HOM interference, we consider the **probability of a coincidence detection**, $$p_{\text{c}}$$, where one photon is detected in the BS output mode $$c$$, and the other photon in output mode $$d$$.
+In order to quantify the effect that distinguishability has on HOM interference, we consider the **probability of a coincidence detection**, $$p_c$$, where one photon is detected in the BS output mode $$c$$, and the other photon in output mode $$d$$.
 This probability is defined as
 
 ~~~math
@@ -170,7 +170,7 @@ On the other hand, for fully distinguishable photons, the probability of a coinc
 An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$, defined via the probability of a coincidence detection,
 
 ~~~math
-V = \frac{p_c ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}}
+V = \frac{p_c ^{\text{max}} - p _c ^{\text{min}}}{p _c^{\text{max}}} = 1 - 2 p _c ^{\text{min}}
 ~~~
 
 where we used the fact that the maximum probability of a coincidence detection is $$1/2$$.
