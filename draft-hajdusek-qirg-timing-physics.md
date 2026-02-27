@@ -119,8 +119,6 @@ The input state can be expressed as
 ~~~
 
 where the daggered operators represent bosonic creation operators, which create a single photon in the corresponding input port of the BS.
-
-<!-- where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
 The indices $$j$$ and $$k$$ represent other properties of the photons that determine how distinguishable the photons are.
 For example, $$j$$ and $$k$$ could represent
 
@@ -136,7 +134,7 @@ The action of the BS on the input modes is represented by a unitary operator $$U
 a ^{\dagger} \xrightarrow{U _{ab}} \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} \xrightarrow{U _{ab}} \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
 ~~~
 
-The output state of the two photons is
+<!--  The output state of the two photons is
 
 ~~~text
 |\psi\rangle _{cd} = U_{ab} |\psi\rangle _{ab} = \left( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
