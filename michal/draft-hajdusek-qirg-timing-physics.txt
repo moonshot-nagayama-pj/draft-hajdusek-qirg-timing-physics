@@ -67,8 +67,9 @@ Table of Contents
      2.2.  Non-Goals
    3.  Interferometric Stabilization
      3.1.  Hong-Ou-Mandel interference
-     3.2.  Acceptance window
-     3.3.  Separation in a train of wavepackets
+     3.2.  Polarization
+     3.3.  Acceptance window
+     3.4.  Separation in a train of wavepackets
    4.  Measurement basis selection
      4.1.  Measurement basics
        4.1.1.  Single-qubit measurements
@@ -335,14 +336,34 @@ Table of Contents
     s   s         s   s                       s   s
       1   2         1   2                       1   2
 
-   where superscript no-deph denotes a the density matrix resulting from
-   an ideal ES at the BSA with unit visibility of the HOM interference,
-   and superscript deph denotes a fully dephased state obtained by
-   setting all off-diagonal elements of the density matrix to zero.
+   where superscript no-deph denotes a density matrix resulting from an
+   ideal ES at the BSA with unit visibility of the HOM interference, and
+   superscript deph denotes a fully dephased state obtained by setting
+   all off-diagonal elements of the density matrix to zero.
 
    In the following subsections, we address and quantify how
    distinguishable photons affect the visibility of the HOM
    interference.
+
+3.2.  Polarization
+
+   We now consider the case when the input photons differ in their
+   polarization degree of photons.  The maximum probability of a
+   coincidence detection is obtained for orthogonally polarized photons,
+   for example when j=H and k=V.  Here, H denotes horizontal
+   polarization and V denotes vertical polarization.  The output state
+   of the two photons is
+
+         1
+| ψ⟩   = ─ ⎛ |1;H⟩  |1;V⟩  + |1;V⟩  |1;H⟩  - |1;H⟩  |1;V⟩  - |1;H⟩  |1;V⟩  ⎞
+    cd   2 ⎝      c      c        c      d        c      d        d      d ⎠
+
+   We can observe that maximum probbility of coincidence is 1/2.
+
+   In general, the two input photons will have polarizations given by
+   two unit vectors, j=ε and k=ε'.  The output state can be written as
+
+   |\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right)
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
@@ -358,7 +379,7 @@ Table of Contents
 
                                   Table 1
 
-3.2.  Acceptance window
+3.3.  Acceptance window
 
    In the previous Section, we used τ to denote the difference between
    the arrival time of the photons at the BSA.  However, due to emission
@@ -382,7 +403,7 @@ Table of Contents
    the entangled states.  Reaching the requested fidelity should take
    priority over high generation rate.
 
-3.3.  Separation in a train of wavepackets
+3.4.  Separation in a train of wavepackets
 
    Current experiments on quantum repeaters use single quantum memory
    per QNIC.  As quantum technologies improve, it is likely that QNICs
