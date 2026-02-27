@@ -118,7 +118,7 @@ The input state can be expressed as
 |\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab}
 ~~~
 
-where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
+<!--- where $$a ^{\dagger} _j$$ and $$b ^{\dagger} _k$$ are the bosonic creation operators corresponding to BS input modes $$a$$ and $$b$$, respectively.
 The indices $$j$$ and $$k$$ represent other properties of the photons that determine how distinguishable the photons are.
 For example, $$j$$ and $$k$$ could represent
 
@@ -726,7 +726,7 @@ Such tasks include:
 
 * **Link monitoring**: Each link must be monitored continuously in order to inform routing (below) and RuleSet creation during connection setup.  Reconstruction of the link density matrix and entanglement success rates involve classical information sharing between the two nodes at opposite ends of the link. This information must be shared reliably but does not have hard real-time constraints, as so is well suited to transmission over a reliable protocol such as TCP without concern for delays. The required classical information is the outcomes of measurements of the quantum portion of the link. That data can be collected from entangled states specifically assigned to the link monitoring task.  It can also be collected from application-targeted uses of the link, provided that appropriate coordination can be achieved and connection privacy maintained.
 * **Routing**: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.
-* **Malicious use monitoring**: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.
+* **Malicious use monitoring**: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior. -->
 
 --- back
 
