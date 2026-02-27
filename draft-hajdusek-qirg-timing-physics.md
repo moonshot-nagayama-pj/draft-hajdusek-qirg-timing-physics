@@ -240,6 +240,8 @@ When the photons have identical polarization, $$\theta=0$$, the visibility reach
 On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, $$\theta=\pm\pi/2$$, visibility is $$V=0$$.
 The visibility $$V(\theta)$$ and the probability of a coincidence detection $$p_{\text{coin}}$$ are both displayed in the figure below.
 
+<artwork type="svg" src="Figures/visibility-polarization.svg"></artwork>
+
 Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
 Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to **drift** during its transmission and change its state from the one that the photon possessed immediately after emission.
 This is often the case in fiber-based quantum networks, where polarization of photons is particularly sensitive to mechanical stresses and temperature gradients affecting the fiber.
