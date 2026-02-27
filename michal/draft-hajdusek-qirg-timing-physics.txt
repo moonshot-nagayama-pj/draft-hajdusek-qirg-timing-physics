@@ -254,8 +254,10 @@ Table of Contents
 
    *  transverse spatial mode.
 
-   The action of the BS on the input modes is represented by a unitary
-   operator U_{ab},
+   Action of the BS on the input modes is the following:
+
+     †      ┌───┐   †    ┌─┐   †        †      ┌─┐   †    ┌───┐   †
+   a   --> ╲│1-r  c   + ╲│r  d  ,     b   --> ╲│r  c   - ╲│1-r  d
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
