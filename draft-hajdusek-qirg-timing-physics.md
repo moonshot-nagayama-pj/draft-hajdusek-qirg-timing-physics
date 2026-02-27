@@ -164,19 +164,19 @@ p _c = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd}
 ~~~
 
 where $$P_i$$, for $$i=c,d$$, are the projection operators representing a detection of a single photon in output mode $$i$$ of the BS.
-For completely indistinguishable input photons that undergo the full HOM interference, we have $$p _c=0$$.
-On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $$p _c=1/2$$.
+For completely indistinguishable input photons that undergo the full HOM interference, we have $$p_c=0$$.
+On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $$p_c=1/2$$.
 
-<!--An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$, defined via the probability of a coincidence detection,
+An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$, defined via the probability of a coincidence detection,
 
-~~~text
-V = \frac{p _{\text{co}} ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}}
+~~~math
+V = \frac{p_c ^{\text{max}} - p _{\text{co}} ^{\text{min}}}{p _{\text{co}}^{\text{max}}} = 1 - 2 p _{\text{co}} ^{\text{min}}
 ~~~
 
 where we used the fact that the maximum probability of a coincidence detection is $$1/2$$.
 We observe that the visibility varies from $$V=0$$ for fully distinguishable input photons to $$V=1$$ for perfectly indistinguishable ones.
 
-Visibility $$V$$ plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
+<!--Visibility $$V$$ plays a useful role when modelling the effects of imperfect HOM interference in the context of entanglement swapping.
 Consider the case when the input photons $$a$$, $$b$$ are entangled with auxiliary systems $$s_1$$ and $$s_2$$, respectively.
 The BSA performs ES by measuring the input photons, entangling systems $$s_1$$ and $$s_2$$ in the process.
 Fidelity of the new entangled pair is directly proportional to the visibility $$V$$ of the HOM interference.
