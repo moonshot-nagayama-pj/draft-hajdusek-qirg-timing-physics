@@ -242,7 +242,7 @@ The visibility `dollarsignV(\theta)dollarsign` and the probability of a coincide
 ~~~svg
 {::include Figures/visibility-polarization.svg}
 ~~~
-{: #mismatched-photon-visibility title="Visibility of polarization mismatched photons."}
+{: #visibility-polarization title="Visibility of polarization mismatched photons."}
 
 Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
 Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to **drift** during its transmission and change its state from the one that the photon possessed immediately after emission.
@@ -398,7 +398,7 @@ If the times of arrival are too different as shown in the Figure below, the prob
 ~~~svg
 {::include Figures/distinguishability_temporal.svg}
 ~~~
-{: #disginguishability-temporable title="Temporal distinguishability of two photons."}
+{: #distinguishability-temporal title="Temporal distinguishability of two photons."}
 
 Without loss of generality we assume that photon `dollarsignbdollarsign` is delayed by a time `dollarsign\taudollarsign`, which transforms its creation operator,
 
