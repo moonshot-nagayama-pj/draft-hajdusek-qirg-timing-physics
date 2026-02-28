@@ -693,7 +693,7 @@ The waveplates can be rotated by a motorized rotator device, which can be adjust
 Therefore, for a rotation of 45 degrees, the motor requires areound 4.5s.
 During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.
 
-<!--# Optical Switch Control
+# Optical Switch Control
 
 Optical switches play an essential role in distributed computing and communication systems.
 Their job is to guide light from a given input to the desired output.
@@ -726,7 +726,7 @@ Further complication that arises during the operation of the switch is also rela
 
 Finally, given a set of connection requests, the optical switch must compute the state of all switch points to **route** the photons correctly. The reconfigurably non-blocking designs proposed in `[15]` come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.
 
-# Pre-configured Event-driven Tasks
+<!--# Pre-configured Event-driven Tasks
 
 In this section, we discuss synchronization-critical tasks that must be conducted when an event occurs. Most stationary qubits are under the control of a classical analog circuit that includes a local oscillator (LO) coupled to the corresponding frequency of the qubit itself. Avoiding drift between the _understood_ phase of the qubit and the _actual_ phase of the LO is a key part of hardware design for a qubit, but is beyond the scope of this document.
 
