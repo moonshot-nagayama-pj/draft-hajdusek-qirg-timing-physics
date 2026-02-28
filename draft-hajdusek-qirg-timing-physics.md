@@ -452,7 +452,7 @@ In this section, we discuss how properties of single-photon detectors (SPDs) aff
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
 This is not always true for [real-world SPDs](https://www.nature.com/articles/nphoton.2009.230).
 
-## Detector basics
+<!-- ## Detector basics
 
 Performance of SPDs can be quantified by the following characteristics,
 
@@ -475,6 +475,7 @@ The _device detection efficiency_ is given by
   ~~~
 
   Detection efficiency affects the rate at which entanglement can be distributed.
+
 * **Recovery time:** Denoted by $$\tau_recovery$$ and also known as 'dead' time. It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon. Recovery time affects the maximum detection rate. If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon. This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency $$\eta_sde$$). On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than $$\tau_recovery$$ to ensure effcient use of the generated photons.
 * **Dark count rate:** SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz (counts per second). Dark counts decrease the fidelity of the distributed entangled states.
 * **Timing jitter:** Denoted by $$J_timing$$.
@@ -482,7 +483,7 @@ Describes the variation in time between the photon being absorbed and the output
 
 <artwork type="svg" src="Figures/timing-jitter.svg"></artwork>
 
-The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
+The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf). -->
 
 
 | Wavelength | 800 nm | 1550 nm |
@@ -492,7 +493,7 @@ The table below shows the above characteristics for a [SNSPD](https://singlequan
 | Dark count rate | < 1 Hz | < 1 Hz |
 | Timing jitter | < 15 ps | < 15 ps |
 
-## Acceptance window
+<!-- ## Acceptance window
 
 In the previous Section, we used $$\tau$$ to denote the difference between the arrival time of the photons at the BSA.
 However, due to emission jitter it is impossible to know the precise time of arrival of a photon.
@@ -506,7 +507,7 @@ Large acceptance windows produce high rates but low fidelity, while small accept
 The appropriate size of the acceptance window must be chosen in order to satisfy the demands of the application requesting the entangled states.
 Reaching the requested fidelity should take priority over high generation rate.
 
-<!-- ## Separation in a train of wavepackets
+## Separation in a train of wavepackets
 
 Current experiments on quantum repeaters use single quantum memory per QNIC.
 As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
