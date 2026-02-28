@@ -567,7 +567,7 @@ Probabilities of the two possible measurement outcomes are given by the squared 
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
 ~~~
 
-We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$.
+We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
 For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
@@ -576,11 +576,11 @@ This approach greatly simplifies the implementation of arbitrary measurements.
 
 Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$:
 
-~~~math
-M = U Z U^{\dagger}
+<!--~~~math
+M = U Z U ^{\dagger}
 ~~~
 
-<!--This means the unitary $$U$$ relates the eigenvectors of the two observables,
+This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
 ~~~math
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
