@@ -567,30 +567,35 @@ Probabilities of the two possible measurement outcomes are given by the squared 
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
 ~~~
 
-<!--We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
+We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
 For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $$Z$$ basis, which can usually be implemented in a straightforward way.
 This approach greatly simplifies the implementation of arbitrary measurements.
 
-Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$, $$M = U Z U ^{\dagger}$$.
+Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$:
+
+~~~math
+M = U Z U ^{\dagger}
+~~~
+
 This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
-~~~text
+~~~math
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
 ~~~
 
-We can perform measurement in the $$M$$ basis by applying $$U ^{\dagger}$$ to the initial state $$|\psi\rangle$$, and them measuring it in the Pauli $$Z$$ basis.
+We can perform measurement in the $$M$$ basis by applying adjoint of $$U$$ to the initial state $$|\psi\rangle$$, and then measuring it in the Pauli $$Z$$ basis.
 This can be easily verified by rewriting the above probabilities corresponding to the two measurement outcomes,
 
-~~~text
+~~~math
 \text{Pr}(|\phi\rangle;|\psi\rangle) = |\langle\phi|\psi\rangle|^2 = |\langle0| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|0\rangle; U ^{\dagger}|\psi\rangle)
 ~~~
 
 and
 
-~~~text
+~~~math
 \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle) = |\langle\phi^{\perp}|\psi\rangle|^2 = |\langle1| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|1\rangle; U ^{\dagger}|\psi\rangle)
 ~~~
 
@@ -598,7 +603,7 @@ This is pictured in the Figure below.
 
 <artwork type="svg" src="Figures/measurement-1qubit.svg"></artwork>
 
-### Two-qubit measurements
+<!--### Two-qubit measurements
 
 The same principle of changing the measurement basis can be generalized to two qubits.
 This time state $$|\psi\rangle$$ represents a general two-qubit state, unitary $$U ^{\dagger}$$ acts on both qubits, which are both finally measured in Pauli $$Z$$ basis.
