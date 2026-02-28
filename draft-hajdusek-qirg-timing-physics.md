@@ -393,7 +393,7 @@ The probability of coincidence and corresponding visibility for both Cases are s
 
 <artwork type="svg" src="Figures/visibility-spectral.svg"></artwork>
 
-<!-- ## Wave Packet Overlap
+## Wave Packet Overlap
 
 So far we have assumed that the two input photons arrive at the BS at exactly the same time.
 In this subsection, we address this unrealistic assumption and quantify how temporal distinguishability affects the visibility of HOM interference.
@@ -444,13 +444,13 @@ p_{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \q
 
 The figure below displays the visibility and probability of coincidence for this case.
 
-<artwork type="svg" src="Figures/visibility-temporal.svg"></artwork> -->
+<artwork type="svg" src="Figures/visibility-temporal.svg"></artwork>
 
-<!-- # Detector Timing Windows
+# Detector Timing Windows
 
 In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
-This is not always true for [real-world SPDs](https://www.nature.com/articles/nphoton.2009.230). -->
+This is not always true for [real-world SPDs](https://www.nature.com/articles/nphoton.2009.230).
 
 <!-- ## Detector basics
 
