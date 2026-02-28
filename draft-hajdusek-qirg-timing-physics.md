@@ -497,16 +497,16 @@ The table below shows the above characteristics for a [SNSPD](https://singlequan
 In the previous Section, we used $$\tau$$ to denote the difference between the arrival time of the photons at the BSA.
 However, due to emission jitter it is impossible to know the precise time of arrival of a photon.
 The only information that is available comes from the electric output signal of a detector.
-Time of detection is in general different from the time of photon arrival due to finite time needed to generate the output signal described by the timing jitter $$J_{\text{timing}}$$.
+Time of detection is in general different from the time of photon arrival due to finite time needed to generate the output signal described by the timing jitter J_timing.
 Therefore, we will use $$\tau$$ to denote the difference in detection time of the two photons.
 
-Measurement at the BSA is successful when the correct pattern of detector clicks is observed, and the difference in detection times $$\tau$$ is smaller than a given detection **acceptance window**, $$T_{\text{window}}$$.
+Measurement at the BSA is successful when the correct pattern of detector clicks is observed, and the difference in detection times $$\tau$$ is smaller than a given detection **acceptance window**, T_window.
 The size of this window affects both the fidelity and the generation rate of the entangled pairs that the link produces.
 Large acceptance windows produce high rates but low fidelity, while small acceptance windows result in low rates and high fidelity.
 The appropriate size of the acceptance window must be chosen in order to satisfy the demands of the application requesting the entangled states.
 Reaching the requested fidelity should take priority over high generation rate.
 
-## Separation in a train of wavepackets
+<!-- ## Separation in a train of wavepackets
 
 Current experiments on quantum repeaters use single quantum memory per QNIC.
 As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
@@ -793,4 +793,4 @@ Such tasks include:
 * R. J. Drost, T. J. Moore, and M. Brodsky, Switching Networks for Pairwise-Entanglement Distribution, [_Journal of Optical Communications and Networking_, **8**, 331 (2016)](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335).
 * M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [_arXiv:2405.09860_ (2024)](https://arxiv.org/abs/2405.09860).
 * Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
-~~~
+~~~ -->
