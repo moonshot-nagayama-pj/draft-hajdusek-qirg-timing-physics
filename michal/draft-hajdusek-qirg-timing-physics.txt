@@ -83,6 +83,8 @@ Table of Contents
      5.1.  Measurement basics
        5.1.1.  Single-qubit measurements
        5.1.2.  Two-qubit measurements
+     5.2.  Measurements on quantum memories
+       5.2.1.  Trapped ions
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -981,6 +983,35 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    pair when the qubits are both initialized in |0〉, as shown in the
    Figure below, where we have dropped the Z label indicating the
    measurement basis.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+5.2.  Measurements on quantum memories
+
+   In this Section, we discuss various methods of implementing
+   measurements of quantum memories.  These methods vary based on the
+   quantum technology used as the quantum memory, and even within the
+   same technology there are usually variations.  We are mainly
+   concerned with giving an overview of the different measurement
+   methods, and their respective timing regimes.
+
+5.2.1.  Trapped ions
+
+   Trapped ions possess two degrees of freedom
+   (https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
+   The first one is the motional degree of freedom, resulting from the
+   ion oscillating around its equilibrium position in the trap.  The
+   second one is the internal degree of freedom, represented by the
+   ground state |g〉 and the excited state |e〉. It is the latter degree
+   of freedom which is used to encode a qubit and hence acts as a
+   quantum memory.
+
+   Measurement in the *Pauli Z* basis is performed by *electron
+   shelving* via the use of a third atomic level |r〉, with much shorter
+   life time than the excited state (https://www.amazon.co.jp/Quantum-
+   World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r.  The
+   figure below demonstrates how this method works.
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics.html)
