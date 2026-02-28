@@ -633,14 +633,14 @@ If no fluorescence is observed, the ion is measured in the excited state $$|e\ra
 Hypothetically a single fluorescent photon would be sufficient, however, the fluorescent photons are only rarely captured into the measurement apparatus (typically involving lenses and a camera) and observed, and stray photons are also often captured, so a relatively long **integration time** is used to confirm the fluorescence with high probability.  (Solid-state systems such as quantum dots and superconducting qubits also need relatively long integration times in their measurement processes.)
 Combined with laser pulses that apply a single-qubit rotation, measurement of a **single ion in an arbitrary basis** can be performed in [1-2 ms](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803).
 
-<!--The **CNOT gate** can be applied in two different ways.
+The **CNOT gate** can be applied in two different ways.
 The original proposal is due to [Cirac and Zoller](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091), where the ions needed to be cooled to their collective motional ground state first.
 This approach was demonstrated experimentally using [$^{40}\text{Ca}^+$$ ions](https://www.nature.com/articles/nature01494).
 Execution of the gate took around 600 microseconds, with the achieved fidelity being less than 0.8.
 The second approach is due to [Molmer and Sorensen](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835), and is more robust against motional excitation.
 This led to high-fidelity demonstrations of $$>0.99$$, and gate times of around 50 microseconds.
 
-## Measurements on photonic qubits
+<!--## Measurements on photonic qubits
 
 Measurement of polarization-encoded photonic qubits can be performed with the aid of a **polarizing beam splitter** (PBS), a **half waveplate** (HWP), a **quarter waveplate** (QWP), and [two detectors](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4) (one detector is enough in fact but less efficient).
 The idea is the same as in the case of measurements performed on stationary qubits discussed above.
