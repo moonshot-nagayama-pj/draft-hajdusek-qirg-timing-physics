@@ -446,7 +446,7 @@ The figure below displays the visibility and probability of coincidence for this
 
 <artwork type="svg" src="Figures/visibility-temporal.svg"></artwork>
 
-<!-- # Detector Timing Windows
+# Detector Timing Windows
 
 In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
@@ -459,36 +459,31 @@ Performance of SPDs can be quantified by the following characteristics,
 * **Spectral range:** SPDs are sensitive over a limited range of wavelengths. This range depends on the materials used in the fabrication of the detector. Typical spectral ranges are in the near-infrared, around 1550nm, where commercial optical fibers perform best in terms of photon loss rates.
 * **Detection efficiency:** The overall probability that an incoming photon registers a count, denoted by $$\eta$$.
 This efficiency can be further broken down.
-Probability of losing the photon before it reaches the detector is described by the _coupling efficiency_, $$\eta_{\text{coupling}}$$.
-The type of material and geometry of the detector determine the photon _absorption efficiency_, $$\eta_{\text{absorption}}$$.
-Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the _registering efficiency_, $$\eta_{\text{registering}}$$.
+Probability of losing the photon before it reaches the detector is described by the _coupling efficiency_, $$\eta_coupling$$.
+The type of material and geometry of the detector determine the photon _absorption efficiency_, $$\eta_absorption$$.
+Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the _registering efficiency_, $$\eta_registering$$.
 The overall _system detection efficiency_ is given by the product of these three,
 
-  ~~~text
+  ~~~math
   \eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
   ~~~
 
-  The _device detection efficiency_ is given by
+The _device detection efficiency_ is given by
 
-  ~~~text
+  ~~~math
   \eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
   ~~~
 
   Detection efficiency affects the rate at which entanglement can be distributed.
-* **Recovery time:** Denoted by $$\tau_{\text{recovery}}$$ and also known as 'dead' time.
-It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon.
-Recovery time affects the maximum detection rate.
-If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon.
-This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency $$\eta_{\text{sde}}$$).
-On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than $$\tau_{\text{recovery}}$$ to ensure effcient use of the generated photons.
+* **Recovery time:** Denoted by $$\tau_recovery$$ and also known as 'dead' time. It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon. Recovery time affects the maximum detection rate. If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon. This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency $$\eta_sde$$). On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than $$\tau_recovery$$ to ensure effcient use of the generated photons.
 * **Dark count rate:** SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz (counts per second). Dark counts decrease the fidelity of the distributed entangled states.
-* **Timing jitter:** Denoted by $$J_{\text{timing}}$$.
+* **Timing jitter:** Denoted by $$J_timing$$.
 Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from `[4]`.
 
 <artwork type="svg" src="Figures/timing-jitter.svg"></artwork>
 
 The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
--->
+
 
 | Wavelength | 800 nm | 1550 nm |
 | ---------- | ------ | ------- |
@@ -517,7 +512,7 @@ Current experiments on quantum repeaters use single quantum memory per QNIC.
 As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
 This will allow for generation of link-level entanglement in a multiplexed manner, where trains of photons, each originating from a different memory inside the same QNIC, are sent to the BSA.
 The photons making up a train must be well separated such that upon a successful BSM, the BSA can uniquely identify which two photons were measured.
-We refer to the minimum separation between the photons as the **separation time** $$T_{\text{separation}}$$.
+We refer to the minimum separation between the photons as the **separation time** $$T_separation$$.
 
 The size of the separation time depends on the following:
 
@@ -528,7 +523,7 @@ The size of the separation time depends on the following:
 
 General (conservative) separation time should therefore be set to
 
-~~~text
+~~~math
 T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}
 ~~~
 
