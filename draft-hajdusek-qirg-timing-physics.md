@@ -320,9 +320,9 @@ p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varph
 ~~~
 
 The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors $$\epsilon$$ and $$\epsilon'$$.
-Now, $$p _{c}$$ depends on the overlap between the spectral amplitude functions.
-If the input photons are fully distinguishable, their respective spectral amplitude functions $$\phi(\omega)$$ and $$\varphi(\omega)$$ are orthogonal and the integrals vanish, meaning $$p _{c}=1/2$$.
-On the other hand, for completely indistinguishable input photons we have $$\phi(\omega)=\varphi(\omega)$$, and due to the normalization condition we obtain $$p _{c}=0$$.
+Now, $$p _c$$ depends on the overlap between the spectral amplitude functions.
+If the input photons are fully distinguishable, their respective spectral amplitude functions $$\phi(\omega)$$ and $$\varphi(\omega)$$ are orthogonal and the integrals vanish, meaning $$p _c=1/2$$.
+On the other hand, for completely indistinguishable input photons we have $$\phi(\omega)=\varphi(\omega)$$, and due to the normalization condition we obtain $$p _c=0$$.
 
 <!-- ### Mixed states
 
