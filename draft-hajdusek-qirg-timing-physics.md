@@ -560,9 +560,14 @@ We will first discuss quantum measurements in general before discussing concrete
 
 For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
 Consider a general state of the qubit, $$|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$$.
-Measurement in an arbitrary basis $$M$$ projects $$|\psi\rangle$$ onto one of the eigenvectors of $$M$$, given by $$\{|\phi\rangle,|\phi^{\perp}\rangle\}$$.
-Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$,
-We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
+Measurement in an arbitrary basis $$M$$ projects $$|\psi\rangle$$ onto one of the eigenvectors of $$M$$.
+Probabilities of the two possible measurement outcomes are given by the squared modula of the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$.
+
+~~~math
+\text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
+~~~
+
+<!--We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
 For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
@@ -572,7 +577,7 @@ This approach greatly simplifies the implementation of arbitrary measurements.
 Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$, $$M = U Z U ^{\dagger}$$.
 This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
-<!-- ~~~text
+~~~text
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
 ~~~
 
