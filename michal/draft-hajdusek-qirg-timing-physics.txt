@@ -1034,6 +1034,20 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    (https://journals.aps.org/prl/abstract/10.1103/
    PhysRevLett.130.050803).
 
+   The *CNOT gate* can be applied in two different ways.  The original
+   proposal is due to Cirac and Zoller
+   (https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091),
+   where the ions needed to be cooled to their collective motional
+   ground state first.  This approach was demonstrated experimentally
+   using [$^{40}\text{Ca}^+ions](https://www.nature.com/articles/
+   nature01494). Execution of the gate took around 600 microseconds,
+   with the achieved fidelity being less than 0.8. The second approach
+   is due to [Molmer and
+   Sorensen](https://journals.aps.org/prl/abstract/10.1103/
+   PhysRevLett.82.1835), and is more robust against motional
+   excitation. This led to high−fidelity demonstrations of>0.99$$, and
+   gate times of around 50 microseconds.
+
 Appendix A.  References
 
 A.1.  Normative
