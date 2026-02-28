@@ -558,9 +558,89 @@ Table of Contents
    write the expression for the probability of coincidence as a sum of
    pure-state coincidence probabilities weighted by u_k and v'_k:
 
-          1   1  ⎲           ⌠     ∗            ⌠      ∗
-   p    = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω )
-     co   2   2 kk′   k   k′ ⌡   1 k  1  k′  1  ⌡   2  k′  2   k  2
+         1   1  ⎲           ⌠     ∗            ⌠      ∗
+   p   = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω )
+     c   2   2 kk′   k   k′ ⌡   1 k  1  k′  1  ⌡   2  k′  2   k  2
+
+3.3.2.1.  Example 1: Gaussian wave packets
+
+   In this example, we consider input photons with Gaussian spectral
+   amplitude functions.  The spectral amplitude functions are given by
+
+                               2
+                         (ω-ω̅ )
+                             i
+                        -───────
+                             2
+                           2σ
+               1             i
+   ϕ (ω) = ────────── e         ,  for  i=a,b
+    i       1/4  ┌──┐
+           π   ╲ │σ
+                ╲│ i
+
+   The probability of a coincidence detection is then
+
+                             2
+                      (ω̅ -ω̅ )
+                        a  b
+                     -────────
+                        2  2
+              σ σ      σ +σ
+         1     a b      a  b
+   p   = ─ -─────── e
+     c   2   2    2
+            σ  + σ
+             a    b
+
+3.3.2.1.1.  Case A (different central frequencies)
+
+   We assume that the two spectral amplitude functions have the same
+   standard deviation, which simplifies the expression for the
+   probability of a coincidence detection to
+
+           ⎛              2 ⎞
+           ⎜       (ω̅ -ω̅ )  ⎟
+           ⎜         a  b   ⎟
+           ⎜      -──────── ⎟
+           ⎜           2    ⎟
+         1 ⎜         2σ     ⎟
+   p   = ─ ⎝ 1 - e          ⎠
+     c   2
+
+   We observe that for identical photons, the probability of a
+   coincidence detection vanishes.  For fully distinguishable wave
+   packets, when the difference between central frequencies diverges,
+   the probability approaches 1/2.  The visibility as a function of the
+   difference between the central frequencies is
+
+                       2
+                (ω̅ -ω̅ )
+                  a  b
+               -────────
+                    2
+                  2σ
+   V(ω̅ -ω̅ ) = e
+      a  b
+
+3.3.2.1.2.  Case B (different standard deviations)
+
+   The spectral amplitude functions have the same central frequencies,
+   which gives the following expression for the probability of
+   coincidence and visibility,
+
+               σ /σ                        2σ /σ
+        1       b  a                         b  a
+   p  = ─ - ────────────,    V(σ /σ ) = ────────────
+    c   2              2        b  a               2
+            1 + (σ /σ )                 1 + (σ /σ )
+                  b  a                        b  a
+
+   The probability of coincidence and corresponding visibility for both
+   Cases are shown in the Figure below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
