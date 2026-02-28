@@ -567,8 +567,6 @@ Probabilities of the two possible measurement outcomes are given by the squared 
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
 ~~~
 
-<!-- For example, measurement in the Pauli $$Z$$ basis projects onto either $$|0\rangle$$ or $$|1\rangle$$, while measurement in the Pauli $$X$$ basis projects onto $$|+\rangle$$ or $$|-\rangle$$. -->
-
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $$Z$$ basis, which can usually be implemented in a straightforward way.
 This approach greatly simplifies the implementation of arbitrary measurements.
@@ -579,7 +577,7 @@ Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$
 M = U Z U ^{\dagger}
 ~~~
 
-<!--This means the unitary $$U$$ relates the eigenvectors of the two observables,
+This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
 ~~~math
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
@@ -602,7 +600,7 @@ This is pictured in the Figure below.
 
 <artwork type="svg" src="Figures/measurement-1qubit.svg"></artwork>
 
-### Two-qubit measurements
+<!--### Two-qubit measurements
 
 The same principle of changing the measurement basis can be generalized to two qubits.
 This time state $$|\psi\rangle$$ represents a general two-qubit state, unitary $$U ^{\dagger}$$ acts on both qubits, which are both finally measured in Pauli $$Z$$ basis.
