@@ -72,6 +72,7 @@ Table of Contents
      3.3.  Spectral distinguishability
        3.3.1.  Pure states
        3.3.2.  Mixed states
+       3.3.3.  Example 1: Gaussian wave packets
      3.4.  Acceptance window
      3.5.  Separation in a train of wavepackets
    4.  Measurement basis selection
@@ -562,7 +563,7 @@ Table of Contents
    p   = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω )
      c   2   2 kk′   k   k′ ⌡   1 k  1  k′  1  ⌡   2  k′  2   k  2
 
-3.3.2.1.  Example 1: Gaussian wave packets
+3.3.3.  Example 1: Gaussian wave packets
 
    In this example, we consider input photons with Gaussian spectral
    amplitude functions.  The spectral amplitude functions are given by
@@ -593,7 +594,7 @@ Table of Contents
             σ  + σ
              a    b
 
-3.3.2.1.1.  Case A (different central frequencies)
+   *Case A (different central frequencies)*
 
    We assume that the two spectral amplitude functions have the same
    standard deviation, which simplifies the expression for the
@@ -623,7 +624,7 @@ Table of Contents
    V(ω̅ -ω̅ ) = e
       a  b
 
-3.3.2.1.2.  Case B (different standard deviations)
+   *Case B (different standard deviations)*
 
    The spectral amplitude functions have the same central frequencies,
    which gives the following expression for the probability of
