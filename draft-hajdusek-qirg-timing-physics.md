@@ -635,12 +635,12 @@ Combined with laser pulses that apply a single-qubit rotation, measurement of a 
 
 The **CNOT gate** can be applied in two different ways.
 The original proposal is due to [Cirac and Zoller](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091), where the ions needed to be cooled to their collective motional ground state first.
-This approach was demonstrated experimentally using [$^{40}\text{Ca}^+$$ ions](https://www.nature.com/articles/nature01494).
+This approach was demonstrated experimentally using [calcium ions](https://www.nature.com/articles/nature01494).
 Execution of the gate took around 600 microseconds, with the achieved fidelity being less than 0.8.
 The second approach is due to [Molmer and Sorensen](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835), and is more robust against motional excitation.
 This led to high-fidelity demonstrations of $$>0.99$$, and gate times of around 50 microseconds.
 
-<!--## Measurements on photonic qubits
+## Measurements on photonic qubits
 
 Measurement of polarization-encoded photonic qubits can be performed with the aid of a **polarizing beam splitter** (PBS), a **half waveplate** (HWP), a **quarter waveplate** (QWP), and [two detectors](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4) (one detector is enough in fact but less efficient).
 The idea is the same as in the case of measurements performed on stationary qubits discussed above.
@@ -652,11 +652,11 @@ This setup is shown in the figure below.
 
 General pure state of a polarization-encoded qubit can be written as
 
-~~~text
+~~~math
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle
 ~~~
 
-This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
+<!--This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 The table below summarizes this equivalence.
 
 <artwork type="svg" src="Figures/polarization-table.svg"></artwork>
