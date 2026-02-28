@@ -284,47 +284,47 @@ The two photons may have different central frequencies or different standard dev
 
 In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.
 
-<!-- ### Pure states
+### Pure states
 
 We begin the discussion by focusing on pure states of the input photons first.
 Single-photon state with a spectral amplitude function $$\phi(\omega)$$ is a superposition written as
 
-~~~text
+~~~math
 |1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a
 ~~~
 
-where $$a ^{\dagger}(\omega)$$ creates a photon in the BS input mode $$a$$ with frequency $$\omega$$.
+where creation operator creates a photon in the BS input mode $$a$$ with frequency $$\omega$$.
 Two input photons with arbitrary spectral functions $$\phi$$ and $$\varphi$$ are described by
 
-~~~text
-|\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0\rangle _{ab}
+~~~math
+|\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0 \rangle _{ab}
 ~~~
 
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is frequency-independent.
 Applying the same transformation rules for the creation operators, the output state of the two photons is
 
-~~~text
+~~~math
 |\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}
 ~~~
 
 The projection operators corresponding to a detection event in output mode $$c$$ and output mode $$d$$ are given by
 
-~~~text
+~~~math
 P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega)
 ~~~
 
 The probability of a coincidence detection is then
 
-~~~text
-p _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2)
+~~~math
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2)
 ~~~
 
 The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors $$\epsilon$$ and $$\epsilon'$$.
-Now, $$p _{\text{co}}$$ depends on the overlap between the spectral amplitude functions.
-If the input photons are fully distinguishable, their respective spectral amplitude functions $$\phi(\omega)$$ and $$\varphi(\omega)$$ are orthogonal and the integrals vanish, meaning $$p _{\text{co}}=1/2$$.
-On the other hand, for completely indistinguishable input photons we have $$\phi(\omega)=\varphi(\omega)$$, and due to the normalization condition we obtain $$p _{\text{co}}=0$$.
+Now, $$p _{c}$$ depends on the overlap between the spectral amplitude functions.
+If the input photons are fully distinguishable, their respective spectral amplitude functions $$\phi(\omega)$$ and $$\varphi(\omega)$$ are orthogonal and the integrals vanish, meaning $$p _{c}=1/2$$.
+On the other hand, for completely indistinguishable input photons we have $$\phi(\omega)=\varphi(\omega)$$, and due to the normalization condition we obtain $$p _{c}=0$$.
 
-### Mixed states
+<!-- ### Mixed states
 
 Previous discussion of pure states can be extended to include mixed states of the input photons.
 Such states will inevitably arise due to imperfections in the preparation procedure and due to the input photons being entangled with other degrees of freedom.
