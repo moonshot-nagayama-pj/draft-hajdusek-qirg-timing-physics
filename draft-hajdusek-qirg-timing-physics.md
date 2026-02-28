@@ -464,17 +464,17 @@ The type of material and geometry of the detector determine the photon _absorpti
 Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the _registering efficiency_, $$\eta_registering$$.
 The overall _system detection efficiency_ is given by the product of these three,
 
-<!--   ~~~math
-  \eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
-  ~~~
+~~~math
+\eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
+~~~
 
-The _device detection efficiency_ is given by
+<!--The _device detection efficiency_ is given by
 
-  ~~~math
-  \eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
-  ~~~
+~~~math
+\eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
+~~~
 
-  Detection efficiency affects the rate at which entanglement can be distributed.
+Detection efficiency affects the rate at which entanglement can be distributed.
 
 * **Recovery time:** Denoted by $$\tau_recovery$$ and also known as 'dead' time. It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon. Recovery time affects the maximum detection rate. If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon. This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency $$\eta_sde$$). On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than $$\tau_recovery$$ to ensure effcient use of the generated photons.
 * **Dark count rate:** SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz (counts per second). Dark counts decrease the fidelity of the distributed entangled states.
