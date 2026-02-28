@@ -1017,7 +1017,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    draft-hajdusek-qirg-timing-physics.html)
 
    The ion is illuminated by light tuned to resonate with the
-   transition |g〉↔|r〉, represented by the red straight arrow in the
+   transition |g〉 <−>|r〉, represented by the red straight arrow in the
    Figure above.  If fluorescence is immediately observed, this
    corresponds to measuring the ion in the ground state |g〉. If no
    fluorescence is observed, the ion is measured in the excited
