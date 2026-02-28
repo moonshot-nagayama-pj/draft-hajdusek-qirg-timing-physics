@@ -556,15 +556,14 @@ An example of this are the so-called all-photonic quantum repeaters, where measu
 
 We will first discuss quantum measurements in general before discussing concrete implementations and their timing requirements based on their physical implementations.
 
-<!-- ### Single-qubit measurements
+### Single-qubit measurements
 
 For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
-Consider a general state of the qubit, $$|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$$, where $$|\alpha|^2+|\beta|^2=1$$.
-Measurement in an arbitrary basis $$M$$ projects the initial state $$|\psi\rangle$$ onto one of the eigenvectors of $$M$$, given by $$\{|\phi\rangle,|\phi^{\perp}\rangle\}$$.
+Consider a general state of the qubit, $$|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$$.
+Measurement in an arbitrary basis $$M$$ projects $$|\psi\rangle$$ onto one of the eigenvectors of $$M$$, given by $$\{|\phi\rangle,|\phi^{\perp}\rangle\}$$.
 Probabilities of the two possible measurement outcomes are given by the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$,
 We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$_.
 For example, measurement in the Pauli $$Z$$ basis projects onto the states $$\{|0\rangle,|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto the states $$\{|+\rangle,|-\rangle\}$$
-~~~
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $$Z$$ basis, which can usually be implemented in a straightforward way.
@@ -573,7 +572,7 @@ This approach greatly simplifies the implementation of arbitrary measurements.
 Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$, $$M = U Z U ^{\dagger}$$.
 This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
-~~~text
+<!-- ~~~text
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
 ~~~
 
