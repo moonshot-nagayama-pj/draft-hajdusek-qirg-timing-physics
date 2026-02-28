@@ -452,7 +452,7 @@ In this section, we discuss how properties of single-photon detectors (SPDs) aff
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
 This is not always true for [real-world SPDs](https://www.nature.com/articles/nphoton.2009.230).
 
-<!-- ## Detector basics
+## Detector basics
 
 Performance of SPDs can be quantified by the following characteristics,
 
@@ -468,7 +468,7 @@ The overall _system detection efficiency_ is given by the product of these three
   \eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
   ~~~
 
-The _device detection efficiency_ is given by
+<!-- The _device detection efficiency_ is given by
 
   ~~~math
   \eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
