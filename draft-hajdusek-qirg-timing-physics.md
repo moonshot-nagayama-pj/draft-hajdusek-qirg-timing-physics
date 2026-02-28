@@ -716,7 +716,7 @@ The optical switch introduces a **propagation time delay**. For some MEMS switch
 
 <artwork type="svg" src="Figures/time-delay.svg"></artwork>
 
-This triangular switch design was introduced by [Koyama et.al.](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port $$X_0$$ have to traverse at least 5 switching points, while photons from input port $$X_{11}$$ do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to $$\text{BSA}_5$$. This requires photons from $$X_0$$ to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
+This triangular switch design was introduced by [Koyama et.al.](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port $$X_0$$ have to traverse at least 5 switching points, while photons from input port $$X_{11}$$ do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to $$BSA_5$$. This requires photons from $$X_0$$ to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
 
 The significance of this time delay ultimately depends on the type of photons used. Photons with longer envelopes, such as those emitted from trapped ions, may be more robust to the propagation time delays introduced by the optical switch. Photons with very short envelopes, such as the ones originating from an SPDC source, are expected to be very susceptible to any propagation time delays.
 
@@ -726,7 +726,7 @@ Further complication that arises during the operation of the switch is also rela
 
 Finally, given a set of connection requests, the optical switch must compute the state of all switch points to **route** the photons correctly. The reconfigurably non-blocking designs proposed in `[15]` come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.
 
-<!--# Pre-configured Event-driven Tasks
+# Pre-configured Event-driven Tasks
 
 In this section, we discuss synchronization-critical tasks that must be conducted when an event occurs. Most stationary qubits are under the control of a classical analog circuit that includes a local oscillator (LO) coupled to the corresponding frequency of the qubit itself. Avoiding drift between the _understood_ phase of the qubit and the _actual_ phase of the LO is a key part of hardware design for a qubit, but is beyond the scope of this document.
 
@@ -766,7 +766,7 @@ Such tasks include:
 
 * **Link monitoring**: Each link must be monitored continuously in order to inform routing (below) and RuleSet creation during connection setup.  Reconstruction of the link density matrix and entanglement success rates involve classical information sharing between the two nodes at opposite ends of the link. This information must be shared reliably but does not have hard real-time constraints, as so is well suited to transmission over a reliable protocol such as TCP without concern for delays. The required classical information is the outcomes of measurements of the quantum portion of the link. That data can be collected from entangled states specifically assigned to the link monitoring task.  It can also be collected from application-targeted uses of the link, provided that appropriate coordination can be achieved and connection privacy maintained.
 * **Routing**: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.
-* **Malicious use monitoring**: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.-->
+* **Malicious use monitoring**: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.
 
 --- back
 
