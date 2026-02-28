@@ -1203,6 +1203,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-detector-timing-windows" class="internal xref">Detector Timing Windows</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="auto internal xref">4.1</a>.  <a href="#name-detector-basics" class="internal xref">Detector basics</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-references" class="internal xref">References</a></p>
@@ -17022,38 +17027,59 @@ The probability of coincidence and the corresponding visibility are given by<a h
 <p id="section-4-1">In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
 This is not always true for <a href="https://www.nature.com/articles/nphoton.2009.230">real-world SPDs</a>.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<div id="detector-basics">
+<section id="section-4.1">
+        <h3 id="name-detector-basics">
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-detector-basics" class="section-name selfRef">Detector basics</a>
+        </h3>
+<p id="section-4.1-1">Performance of SPDs can be quantified by the following characteristics,<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-4.1-2.1">
+            <p id="section-4.1-2.1.1"><strong>Spectral range:</strong> SPDs are sensitive over a limited range of wavelengths. This range depends on the materials used in the fabrication of the detector. Typical spectral ranges are in the near-infrared, around 1550nm, where commercial optical fibers perform best in terms of photon loss rates.<a href="#section-4.1-2.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.1-2.2">
+            <p id="section-4.1-2.2.1"><strong>Detection efficiency:</strong> The overall probability that an incoming photon registers a count, denoted by <span class="contact-name">η</span>.
+This efficiency can be further broken down.
+Probability of losing the photon before it reaches the detector is described by the <em>coupling efficiency</em>, <span class="contact-name">η_coupling</span>.
+The type of material and geometry of the detector determine the photon <em>absorption efficiency</em>, <span class="contact-name">η_absorption</span>.
+Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the <em>registering efficiency</em>, <span class="contact-name">η_registering</span>.
+The overall <em>system detection efficiency</em> is given by the product of these three,<a href="#section-4.1-2.2.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
 <table class="center" id="table-1">
-        <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
+          <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
 <thead>
-          <tr>
-            <th class="text-left" rowspan="1" colspan="1">Wavelength</th>
-            <th class="text-left" rowspan="1" colspan="1">800 nm</th>
-            <th class="text-left" rowspan="1" colspan="1">1550 nm</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">System detection efficiency</td>
-            <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
-            <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">Recovery time</td>
-            <td class="text-left" rowspan="1" colspan="1">10 ns</td>
-            <td class="text-left" rowspan="1" colspan="1">20 ns</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">Dark count rate</td>
-            <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
-            <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">Timing jitter</td>
-            <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
-            <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <th class="text-left" rowspan="1" colspan="1">Wavelength</th>
+              <th class="text-left" rowspan="1" colspan="1">800 nm</th>
+              <th class="text-left" rowspan="1" colspan="1">1550 nm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">System detection efficiency</td>
+              <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
+              <td class="text-left" rowspan="1" colspan="1">&gt; 90%</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Recovery time</td>
+              <td class="text-left" rowspan="1" colspan="1">10 ns</td>
+              <td class="text-left" rowspan="1" colspan="1">20 ns</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Dark count rate</td>
+              <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
+              <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Timing jitter</td>
+              <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
+              <td class="text-left" rowspan="1" colspan="1">&lt; 15 ps</td>
+            </tr>
+          </tbody>
+        </table>
+</section>
+</div>
 </section>
 </div>
 <div id="references">

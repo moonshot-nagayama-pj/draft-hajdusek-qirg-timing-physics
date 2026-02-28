@@ -76,6 +76,7 @@ Table of Contents
      3.4.  Wave Packet Overlap
        3.4.1.  Example: Gaussian wave packets
    4.  Detector Timing Windows
+     4.1.  Detector basics
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -712,6 +713,28 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    generates no signal in the absence of a photon.  This is not always
    true for real-world SPDs (https://www.nature.com/articles/
    nphoton.2009.230).
+
+4.1.  Detector basics
+
+   Performance of SPDs can be quantified by the following
+   characteristics,
+
+   *  *Spectral range:* SPDs are sensitive over a limited range of
+      wavelengths.  This range depends on the materials used in the
+      fabrication of the detector.  Typical spectral ranges are in the
+      near-infrared, around 1550nm, where commercial optical fibers
+      perform best in terms of photon loss rates.
+
+   *  *Detection efficiency:* The overall probability that an incoming
+      photon registers a count, denoted by η. This efficiency can be
+      further broken down.  Probability of losing the photon before it
+      reaches the detector is described by the _coupling efficiency_,
+      η_coupling.  The type of material and geometry of the detector
+      determine the photon _absorption efficiency_, η_absorption.
+      Finally, the probability that an electric signal is generated upon
+      successful absorption of a photon is described by the _registering
+      efficiency_, η_registering.  The overall _system detection
+      efficiency_ is given by the product of these three,
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
