@@ -493,7 +493,7 @@ The table below shows the above characteristics for a [SNSPD](https://singlequan
 | Dark count rate | < 1 Hz | < 1 Hz |
 | Timing jitter | < 15 ps | < 15 ps |
 
-<!-- ## Acceptance window
+## Acceptance window
 
 In the previous Section, we used $$\tau$$ to denote the difference between the arrival time of the photons at the BSA.
 However, due to emission jitter it is impossible to know the precise time of arrival of a photon.
@@ -513,7 +513,7 @@ Current experiments on quantum repeaters use single quantum memory per QNIC.
 As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
 This will allow for generation of link-level entanglement in a multiplexed manner, where trains of photons, each originating from a different memory inside the same QNIC, are sent to the BSA.
 The photons making up a train must be well separated such that upon a successful BSM, the BSA can uniquely identify which two photons were measured.
-We refer to the minimum separation between the photons as the **separation time** $$T_separation$$.
+We refer to the minimum separation between the photons as the **separation time** T_separation.
 
 The size of the separation time depends on the following:
 
@@ -541,7 +541,7 @@ This means that most of the time windows given by the separation time will not c
 However, the separation time should be maintained in order to correcly identify the photons that were part of a successful measurement at the BSA.
 The separation time governs the maximum rate at which EPPS attempts to generate the entangled photon pairs, which is given by 1/T_separation.
 
-# Measurement basis selection
+<!-- # Measurement basis selection
 
 We have encountered Bell-state measurements performed by the BSA on photonic qubits that are needed for entanglement swapping.
 These measurements were static in the sense that we did not need to change the measurement basis.
