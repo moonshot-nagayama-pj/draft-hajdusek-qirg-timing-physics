@@ -945,6 +945,30 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
              †
    M = U Z U
 
+   This means the unitary U relates the eigenvectors of the two
+   observables,
+
+                         ⟂
+   |ϕ⟩= U |0⟩,   and   |ϕ ⟩= U |1⟩
+
+   We can perform measurement in the M basis by applying adjoint of U to
+   the initial state |ψ〉, and then measuring it in the Pauli Z basis.
+   This can be easily verified by rewriting the above probabilities
+   corresponding to the two measurement outcomes,
+
+                        2          †    2             †
+   Pr(|ϕ⟩;|ψ⟩) = |⟨ϕ|ψ⟩|  = |⟨0| U  |ψ⟩|  = Pr(|0⟩; U  |ψ⟩)
+
+   and
+
+        ⟂            ⟂    2          †    2             †
+   Pr(|ϕ ⟩;|ψ⟩) = |⟨ϕ |ψ⟩|  = |⟨1| U  |ψ⟩|  = Pr(|1⟩; U  |ψ⟩)
+
+   This is pictured in the Figure below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
 Appendix A.  References
 
 A.1.  Normative
