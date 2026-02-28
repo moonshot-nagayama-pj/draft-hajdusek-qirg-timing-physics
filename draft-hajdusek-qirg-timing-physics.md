@@ -393,7 +393,7 @@ The probability of coincidence and corresponding visibility for both Cases are s
 
 <artwork type="svg" src="Figures/visibility-spectral.svg"></artwork>
 
-## Wave Packet Overlap
+<!-- ## Wave Packet Overlap
 
 So far we have assumed that the two input photons arrive at the BS at exactly the same time.
 In this subsection, we address this unrealistic assumption and quantify how temporal distinguishability affects the visibility of HOM interference.
@@ -444,7 +444,7 @@ p_{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \q
 
 The figure below displays the visibility and probability of coincidence for this case.
 
-<artwork type="svg" src="Figures/visibility-temporal.svg"></artwork>
+<artwork type="svg" src="Figures/visibility-temporal.svg"></artwork> -->
 
 <!-- # Detector Timing Windows
 
