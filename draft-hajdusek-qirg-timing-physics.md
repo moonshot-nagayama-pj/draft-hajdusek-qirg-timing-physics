@@ -580,7 +580,7 @@ Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$
 M = U Z U ^{\dagger}
 ~~~
 
-This means the unitary $$U$$ relates the eigenvectors of the two observables,
+<!--This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
 ~~~math
 |\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
@@ -603,7 +603,7 @@ This is pictured in the Figure below.
 
 <artwork type="svg" src="Figures/measurement-1qubit.svg"></artwork>
 
-<!--### Two-qubit measurements
+### Two-qubit measurements
 
 The same principle of changing the measurement basis can be generalized to two qubits.
 This time state $$|\psi\rangle$$ represents a general two-qubit state, unitary $$U ^{\dagger}$$ acts on both qubits, which are both finally measured in Pauli $$Z$$ basis.
