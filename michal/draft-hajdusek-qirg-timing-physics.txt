@@ -85,6 +85,7 @@ Table of Contents
        5.1.2.  Two-qubit measurements
      5.2.  Measurements on quantum memories
        5.2.1.  Trapped ions
+     5.3.  Measurements on photonic qubits
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -1039,14 +1040,38 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    (https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091),
    where the ions needed to be cooled to their collective motional
    ground state first.  This approach was demonstrated experimentally
-   using [$^{40}\text{Ca}^+ions](https://www.nature.com/articles/
-   nature01494). Execution of the gate took around 600 microseconds,
-   with the achieved fidelity being less than 0.8. The second approach
-   is due to [Molmer and
-   Sorensen](https://journals.aps.org/prl/abstract/10.1103/
-   PhysRevLett.82.1835), and is more robust against motional
-   excitation. This led to high−fidelity demonstrations of>0.99$$, and
-   gate times of around 50 microseconds.
+   using calcium ions (https://www.nature.com/articles/nature01494).
+   Execution of the gate took around 600 microseconds, with the achieved
+   fidelity being less than 0.8.  The second approach is due to Molmer
+   and Sorensen (https://journals.aps.org/prl/abstract/10.1103/
+   PhysRevLett.82.1835), and is more robust against motional excitation.
+   This led to high-fidelity demonstrations of >0.99, and gate times of
+   around 50 microseconds.
+
+5.3.  Measurements on photonic qubits
+
+   Measurement of polarization-encoded photonic qubits can be performed
+   with the aid of a *polarizing beam splitter* (PBS), a *half
+   waveplate* (HWP), a *quarter waveplate* (QWP), and two detectors
+   (https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4) (one
+   detector is enough in fact but less efficient).  The idea is the same
+   as in the case of measurements performed on stationary qubits
+   discussed above.  Setting the HWP and QWP at particular angles
+   applies the unitary U ^{†} that picks the basis of the measurement,
+   while the PBS filters out vertical and horizontal polarizations that
+   then get detected by the detectors placed in the output paths of the
+   PBS.  Horizontal polarization gets transmitted through the PBS, while
+   vertical polarization gets reflected.  This setup is shown in the
+   figure below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   General pure state of a polarization-encoded qubit can be written as
+
+           ⎛θ⎞      iϕ   ⎛θ⎞
+   |ψ⟩= cos⎜─⎟|H⟩+ e  sin⎜─⎟|V⟩
+           ⎝2⎠           ⎝2⎠
 
 Appendix A.  References
 
