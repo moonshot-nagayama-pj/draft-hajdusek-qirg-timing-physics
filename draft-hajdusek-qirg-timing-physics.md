@@ -347,53 +347,53 @@ It is not necessary to repeat the entire calculation we did for pure states.
 Due to linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$:
 
 ~~~math
-p _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2)
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2)
 ~~~
 
-<!-- #### Example 1: Gaussian wave packets
+#### Example 1: Gaussian wave packets
 
 In this example, we consider input photons with Gaussian spectral amplitude functions.
 The spectral amplitude functions are given by
 
-~~~text
+~~~math
 \phi_i(\omega) = \frac{1}{\pi^{1/4}\sqrt{\sigma_i}} e ^{-\frac{(\omega-\bar{\omega}_i)^2}{2\sigma^2_i}},\quad\text{for } i=a,b
 ~~~
 
 The probability of a coincidence detection is then
 
-~~~text
-p _{\text{co}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}
+~~~math
+p _{\text{c}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}
 ~~~
 
 ##### Case A (different central frequencies)
 
-We assume that the two spectral amplitude functions have the same standard deviation $$\sigma_a=\sigma_b=\sigma$$, which simplifies the expression for the probability of a coincidence detection to
+We assume that the two spectral amplitude functions have the same standard deviation, which simplifies the expression for the probability of a coincidence detection to
 
-~~~text
-p _{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right)
+~~~math
+p _{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right)
 ~~~
 
-We observe that for identical photons, when $$\bar{\omega}_a=\bar{\omega}_b$$, the probability of a coincidence detection vanishes.
-For fully distinguishable wave packets, when $$\bar{\omega}_a-\bar{\omega}_b\rightarrow\infty$$, the probability approaches 1/2, as expected.
-We can now define visibility as a function of the difference between the central frequencies $$\bar{\omega}_a-\bar{\omega}_b$$,
+We observe that for identical photons, the probability of a coincidence detection vanishes.
+For fully distinguishable wave packets, when the difference between central frequencies diverges, the probability approaches 1/2.
+The visibility as a function of the difference between the central frequencies is
 
-~~~text
+~~~math
 V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}
 ~~~
 
 ##### Case B (different standard deviations)
 
-The spectral amplitude functions have the same central frequencies, $$\omega_a=\omega_b$$, which gives the following expression for the probability of coincidence and visibility,
+The spectral amplitude functions have the same central frequencies, which gives the following expression for the probability of coincidence and visibility,
 
-~~~text
-p_{\text{co}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}
+~~~math
+p_{\text{c}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}
 ~~~
 
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
 <artwork type="svg" src="Figures/visibility-spectral.svg"></artwork>
 
-## Wave Packet Overlap
+<!-- ## Wave Packet Overlap
 
 So far we have assumed that the two input photons arrive at the BS at exactly the same time.
 In this subsection, we address this unrealistic assumption and quantify how temporal distinguishability affects the visibility of HOM interference.
