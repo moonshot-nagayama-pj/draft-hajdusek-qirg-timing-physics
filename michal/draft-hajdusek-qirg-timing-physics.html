@@ -1220,6 +1220,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.1">
                 <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="auto internal xref">5.1</a>.  <a href="#name-measurement-basics" class="internal xref">Measurement basics</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.1.2.1">
+                    <p id="section-toc.1-1.5.2.1.2.1.1"><a href="#section-5.1.1" class="auto internal xref">5.1.1</a>.  <a href="#name-single-qubit-measurements" class="internal xref">Single-qubit measurements</a></p>
+</li>
+                </ul>
 </li>
             </ul>
 </li>
@@ -17431,6 +17436,94 @@ An example of this are the so-called all-photonic quantum repeaters, where measu
 <a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-measurement-basics" class="section-name selfRef">Measurement basics</a>
         </h3>
 <p id="section-5.1-1">We will first discuss quantum measurements in general before discussing concrete implementations and their timing requirements based on their physical implementations.<a href="#section-5.1-1" class="pilcrow">¶</a></p>
+<div id="single-qubit-measurements">
+<section id="section-5.1.1">
+          <h4 id="name-single-qubit-measurements">
+<a href="#section-5.1.1" class="section-number selfRef">5.1.1. </a><a href="#name-single-qubit-measurements" class="section-name selfRef">Single-qubit measurements</a>
+          </h4>
+<p id="section-5.1.1-1">For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
+Consider a general state of the qubit, <span class="contact-name">|ψ〉 = α |0〉 + β |1〉</span>.
+Measurement in an arbitrary basis <span class="contact-name">M</span> projects <span class="contact-name">|ψ〉</span> onto one of the eigenvectors of <span class="contact-name">M</span>.
+Probabilities of the two possible measurement outcomes are given by the squared modula of the overlaps between the initial state <span class="contact-name">|ψ〉</span> and the eigenvectors of the observable <span class="contact-name">M</span>.<a href="#section-5.1.1-1" class="pilcrow">¶</a></p>
+<div id="section-5.1.1-2">
+            <div class="alignLeft art-svg artwork" id="section-5.1.1-2.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="3.009ex" role="img" viewBox="0 -1006.6 21819.9 1295.7" width="50.679ex">
+                <defs>
+                  <path d="M16 662h259c100 0 172 -25 217 -63c33 -28 50 -69 50 -119c0 -53 -20 -98 -57 -131c-58 -52 -107 -61 -214 -61c-26 0 -42 1 -69 3v-179c0 -76 13 -89 94 -93v-19h-280v19c78 6 84 17 84 103v429c0 74 -10 86 -84 92v19zM202 589v-258c23 -2 41 -3 61 -3 c110 0 170 57 170 147c0 110 -60 150 -196 150c-29 0 -35 -9 -35 -36Z" id="E1-STIXWEBMAIN-50" stroke-width="1"></path>
+                  <path d="M160 458v-92c50 72 78 94 120 94c34 0 55 -20 55 -53c0 -28 -15 -45 -39 -45c-13 0 -24 5 -40 20c-11 10 -20 15 -26 15c-28 0 -70 -50 -70 -82v-225c0 -57 17 -72 85 -75v-15h-240v15c64 12 71 19 71 69v250c0 44 -9 60 -34 60c-12 0 -21 -1 -35 -4v16 c59 19 95 33 148 54Z" id="E1-STIXWEBMAIN-72" stroke-width="1"></path>
+                  <path d="M304 -161l-12 -16c-158 90 -244 259 -244 429c0 185 87 329 247 424l9 -16c-139 -119 -170 -212 -170 -405c0 -186 30 -299 170 -416Z" id="E1-STIXWEBMAIN-28" stroke-width="1"></path>
+                  <path d="M193 -189h-66v879h66v-879Z" id="E1-STIXWEBVARIANTS-7C" stroke-width="1"></path>
+                  <path d="M480 668l-55 -228c103 0 195 -38 195 -155c0 -78 -27 -147 -80 -204c-60 -65 -139 -92 -226 -92l-48 -172h-81l46 172c-108 0 -191 56 -191 171c0 76 31 142 84 196c56 57 125 84 205 84h16c19 76 37 152 53 228h82zM418 411l-97 -392c121 0 214 151 214 261 c0 79 -32 132 -117 131zM240 19l99 392c-130 0 -215 -134 -215 -253c0 -63 46 -139 116 -139Z" id="E1-STIXWEBNORMALI-1D719" stroke-width="1"></path>
+                  <path d="M323 240l-206 -453h-52l192 463l-191 463h52l205 -453v-20Z" id="E1-STIXWEBMAIN-27E9" stroke-width="1"></path>
+                  <path d="M191 403c0 -30 -25 -55 -55 -55s-56 25 -56 55c0 32 24 56 56 56c30 0 55 -26 55 -56zM107 -141l-10 19c55 36 83 73 83 106c0 7 -6 14 -14 14c-6 0 -19 -4 -28 -4c-37 0 -58 19 -58 52s26 56 59 56c45 0 80 -35 80 -89c0 -63 -42 -121 -112 -154Z" id="E1-STIXWEBMAIN-3B" stroke-width="1"></path>
+                  <path d="M711 439v-16c-96 -13 -121 -124 -141 -213c-29 -128 -144 -221 -268 -221l-42 -172h-81l43 172h-10c-78 0 -153 41 -153 165c0 56 32 116 32 183c0 40 -14 81 -61 86l5 16c19 2 37 2 55 2c57 0 88 -54 88 -111c0 -56 -31 -127 -31 -185c0 -75 32 -119 83 -126l100 409h81 l-100 -409c73 14 145 78 170 187c28 120 51 233 204 233h26Z" id="E1-STIXWEBNORMALI-1D713" stroke-width="1"></path>
+                  <path d="M29 660l12 16c153 -92 244 -259 244 -429c0 -185 -88 -327 -247 -424l-9 16c142 117 170 211 170 405c0 187 -25 302 -170 416Z" id="E1-STIXWEBMAIN-29" stroke-width="1"></path>
+                  <path d="M637 320h-589v66h589v-66zM637 120h-589v66h589v-66Z" id="E1-STIXWEBMAIN-3D" stroke-width="1"></path>
+                  <path d="M335 713l-192 -462l191 -464h-52l-205 454v20l206 452h52Z" id="E1-STIXWEBMAIN-27E8" stroke-width="1"></path>
+                  <path d="M474 137l-54 -137h-391v12l178 189c94 99 130 175 130 260c0 91 -54 141 -139 141c-72 0 -107 -32 -147 -130l-21 5c21 117 85 199 208 199c113 0 185 -77 185 -176c0 -79 -39 -154 -128 -248l-165 -176h234c42 0 63 11 96 67Z" id="E1-STIXWEBMAIN-32" stroke-width="1"></path>
+                  <path d="M83 -141l-10 19c55 37 83 74 83 107c0 7 -6 13 -14 13s-18 -4 -29 -4c-37 0 -58 17 -58 51s24 57 60 57c45 0 80 -35 80 -87c0 -60 -43 -123 -112 -156Z" id="E1-STIXWEBMAIN-2C" stroke-width="1"></path>
+                  <path d="M637 0h-589v66h262v596h66v-596h261v-66Z" id="E1-STIXWEBMAIN-22A5" stroke-width="1"></path>
+                </defs>
+                <g fill="black" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+                  <use xlink:href="#E1-STIXWEBMAIN-50"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-72" x="557" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-28" x="891" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="1224" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D719" x="1545" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="2190" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-3B" x="2591" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="3036" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="3356" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="4068" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-29" x="4468" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-3D" x="5079" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="6043" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E8" x="6363" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D719" x="6764" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="7409" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="7730" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="8441" y="0"></use>
+                  <g transform="translate(8842,0)">
+                    <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.707)" x="453" y="591"></use>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBMAIN-2C" x="9616" y="0"></use>
+                  <g transform="translate(11033,0)">
+                    <use xlink:href="#E1-STIXWEBMAIN-50"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-72" x="557" y="0"></use>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBMAIN-28" x="11924" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="12258" y="0"></use>
+                  <g transform="translate(12578,0)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D719" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-22A5" transform="scale(0.707)" x="912" y="583"></use>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="13809" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-3B" x="14209" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="14654" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="14975" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="15686" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-29" x="16087" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-3D" x="16698" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="17661" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E8" x="17982" y="0"></use>
+                  <g transform="translate(18382,0)">
+                    <use xlink:href="#E1-STIXWEBNORMALI-1D719" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-22A5" transform="scale(0.707)" x="912" y="583"></use>
+                  </g>
+                  <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="19612" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D713" x="19933" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-27E9" x="20644" y="0"></use>
+                  <g transform="translate(21045,0)">
+                    <use xlink:href="#E1-STIXWEBVARIANTS-7C" x="0" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-32" transform="scale(0.707)" x="453" y="591"></use>
+                  </g>
+                </g>
+              </svg><a href="#section-5.1.1-2.1" class="pilcrow">¶</a>
+</div>
+</div>
+</section>
+</div>
 </section>
 </div>
 </section>

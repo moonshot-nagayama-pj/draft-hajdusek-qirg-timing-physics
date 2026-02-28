@@ -81,6 +81,7 @@ Table of Contents
      4.3.  Separation in a train of wavepackets
    5.  Measurement basis selection
      5.1.  Measurement basics
+       5.1.1.  Single-qubit measurements
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -917,6 +918,19 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    We will first discuss quantum measurements in general before
    discussing concrete implementations and their timing requirements
    based on their physical implementations.
+
+5.1.1.  Single-qubit measurements
+
+   For simplicity, we begin with measurements on a single qubit before
+   generalizing to two qubit measurements.  Consider a general state of
+   the qubit, |ψ〉 = α |0〉 + β |1〉. Measurement in an arbitrary basis M
+   projects |ψ〉 onto one of the eigenvectors of M.  Probabilities of the
+   two possible measurement outcomes are given by the squared modula of
+   the overlaps between the initial state |ψ〉 and the eigenvectors of
+   the observable M.
+
+                      2          ⟂          ⟂    2
+   Pr(|ϕ⟩;|ψ⟩)=|⟨ϕ|ψ⟩| ,    Pr(|ϕ ⟩;|ψ⟩)=|⟨ϕ |ψ⟩|
 
 Appendix A.  References
 
