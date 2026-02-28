@@ -5,7 +5,7 @@
 QIRG                                                         M. Hajdusek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 31 August 2026                                 27 February 2026
+Expires: 1 September 2026                               28 February 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 31 August 2026.
+   This Internet-Draft will expire on 1 September 2026.
 
 Copyright Notice
 
@@ -70,6 +70,7 @@ Table of Contents
      3.2.  Polarization
        3.2.1.  Interference of photons from two independent EPPS
      3.3.  Spectral distinguishability
+       3.3.1.  Pure states
      3.4.  Acceptance window
      3.5.  Separation in a train of wavepackets
    4.  Measurement basis selection
@@ -477,6 +478,56 @@ Table of Contents
    In this subsection, we analyze the requirements in terms of the
    photonic spectral amplitude function that lead to high visibility of
    the HOM interference.
+
+3.3.1.  Pure states
+
+   We begin the discussion by focusing on pure states of the input
+   photons first.  Single-photon state with a spectral amplitude
+   function ϕ(ω) is a superposition written as
+
+            ⌠          †
+   |1;ϕ⟩  = ⎮ dωϕ(ω) a  (ω) |0⟩
+        a   ⌡                  a
+
+   where creation operator creates a photon in the BS input mode a with
+   frequency ω. Two input photons with arbitrary spectral functions ϕ
+   and φ are described by
+
+                          ⌠             †     ⌠             †
+  |ψ⟩   = |1;ϕ⟩  |1;𝜑⟩  = ⎮ dω  ϕ(ω ) a  (ω ) ⎮ dω  𝜑(ω ) b  (ω ) |0 ⟩
+     ab        a      b   ⌡   1    1       1  ⌡   2    2       2      ab
+
+   We assume that the BS acts on the different frequency modes
+   independently, and that the reflectivity is frequency-independent.
+   Applying the same transformation rules for the creation operators,
+   the output state of the two photons is
+
+        1 ⌠           ⌠           ⎡   †       †         †       †         †       †         †       †     ⎤
+|ψ⟩   = ─ ⎮ dω  ϕ(ω ) ⎮ dω  𝜑(ω ) ⎢ c  (ω ) c  (ω ) + c  (ω ) d  (ω ) - c  (ω ) d  (ω ) - d  (ω ) d  (ω ) ⎥ |0⟩
+   cd   2 ⌡   1    1  ⌡   2    2  ⎣      1       2         2       1         1       2         1       2  ⎦    cd
+
+   The projection operators corresponding to a detection event in output
+   mode c and output mode d are given by
+
+         ⌠     †                            ⌠     †
+   P   = ⎮ dωc  (ω) |0⟩ ⟨0|  c (ω),   P   = ⎮ dωd  (ω) |0⟩ ⟨0|   d(ω)
+     c   ⌡             c   c            d   ⌡             d    d
+
+   The probability of a coincidence detection is then
+
+         1   1⌠     ∗          ⌠      ∗
+   p   = ─ - ─⎮ dω ϕ (ω )𝜑(ω ) ⎮ dω  𝜑 (ω ) ϕ(ω )
+     c   2   2⌡   1    1    1  ⌡   2     2     2
+
+   The form of this expression is the same as the one in subsection on
+   polarization above, where the probability of a coincidence detection
+   depended on the overlap between the polarization vectors ε and ε'.
+   Now, p _{c} depends on the overlap between the spectral amplitude
+   functions.  If the input photons are fully distinguishable, their
+   respective spectral amplitude functions ϕ(ω) and φ(ω) are orthogonal
+   and the integrals vanish, meaning p _{c}=1/2.  On the other hand, for
+   completely indistinguishable input photons we have ϕ(ω)=φ(ω), and due
+   to the normalization condition we obtain p _{c}=0.
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
