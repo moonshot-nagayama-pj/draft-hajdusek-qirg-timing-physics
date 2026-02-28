@@ -1073,6 +1073,56 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    |ψ⟩= cos⎜─⎟|H⟩+ e  sin⎜─⎟|V⟩
            ⎝2⎠           ⎝2⎠
 
+   This is directly equivalent to expressing the qubit state in the
+   computational basis, and can be visualized with the help of the
+   *Poincaré sphere*. The table below summarizes this equivalence.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   The Figure below shows the Poincaré sphere along with the position of
+   the polarization states.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   Polarization of light is manipulated by waveplates.  Waveplate
+   rotated by an angle α (zero is aligned with the horizontal axis)
+   rotates the polarization state around an axis, located at an angle of
+   2α with the horizontal state |H〉 in the horizontal plane, as shown in
+   Figure above.  Half waveplate rotates the polarization state by an
+   angle π, while a quarter waveplate rotates by an angle π/2 in the
+   Poincaré sphere.  The action of the waveplates is captured by the
+   corresponding unitary operations:
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   The idea behind measurements in arbitrary basis
+
+           ⟂
+   {|ψ⟩, |ψ ⟩}
+
+   is to choose the angles for the waveplates such that the following
+   transformation is achieved,
+
+                                                           ⟂
+   U   (α   )U   (α   ) |ψ⟩→|H⟩,    U   (α   )U   (α   ) |ψ ⟩→|V⟩
+    HWP  HWP  QWP  QWP               HWP  HWP  QWP  QWP
+
+   Settings for the three Pauli bases are summarized in the table below.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics.html)
+
+   Changing the basis of measurement requires mechanical rotation of the
+   waveplates and coordination with the detectors.  The waveplates can
+   be rotated by a motorized rotator device, which can be adjusted at a
+   rate of around 1 degree per 100ms.  Therefore, for a rotation of 45
+   degrees, the motor requires areound 4.5s.  During the rotation
+   interval, any results obtained from the detectors must be discarded
+   as they correspond to measurements in an undesired basis.
+
 Appendix A.  References
 
 A.1.  Normative
