@@ -567,7 +567,7 @@ Probabilities of the two possible measurement outcomes are given by the squared 
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
 ~~~
 
-We read this notation as _probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$.
+We read this notation as probability of the measurement outcome being the state $$|\phi\rangle$$, given that the initial state was $$|\psi\rangle$$.
 <!--For example, measurement in the Pauli $$Z$$ basis projects onto either $$|0\rangle$$ or $$|1\rangle\}$$, while measurement in the Pauli $$X$$ basis projects onto $$|+\rangle$$ or $$|-\rangle$$.
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
