@@ -627,7 +627,7 @@ The figure below demonstrates how this method works.
 
 <artwork type="svg" src="Figures/shelving.svg"></artwork>
 
-The ion is illuminated by light tuned to resonate with the transition $$|g\rangle\leftrightarrow|r\rangle$$, represented by the red straight arrow in the Figure above.
+The ion is illuminated by light tuned to resonate with the transition $$|g\rangle <->|r\rangle$$, represented by the red straight arrow in the Figure above.
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state $$|g\rangle$$.
 If no fluorescence is observed, the ion is measured in the excited state $$|e\rangle$$.
 Hypothetically a single fluorescent photon would be sufficient, however, the fluorescent photons are only rarely captured into the measurement apparatus (typically involving lenses and a camera) and observed, and stray photons are also often captured, so a relatively long **integration time** is used to confirm the fluorescence with high probability.  (Solid-state systems such as quantum dots and superconducting qubits also need relatively long integration times in their measurement processes.)
