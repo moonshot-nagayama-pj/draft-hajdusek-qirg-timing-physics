@@ -522,12 +522,12 @@ Table of Contents
    The form of this expression is the same as the one in subsection on
    polarization above, where the probability of a coincidence detection
    depended on the overlap between the polarization vectors ε and ε'.
-   Now, p _{c} depends on the overlap between the spectral amplitude
+   Now, p _c depends on the overlap between the spectral amplitude
    functions.  If the input photons are fully distinguishable, their
    respective spectral amplitude functions ϕ(ω) and φ(ω) are orthogonal
-   and the integrals vanish, meaning p _{c}=1/2.  On the other hand, for
+   and the integrals vanish, meaning p _c=1/2.  On the other hand, for
    completely indistinguishable input photons we have ϕ(ω)=φ(ω), and due
-   to the normalization condition we obtain p _{c}=0.
+   to the normalization condition we obtain p _c=0.
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
