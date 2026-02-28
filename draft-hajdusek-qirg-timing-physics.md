@@ -324,23 +324,33 @@ Now, $$p_c$$ depends on the overlap between the spectral amplitude functions.
 If the input photons are fully distinguishable, their respective spectral amplitude functions $$\phi(\omega)$$ and $$\varphi(\omega)$$ are orthogonal and the integrals vanish, meaning $$p_c=1/2$$.
 On the other hand, for completely indistinguishable input photons we have $$\phi(\omega)=\varphi(\omega)$$, and due to the normalization condition we obtain $$p_c=0$$.
 
-<!-- ### Mixed states
+### Mixed states
 
 Previous discussion of pure states can be extended to include mixed states of the input photons.
 Such states will inevitably arise due to imperfections in the preparation procedure and due to the input photons being entangled with other degrees of freedom.
 These can include other photons or quantum memories.
 
-The mixed state of an input photon is described by the following density matrix,
-$$\rho_a = \sum_k u_k |1;\phi_k\rangle_a\langle1;\phi_k|_a,$$
-where the state of the photon is a mixture of pure single-photon states with spectral amplitude function $$\phi_k(\omega)$$, weighted by probability $$u_k$$.
-The normalization condition requires that $$\sum_k u_k=1$$.
-The two-photon input state can be written as
-$$\rho ^{\text{in}} _{ab} = \sum _{kk'} u_k v _{k'} |1;\phi_k\rangle_a |1;\varphi _{k'}\rangle_b \langle 1;\phi_k|_a \langle 1;\varphi _{k'}|_b.$$
-It is not necessary to repeat the entire calculation we did for pure states.
-Due to the linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$,
-$$p _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2).$$
+The mixed state of an input photon is described by the following density matrix:
 
-#### Example 1: Gaussian wave packets
+~~~math
+\rho_a = \sum_k u_k |1;\phi_k\rangle_a\langle1;\phi_k|_a, \quad \sum_k u_k=1
+~~~
+
+where the state of the photon is a mixture of pure single-photon states with spectral amplitude function $$\phi_k(\omega)$$, weighted by probability $$u_k$$.
+The two-photon input state can be written as
+
+~~~math
+\rho ^{\text{in}} _{ab} = \sum _{kk'} u_k v _{k'} |1;\phi_k\rangle_a |1;\varphi _{k'}\rangle_b \langle 1;\phi_k|_a \langle 1;\varphi _{k'}|_b
+~~~
+
+It is not necessary to repeat the entire calculation we did for pure states.
+Due to linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$:
+
+~~~math
+p _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2)
+~~~
+
+<!-- #### Example 1: Gaussian wave packets
 
 In this example, we consider input photons with Gaussian spectral amplitude functions.
 The spectral amplitude functions are given by
