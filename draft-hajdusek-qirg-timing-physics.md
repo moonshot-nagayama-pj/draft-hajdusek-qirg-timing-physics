@@ -464,11 +464,11 @@ The type of material and geometry of the detector determine the photon _absorpti
 Finally, the probability that an electric signal is generated upon successful absorption of a photon is described by the _registering efficiency_, $$\eta_registering$$.
 The overall _system detection efficiency_ is given by the product of these three,
 
-  ~~~math
+<!--   ~~~math
   \eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
   ~~~
 
-<!-- The _device detection efficiency_ is given by
+The _device detection efficiency_ is given by
 
   ~~~math
   \eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
