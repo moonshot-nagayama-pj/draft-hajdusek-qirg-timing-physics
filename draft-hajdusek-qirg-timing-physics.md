@@ -516,7 +516,7 @@ We refer to the minimum separation between the photons as the **separation time*
 
 The size of the separation time depends on the following:
 
-* **Wave packet shape:** Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use $$T_{\text{photon}}$$ to denote the length of a wavepacket in seconds.
+* **Wave packet shape:** Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use T_photon to denote the length of a wavepacket in seconds.
 * **Detector recovery time:** Spacing the wavepackets too close to each other may result in some of the photons being lost due to the detector recovering following a detection event, leading to inefficient use of initially generated entangled pairs (either memory-photon or photon-photon).
 * **Memory emission jitter:** The separation between the wavepackets must take into account the probabilistic nature of photon emission from a quantum memory in order to prevent wavepacket overlap.
 * **Detector timing jitter:** Generation of the electric signal following absorption of a photon varies in duration, leading to a variance in timing of the detection event. This may lead to the BSA mislabelling which photons were part of a successful measurement if their wavepackets are spaced too closely.
@@ -529,8 +529,8 @@ T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{tim
 
 The above discussion assumes that the photons can be generated nearly on-demand.
 This is a fair assumption in the case of quantum memories based on [trapped ions](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
-Here, the memory must be first initialized by cooling it to its ground state, a process which takes $$<1\text{ms}$$.
-The memory is then excited by a laser pulse of approximately $$50\mu \text{s}$$ that generates a photon.
+Here, the memory must be first initialized by cooling it to its ground state, a process which takes <1ms.
+The memory is then excited by a laser pulse of approximately 50 microseconds that generates a photon.
 
 In the case of memory-less link architectures, the picture is slightly different.
 Here, EPPS nodes utilizing the principle of spontaneous parametric down-conversion (SPDC) generate entangled photon pairs.
@@ -538,7 +538,7 @@ Each photon is sent to a different BSA, where they are measured with a photon or
 SPDC is an inefficient process with success probability of around $$10^{-6}$$ per pump photon. In system design, the intensity of the pump laser is adjusted so that the average number of photons is appropriate; generally this must be set below one photon per time window in order to avoid polluting the signal with two-photon states.
 This means that most of the time windows given by the separation time will not contain a photon.
 However, the separation time should be maintained in order to correcly identify the photons that were part of a successful measurement at the BSA.
-The separation time governs the maximum rate at which EPPS attempts to generate the entangled photon pairs, which is given by $$1/T_{\text{separation}}$$.
+The separation time governs the maximum rate at which EPPS attempts to generate the entangled photon pairs, which is given by 1/T_separation.
 
 # Measurement basis selection
 
