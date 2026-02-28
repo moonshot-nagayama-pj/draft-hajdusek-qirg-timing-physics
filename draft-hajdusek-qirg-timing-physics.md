@@ -393,7 +393,7 @@ The probability of coincidence and corresponding visibility for both Cases are s
 
 <artwork type="svg" src="Figures/visibility-spectral.svg"></artwork>
 
-<!-- ## Wave Packet Overlap
+## Wave Packet Overlap
 
 So far we have assumed that the two input photons arrive at the BS at exactly the same time.
 In this subsection, we address this unrealistic assumption and quantify how temporal distinguishability affects the visibility of HOM interference.
@@ -404,33 +404,33 @@ If the times of arrival are too different as shown in the Figure below, the prob
 
 Without loss of generality we assume that photon $$b$$ is delayed by a time $$\tau$$, which transforms its creation operator,
 
-~~~text
+~~~math
 b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}
 ~~~
 
 Two input photons with arbitrary spectral functions $$\phi$$ and $$\varphi$$, with photon $$b$$ arriving late, are described by
 
-~~~text
+~~~math
 |\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}
 ~~~
 
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is also frequency-independent.
 Applying the same transformation rules for the input creation operators, the output state of the two photons is
 
-~~~text
+~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) e^{-i\omega_2\tau} \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}
 ~~~
 
 For pure input states, the probability of a coincidence detection is
 
-~~~text
-p ^{\text{pure}} _{\text{co}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau}
+~~~math
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau}
 ~~~
 
 while for mixed states is can be generalized to the following form,
 
-~~~text
-p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}
+~~~math
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}
 ~~~
 
 ### Example: Gaussian wave packets
@@ -438,15 +438,15 @@ p ^{\text{mix}} _{\text{co}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'}
 Consider two identical pure Gaussian wavepackets that arrive at the BS with a time difference given by $$\tau$$.
 The probability of coincidence and the corresponding visibility are given by
 
-~~~text
-p_{\text{co}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}
+~~~math
+p_{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}
 ~~~
 
 The figure below displays the visibility and probability of coincidence for this case.
 
 <artwork type="svg" src="Figures/visibility-temporal.svg"></artwork>
 
-# Detector Timing Windows
+<!-- # Detector Timing Windows
 
 In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
