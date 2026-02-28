@@ -1207,6 +1207,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
                 <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="auto internal xref">4.1</a>.  <a href="#name-detector-basics" class="internal xref">Detector basics</a></p>
 </li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2">
+                <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="auto internal xref">4.2</a>.  <a href="#name-acceptance-window" class="internal xref">Acceptance window</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.3">
+                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="auto internal xref">4.3</a>.  <a href="#name-separation-in-a-train-of-wa" class="internal xref">Separation in a train of wavepackets</a></p>
+</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
@@ -17261,6 +17267,139 @@ Describes the variation in time between the photon being absorbed and the output
             </tr>
           </tbody>
         </table>
+</section>
+</div>
+<div id="acceptance-window">
+<section id="section-4.2">
+        <h3 id="name-acceptance-window">
+<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-acceptance-window" class="section-name selfRef">Acceptance window</a>
+        </h3>
+<p id="section-4.2-1">In the previous Section, we used <span class="contact-name">τ</span> to denote the difference between the arrival time of the photons at the BSA.
+However, due to emission jitter it is impossible to know the precise time of arrival of a photon.
+The only information that is available comes from the electric output signal of a detector.
+Time of detection is in general different from the time of photon arrival due to finite time needed to generate the output signal described by the timing jitter J_timing.
+Therefore, we will use <span class="contact-name">τ</span> to denote the difference in detection time of the two photons.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
+<p id="section-4.2-2">Measurement at the BSA is successful when the correct pattern of detector clicks is observed, and the difference in detection times <span class="contact-name">τ</span> is smaller than a given detection <strong>acceptance window</strong>, T_window.
+The size of this window affects both the fidelity and the generation rate of the entangled pairs that the link produces.
+Large acceptance windows produce high rates but low fidelity, while small acceptance windows result in low rates and high fidelity.
+The appropriate size of the acceptance window must be chosen in order to satisfy the demands of the application requesting the entangled states.
+Reaching the requested fidelity should take priority over high generation rate.<a href="#section-4.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="separation-in-a-train-of-wavepackets">
+<section id="section-4.3">
+        <h3 id="name-separation-in-a-train-of-wa">
+<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-separation-in-a-train-of-wa" class="section-name selfRef">Separation in a train of wavepackets</a>
+        </h3>
+<p id="section-4.3-1">Current experiments on quantum repeaters use single quantum memory per QNIC.
+As quantum technologies improve, it is likely that QNICs will be equipped with multiple quantum memories.
+This will allow for generation of link-level entanglement in a multiplexed manner, where trains of photons, each originating from a different memory inside the same QNIC, are sent to the BSA.
+The photons making up a train must be well separated such that upon a successful BSM, the BSA can uniquely identify which two photons were measured.
+We refer to the minimum separation between the photons as the <strong>separation time</strong> T_separation.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
+<p id="section-4.3-2">The size of the separation time depends on the following:<a href="#section-4.3-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-4.3-3.1">
+            <p id="section-4.3-3.1.1"><strong>Wave packet shape:</strong> Individual photons cannot have overlapping spatial wavepackets, which may lead to incorrect assignement of entangled qubits following a successful meadurement at the BSA. We will use T_photon to denote the length of a wavepacket in seconds.<a href="#section-4.3-3.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.2">
+            <p id="section-4.3-3.2.1"><strong>Detector recovery time:</strong> Spacing the wavepackets too close to each other may result in some of the photons being lost due to the detector recovering following a detection event, leading to inefficient use of initially generated entangled pairs (either memory-photon or photon-photon).<a href="#section-4.3-3.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.3">
+            <p id="section-4.3-3.3.1"><strong>Memory emission jitter:</strong> The separation between the wavepackets must take into account the probabilistic nature of photon emission from a quantum memory in order to prevent wavepacket overlap.<a href="#section-4.3-3.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.4">
+            <p id="section-4.3-3.4.1"><strong>Detector timing jitter:</strong> Generation of the electric signal following absorption of a photon varies in duration, leading to a variance in timing of the detection event. This may lead to the BSA mislabelling which photons were part of a successful measurement if their wavepackets are spaced too closely.<a href="#section-4.3-3.4.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
+<p id="section-4.3-4">General (conservative) separation time should therefore be set to<a href="#section-4.3-4" class="pilcrow">¶</a></p>
+<div id="section-4.3-5">
+          <div class="alignLeft art-svg artwork" id="section-4.3-5.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="2.843ex" role="img" viewBox="0 -791.3 15325.5 1223.9" width="35.595ex">
+              <defs>
+                <path d="M670 653l-46 -179h-16c2 17 5 44 5 71c0 66 -58 71 -99 71h-98l-133 -538c-2 -9 -5 -16 -5 -25c0 -21 16 -37 76 -37h21l-4 -16h-329l4 16h18c78 0 98 28 106 62l133 538h-91c-83 0 -153 -61 -171 -142h-16l46 179h599Z" id="E1-STIXWEBNORMALI-1D447" stroke-width="1"></path>
+                <path d="M156 301l104 -63c64 -39 88 -66 88 -123c0 -67 -64 -125 -140 -125c-21 0 -50 1 -73 9c-24 8 -35 9 -46 9c-12 0 -18 -2 -24 -12h-13v157h16c21 -97 58 -141 127 -141c51 0 83 33 83 74c0 31 -20 57 -53 75l-54 30c-83 46 -120 94 -120 145c0 79 56 123 138 123 c24 0 46 -1 67 -11c11 -5 21 -8 28 -8c4 0 8 1 16 10h11l5 -136h-15c-23 90 -53 123 -113 123c-43 0 -75 -21 -75 -68c0 -22 15 -51 43 -68Z" id="E1-STIXWEBMAIN-73" stroke-width="1"></path>
+                <path d="M408 164l16 -7c-39 -109 -109 -167 -209 -167c-118 0 -190 89 -190 227c0 141 81 243 207 243c62 0 107 -24 139 -69c20 -28 30 -60 34 -114h-308c5 -76 10 -115 46 -163c28 -37 65 -55 111 -55c67 0 105 31 154 105zM99 309h204c-11 81 -32 115 -98 115 c-56 0 -95 -40 -106 -115Z" id="E1-STIXWEBMAIN-65" stroke-width="1"></path>
+                <path d="M159 458v-77c44 55 88 79 144 79c97 0 167 -89 167 -213c0 -145 -91 -257 -210 -257c-42 0 -65 10 -101 43v-157c0 -63 13 -74 88 -75v-18h-242v17c59 6 70 17 70 69v468c0 47 -7 57 -41 57c-9 0 -16 0 -25 -1v16c55 17 91 30 144 51zM159 334v-246c0 -30 57 -66 104 -66 c72 0 121 75 121 185c0 117 -49 193 -123 193c-46 0 -102 -36 -102 -66Z" id="E1-STIXWEBMAIN-70" stroke-width="1"></path>
+                <path d="M442 66v-28c-30 -38 -56 -48 -90 -48c-37 0 -59 20 -64 73h-1c-53 -60 -102 -73 -145 -73c-62 0 -105 38 -105 104c0 52 31 91 70 117c30 20 67 39 180 81v54c0 62 -33 90 -78 90c-40 0 -70 -22 -70 -49c0 -18 6 -21 6 -42c0 -19 -20 -41 -46 -41c-21 0 -43 19 -43 46 c0 26 16 58 51 80c28 18 70 30 115 30c56 0 94 -16 118 -45s28 -50 28 -111v-191c0 -46 13 -66 31 -66c16 0 26 5 43 19zM287 127v141c-62 -22 -103 -43 -128 -66c-24 -22 -34 -46 -34 -77c0 -53 30 -77 69 -77c20 0 41 5 58 16c29 20 35 34 35 63Z" id="E1-STIXWEBMAIN-61" stroke-width="1"></path>
+                <path d="M160 458v-92c50 72 78 94 120 94c34 0 55 -20 55 -53c0 -28 -15 -45 -39 -45c-13 0 -24 5 -40 20c-11 10 -20 15 -26 15c-28 0 -70 -50 -70 -82v-225c0 -57 17 -72 85 -75v-15h-240v15c64 12 71 19 71 69v250c0 44 -9 60 -34 60c-12 0 -21 -1 -35 -4v16 c59 19 95 33 148 54Z" id="E1-STIXWEBMAIN-72" stroke-width="1"></path>
+                <path d="M266 77l13 -11c-33 -52 -71 -76 -121 -76c-58 0 -88 43 -88 127v301h-53c-3 2 -4 4 -4 7c0 6 6 12 17 19c26 15 59 52 97 107c6 9 14 18 20 28c5 0 7 -3 7 -13v-116h101v-32h-101v-286c0 -64 15 -90 52 -90c22 0 38 9 60 35Z" id="E1-STIXWEBMAIN-74" stroke-width="1"></path>
+                <path d="M180 632c0 -29 -22 -51 -52 -51c-28 0 -50 22 -50 51c0 28 23 51 51 51c29 0 51 -23 51 -51zM253 0h-237v15c69 4 79 13 79 89v227c0 47 -8 63 -33 63c-9 0 -24 0 -42 -5v16l155 55l4 -4v-351c0 -74 8 -85 74 -90v-15Z" id="E1-STIXWEBMAIN-69" stroke-width="1"></path>
+                <path d="M470 231c0 -139 -90 -241 -225 -241c-121 0 -216 99 -216 238s90 232 225 232c122 0 216 -91 216 -229zM380 204c0 68 -18 137 -50 178c-24 30 -52 50 -95 50c-69 0 -116 -59 -116 -159c0 -79 16 -151 53 -205c22 -32 54 -50 90 -50c74 0 118 70 118 186Z" id="E1-STIXWEBMAIN-6F" stroke-width="1"></path>
+                <path d="M485 0h-208l1 15c50 4 62 24 62 90v199c0 71 -24 101 -73 101c-33 0 -57 -12 -103 -57v-276c0 -39 14 -53 65 -57v-15h-211v15c51 4 62 20 62 79v243c0 49 -7 65 -35 65c-11 0 -22 -1 -29 -4v17c55 16 88 27 137 45l8 -3v-78h1c52 59 98 81 144 81c76 0 118 -55 118 -154 v-221c0 -54 12 -65 61 -70v-15Z" id="E1-STIXWEBMAIN-6E" stroke-width="1"></path>
+                <path d="M629 324l-565 -273v63l432 215l-432 215v65l565 -275v-10zM629 -103h-565v66h565v-66Z" id="E1-STIXWEBMAIN-2265" stroke-width="1"></path>
+                <path d="M487 0h-212v15c58 6 68 18 68 87v198c0 70 -25 106 -74 106c-40 0 -70 -17 -112 -63v-241c0 -69 10 -81 68 -87v-15h-216v15c58 8 64 17 64 87v471c0 43 -8 51 -51 51c-4 0 -9 0 -12 -1v16l27 8c57 17 80 24 115 36l5 -3v-304c46 60 88 84 147 84c82 0 123 -54 123 -159 v-199c0 -69 6 -77 60 -87v-15Z" id="E1-STIXWEBMAIN-68" stroke-width="1"></path>
+                <path d="M636 220h-261v-261h-66v261h-261v66h261v261h66v-261h261v-66Z" id="E1-STIXWEBMAIN-2B" stroke-width="1"></path>
+                <path d="M620 653l-4 -16h-18c-74 0 -99 -27 -108 -63l-103 -413c-19 -75 -52 -118 -92 -145c-39 -25 -84 -28 -109 -28c-69 0 -126 37 -126 97c0 37 20 71 70 71c31 0 64 -20 64 -51c0 -32 -27 -32 -27 -59c0 -15 13 -21 24 -21c49 0 67 69 74 96c37 144 117 469 117 477 c0 24 -18 39 -75 39h-20l4 16h329Z" id="E1-STIXWEBNORMALI-1D43D" stroke-width="1"></path>
+                <path d="M775 0h-218v15c56 6 65 17 65 75v206c0 79 -20 112 -77 112c-47 0 -77 -18 -107 -61v-252c0 -65 15 -79 72 -80v-15h-224v15c57 4 68 10 68 71v211c0 69 -22 111 -65 111c-37 0 -86 -19 -106 -43c-7 -8 -13 -15 -13 -17v-278c0 -43 15 -53 68 -55v-15h-222v15 c56 1 70 15 70 73v248c0 49 -9 66 -35 66c-11 0 -19 -1 -32 -4v17c55 15 88 26 139 45l8 -3v-74h2c66 68 108 77 153 77c54 0 88 -27 106 -84c54 58 105 84 163 84c81 0 116 -62 116 -180v-203c0 -45 13 -58 43 -60l26 -2v-15Z" id="E1-STIXWEBMAIN-6D" stroke-width="1"></path>
+                <path d="M470 388h-83c14 -32 19 -55 19 -84c0 -52 -16 -89 -52 -116c-32 -24 -69 -39 -104 -39c-6 0 -20 1 -38 3l-19 2c-27 -8 -60 -43 -60 -63c0 -16 24 -24 78 -27l129 -6c74 -3 121 -45 121 -107c0 -40 -19 -73 -60 -105c-52 -40 -128 -64 -200 -64c-96 0 -173 44 -173 97 c0 37 26 70 98 122c-42 20 -53 31 -53 53c0 20 13 40 46 69c15 13 29 26 43 40c-67 33 -93 71 -93 134c0 91 74 163 167 163c26 0 53 -5 80 -15l22 -8c20 -7 35 -10 55 -10h77v-39zM152 338v-3c0 -96 41 -161 103 -161c45 0 74 35 74 90c0 41 -11 86 -30 121 c-16 30 -42 47 -73 47c-46 0 -74 -35 -74 -94zM433 -64c0 37 -33 49 -124 49c-49 0 -128 6 -162 13c-40 -48 -49 -63 -49 -86c0 -44 57 -73 145 -73c114 0 190 39 190 97Z" id="E1-STIXWEBMAIN-67" stroke-width="1"></path>
+              </defs>
+              <g fill="black" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+                <use xlink:href="#E1-STIXWEBNORMALI-1D447" x="0" y="0"></use>
+                <g transform="translate(550,-150)">
+                  <use xlink:href="#E1-STIXWEBMAIN-73" transform="scale(0.707)"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-65" transform="scale(0.707)" x="389" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-70" transform="scale(0.707)" x="833" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-61" transform="scale(0.707)" x="1334" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-72" transform="scale(0.707)" x="1779" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-61" transform="scale(0.707)" x="2112" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-74" transform="scale(0.707)" x="2557" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-69" transform="scale(0.707)" x="2835" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-6F" transform="scale(0.707)" x="3114" y="0"></use>
+                  <use xlink:href="#E1-STIXWEBMAIN-6E" transform="scale(0.707)" x="3614" y="0"></use>
+                </g>
+                <use xlink:href="#E1-STIXWEBMAIN-2265" x="3838" y="0"></use>
+                <g transform="translate(4801,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D447" x="0" y="0"></use>
+                  <g transform="translate(550,-150)">
+                    <use xlink:href="#E1-STIXWEBMAIN-70" transform="scale(0.707)"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-68" transform="scale(0.707)" x="500" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6F" transform="scale(0.707)" x="1001" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-74" transform="scale(0.707)" x="1501" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6F" transform="scale(0.707)" x="1780" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6E" transform="scale(0.707)" x="2280" y="0"></use>
+                  </g>
+                </g>
+                <use xlink:href="#E1-STIXWEBMAIN-2B" x="7640" y="0"></use>
+                <g transform="translate(8548,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D43D" x="0" y="0"></use>
+                  <g transform="translate(540,-150)">
+                    <use xlink:href="#E1-STIXWEBMAIN-65" transform="scale(0.707)"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6D" transform="scale(0.707)" x="444" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-69" transform="scale(0.707)" x="1223" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-73" transform="scale(0.707)" x="1501" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-73" transform="scale(0.707)" x="1891" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-69" transform="scale(0.707)" x="2280" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6F" transform="scale(0.707)" x="2559" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6E" transform="scale(0.707)" x="3059" y="0"></use>
+                  </g>
+                </g>
+                <use xlink:href="#E1-STIXWEBMAIN-2B" x="11928" y="0"></use>
+                <g transform="translate(12835,0)">
+                  <use xlink:href="#E1-STIXWEBNORMALI-1D43D" x="0" y="0"></use>
+                  <g transform="translate(540,-150)">
+                    <use xlink:href="#E1-STIXWEBMAIN-74" transform="scale(0.707)"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-69" transform="scale(0.707)" x="278" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6D" transform="scale(0.707)" x="557" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-69" transform="scale(0.707)" x="1335" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-6E" transform="scale(0.707)" x="1614" y="0"></use>
+                    <use xlink:href="#E1-STIXWEBMAIN-67" transform="scale(0.707)" x="2114" y="0"></use>
+                  </g>
+                </g>
+              </g>
+            </svg><a href="#section-4.3-5.1" class="pilcrow">¶</a>
+</div>
+</div>
+<p id="section-4.3-6">The above discussion assumes that the photons can be generated nearly on-demand.
+This is a fair assumption in the case of quantum memories based on <a href="https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366">trapped ions</a>.
+Here, the memory must be first initialized by cooling it to its ground state, a process which takes &lt;1ms.
+The memory is then excited by a laser pulse of approximately 50 microseconds that generates a photon.<a href="#section-4.3-6" class="pilcrow">¶</a></p>
+<p id="section-4.3-7">In the case of memory-less link architectures, the picture is slightly different.
+Here, EPPS nodes utilizing the principle of spontaneous parametric down-conversion (SPDC) generate entangled photon pairs.
+Each photon is sent to a different BSA, where they are measured with a photon originating from a different EPPS node.
+SPDC is an inefficient process with success probability of around <span class="contact-name">10^{−6}</span> per pump photon. In system design, the intensity of the pump laser is adjusted so that the average number of photons is appropriate; generally this must be set below one photon per time window in order to avoid polluting the signal with two-photon states.
+This means that most of the time windows given by the separation time will not contain a photon.
+However, the separation time should be maintained in order to correcly identify the photons that were part of a successful measurement at the BSA.
+The separation time governs the maximum rate at which EPPS attempts to generate the entangled photon pairs, which is given by 1/T_separation.<a href="#section-4.3-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
