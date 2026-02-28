@@ -656,7 +656,7 @@ General pure state of a polarization-encoded qubit can be written as
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle
 ~~~
 
-<!--This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
+This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 The table below summarizes this equivalence.
 
 <artwork type="svg" src="Figures/polarization-table.svg"></artwork>
@@ -674,13 +674,13 @@ The action of the waveplates is captured by the corresponding unitary operations
 
 The idea behind measurements in arbitrary basis
 
-~~~text
+~~~math
 \{|\psi\rangle, |\psi^{\perp}\rangle\}
 ~~~
 
 is to choose the angles for the waveplates such that the following transformation is achieved,
 
-~~~text
+~~~math
 U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle
 ~~~
 
@@ -693,7 +693,7 @@ The waveplates can be rotated by a motorized rotator device, which can be adjust
 Therefore, for a rotation of 45 degrees, the motor requires areound 4.5s.
 During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.
 
-# Optical Switch Control
+<!--# Optical Switch Control
 
 Optical switches play an essential role in distributed computing and communication systems.
 Their job is to guide light from a given input to the desired output.
