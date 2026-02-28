@@ -350,7 +350,7 @@ Due to linearity of quantum mechanics, we can immediately write the expression f
 p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2)
 ~~~
 
-#### Example 1: Gaussian wave packets
+### Example 1: Gaussian wave packets
 
 In this example, we consider input photons with Gaussian spectral amplitude functions.
 The spectral amplitude functions are given by
@@ -365,7 +365,7 @@ The probability of a coincidence detection is then
 p _{\text{c}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}
 ~~~
 
-##### Case A (different central frequencies)
+**Case A (different central frequencies)**
 
 We assume that the two spectral amplitude functions have the same standard deviation, which simplifies the expression for the probability of a coincidence detection to
 
@@ -381,7 +381,7 @@ The visibility as a function of the difference between the central frequencies i
 V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}
 ~~~
 
-##### Case B (different standard deviations)
+**Case B (different standard deviations)**
 
 The spectral amplitude functions have the same central frequencies, which gives the following expression for the probability of coincidence and visibility,
 
