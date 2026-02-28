@@ -71,6 +71,7 @@ Table of Contents
        3.2.1.  Interference of photons from two independent EPPS
      3.3.  Spectral distinguishability
        3.3.1.  Pure states
+       3.3.2.  Mixed states
      3.4.  Acceptance window
      3.5.  Separation in a train of wavepackets
    4.  Measurement basis selection
@@ -528,6 +529,38 @@ Table of Contents
    and the integrals vanish, meaning p_c=1/2.  On the other hand, for
    completely indistinguishable input photons we have ϕ(ω)=φ(ω), and due
    to the normalization condition we obtain p_c=0.
+
+3.3.2.  Mixed states
+
+   Previous discussion of pure states can be extended to include mixed
+   states of the input photons.  Such states will inevitably arise due
+   to imperfections in the preparation procedure and due to the input
+   photons being entangled with other degrees of freedom.  These can
+   include other photons or quantum memories.
+
+   The mixed state of an input photon is described by the following
+   density matrix:
+
+        ⎲                       ⎲
+   ρ  = ⎳ u  |1;ϕ ⟩ ⟨1;ϕ | ,    ⎳ u =1
+    a   k  k     k a    k a     k  k
+
+   where the state of the photon is a mixture of pure single-photon
+   states with spectral amplitude function ϕ_k(ω), weighted by
+   probability u_k.  The two-photon input state can be written as
+
+    in       ⎲
+   ρ      =  ⎳  u  v    |1;ϕ ⟩  |1;𝜑  ⟩  ⟨1;ϕ |  ⟨1;𝜑  |
+       ab   kk′  k   k′     k a     k′ b     k a     k′ b
+
+   It is not necessary to repeat the entire calculation we did for pure
+   states.  Due to linearity of quantum mechanics, we can immediately
+   write the expression for the probability of coincidence as a sum of
+   pure-state coincidence probabilities weighted by u_k and v'_k:
+
+          1   1  ⎲           ⌠     ∗            ⌠      ∗
+   p    = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω )
+     co   2   2 kk′   k   k′ ⌡   1 k  1  k′  1  ⌡   2  k′  2   k  2
 
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
