@@ -79,6 +79,8 @@ Table of Contents
      4.1.  Detector basics
      4.2.  Acceptance window
      4.3.  Separation in a train of wavepackets
+   5.  Measurement basis selection
+     5.1.  Measurement basics
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -887,6 +889,34 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    successful measurement at the BSA.  The separation time governs the
    maximum rate at which EPPS attempts to generate the entangled photon
    pairs, which is given by 1/T_separation.
+
+5.  Measurement basis selection
+
+   We have encountered Bell-state measurements performed by the BSA on
+   photonic qubits that are needed for entanglement swapping.  These
+   measurements were static in the sense that we did not need to change
+   the measurement basis.  Observed detection pattern determined whether
+   the post-measurement state of the remote quantum systems (either
+   quantum memories or other photons) was |Ψ^+〉 or |Ψ^−〉. Projection
+   onto two of the four Bell-basis states was achieved probabilistically
+   without actively applying any transformations on the photonic qubits.
+   We will see in this Section that the photonic BSA is a very special
+   case in this regard, and that changing the basis of the measurement
+   is an indispensable part of quantum networking.  Entanglement
+   swapping on stationary qubits stored in quantum memories is not
+   possible without applying appropriate unitaries first that change the
+   basis of the measurement.  There are also cases, where change of
+   basis is required even when dealing with only photonic qubits.  An
+   example of this are the so-called all-photonic quantum repeaters,
+   where measurement basis is conditioned on the outcomes of previous
+   measurements, leading to the requirement of very fast basis
+   switching.
+
+5.1.  Measurement basics
+
+   We will first discuss quantum measurements in general before
+   discussing concrete implementations and their timing requirements
+   based on their physical implementations.
 
 Appendix A.  References
 
