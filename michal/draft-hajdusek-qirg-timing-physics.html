@@ -1246,18 +1246,30 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-optical-switch-control" class="internal xref">Optical Switch Control</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-references" class="internal xref">References</a></p>
-<ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7.2.1">
-                <p id="section-toc.1-1.7.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-normative" class="internal xref">Normative</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-pre-configured-event-driven" class="internal xref">Pre-configured Event-driven Tasks</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7.2.2">
-                <p id="section-toc.1-1.7.2.2.1"><a href="#appendix-A.2" class="auto internal xref">A.2</a>.  <a href="#name-informative" class="internal xref">Informative</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-urgent-but-not-synchronizat" class="internal xref">Urgent but Not Synchronization-critical Tasks</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
+            <p id="section-toc.1-1.9.1"><a href="#section-9" class="auto internal xref">9</a>.  <a href="#name-host-side-application-level" class="internal xref">Host-side Application-level Tasks</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
+            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-background-tasks" class="internal xref">Background Tasks</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
+            <p id="section-toc.1-1.11.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11.2.1">
+                <p id="section-toc.1-1.11.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-normative" class="internal xref">Normative</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11.2.2">
+                <p id="section-toc.1-1.11.2.2.1"><a href="#appendix-A.2" class="auto internal xref">A.2</a>.  <a href="#name-informative" class="internal xref">Informative</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
+            <p id="section-toc.1-1.12.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -21728,11 +21740,89 @@ The first approach is the <em>crossbar switch</em> with all-to-all connectivity.
           </g>
         </svg><a href="#section-6-8" class="pilcrow">¶</a>
 </div>
-<p id="section-6-9">This triangular switch design was introduced by <a href="https://ieeexplore.ieee.org/document/10821447">Koyama et.al.</a>. Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port <span class="contact-name">X_0</span> have to traverse at least 5 switching points, while photons from input port <span class="contact-name">X_{11}</span> do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to <span class="contact-name">\text{BSA}_5</span>. This requires photons from <span class="contact-name">X_0</span> to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.<a href="#section-6-9" class="pilcrow">¶</a></p>
+<p id="section-6-9">This triangular switch design was introduced by <a href="https://ieeexplore.ieee.org/document/10821447">Koyama et.al.</a>. Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port <span class="contact-name">X_0</span> have to traverse at least 5 switching points, while photons from input port <span class="contact-name">X_{11}</span> do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to <span class="contact-name">BSA_5</span>. This requires photons from <span class="contact-name">X_0</span> to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.<a href="#section-6-9" class="pilcrow">¶</a></p>
 <p id="section-6-10">The significance of this time delay ultimately depends on the type of photons used. Photons with longer envelopes, such as those emitted from trapped ions, may be more robust to the propagation time delays introduced by the optical switch. Photons with very short envelopes, such as the ones originating from an SPDC source, are expected to be very susceptible to any propagation time delays.<a href="#section-6-10" class="pilcrow">¶</a></p>
 <p id="section-6-11">In order to compensate for the propagation time delay, and ensure acceptable visibility at the BSAs, it is neccesary to adjust the path length of the photons with <strong>optical delay lines</strong> (ODLs). For small enough optical switches, it may be possible to characterize the propagation time delays for given photon pairs <span class="contact-name">(X_i,X_j)</span> assigned to a particular BSA prior to the opration of the switch. This would allow the ODLs to be set to precomputed configurations based on the connection request patterns. This approach will most likely not scale, at least in its general form, to larger optical switches.<a href="#section-6-11" class="pilcrow">¶</a></p>
 <p id="section-6-12">Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their <strong>polarization</strong> changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">230m</a>, data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took <strong>several minutes</strong>. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.<a href="#section-6-12" class="pilcrow">¶</a></p>
 <p id="section-6-13">Finally, given a set of connection requests, the optical switch must compute the state of all switch points to <strong>route</strong> the photons correctly. The reconfigurably non-blocking designs proposed in <code>[15]</code> come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.<a href="#section-6-13" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="pre-configured-event-driven-tasks">
+<section id="section-7">
+      <h2 id="name-pre-configured-event-driven">
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-pre-configured-event-driven" class="section-name selfRef">Pre-configured Event-driven Tasks</a>
+      </h2>
+<p id="section-7-1">In this section, we discuss synchronization-critical tasks that must be conducted when an event occurs. Most stationary qubits are under the control of a classical analog circuit that includes a local oscillator (LO) coupled to the corresponding frequency of the qubit itself. Avoiding drift between the <em>understood</em> phase of the qubit and the <em>actual</em> phase of the LO is a key part of hardware design for a qubit, but is beyond the scope of this document.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<p id="section-7-2">Events can be <em>local</em> to a quantum computer or repeater node, or <em>remote</em>, generally implying reception and processing of a classical message.<a href="#section-7-2" class="pilcrow">¶</a></p>
+<p id="section-7-3">In some cases, when a memory is used to emit a photon, the ultimate disposition of the qubit in memory might be measurement immediately after the emission of the photon (as in QKD). Alternatively, in systems involving QEC, immediately after emission of the photon, the memory qubit may be encoded into a logical qubit. In general, such events can trigger execution of a local quantum circuit.<a href="#section-7-3" class="pilcrow">¶</a></p>
+<p id="section-7-4">For links using HOM-based entanglement generation, inevitably there is a delay between the BSA operation completing successfully and the generation, transmission and reception of the confirmation message. Over distances of a few kilometers, this can require a few microseconds.<a href="#section-7-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="urgent-but-not-synchronization-critical-tasks">
+<section id="section-8">
+      <h2 id="name-urgent-but-not-synchronizat">
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-urgent-but-not-synchronizat" class="section-name selfRef">Urgent but Not Synchronization-critical Tasks</a>
+      </h2>
+<p id="section-8-1">Some events trigger a computation, or series of computations, that are too complex to be compiled directly into a form for execution by an ASIC or FPGA. For example, hybrid or adaptive algorithms such as VQE, if executed in a distributed fashion, might require a substantial statistical computation to adjust the parameters used in the creation of the ansatz.<a href="#section-8-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="host-side-application-level-tasks">
+<section id="section-9">
+      <h2 id="name-host-side-application-level">
+<a href="#section-9" class="section-number selfRef">9. </a><a href="#name-host-side-application-level" class="section-name selfRef">Host-side Application-level Tasks</a>
+      </h2>
+<p id="section-9-1">The service provided by a quantum network is entangled states, which may be either delivered to applications on quantum computers, held in limited-capability quantum memories for later release and use, or directly measured as creation is completed, corresponding to the capabilities of COMP, STOR and MEAS end node types, respectively.<a href="#section-9-1" class="pilcrow">¶</a></p>
+<p id="section-9-2">An application that uses the services of a quantum network passes through several phases:<a href="#section-9-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-9-3.1">
+          <p id="section-9-3.1.1"><strong>Planning</strong>: selecting application-level tasks and communication partners, including defining application quantum circuits (for distributed computation) or measurement bases and characteristics (for QKD or sensing applications), required distributed quantum states (at the moment, presumed to be Bell pairs), distributed entanglement fidelity, and number or rate of entangled states needed.<a href="#section-9-3.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.2">
+          <p id="section-9-3.2.1"><strong>Computational resource preparation</strong>: for distributed quantum computation, allocation of quantum computing resources attached to the quantum network, compilation of application circuits for processing and consumption of the entangled states delivered by the network service.<a href="#section-9-3.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.3">
+          <p id="section-9-3.3.1"><strong>Connection setup</strong>: the classical process of establishing communication between nodes.  Depending on the network architecture, this may include allocation of resources at repeater nodes.<a href="#section-9-3.3.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.4">
+          <p id="section-9-3.4.1"><strong>Real-time receipt and disposition of entangled states</strong>: as the network delivers entangled states to the end nodes, they will be consumed by applications, ultimately resulting in classical information which may determine further quantum actions at the level of immediate, result-dependent actions.<a href="#section-9-3.4.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.5">
+          <p id="section-9-3.5.1"><strong>Near-real time computation</strong>: many quantum algorithms are hybrid classical/quantum computation and may require larger-scale adaptation or recompilation of application quantum circuits.<a href="#section-9-3.5.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.6">
+          <p id="section-9-3.6.1"><strong>Post-quantum processing</strong>: the classical data generated by the quantum circuits or measurements can be delivered to larger classical computation and communication systems, e.g. for use as cryptographic keys or as part of a much larger computation. At this point, processing is completely decoupled from the quantum network.<a href="#section-9-3.6.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.7">
+          <p id="section-9-3.7.1"><strong>Connection teardown</strong>: After completion of the quantum network service requested by the application or larger IT service (e.g., encrypted classical connection), resources along the communication path can be recovered; partially complete entangled states are discarded or repurposed, and physical resources reallocated to other connections.<a href="#section-9-3.7.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.8">
+          <p id="section-9-3.8.1"><strong>Computational resource release</strong>: reserved quantum computational resources are released.<a href="#section-9-3.8.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-9-3.9">
+          <p id="section-9-3.9.1"><strong>Completion</strong>: the end-to-end hybrid quantum+classical service is terminated.<a href="#section-9-3.9.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<p id="section-9-4">All of the above except those marked real-time and near-real time are almost entirely insensitive to timing issues, except as necessary for the end-to-end service to meet the users' needs. If allocated resources sit unused for extensive periods of time, the service delivery of the network as a whole may be negatively impacted; introduction of proper pricing or admission control may be needed to resolve such issues.<a href="#section-9-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="background-tasks">
+<section id="section-10">
+      <h2 id="name-background-tasks">
+<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-background-tasks" class="section-name selfRef">Background Tasks</a>
+      </h2>
+<p id="section-10-1">Network operations include a number of tasks that monitor and maintain the integrity and performance of the network. In the case of a quantum network, uses of the quantum portion of the network can often be deferred until the network is idle or pre-scheduled time slots arrive, in order to minimize the impact on application requests.  Once the quantum operations are begun, of course, they are subject to all of the constraints listed above, but the accompanying classical calculation and inter-node reconciliation can proceed in the background.<a href="#section-10-1" class="pilcrow">¶</a></p>
+<p id="section-10-2">Such tasks include:<a href="#section-10-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-10-3.1">
+          <p id="section-10-3.1.1"><strong>Link monitoring</strong>: Each link must be monitored continuously in order to inform routing (below) and RuleSet creation during connection setup.  Reconstruction of the link density matrix and entanglement success rates involve classical information sharing between the two nodes at opposite ends of the link. This information must be shared reliably but does not have hard real-time constraints, as so is well suited to transmission over a reliable protocol such as TCP without concern for delays. The required classical information is the outcomes of measurements of the quantum portion of the link. That data can be collected from entangled states specifically assigned to the link monitoring task.  It can also be collected from application-targeted uses of the link, provided that appropriate coordination can be achieved and connection privacy maintained.<a href="#section-10-3.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-10-3.2">
+          <p id="section-10-3.2.1"><strong>Routing</strong>: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.<a href="#section-10-3.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-10-3.3">
+          <p id="section-10-3.3.1"><strong>Malicious use monitoring</strong>: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.<a href="#section-10-3.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
 </section>
 </div>
 <div id="references">

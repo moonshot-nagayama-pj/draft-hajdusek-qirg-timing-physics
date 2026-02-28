@@ -87,6 +87,10 @@ Table of Contents
        5.2.1.  Trapped ions
      5.3.  Measurements on photonic qubits
    6.  Optical Switch Control
+   7.  Pre-configured Event-driven Tasks
+   8.  Urgent but Not Synchronization-critical Tasks
+   9.  Host-side Application-level Tasks
+   10. Background Tasks
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -1199,10 +1203,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    have to traverse at least 5 switching points, while photons from
    input port X_{11} do not have to traverse any at all.  Furthermore,
    if photons from these two input ports are required to undergo Bell-
-   state measurement, both need to be routed to \text{BSA}_5.  This
-   requires photons from X_0 to traverse 10 switching points intoducing
-   the largest possible time delay giventhis design and size of the
-   switch.
+   state measurement, both need to be routed to BSA_5.  This requires
+   photons from X_0 to traverse 10 switching points intoducing the
+   largest possible time delay giventhis design and size of the switch.
 
    The significance of this time delay ultimately depends on the type of
    photons used.  Photons with longer envelopes, such as those emitted
@@ -1245,6 +1248,154 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    correction, it is expected that computing the configuration of all
    switching points will not be the bottleneck during operation of the
    optical switch.
+
+7.  Pre-configured Event-driven Tasks
+
+   In this section, we discuss synchronization-critical tasks that must
+   be conducted when an event occurs.  Most stationary qubits are under
+   the control of a classical analog circuit that includes a local
+   oscillator (LO) coupled to the corresponding frequency of the qubit
+   itself.  Avoiding drift between the _understood_ phase of the qubit
+   and the _actual_ phase of the LO is a key part of hardware design for
+   a qubit, but is beyond the scope of this document.
+
+   Events can be _local_ to a quantum computer or repeater node, or
+   _remote_, generally implying reception and processing of a classical
+   message.
+
+   In some cases, when a memory is used to emit a photon, the ultimate
+   disposition of the qubit in memory might be measurement immediately
+   after the emission of the photon (as in QKD).  Alternatively, in
+   systems involving QEC, immediately after emission of the photon, the
+   memory qubit may be encoded into a logical qubit.  In general, such
+   events can trigger execution of a local quantum circuit.
+
+   For links using HOM-based entanglement generation, inevitably there
+   is a delay between the BSA operation completing successfully and the
+   generation, transmission and reception of the confirmation message.
+   Over distances of a few kilometers, this can require a few
+   microseconds.
+
+8.  Urgent but Not Synchronization-critical Tasks
+
+   Some events trigger a computation, or series of computations, that
+   are too complex to be compiled directly into a form for execution by
+   an ASIC or FPGA.  For example, hybrid or adaptive algorithms such as
+   VQE, if executed in a distributed fashion, might require a
+   substantial statistical computation to adjust the parameters used in
+   the creation of the ansatz.
+
+9.  Host-side Application-level Tasks
+
+   The service provided by a quantum network is entangled states, which
+   may be either delivered to applications on quantum computers, held in
+   limited-capability quantum memories for later release and use, or
+   directly measured as creation is completed, corresponding to the
+   capabilities of COMP, STOR and MEAS end node types, respectively.
+
+   An application that uses the services of a quantum network passes
+   through several phases:
+
+   *  *Planning*: selecting application-level tasks and communication
+      partners, including defining application quantum circuits (for
+      distributed computation) or measurement bases and characteristics
+      (for QKD or sensing applications), required distributed quantum
+      states (at the moment, presumed to be Bell pairs), distributed
+      entanglement fidelity, and number or rate of entangled states
+      needed.
+
+   *  *Computational resource preparation*: for distributed quantum
+      computation, allocation of quantum computing resources attached to
+      the quantum network, compilation of application circuits for
+      processing and consumption of the entangled states delivered by
+      the network service.
+
+   *  *Connection setup*: the classical process of establishing
+      communication between nodes.  Depending on the network
+      architecture, this may include allocation of resources at repeater
+      nodes.
+
+   *  *Real-time receipt and disposition of entangled states*: as the
+      network delivers entangled states to the end nodes, they will be
+      consumed by applications, ultimately resulting in classical
+      information which may determine further quantum actions at the
+      level of immediate, result-dependent actions.
+
+   *  *Near-real time computation*: many quantum algorithms are hybrid
+      classical/quantum computation and may require larger-scale
+      adaptation or recompilation of application quantum circuits.
+
+   *  *Post-quantum processing*: the classical data generated by the
+      quantum circuits or measurements can be delivered to larger
+      classical computation and communication systems, e.g. for use as
+      cryptographic keys or as part of a much larger computation.  At
+      this point, processing is completely decoupled from the quantum
+      network.
+
+   *  *Connection teardown*: After completion of the quantum network
+      service requested by the application or larger IT service (e.g.,
+      encrypted classical connection), resources along the communication
+      path can be recovered; partially complete entangled states are
+      discarded or repurposed, and physical resources reallocated to
+      other connections.
+
+   *  *Computational resource release*: reserved quantum computational
+      resources are released.
+
+   *  *Completion*: the end-to-end hybrid quantum+classical service is
+      terminated.
+
+   All of the above except those marked real-time and near-real time are
+   almost entirely insensitive to timing issues, except as necessary for
+   the end-to-end service to meet the users' needs.  If allocated
+   resources sit unused for extensive periods of time, the service
+   delivery of the network as a whole may be negatively impacted;
+   introduction of proper pricing or admission control may be needed to
+   resolve such issues.
+
+10.  Background Tasks
+
+   Network operations include a number of tasks that monitor and
+   maintain the integrity and performance of the network.  In the case
+   of a quantum network, uses of the quantum portion of the network can
+   often be deferred until the network is idle or pre-scheduled time
+   slots arrive, in order to minimize the impact on application
+   requests.  Once the quantum operations are begun, of course, they are
+   subject to all of the constraints listed above, but the accompanying
+   classical calculation and inter-node reconciliation can proceed in
+   the background.
+
+   Such tasks include:
+
+   *  *Link monitoring*: Each link must be monitored continuously in
+      order to inform routing (below) and RuleSet creation during
+      connection setup.  Reconstruction of the link density matrix and
+      entanglement success rates involve classical information sharing
+      between the two nodes at opposite ends of the link.  This
+      information must be shared reliably but does not have hard real-
+      time constraints, as so is well suited to transmission over a
+      reliable protocol such as TCP without concern for delays.  The
+      required classical information is the outcomes of measurements of
+      the quantum portion of the link.  That data can be collected from
+      entangled states specifically assigned to the link monitoring
+      task.  It can also be collected from application-targeted uses of
+      the link, provided that appropriate coordination can be achieved
+      and connection privacy maintained.
+
+   *  *Routing*: Creation and update of routing tables at each node is
+      an ordinary, distributed classical task that shares the
+      information collected about links as above.  The expected
+      completion time of this tasks should be quick enough that the
+      network converges to provide seamless service upon topology
+      changes.  Unless nodes are mobile, propagation and recalculation
+      of such changes at the level of seconds should be acceptable.
+
+   *  *Malicious use monitoring*: It is known that a hijacked or
+      malfunctioning repeater can be used to impede the overall service
+      of the network or even to partition the network.  It is also known
+      that QKD-derived monitoring of the network using randomly selected
+      measurement bases on a portion of the network capacity can serve
+      as a detection mechanism for this malicious behavior.
 
 Appendix A.  References
 
