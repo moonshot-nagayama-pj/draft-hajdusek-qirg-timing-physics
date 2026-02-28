@@ -600,16 +600,16 @@ This is pictured in the Figure below.
 
 <artwork type="svg" src="Figures/measurement-1qubit.svg"></artwork>
 
-<!--### Two-qubit measurements
+### Two-qubit measurements
 
 The same principle of changing the measurement basis can be generalized to two qubits.
 This time state $$|\psi\rangle$$ represents a general two-qubit state, unitary $$U ^{\dagger}$$ acts on both qubits, which are both finally measured in Pauli $$Z$$ basis.
 In the majority of cases, we are interested in performing measurements in the Bell basis.
-Required unitary $$U ^{\dagger}$$ is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in $$|0\rangle$$, as shown in the Figure below, where we have dropped the $$Z$$ label indicating the measurement basis.
+Required unitary is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in $$|0\rangle$$, as shown in the Figure below, where we have dropped the $$Z$$ label indicating the measurement basis.
 
 <artwork type="svg" src="Figures/measurement-2qubit.svg"></artwork>
 
-## Measurements on quantum memories
+<!--## Measurements on quantum memories
 
 In this Section, we discuss various methods of implementing measurements of quantum memories.
 These methods vary based on the quantum technology used as the quantum memory, and even within the same technology there are usually variations.
