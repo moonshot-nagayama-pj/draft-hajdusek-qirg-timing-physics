@@ -932,6 +932,17 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
                       2          ⟂          ⟂    2
    Pr(|ϕ⟩;|ψ⟩)=|⟨ϕ|ψ⟩| ,    Pr(|ϕ ⟩;|ψ⟩)=|⟨ϕ |ψ⟩|
 
+   For example, measurement in the Pauli Z basis projects onto
+   either |0〉 or |1〉}, while measurement in the Pauli X basis projects
+   onto |+〉 or |−〉.
+
+   It is often difficult to directly measure the qubit in an arbitrary
+   basis when it comes to real-world implementation.  In such a case,
+   the qubit needs to be pre-rotated by an appropriate unitary
+   operation, and then measured in the Z basis, which can usually be
+   implemented in a straightforward way.  This approach greatly
+   simplifies the implementation of arbitrary measurements.
+
 Appendix A.  References
 
 A.1.  Normative
