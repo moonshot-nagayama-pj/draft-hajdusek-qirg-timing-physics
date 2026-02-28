@@ -736,6 +736,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
       efficiency_, η_registering.  The overall _system detection
       efficiency_ is given by the product of these three,
 
+   η    = η         ×η           ×η
+    sde    coupling   absorption   registering
+
             +=============================+=========+=========+
             | Wavelength                  | 800 nm  | 1550 nm |
             +=============================+=========+=========+
