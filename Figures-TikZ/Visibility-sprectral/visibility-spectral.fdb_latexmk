@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1772335805.07894 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" "visibility-spectral.pdf" "visibility-spectral" 1772335806.08263 0
-  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" 1772335804.88585 1557 45fddd2e7fb39c08bd1982d7948a3e41 ""
+["pdflatex"] 1772336019.677 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" "visibility-spectral.pdf" "visibility-spectral" 1772336020.64608 0
+  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" 1772336019.50182 1557 ac33b9b049adb82e301ca452f29ed1c5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -149,8 +149,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1771289625 5541377 824b1e5beafd2ebda40585373b35bb6b ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771289770 3636351 86f02ac9cf6676be8ec685ab5c788b18 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "visibility-spectral.aux" 1772335806.0443 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "visibility-spectral.tex" 1772335804.88585 1557 45fddd2e7fb39c08bd1982d7948a3e41 ""
+  "visibility-spectral.aux" 1772336020.60694 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "visibility-spectral.tex" 1772336019.50182 1557 ac33b9b049adb82e301ca452f29ed1c5 ""
   (generated)
   "visibility-spectral.aux"
   "visibility-spectral.log"
