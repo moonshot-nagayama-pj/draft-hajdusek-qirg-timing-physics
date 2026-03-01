@@ -114,7 +114,7 @@ This figure shows these cases:
   <artset>
     <artwork type="svg" src="Figures-BW/HOM-bw.svg"></artwork>
   </artset>
-<f/igure>
+</figure>
 
 The input state can be expressed as
 
