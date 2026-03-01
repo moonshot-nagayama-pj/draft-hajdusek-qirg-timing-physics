@@ -110,7 +110,11 @@ There are four possible cases that may occur:
 
 This figure shows these cases:
 
-<artwork type="svg" src="Figures-BW/HOM-bw.svg"></artwork>
+<figure>
+  <artset>
+    <artwork type="svg" src="Figures-BW/HOM-bw.svg"></artwork>
+  </artset>
+<f/igure>
 
 The input state can be expressed as
 
