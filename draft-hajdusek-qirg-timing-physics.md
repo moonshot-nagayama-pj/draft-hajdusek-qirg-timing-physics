@@ -400,7 +400,7 @@ In this subsection, we address this unrealistic assumption and quantify how temp
 Even for photons with identical spectral amplitude functions, different arrival times result in decreased overlap between the photons' wave packets, diminishing the visibility of the HOM interference.
 If the times of arrival are too different as shown in the Figure below, the probability of a coincidence detection will reach its maximum value of 1/2, and the visibility will vanish.
 
-<artwork type="svg" src="Figures/distinguishability-temporal.svg"></artwork>
+<artwork type="svg" src="Figures-BW/distinguishability-temporal-bw.svg"></artwork>
 
 Without loss of generality we assume that photon $$b$$ is delayed by a time $$\tau$$, which transforms its creation operator,
 
