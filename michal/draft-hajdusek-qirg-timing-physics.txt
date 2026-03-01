@@ -5,7 +5,7 @@
 QIRG                                                         M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 1 September 2026                               28 February 2026
+Expires: 2 September 2026                                   1 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 1 September 2026.
+   This Internet-Draft will expire on 2 September 2026.
 
 Copyright Notice
 
