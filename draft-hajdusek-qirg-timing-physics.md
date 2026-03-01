@@ -607,7 +607,7 @@ This time state $$|\psi\rangle$$ represents a general two-qubit state, unitary $
 In the majority of cases, we are interested in performing measurements in the Bell basis.
 Required unitary is the Hermitian conjugate of the unitary that creates a Bell pair when the qubits are both initialized in $$|0\rangle$$, as shown in the Figure below, where we have dropped the $$Z$$ label indicating the measurement basis.
 
-<artwork type="svg" src="Figures/measurement-2qubit.svg"></artwork>
+<artwork type="svg" src="Figures-BW/measurement-2qubit-bw.svg"></artwork>
 
 ## Measurements on quantum memories
 
