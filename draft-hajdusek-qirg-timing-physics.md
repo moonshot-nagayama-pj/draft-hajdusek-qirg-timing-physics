@@ -391,7 +391,7 @@ p_{\text{c}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}
 
 The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below.
 
-<artwork type="svg" src="Figures-BW/visibility-spectral-bw.svg"></artwork>
+<artwork type="svg" src="Figures-matplotlib/visibility-spectral.svg"></artwork>
 
 ## Wave Packet Overlap
 
