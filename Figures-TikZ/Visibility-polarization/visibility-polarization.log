@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.17)  1 MAR 2026 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.17)  1 MAR 2026 17:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -407,7 +407,7 @@ File: ueur.fd 2013/01/14 v3.01 Euler Roman
 
 
 Non-PDF special ignored!
-<special> papersize=267.15764pt,179.15848pt
+<special> papersize=267.15764pt,176.69339pt
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./visibility-polarization.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -417,16 +417,16 @@ L3 programming layer <2026-01-19>
 Here is how much of TeX's memory you used:
  24215 strings out of 467533
  646235 string characters out of 5419489
- 1180924 words of memory out of 5000000
+ 1180895 words of memory out of 5000000
  52723 multiletter control sequences out of 15000+600000
  635556 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,18n,107p,824b,2182s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on visibility-polarization.pdf (1 page, 33241 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on visibility-polarization.pdf (1 page, 14143 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 17 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
