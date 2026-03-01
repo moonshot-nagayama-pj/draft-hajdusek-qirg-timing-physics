@@ -598,7 +598,7 @@ and
 
 This is pictured in the Figure below.
 
-<artwork type="svg" src="Figures-Bw/measurement-1qubit-bw.svg"></artwork>
+<artwork type="svg" src="Figures-BW/measurement-1qubit-bw.svg"></artwork>
 
 ### Two-qubit measurements
 
