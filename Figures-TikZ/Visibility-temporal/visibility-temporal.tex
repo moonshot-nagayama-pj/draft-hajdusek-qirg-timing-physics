@@ -7,9 +7,11 @@ positioning,
 calc,
 patterns}
 \usepackage{pgfplots}
+\usepackage{helvet}
+\usepackage[eulergreek]{sansmath}
 \pgfplotsset{compat=1.18}
 \pgfplotsset{
-    ticklabel style={font=\sffamily},
+    tick label style={font=\sansmath\sffamily},
     every axis label/.append style={font=\sffamily},
     legend style={font=\sffamily},
     title style={font=\sffamily}
@@ -30,7 +32,7 @@ patterns}
     samples=101,
     ymin=-0.1,
     ymax=1.25,
-    xlabel={Time delay $\tau$ [units of $\sigma$]},
+    xlabel={Time delay},
     title={HOM interference for arrival time delay},
     legend entries={visibility,coincidence prob.},
     legend columns=2,
