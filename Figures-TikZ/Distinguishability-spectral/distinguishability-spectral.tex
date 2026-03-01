@@ -8,6 +8,12 @@ calc,
 patterns}
 \usepackage{pgfplots}
 \usepgfplotslibrary{fillbetween}
+\pgfplotsset{
+    ticklabel style={font=\sffamily},
+    every axis label/.append style={font=\sffamily},
+    legend style={font=\sffamily},
+    title style={font=\sffamily}
+}
 
 \begin{document}
 
@@ -43,8 +49,10 @@ patterns}
     height=5cm,
     width=10cm]
 
-  \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanA,\varA)};
-  \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanB,\varB)};
+  % \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanA,\varA)}; % uses color
+  % \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanB,\varB)}; % uses color
+  \addplot [black, very thick, smooth, name path global=first] {gauss(\meanA,\varA)}; % black nad white
+  \addplot [black, very thick, smooth, name path global=first] {gauss(\meanB,\varB)}; % balck and white
   \addplot [
     pattern=north west lines,
     pattern color=black,
@@ -69,8 +77,10 @@ patterns}
     height=5cm,
     width=10cm]
 
-  \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanC,\varC)};
-  \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanD,\varD)};
+  % \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanC,\varC)};
+  % \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanD,\varD)};
+  \addplot [black, very thick, smooth, name path global=first] {gauss(\meanC,\varC)};
+  \addplot [black, very thick, smooth, name path global=first] {gauss(\meanD,\varD)};
   \addplot [
     pattern=north west lines,
     pattern color=black,

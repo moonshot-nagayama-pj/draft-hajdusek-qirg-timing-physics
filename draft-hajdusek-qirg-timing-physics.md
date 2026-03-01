@@ -280,7 +280,7 @@ Two input photons become distinguishable if their respective spectral amplitude 
 We resctrict our discussion to Gaussian spectral amplitude functions but the same methods generalize to arbitrary photons.
 The two photons may have different central frequencies or different standard deviations, as shown in the Figure below.
 
-<artwork type="svg" src="Figures/distinguishability-spectral.svg"></artwork>
+<artwork type="svg" src="Figures-BW/distinguishability-spectral-bw.svg"></artwork>
 
 In this subsection, we analyze the requirements in terms of the photonic spectral amplitude function that lead to high visibility of the HOM interference.
 
