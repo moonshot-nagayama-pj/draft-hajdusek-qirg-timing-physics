@@ -8,6 +8,12 @@ calc,
 patterns}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\pgfplotsset{
+    ticklabel style={font=\sffamily},
+    every axis label/.append style={font=\sffamily},
+    legend style={font=\sffamily},
+    title style={font=\sffamily}
+}
 
 \begin{document}
 
@@ -30,8 +36,8 @@ patterns}
     legend columns=2,
     legend style={/tikz/every even column/.append style={column sep=0.5cm}}]
 
-  \addplot [myBlue, very thick, smooth] {exp(-0.5*x*x)};
-  \addplot [orange, very thick, smooth, dashed] {0.5*(1-exp(-x*x/2))};
+  \addplot [black, very thick, smooth] {exp(-0.5*x*x)};
+  \addplot [black, very thick, smooth, dashed] {0.5*(1-exp(-x*x/2))};
 
   \end{axis}
   \end{scope}
