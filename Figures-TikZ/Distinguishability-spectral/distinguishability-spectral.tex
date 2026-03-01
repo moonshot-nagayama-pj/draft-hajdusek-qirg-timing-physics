@@ -50,8 +50,6 @@ patterns}
     height=5cm,
     width=10cm]
 
-  % \addplot [myBlue, fill=myBlue!10, very thick, smooth, name path global=first] {gauss(\meanA,\varA)}; % uses color
-  % \addplot [myRed, fill=myRed!10, very thick, smooth, name path global=first] {gauss(\meanB,\varB)}; % uses color
   \addplot [black, very thick, smooth, name path global=first] {gauss(\meanA,\varA)}; % black nad white
   \addplot [black, very thick, smooth, name path global=first] {gauss(\meanB,\varB)}; % balck and white
   \addplot [
@@ -65,7 +63,7 @@ patterns}
   \end{axis}
   \end{scope}
 
-  \begin{scope}[yshift=-170]
+  \begin{scope}[yshift=-150]
   \begin{axis}[
     domain=-15:15,
     samples=101,

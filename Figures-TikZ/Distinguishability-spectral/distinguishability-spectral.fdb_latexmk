@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1772353869.04791 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Distinguishability-spectral/distinguishability-spectral.tex" "distinguishability-spectral.pdf" "distinguishability-spectral" 1772353870.76027 0
-  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Distinguishability-spectral/distinguishability-spectral.tex" 1772353868.96032 2551 38787818321fb72fbeca2d53f35fa266 ""
+["pdflatex"] 1772354123.20106 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Distinguishability-spectral/distinguishability-spectral.tex" "distinguishability-spectral.pdf" "distinguishability-spectral" 1772354124.91151 0
+  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Distinguishability-spectral/distinguishability-spectral.tex" 1772354123.11191 2317 dc2120ab0469f993ddc796bc87e4165f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
@@ -153,8 +153,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1771289625 5541377 824b1e5beafd2ebda40585373b35bb6b ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771289770 3636351 86f02ac9cf6676be8ec685ab5c788b18 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "distinguishability-spectral.aux" 1772353870.72536 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "distinguishability-spectral.tex" 1772353868.96032 2551 38787818321fb72fbeca2d53f35fa266 ""
+  "distinguishability-spectral.aux" 1772354124.87691 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "distinguishability-spectral.tex" 1772354123.11191 2317 dc2120ab0469f993ddc796bc87e4165f ""
   (generated)
   "distinguishability-spectral.aux"
   "distinguishability-spectral.log"
