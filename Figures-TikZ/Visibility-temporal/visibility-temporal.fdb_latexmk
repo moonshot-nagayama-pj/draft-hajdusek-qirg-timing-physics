@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1772352394.38575 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-temporal/visibility-temporal.tex" "visibility-temporal.pdf" "visibility-temporal" 1772352395.22183 0
-  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-temporal/visibility-temporal.tex" 1772352394.29705 1091 94597c966a4da8ccf51c355cd3c6a7bd ""
+["pdflatex"] 1772352639.41791 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-temporal/visibility-temporal.tex" "visibility-temporal.pdf" "visibility-temporal" 1772352640.23485 0
+  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-temporal/visibility-temporal.tex" 1772352639.32636 1118 77ed879b4a57dafc620c37c49c91b1d2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1136768653 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -165,8 +165,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1771289625 5541377 824b1e5beafd2ebda40585373b35bb6b ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771289770 3636351 86f02ac9cf6676be8ec685ab5c788b18 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "visibility-temporal.aux" 1772352395.18174 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "visibility-temporal.tex" 1772352394.29705 1091 94597c966a4da8ccf51c355cd3c6a7bd ""
+  "visibility-temporal.aux" 1772352640.19781 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "visibility-temporal.tex" 1772352639.32636 1118 77ed879b4a57dafc620c37c49c91b1d2 ""
   (generated)
   "visibility-temporal.aux"
   "visibility-temporal.log"
