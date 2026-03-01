@@ -7,14 +7,12 @@ positioning,
 calc,
 patterns}
 \usepackage{pgfplots}
-\usepackage{helvet}
-\usepackage[eulergreek]{sansmath}
 \pgfplotsset{compat=1.18}
 \pgfplotsset{
-    tick label style={font=\sansmath\sffamily},
-    every axis label/.append style={font=\sansmath\sffamily},
-    legend style={font=\sansmath\sffamily},
-    title style={font=\sansmath\sffamily}
+    tick label style={font=\sffamily},
+    every axis label/.append style={font=\sffamily},
+    legend style={font=\sffamily},
+    title style={font=\sffamily}
 }
 
 \begin{document}
@@ -33,6 +31,10 @@ patterns}
     ymin=-0.1,
     ymax=1.25,
     xlabel={Central frequency mismatch},
+    xtick={-6,-4,-2,0,2,4,6},
+    xticklabels={-6,-4,-2,0,2,4,6},
+    ytick={0,0.5,1},
+    yticklabels={0,0.5,1},
     title={HOM interference for Case A},
     legend entries={visibility,coincidence prob.},
     legend columns=2,
@@ -44,7 +46,7 @@ patterns}
   \end{axis}
   \end{scope}
 
-  \begin{scope}[yshift=-200]
+  \begin{scope}[yshift=-190]
   \begin{axis}[
     height=6cm,
     width=10cm,
@@ -53,6 +55,10 @@ patterns}
     ymin=-0.1,
     ymax=1.25,
     xlabel={Ratio of standard deviations},
+    xtick={-6,-4,-2,0,2,4,6},
+    xticklabels={-6,-4,-2,0,2,4,6},
+    ytick={0,0.5,1},
+    yticklabels={0,0.5,1},
     title={HOM interference for Case B},
     legend entries={visibility,coincidence prob.},
     legend columns=2,
