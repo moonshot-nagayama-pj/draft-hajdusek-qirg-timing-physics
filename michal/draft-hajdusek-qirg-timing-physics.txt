@@ -1016,13 +1016,11 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    Measurement in the *Pauli Z* basis is performed by *electron
    shelving* via the use of a third atomic level |r〉, with much shorter
    life time than the excited state (https://www.amazon.co.jp/Quantum-
-   World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r. <!-- The
+   World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r.  The
    figure below demonstrates how this method works.
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics.html)
-
-   -->
 
    The ion is illuminated by light tuned to resonate with the
    transition |g〉 <−>|r〉, represented by the red straight arrow in the
