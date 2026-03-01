@@ -625,7 +625,7 @@ It is the latter degree of freedom which is used to encode a qubit and hence act
 Measurement in the **Pauli Z** basis is performed by **electron shelving** via the use of a third atomic level $$|r\rangle$$, with much shorter life time than the [excited state](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163) $$|e\rangle$$, $$\tau_e \gg \tau_r$$.
 <!-- The figure below demonstrates how this method works.
 
-<artwork type="svg" src="Figures/shelving.svg"></artwork> -->
+<artwork type="svg" src="Figures/shelving.svg"></artwork>-->
 
 The ion is illuminated by light tuned to resonate with the transition $$|g\rangle <->|r\rangle$$, represented by the red straight arrow in the Figure above.
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state $$|g\rangle$$.
