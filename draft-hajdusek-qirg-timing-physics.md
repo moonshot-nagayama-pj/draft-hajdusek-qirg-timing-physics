@@ -239,7 +239,7 @@ When the photons have identical polarization, the visibility reaches its maximum
 On the other hand, when the photons are fully distinguishable and their polarization vectors are orthogonal, visibility vanishes.
 The visibility and the probability of a coincidence detection are both displayed in the figure below.
 
-<artwork type="svg" src="Figures-BW/visibility-polarization-bw.svg"></artwork>
+<artwork type="svg" src="Figures-BW/visibility-polarization-matplotlib-bw.svg"></artwork>
 
 Ensuring that the two input photons are indistinguishable in their polarization degree of freedom is critical for proper operation of the BSA.
 Care must be therefore taken to characterize the photons just before they are incident onto the BS, as it is possible for the polarization of a photon to **drift** during its transmission and change its state from the one that the photon possessed immediately after emission.
