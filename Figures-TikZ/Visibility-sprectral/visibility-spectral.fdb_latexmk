@@ -1,10 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772335239.17447 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" "visibility-spectral.pdf" "visibility-spectral" 1772335240.14254 0
-  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" 1772335239.08518 1625 6216fa07ab950e209ef91da6c6e80c96 ""
+["pdflatex"] 1772335462.70132 "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" "visibility-spectral.pdf" "visibility-spectral" 1772335463.66855 0
+  "/Users/michal/draft-hajdusek-qirg-timing-physics/Figures-TikZ/Visibility-sprectral/visibility-spectral.tex" 1772335462.61607 1577 bb49c8fcb5d479f0fb82d72868925eef ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -150,8 +149,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1771289625 5541377 824b1e5beafd2ebda40585373b35bb6b ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771289770 3636351 86f02ac9cf6676be8ec685ab5c788b18 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "visibility-spectral.aux" 1772335240.1028 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "visibility-spectral.tex" 1772335239.08518 1625 6216fa07ab950e209ef91da6c6e80c96 ""
+  "visibility-spectral.aux" 1772335463.63062 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "visibility-spectral.tex" 1772335462.61607 1577 bb49c8fcb5d479f0fb82d72868925eef ""
   (generated)
   "visibility-spectral.aux"
   "visibility-spectral.log"
