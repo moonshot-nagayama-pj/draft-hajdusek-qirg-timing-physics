@@ -51,7 +51,7 @@ patterns}
 
   \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanA,\varA)};
   \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanB,\varB)};
-  \addplot[black, thick, latex-latex] coordinates {(\meanB,1.05) (\meanA,1.05)} node[midway, above] {$\tau$};
+  % \addplot[black, thick, latex-latex] coordinates {(\meanB,1.05) (\meanA,1.05)} node[midway, above] {$\tau$};
   \addplot [
     pattern=north west lines,
     pattern color=black,
@@ -62,7 +62,7 @@ patterns}
   \end{axis}
   \end{scope}
 
-  \begin{scope}[yshift=-180]
+  \begin{scope}[yshift=-170]
   \begin{axis}[
     domain=-15:15,
     samples=101,
@@ -77,7 +77,7 @@ patterns}
 
   \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanC,\varC)};
   \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanD,\varD)};
-  \addplot[black, thick, latex-latex] coordinates {(\meanD,1.05) (\meanC,1.05)} node[midway, above] {$\tau$};
+  % \addplot[black, thick, latex-latex] coordinates {(\meanD,1.05) (\meanC,1.05)} node[midway, above] {$\tau$};
 
   \end{axis}
   \end{scope}
