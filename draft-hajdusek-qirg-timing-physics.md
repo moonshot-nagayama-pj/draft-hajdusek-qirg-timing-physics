@@ -91,6 +91,7 @@ Some of these can only be achieved using high-quality hardware, while others are
 
 * Detailed physical derivations.
 * Exhaustive coverage of all existing quantum platforms and technologies.
+* New research results.
 
 # Interferometric Stabilization
 
