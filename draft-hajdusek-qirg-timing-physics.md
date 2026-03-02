@@ -658,7 +658,7 @@ Half waveplate rotates the polarization state by an angle $$\pi$$, while a quart
 The action of the waveplates is captured by the corresponding unitary operations:
 
 ~~~math
-U_{\text{QWP}}(\alpha) = 
+U_{\text{QWP}}(\alpha) = \begin{bmatrix} \cos^2\alpha + i\sin^2\alpha & (1-i)\cos\alpha\sin\alpha \\ (1-i)\cos\alpha\sin\alpha & \sin^2\alpha +i\cos^2\alpha \end{bmatrix}
 ~~~
 
 The idea behind measurements in arbitrary basis
