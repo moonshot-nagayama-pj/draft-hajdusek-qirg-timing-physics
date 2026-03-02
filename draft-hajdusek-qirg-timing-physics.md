@@ -10,19 +10,19 @@ number:
 date:
 consensus: true
 v: 3
-area: IRTF
-workgroup: QIRG
+area: "IRTF"
+workgroup: "Quantum Internet Research Group"
 keyword:
  - quantum network
  - quantum repeater
  - physical foundations
 venue:
-  group: Quantum Internet Research Group
-  type: RG
-  mail: qirg@irtf.org
-  arch: https://datatracker.ietf.org/rg/qirg/documents/
-  github: moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
-  latest: https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
+  group: "Quantum Internet Research Group"
+  type: "Research Group"
+  mail: "qirg@irtf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/qirg"
+  github: "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics"
+  latest: "https://moonshot-nagayama-pj.github.io/draft-hajdusek-qirg-timing-physics/draft-hajdusek-qirg-timing-physics.html"
 
 author:
  -
