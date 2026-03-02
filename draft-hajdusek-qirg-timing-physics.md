@@ -653,14 +653,13 @@ General pure state of a polarization-encoded qubit can be written as
 
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 Polarization of light is manipulated by waveplates.
-Waveplate rotated by an angle $$\alpha$$ (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of $$2\alpha$$ with the horizontal state $$|H\rangle$$ in the horizontal plane, as shown in Figure above.
-
-<artwork type="svg" src="Figures/poincare-sphere.svg"></artwork>
-
+Waveplate rotated by an angle $$\alpha$$ (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of $$2\alpha$$ with the horizontal state $$|H\rangle$$ in the horizontal plane.
 Half waveplate rotates the polarization state by an angle $$\pi$$, while a quarter waveplate rotates by an angle $$\pi/2$$ in the Poincaré sphere.
 The action of the waveplates is captured by the corresponding unitary operations:
 
-<artwork type="svg" src="Figures/waveplates-matrix.svg"></artwork>
+~~~math
+U_{\text{QWP}}(\alpha) = 
+~~~
 
 The idea behind measurements in arbitrary basis
 
@@ -668,7 +667,7 @@ The idea behind measurements in arbitrary basis
 \{|\psi\rangle, |\psi^{\perp}\rangle\}
 ~~~
 
-is to choose the angles for the waveplates such that the following transformation is achieved,
+is to choose the angles for the waveplates such that the following transformation is achieved:
 
 ~~~math
 U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle
