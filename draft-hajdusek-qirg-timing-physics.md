@@ -13,15 +13,15 @@ v: 3
 area: IRTF
 workgroup: QIRG
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - quantum network
+ - quantum repeater
+ - physical foundations
 venue:
   group: Quantum Internet Research Group
   type: RG
   mail: qirg@irtf.org
-  arch: https://example.com/WG
-  github: mhajdusek/draft-hajdusek-qirg-timing-physics
+  arch: 
+  github: moonshot-nagayama-pj
   latest: https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
 
 author:
