@@ -21,7 +21,7 @@ venue:
   type: RG
   mail: qirg@irtf.org
   arch: 
-  github: moonshot-nagayama-pj
+  github: moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
   latest: https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
 
 author:
