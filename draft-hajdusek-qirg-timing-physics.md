@@ -17,12 +17,12 @@ keyword:
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: WG
-  type: Working Group
-  mail: WG@example.com
+  group: Quantum Internet Research Group
+  type: RG
+  mail: qirg@irtf.org
   arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  github: mhajdusek/draft-hajdusek-qirg-timing-physics
+  latest: https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
 
 author:
  -
