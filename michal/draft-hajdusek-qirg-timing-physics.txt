@@ -5,7 +5,7 @@
 QIRG                                                         M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 2 September 2026                                   1 March 2026
+Expires: 3 September 2026                                   2 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 September 2026.
+   This Internet-Draft will expire on 3 September 2026.
 
 Copyright Notice
 
@@ -1016,29 +1016,22 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    Measurement in the *Pauli Z* basis is performed by *electron
    shelving* via the use of a third atomic level |r〉, with much shorter
    life time than the excited state (https://www.amazon.co.jp/Quantum-
-   World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r. <!-- The
-   figure below demonstrates how this method works.
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics.html)
-
-   -->
-
-   The ion is illuminated by light tuned to resonate with the
-   transition |g〉 <−>|r〉, represented by the red straight arrow in the
-   Figure above.  If fluorescence is immediately observed, this
-   corresponds to measuring the ion in the ground state |g〉. If no
-   fluorescence is observed, the ion is measured in the excited
-   state |e〉. Hypothetically a single fluorescent photon would be
-   sufficient, however, the fluorescent photons are only rarely captured
-   into the measurement apparatus (typically involving lenses and a
-   camera) and observed, and stray photons are also often captured, so a
-   relatively long *integration time* is used to confirm the
-   fluorescence with high probability.  (Solid-state systems such as
-   quantum dots and superconducting qubits also need relatively long
-   integration times in their measurement processes.)  Combined with
-   laser pulses that apply a single-qubit rotation, measurement of a
-   *single ion in an arbitrary basis* can be performed in 1-2 ms
+   World-Ultra-Cold-Atoms-Light/dp/1783266163) |e〉, τ_e ≫ τ_r.  The ion
+   is illuminated by light tuned to resonate with the transition |g〉
+   <−>|r〉, represented by the red straight arrow in the Figure above.
+   If fluorescence is immediately observed, this corresponds to
+   measuring the ion in the ground state |g〉. If no fluorescence is
+   observed, the ion is measured in the excited state |e〉.
+   Hypothetically a single fluorescent photon would be sufficient,
+   however, the fluorescent photons are only rarely captured into the
+   measurement apparatus (typically involving lenses and a camera) and
+   observed, and stray photons are also often captured, so a relatively
+   long *integration time* is used to confirm the fluorescence with high
+   probability.  (Solid-state systems such as quantum dots and
+   superconducting qubits also need relatively long integration times in
+   their measurement processes.)  Combined with laser pulses that apply
+   a single-qubit rotation, measurement of a *single ion in an arbitrary
+   basis* can be performed in 1-2 ms
    (https://journals.aps.org/prl/abstract/10.1103/
    PhysRevLett.130.050803).
 
