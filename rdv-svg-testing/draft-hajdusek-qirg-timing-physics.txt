@@ -257,6 +257,9 @@ Table of Contents
 
    This figure shows these cases:
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
+
    The input state can be expressed as
 
              †     †
