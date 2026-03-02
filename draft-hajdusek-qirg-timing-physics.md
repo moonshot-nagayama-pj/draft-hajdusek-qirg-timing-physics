@@ -772,6 +772,11 @@ Such tasks include:
 
 --- back
 
+# Acknowledgements
+
+The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama and Akihito Soeda for useful early discussions on the direction of the document.
+This work was supported by the JST [Moonshot R&D program] under Grant Number [JPMJMS226C].
+
 # References
 
 ## Normative
@@ -797,8 +802,3 @@ Such tasks include:
 * M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [_arXiv:2405.09860_ (2024)](https://arxiv.org/abs/2405.09860).
 * Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
 ~~~
-
-# Acknowledgements
-
-The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama and Akihito Soeda for useful early discussions on the direction of the document.
-This work was supported by the JST [Moonshot R&D program] under Grant Number [JPMJMS226C].
