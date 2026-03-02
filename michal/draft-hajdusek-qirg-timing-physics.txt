@@ -1081,8 +1081,15 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    located at an angle of 2α with the horizontal state |H〉 in the
    horizontal plane.  Half waveplate rotates the polarization state by
    an angle π, while a quarter waveplate rotates by an angle π/2 in the
-   Poincaré sphere.  The action of the waveplates is captured by the
-   corresponding unitary operations:
+   Poincaré sphere.  The action of the half waveplate is captured by the
+   corresponding unitary operations in linear polarization basis:
+
+             ⎡ cos2α  sin2α⎤
+   U   (α) = ⎣ sin2α -cos2α⎦
+    HWP
+
+   Unitary matrix representing the action of a quarter waveplate in
+   linear polarization basis:
 
              ⎡    2       2               ⎤
              ⎢ cos α+ isin α (1-i)cosαsinα⎥
