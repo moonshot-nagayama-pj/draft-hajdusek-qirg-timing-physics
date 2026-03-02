@@ -105,6 +105,7 @@ Table of Contents
    8.  Urgent but Not Synchronization-critical Tasks
    9.  Host-side Application-level Tasks
    10. Background Tasks
+   11. Acknowledgments
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -1409,6 +1410,14 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
       that QKD-derived monitoring of the network using randomly selected
       measurement bases on a portion of the network capacity can serve
       as a detection mechanism for this malicious behavior.
+
+11.  Acknowledgments
+
+   The authors would like to thank Andrew Todd for crucial help in
+   building the document, and Shota Nagayama, Akihito Soeda and Monet
+   Tokuyama Friedrich for useful early discussions on the direction of
+   the document.  This work was supported by the JST [Moonshot R&D
+   program] under Grant Number [JPMJMS226C].
 
 Appendix A.  References
 
