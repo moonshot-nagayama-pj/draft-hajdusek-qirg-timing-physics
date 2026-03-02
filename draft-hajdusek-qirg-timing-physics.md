@@ -1,7 +1,7 @@
 ---
 stand_alone: true
 title: "Timing Regimes in Quantum Networks and their Physical Underpinnings"
-abbrev: "TODO - Abbreviation"
+abbrev: "Quantum Timing Regimes"
 category: info
 
 docname: draft-hajdusek-qirg-timing-physics
@@ -713,7 +713,7 @@ Both of these designs consider a $$2\times 2$$ switch as the basic building bloc
 
 The optical switch introduces a **propagation time delay**. For some MEMS switches, this delay can be as low as [25 nanoseconds](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf). In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but as discussed in Section A, any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch, as demonstrated in figure below.
 
-<artwork type="svg" src="Figures/time-delay.svg"></artwork>
+<artwork type="svg" src="Figures-BW/time-delay-bw.svg"></artwork>
 
 This triangular switch design was introduced by [Koyama et.al.](https://ieeexplore.ieee.org/document/10821447). Photons entering the switch from different ports need to traverse vastly different number of switching points. For example, photons from input port $$X_0$$ have to traverse at least 5 switching points, while photons from input port $$X_{11}$$ do not have to traverse any at all. Furthermore, if photons from these two input ports are required to undergo Bell-state measurement, both need to be routed to $$BSA_5$$. This requires photons from $$X_0$$ to traverse 10 switching points intoducing the largest possible time delay giventhis design and size of the switch.
 
