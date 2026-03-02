@@ -1079,18 +1079,13 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    waveplates.  Waveplate rotated by an angle α (zero is aligned with
    the horizontal axis) rotates the polarization state around an axis,
    located at an angle of 2α with the horizontal state |H〉 in the
-   horizontal plane, as shown in Figure above.
+   horizontal plane.  Half waveplate rotates the polarization state by
+   an angle π, while a quarter waveplate rotates by an angle π/2 in the
+   Poincaré sphere.  The action of the waveplates is captured by the
+   corresponding unitary operations:
 
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics.html)
-
-   Half waveplate rotates the polarization state by an angle π, while a
-   quarter waveplate rotates by an angle π/2 in the Poincaré sphere.
-   The action of the waveplates is captured by the corresponding unitary
-   operations:
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics.html)
+   U   (α) =
+    QWP
 
    The idea behind measurements in arbitrary basis
 
@@ -1098,7 +1093,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    {|ψ⟩, |ψ ⟩}
 
    is to choose the angles for the waveplates such that the following
-   transformation is achieved,
+   transformation is achieved:
 
                                                            ⟂
    U   (α   )U   (α   ) |ψ⟩→|H⟩,    U   (α   )U   (α   ) |ψ ⟩→|V⟩
