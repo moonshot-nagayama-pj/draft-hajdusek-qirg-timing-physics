@@ -105,7 +105,7 @@ Table of Contents
    7.  Pre-configured Event-driven Tasks
    8.  Urgent but Not Synchronization-critical Tasks
    9.  Host-side Application-level Tasks
-   10. Acknowledgments
+   10. Background Tasks
    11. Acknowledgments
    Appendix A.  References
      A.1.  Normative
@@ -254,11 +254,6 @@ Table of Contents
 
    *  Case D: photon in mode a is transmitted, while photon in mode b is
       reflected.
-
-   This figure shows these cases (Figures-BW/HOM-bw.svg):
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
 
    The input state can be expressed as
 
@@ -422,12 +417,7 @@ Table of Contents
    When the photons have identical polarization, the visibility reaches
    its maximum of 1.  On the other hand, when the photons are fully
    distinguishable and their polarization vectors are orthogonal,
-   visibility vanishes.  The visibility and the probability of a
-   coincidence detection are both displayed in the figure below
-   (Figures-matplotlib/visibility-polarization.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
+   visibility vanishes.
 
    Ensuring that the two input photons are indistinguishable in their
    polarization degree of freedom is critical for proper operation of
@@ -494,11 +484,7 @@ Table of Contents
    amplitude functions are not equal.  We restrict our discussion to
    Gaussian spectral amplitude functions but the same methods generalize
    to arbitrary photons.  The two photons may have different central
-   frequencies or different standard deviations, as shown in the
-   Figure below (Figures-matplotlib/distinguishability-spectral.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
+   frequencies or different standard deviations.
 
    In this subsection, we analyze the requirements in terms of the
    photonic spectral amplitude function that lead to high visibility of
@@ -660,13 +646,6 @@ Table of Contents
             1 + (σ /σ )                 1 + (σ /σ )
                   b  a                        b  a
 
-   The probability of coincidence and corresponding visibility for both
-   Cases are shown in the Figure below (Figures-matplotlib/visibility-
-   spectral.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
-
 3.4.  Wave Packet Overlap
 
    So far we have assumed that the two input photons arrive at the BS at
@@ -675,14 +654,7 @@ Table of Contents
    affects the visibility of HOM interference.  Even for photons with
    identical spectral amplitude functions, different arrival times
    result in decreased overlap between the photons' wave packets,
-   diminishing the visibility of the HOM interference.  If the times of
-   arrival are too different as shown in the Figure below, the
-   probability of a coincidence detection will reach its maximum value
-   of 1/2, and the visibility will vanish (Figures-matplotlib/
-   distinguishability-temporal.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
+   diminishing the visibility of the HOM interference.
 
    Without loss of generality we assume that photon b is delayed by a
    time τ, which transforms its creation operator,
@@ -733,13 +705,6 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
         1 ⎜       2     ⎟              2
    p  = ─ ⎝ 1 - e       ⎠,    V(τ) = e
     c   2
-
-   The figure below displays the visibility and probability of
-   coincidence for this case (Figures-matplotlib/visibility-
-   temporal.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
 
 4.  Detector Timing Windows
 
@@ -990,12 +955,6 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
         ⟂            ⟂    2          †    2             †
    Pr(|ϕ ⟩;|ψ⟩) = |⟨ϕ |ψ⟩|  = |⟨1| U  |ψ⟩|  = Pr(|1⟩; U  |ψ⟩)
 
-   This is pictured in the Figure below (Figures-BW/measurement-1qubit-
-   bw.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
-
 5.1.2.  Two-qubit measurements
 
    The same principle of changing the measurement basis can be
@@ -1004,12 +963,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    finally measured in Pauli Z basis.  In the majority of cases, we are
    interested in performing measurements in the Bell basis.  Required
    unitary is the Hermitian conjugate of the unitary that creates a Bell
-   pair when the qubits are both initialized in |0〉, as shown in the
-   Figure below, where we have dropped the Z label indicating the
-   measurement basis (Figures-BW/measurement-2qubit-bw.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
+   pair when the qubits are both initialized in |0〉.
 
 5.2.  Measurements on quantum memories
 
@@ -1079,11 +1033,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    while the PBS filters out vertical and horizontal polarizations that
    then get detected by the detectors placed in the output paths of the
    PBS.  Horizontal polarization gets transmitted through the PBS, while
-   vertical polarization gets reflected.  This setup is shown in the
-   figure below (Figures-BW/measurement-polarization-bw.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
+   vertical polarization gets reflected.
 
    General pure state of a polarization-encoded qubit can be written as
 
@@ -1185,11 +1135,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    8-5-331&id=340335).  Or the switch can be placed before a pool of
    Bell State Analyzers (BSA) and route input pairs of photons to the
    desired BSA, where they undergo measurement in the Bell basis
-   (https://ieeexplore.ieee.org/document/10821447).  These approaches
-   are pictured in the figure below (Figures-BW/optical-switch-bw.svg).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
+   (https://ieeexplore.ieee.org/document/10821447).
 
    Both of these designs consider a 2× 2 switch as the basic building
    block, which is implemented with *integrated photonics* and
@@ -1205,29 +1151,18 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    osm-network-switch-module-data-sheets-en.pdf).  In general, this
    delay time varies with the choice of input-output ports.  This
    variation is probably insignificant in most classical contexts, but
-   as discussed in Section A, any delay between the arrival times of
-   photon pairs at the same BSA may result in decreased visibility
-   further lowering the fidelity of the post-measurement state.  The
-   issue of arrival time delay arises in the case of integrated switches
-   used in paired-egress BSA pools.  The propagation delay introduced by
-   the switching fabric depends on the design of the switch, as
-   demonstrated in figure below (Figures-BW/time-delay-bw.svg).
+   any delay between the arrival times of photon pairs at the same BSA
+   may result in decreased visibility further lowering the fidelity of
+   the post-measurement state.  The issue of arrival time delay arises
+   in the case of integrated switches used in paired-egress BSA pools.
+   The propagation delay introduced by the switching fabric depends on
+   the design of the switch.
 
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics-latest.html)
-
-   This triangular switch design was introduced by Koyama et.al.
-   (https://ieeexplore.ieee.org/document/10821447).  Photons entering
-   the switch from different ports need to traverse vastly different
-   number of switching points.  For example, photons from input port X_0
-   have to traverse at least 5 switching points, while photons from
-   input port X_{11} do not have to traverse any at all.  Furthermore,
-   if photons from these two input ports are required to undergo Bell-
-   state measurement, both need to be routed to BSA_5.  This requires
-   photons from X_0 to traverse 10 switching points intoducing the
-   largest possible time delay giventhis design and size of the switch.
-
-   The significance of this time delay ultimately depends on the type of
+   An example where time delays arise is the triangular switch design,
+   introduced by Koyama et.al. (https://ieeexplore.ieee.org/
+   document/10821447).  Photons entering the switch from different ports
+   need to traverse vastly different number of switching points.  The
+   significance of this time delay ultimately depends on the type of
    photons used.  Photons with longer envelopes, such as those emitted
    from trapped ions, may be more robust to the propagation time delays
    introduced by the optical switch.  Photons with very short envelopes,
@@ -1238,9 +1173,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    acceptable visibility at the BSAs, it is neccesary to adjust the path
    length of the photons with *optical delay lines* (ODLs).  For small
    enough optical switches, it may be possible to characterize the
-   propagation time delays for given photon pairs (X_i,X_j) assigned to
-   a particular BSA prior to the opration of the switch.  This would
-   allow the ODLs to be set to precomputed configurations based on the
+   propagation time delays for given photon pairs assigned to a
+   particular BSA prior to the opration of the switch.  This would allow
+   the ODLs to be set to precomputed configurations based on the
    connection request patterns.  This approach will most likely not
    scale, at least in its general form, to larger optical switches.
 
@@ -1373,13 +1308,49 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    introduction of proper pricing or admission control may be needed to
    resolve such issues.
 
-10.  Acknowledgments
+10.  Background Tasks
 
-   The authors would like to thank Andrew Todd for crucial help in
-   building the document, and Shota Nagayama, Akihito Soeda and Monet
-   Tokuyama Friedrich for useful early discussions on the direction of
-   the document.  This work was supported by the JST Moonshot R&D
-   program under Grant Number JPMJMS226C.
+   Network operations include a number of tasks that monitor and
+   maintain the integrity and performance of the network.  In the case
+   of a quantum network, uses of the quantum portion of the network can
+   often be deferred until the network is idle or pre-scheduled time
+   slots arrive, in order to minimize the impact on application
+   requests.  Once the quantum operations are begun, of course, they are
+   subject to all of the constraints listed above, but the accompanying
+   classical calculation and inter-node reconciliation can proceed in
+   the background.
+
+   Such tasks include:
+
+   *  *Link monitoring*: Each link must be monitored continuously in
+      order to inform routing (below) and RuleSet creation during
+      connection setup.  Reconstruction of the link density matrix and
+      entanglement success rates involve classical information sharing
+      between the two nodes at opposite ends of the link.  This
+      information must be shared reliably but does not have hard real-
+      time constraints, as so is well suited to transmission over a
+      reliable protocol such as TCP without concern for delays.  The
+      required classical information is the outcomes of measurements of
+      the quantum portion of the link.  That data can be collected from
+      entangled states specifically assigned to the link monitoring
+      task.  It can also be collected from application-targeted uses of
+      the link, provided that appropriate coordination can be achieved
+      and connection privacy maintained.
+
+   *  *Routing*: Creation and update of routing tables at each node is
+      an ordinary, distributed classical task that shares the
+      information collected about links as above.  The expected
+      completion time of this tasks should be quick enough that the
+      network converges to provide seamless service upon topology
+      changes.  Unless nodes are mobile, propagation and recalculation
+      of such changes at the level of seconds should be acceptable.
+
+   *  *Malicious use monitoring*: It is known that a hijacked or
+      malfunctioning repeater can be used to impede the overall service
+      of the network or even to partition the network.  It is also known
+      that QKD-derived monitoring of the network using randomly selected
+      measurement bases on a portion of the network capacity can serve
+      as a detection mechanism for this malicious behavior.
 
 11.  Acknowledgments
 
