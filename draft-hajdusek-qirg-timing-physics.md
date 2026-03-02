@@ -644,7 +644,7 @@ Setting the HWP and QWP at particular angles applies the unitary $$U ^{\dagger}$
 Horizontal polarization gets transmitted through the PBS, while vertical polarization gets reflected.
 This setup is shown in the figure below.
 
-<artwork type="svg" src="Figures/2detector-polarization.svg"></artwork>
+<artwork type="svg" src="Figures-BW/measurement-polarization-bw.svg"></artwork>
 
 General pure state of a polarization-encoded qubit can be written as
 
