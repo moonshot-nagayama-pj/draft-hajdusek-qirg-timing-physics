@@ -48,7 +48,7 @@ Entangling quantum networks build on new physical mechanisms to distribute quant
 To design a complete network protocol stack with proper division of responsibilities into layers, hardware and protocol engineers must share an understanding of those physical mechanisms and use a common vocabulary.
 This document bridges the abstract concepts described in RFC 9340 and the underlying physics to engineering concerns such as timing constraints on arrival of photons and exchange of supporting classical messages.
 The equations presented here will serve as reference points for architectural decisions in future documents, allowing future documents to deal directly in code without complex mathematics.
-This document can serve as the basis for decisions such as layer boundaries.
+Application-layer developers will not need the low-level physics presented here.
 
 --- middle
 
