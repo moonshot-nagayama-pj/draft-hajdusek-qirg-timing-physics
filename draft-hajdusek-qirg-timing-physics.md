@@ -4,7 +4,7 @@ title: "Timing Regimes in Quantum Networks and their Physical Underpinnings"
 abbrev: "Quantum Timing Regimes"
 category: info
 
-docname: draft-hajdusek-qirg-timing-physics
+docname: draft-hajdusek-qirg-timing-physics-latest
 submissiontype: IRTF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
