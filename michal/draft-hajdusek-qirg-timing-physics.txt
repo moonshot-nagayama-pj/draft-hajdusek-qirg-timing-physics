@@ -24,8 +24,8 @@ Abstract
    and exchange of supporting classical messages.  The equations
    presented here will serve as reference points for architectural
    decisions in future documents, allowing future documents to deal
-   directly in code without complex mathematics.  This document can
-   serve as the basis for decisions such as layer boundaries.
+   directly in code without complex mathematics.  Application-layer
+   developers will not need the low-level physics presented here.
 
 About This Document
 
