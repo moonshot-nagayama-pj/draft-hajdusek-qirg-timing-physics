@@ -681,7 +681,11 @@ U_{HWP}U_{QWP} |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}U_{QWP}|\psi^{\p
 
 Settings for the three Pauli bases are summarized in the table below.
 
-<artwork type="svg" src="Figures/waveplate-angles.svg"></artwork>
+| Measurement basis | HWP | QWP |
+| ---------- | ------ | ------- |
+| linear (Z) | 0 | 0 |
+| diagonal (X) | Pi/8 | Pi/4 |
+| circular (Y) | 0 | Pi/4 |
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
