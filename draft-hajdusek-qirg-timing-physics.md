@@ -20,7 +20,7 @@ venue:
   group: Quantum Internet Research Group
   type: RG
   mail: qirg@irtf.org
-  arch: 
+  arch: https://datatracker.ietf.org/rg/qirg/documents/
   github: moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
   latest: https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics
 
