@@ -684,7 +684,7 @@ Settings for the three Pauli bases are summarized in the table below.
 | Measurement basis | HWP | QWP |
 | ---------- | ------ | ------- |
 | linear (Z) | 0 | 0 |
-| diagonal (X) | $$\pi/8$$ | Pi/4 |
+| diagonal (X) | Pi/8 | Pi/4 |
 | circular (Y) | 0 | Pi/4 |
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
@@ -707,7 +707,7 @@ The first approach is the _crossbar switch_ with all-to-all connectivity. Such a
 
 Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible $$N!$$ input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a [connection](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335). Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the [Bell basis](https://ieeexplore.ieee.org/document/10821447). These approaches are pictured in the figure below.
 
-<artwork type="svg" src="Figures/optical-switch.svg"></artwork>
+<artwork type="svg" src="Figures-BW/optical-switch-bw.svg"></artwork>
 
 Both of these designs consider a $$2\times 2$$ switch as the basic building block, which is implemented with **integrated photonics** and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.
 
