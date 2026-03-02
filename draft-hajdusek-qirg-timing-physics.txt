@@ -106,10 +106,10 @@ Table of Contents
    8.  Urgent but Not Synchronization-critical Tasks
    9.  Host-side Application-level Tasks
    10. Background Tasks
-   Appendix A.  References
-     A.1.  Normative
-     A.2.  Informative
-   Appendix B.  Acknowledgements
+   Appendix A.  Acknowledgements
+   Appendix B.  References
+     B.1.  Normative
+     B.2.  Informative
    Authors' Addresses
 
 1.  Prologue
@@ -1412,11 +1412,19 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
       measurement bases on a portion of the network capacity can serve
       as a detection mechanism for this malicious behavior.
 
-Appendix A.  References
+Appendix A.  Acknowledgements
 
-A.1.  Normative
+   The authors would like to thank Andrew Todd for crucial help in
+   building the document, and Shota Nagayama and Akihito Soeda for
+   useful early discussions on the direction of the document.  This work
+   was supported by the JST [Moonshot R&D program] under Grant Number
+   [JPMJMS226C].
 
-A.2.  Informative
+Appendix B.  References
+
+B.1.  Normative
+
+B.2.  Informative
 
    * C.K. Hong, Z.Y. Ou, and L. Mandel, Measurement of subpicosecond time intervals between two photons by interference, [_Phys. Rev. Lett._ **59**, 2044 (1987)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044).
    * A. M. Branczyk, Hong-Ou-Mandel Interference, [_arXiv:1711.00080_ (2017)](https://arxiv.org/abs/1711.00080).
@@ -1435,14 +1443,6 @@ A.2.  Informative
    * R. J. Drost, T. J. Moore, and M. Brodsky, Switching Networks for Pairwise-Entanglement Distribution, [_Journal of Optical Communications and Networking_, **8**, 331 (2016)](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335).
    * M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [_arXiv:2405.09860_ (2024)](https://arxiv.org/abs/2405.09860).
    * Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
-
-Appendix B.  Acknowledgements
-
-   The authors would like to thank Andrew Todd for crucial help in
-   building the document, and Shota Nagayama and Akihito Soeda for
-   useful early discussions on the direction of the document.  This work
-   was supported by the JST [Moonshot R&D program] under Grant Number
-   [JPMJMS226C].
 
 Authors' Addresses
 
