@@ -1110,8 +1110,17 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
 
    Settings for the three Pauli bases are summarized in the table below.
 
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics.html)
+                    +===================+======+======+
+                    | Measurement basis | HWP  | QWP  |
+                    +===================+======+======+
+                    | linear (Z)        | 0    | 0    |
+                    +-------------------+------+------+
+                    | diagonal (X)      | Pi/8 | Pi/4 |
+                    +-------------------+------+------+
+                    | circular (Y)      | 0    | Pi/4 |
+                    +-------------------+------+------+
+
+                                  Table 2
 
    Changing the basis of measurement requires mechanical rotation of the
    waveplates and coordination with the detectors.  The waveplates can
