@@ -1104,9 +1104,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    is to choose the angles for the waveplates such that the following
    transformation is achieved:
 
-                                                           ⟂
-   U   (α   )U   (α   ) |ψ⟩→|H⟩,    U   (α   )U   (α   ) |ψ ⟩→|V⟩
-    HWP  HWP  QWP  QWP               HWP  HWP  QWP  QWP
+                                  ⟂
+   U   U    |ψ⟩→|H⟩,    U   U   |ψ ⟩→|V⟩
+    HWP QWP              HWP QWP
 
    Settings for the three Pauli bases are summarized in the table below.
 
