@@ -30,7 +30,8 @@ About This Document
    Subscribe at https://www.ietf.org/mailman/listinfo/qirg/.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/moonshot-nagayama-pj.
+   https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-
+   physics.
 
 Status of This Memo
 
