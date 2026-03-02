@@ -1075,35 +1075,19 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
 
    This is directly equivalent to expressing the qubit state in the
    computational basis, and can be visualized with the help of the
-   *Poincaré sphere*. The table below summarizes this equivalence.
-
-     +=============+====================+==============+============+
-     | Qubit basis | Polarization basis | Polarization |            |
-     |             |                    | states       |            |
-     +=============+====================+==============+============+
-     | Z           | linear             | $$           | H\rangle$$ |
-     +-------------+--------------------+--------------+------------+
-     | X           | diagonal           | 20 ns        |            |
-     +-------------+--------------------+--------------+------------+
-     | Y           | circular           | < 1 Hz       |            |
-     +-------------+--------------------+--------------+------------+
-
-                                 Table 2
-
-   The Figure below shows the Poincaré sphere along with the position of
-   the polarization states.
+   *Poincaré sphere*. Polarization of light is manipulated by
+   waveplates.  Waveplate rotated by an angle α (zero is aligned with
+   the horizontal axis) rotates the polarization state around an axis,
+   located at an angle of 2α with the horizontal state |H〉 in the
+   horizontal plane, as shown in Figure above.
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics.html)
 
-   Polarization of light is manipulated by waveplates.  Waveplate
-   rotated by an angle α (zero is aligned with the horizontal axis)
-   rotates the polarization state around an axis, located at an angle of
-   2α with the horizontal state |H〉 in the horizontal plane, as shown in
-   Figure above.  Half waveplate rotates the polarization state by an
-   angle π, while a quarter waveplate rotates by an angle π/2 in the
-   Poincaré sphere.  The action of the waveplates is captured by the
-   corresponding unitary operations:
+   Half waveplate rotates the polarization state by an angle π, while a
+   quarter waveplate rotates by an angle π/2 in the Poincaré sphere.
+   The action of the waveplates is captured by the corresponding unitary
+   operations:
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics.html)

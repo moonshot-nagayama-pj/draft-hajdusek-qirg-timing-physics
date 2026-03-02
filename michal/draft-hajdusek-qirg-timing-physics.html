@@ -7988,40 +7988,9 @@ This setup is shown in the figure below.<a href="#section-5.3-1" class="pilcrow"
 </div>
 </div>
 <p id="section-5.3-5">This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the <strong>Poincaré sphere</strong>.
-The table below summarizes this equivalence.<a href="#section-5.3-5" class="pilcrow">¶</a></p>
-<table class="center" id="table-2">
-          <caption><a href="#table-2" class="selfRef">Table 2</a></caption>
-<thead>
-            <tr>
-              <th class="text-left" rowspan="1" colspan="1">Qubit basis</th>
-              <th class="text-left" rowspan="1" colspan="1">Polarization basis</th>
-              <th class="text-left" rowspan="1" colspan="1">Polarization states</th>
-              <th class="text-left" rowspan="1" colspan="1"> </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">Z</td>
-              <td class="text-left" rowspan="1" colspan="1">linear</td>
-              <td class="text-left" rowspan="1" colspan="1">$$</td>
-              <td class="text-left" rowspan="1" colspan="1">H\rangle$$</td>
-            </tr>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">X</td>
-              <td class="text-left" rowspan="1" colspan="1">diagonal</td>
-              <td class="text-left" rowspan="1" colspan="1">20 ns</td>
-              <td class="text-left" rowspan="1" colspan="1"> </td>
-            </tr>
-            <tr>
-              <td class="text-left" rowspan="1" colspan="1">Y</td>
-              <td class="text-left" rowspan="1" colspan="1">circular</td>
-              <td class="text-left" rowspan="1" colspan="1">&lt; 1 Hz</td>
-              <td class="text-left" rowspan="1" colspan="1"> </td>
-            </tr>
-          </tbody>
-        </table>
-<p id="section-5.3-7">The Figure below shows the Poincaré sphere along with the position of the polarization states.<a href="#section-5.3-7" class="pilcrow">¶</a></p>
-<div class="alignLeft art-svg artwork" id="section-5.3-8">
+Polarization of light is manipulated by waveplates.
+Waveplate rotated by an angle <span class="contact-name">α</span> (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of <span class="contact-name">2α</span> with the horizontal state <span class="contact-name">|H〉</span> in the horizontal plane, as shown in Figure above.<a href="#section-5.3-5" class="pilcrow">¶</a></p>
+<div class="alignLeft art-svg artwork" id="section-5.3-6">
 <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="281.21848pt" height="154.25336pt" viewBox="0 0 281.21847 154.25336" version="1.1" id="svg870" sodipodi:docname="poincare-sphere.svg" inkscape:version="1.2.2 (b0a84865, 2022-12-01)">
             <sodipodi:namedview id="namedview872" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:document-units="pt" showgrid="false" inkscape:zoom="1.1076831" inkscape:cx="160.24439" inkscape:cy="102.01474" inkscape:window-width="1728" inkscape:window-height="993" inkscape:window-x="0" inkscape:window-y="33" inkscape:window-maximized="1" inkscape:current-layer="svg870"></sodipodi:namedview>
             <defs id="defs520">
@@ -8365,13 +8334,11 @@ The table below summarizes this equivalence.<a href="#section-5.3-5" class="pilc
                 <use xlink:href="#glyph-0-10" x="213.78999" y="23.747999" id="use866"></use>
               </g>
             </g>
-          </svg><a href="#section-5.3-8" class="pilcrow">¶</a>
+          </svg><a href="#section-5.3-6" class="pilcrow">¶</a>
 </div>
-<p id="section-5.3-9">Polarization of light is manipulated by waveplates.
-Waveplate rotated by an angle <span class="contact-name">α</span> (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of <span class="contact-name">2α</span> with the horizontal state <span class="contact-name">|H〉</span> in the horizontal plane, as shown in Figure above.
-Half waveplate rotates the polarization state by an angle <span class="contact-name">π</span>, while a quarter waveplate rotates by an angle <span class="contact-name">π/2</span> in the Poincaré sphere.
-The action of the waveplates is captured by the corresponding unitary operations:<a href="#section-5.3-9" class="pilcrow">¶</a></p>
-<div class="alignLeft art-svg artwork" id="section-5.3-10">
+<p id="section-5.3-7">Half waveplate rotates the polarization state by an angle <span class="contact-name">π</span>, while a quarter waveplate rotates by an angle <span class="contact-name">π/2</span> in the Poincaré sphere.
+The action of the waveplates is captured by the corresponding unitary operations:<a href="#section-5.3-7" class="pilcrow">¶</a></p>
+<div class="alignLeft art-svg artwork" id="section-5.3-8">
 <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="491.55688mm" height="30.923662mm" viewBox="0 0 491.55688 30.923662" version="1.1" id="svg5" inkscape:version="1.2.2 (b0a84865, 2022-12-01)" sodipodi:docname="waveplates_matrix.svg" xml:space="preserve">
             <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#c6c6c6" inkscape:document-units="mm" showgrid="false" inkscape:zoom="0.43871955" inkscape:cx="719.13824" inkscape:cy="17.095204" inkscape:window-width="1728" inkscape:window-height="992" inkscape:window-x="892" inkscape:window-y="1638" inkscape:window-maximized="1" inkscape:current-layer="layer1"></sodipodi:namedview>
             <defs id="defs2">
@@ -8708,11 +8675,11 @@ The action of the waveplates is captured by the corresponding unitary operations
                 </g>
               </g>
             </g>
-          </svg><a href="#section-5.3-10" class="pilcrow">¶</a>
+          </svg><a href="#section-5.3-8" class="pilcrow">¶</a>
 </div>
-<p id="section-5.3-11">The idea behind measurements in arbitrary basis<a href="#section-5.3-11" class="pilcrow">¶</a></p>
-<div id="section-5.3-12">
-          <div class="alignLeft art-svg artwork" id="section-5.3-12.1">
+<p id="section-5.3-9">The idea behind measurements in arbitrary basis<a href="#section-5.3-9" class="pilcrow">¶</a></p>
+<div id="section-5.3-10">
+          <div class="alignLeft art-svg artwork" id="section-5.3-10.1">
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="3.009ex" role="img" viewBox="0 -1006.6 4842.9 1295.7" width="11.248ex">
               <defs>
                 <path d="M350 -170v-11c-67 1 -93 7 -121 25s-44 59 -44 115v177c0 69 -18 93 -85 114c67 20 85 43 85 113v178c0 57 15 96 44 114s55 24 121 25v-11c-69 -18 -91 -48 -91 -123v-168c0 -83 -19 -109 -94 -129c75 -19 94 -45 94 -128v-168c0 -75 22 -105 91 -123Z" id="E1-STIXWEBMAIN-7B" stroke-width="1"></path>
@@ -8737,12 +8704,12 @@ The action of the waveplates is captured by the corresponding unitary operations
                 <use xlink:href="#E1-STIXWEBMAIN-27E9" x="3961" y="0"></use>
                 <use xlink:href="#E1-STIXWEBMAIN-7D" x="4362" y="0"></use>
               </g>
-            </svg><a href="#section-5.3-12.1" class="pilcrow">¶</a>
+            </svg><a href="#section-5.3-10.1" class="pilcrow">¶</a>
 </div>
 </div>
-<p id="section-5.3-13">is to choose the angles for the waveplates such that the following transformation is achieved,<a href="#section-5.3-13" class="pilcrow">¶</a></p>
-<div id="section-5.3-14">
-          <div class="alignLeft art-svg artwork" id="section-5.3-14.1">
+<p id="section-5.3-11">is to choose the angles for the waveplates such that the following transformation is achieved,<a href="#section-5.3-11" class="pilcrow">¶</a></p>
+<div id="section-5.3-12">
+          <div class="alignLeft art-svg artwork" id="section-5.3-12.1">
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="3.176ex" role="img" viewBox="0 -1006.6 34398.8 1367.4" width="79.894ex">
               <defs>
                 <path d="M775 653l-4 -16h-16c-75 0 -98 -27 -107 -63l-87 -356c-26 -106 -82 -231 -272 -231c-160 0 -222 96 -222 187c0 8 12 86 14 95l76 330c1 2 1 5 1 7c0 20 -21 31 -75 31h-18l4 16h328l-4 -16h-17c-79 0 -97 -27 -106 -63l-90 -360c-4 -15 -7 -51 -7 -68 c0 -54 47 -112 144 -112c111 0 169 81 195 189l86 351c2 7 4 15 4 26c-1 23 -17 37 -75 37h-19l4 16h263Z" id="E1-STIXWEBNORMALI-1D448" stroke-width="1"></path>
@@ -8851,11 +8818,11 @@ The action of the waveplates is captured by the corresponding unitary operations
                 <use xlink:href="#E1-STIXWEBNORMALI-1D449" x="33237" y="0"></use>
                 <use xlink:href="#E1-STIXWEBMAIN-27E9" x="33998" y="0"></use>
               </g>
-            </svg><a href="#section-5.3-14.1" class="pilcrow">¶</a>
+            </svg><a href="#section-5.3-12.1" class="pilcrow">¶</a>
 </div>
 </div>
-<p id="section-5.3-15">Settings for the three Pauli bases are summarized in the table below.<a href="#section-5.3-15" class="pilcrow">¶</a></p>
-<div class="alignLeft art-svg artwork" id="section-5.3-16">
+<p id="section-5.3-13">Settings for the three Pauli bases are summarized in the table below.<a href="#section-5.3-13" class="pilcrow">¶</a></p>
+<div class="alignLeft art-svg artwork" id="section-5.3-14">
 <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="247.1925mm" height="62.24984mm" viewBox="0 0 247.1925 62.249839" version="1.1" id="svg5" inkscape:version="1.2.2 (b0a84865, 2022-12-01)" sodipodi:docname="waveplate_angles_table.svg" xml:space="preserve">
             <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#c6c6c6" inkscape:document-units="mm" showgrid="false" inkscape:zoom="0.43871955" inkscape:cx="466.12922" inkscape:cy="117.38707" inkscape:window-width="1728" inkscape:window-height="992" inkscape:window-x="892" inkscape:window-y="1638" inkscape:window-maximized="1" inkscape:current-layer="layer1"></sodipodi:namedview>
             <defs id="defs2">
@@ -9232,12 +9199,12 @@ The action of the waveplates is captured by the corresponding unitary operations
                 <path fill="none" stroke-width="0.398" stroke-linecap="butt" stroke-linejoin="miter" stroke="#000000" stroke-opacity="1" stroke-miterlimit="10" d="M 2.69097e-4,-2.79514e-4 H 194.64003" transform="matrix(3.6,0,0,-3.6,0.042,175.9404)" id="path1532"></path>
               </g>
             </g>
-          </svg><a href="#section-5.3-16" class="pilcrow">¶</a>
+          </svg><a href="#section-5.3-14" class="pilcrow">¶</a>
 </div>
-<p id="section-5.3-17">Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
+<p id="section-5.3-15">Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
 Therefore, for a rotation of 45 degrees, the motor requires areound 4.5s.
-During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.<a href="#section-5.3-17" class="pilcrow">¶</a></p>
+During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.<a href="#section-5.3-15" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
