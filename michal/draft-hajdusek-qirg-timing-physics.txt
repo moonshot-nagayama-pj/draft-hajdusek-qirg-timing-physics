@@ -219,6 +219,8 @@ Table of Contents
    *  Exhaustive coverage of all existing quantum platforms and
       technologies.
 
+   *  New research results.
+
 3.  Interferometric Stabilization
 
    Entanglement distribution in quantum networks is performed by
