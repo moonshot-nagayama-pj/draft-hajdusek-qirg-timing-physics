@@ -106,10 +106,11 @@ Table of Contents
    8.  Urgent but Not Synchronization-critical Tasks
    9.  Host-side Application-level Tasks
    10. Background Tasks
-   Appendix A.  Acknowledgments
-   Appendix B.  References
-     B.1.  Normative
-     B.2.  Informative
+   Appendix A.  Entanglement Soup
+   Appendix B.  Acknowledgments
+   Appendix C.  References
+     C.1.  Normative
+     C.2.  Informative
    Authors' Addresses
 
 1.  Prologue
@@ -1412,7 +1413,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
       measurement bases on a portion of the network capacity can serve
       as a detection mechanism for this malicious behavior.
 
-Appendix A.  Acknowledgments
+Appendix A.  Entanglement Soup
+
+Appendix B.  Acknowledgments
 
    The authors would like to thank Andrew Todd for crucial help in
    building the document, and Shota Nagayama, Akihito Soeda and Monet
@@ -1420,11 +1423,11 @@ Appendix A.  Acknowledgments
    the document.  This work was supported by the JST [Moonshot R&D
    program] under Grant Number [JPMJMS226C].
 
-Appendix B.  References
+Appendix C.  References
 
-B.1.  Normative
+C.1.  Normative
 
-B.2.  Informative
+C.2.  Informative
 
    * C.K. Hong, Z.Y. Ou, and L. Mandel, Measurement of subpicosecond time intervals between two photons by interference, [_Phys. Rev. Lett._ **59**, 2044 (1987)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044).
    * A. M. Branczyk, Hong-Ou-Mandel Interference, [_arXiv:1711.00080_ (2017)](https://arxiv.org/abs/1711.00080).
