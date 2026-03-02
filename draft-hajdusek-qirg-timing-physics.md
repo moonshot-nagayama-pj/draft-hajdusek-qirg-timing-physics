@@ -770,14 +770,12 @@ Such tasks include:
 * **Routing**: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.
 * **Malicious use monitoring**: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.
 
---- back
-
-# Entanglement Soup
-
 # Acknowledgments
 
 The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama, Akihito Soeda and Monet Tokuyama Friedrich for useful early discussions on the direction of the document.
 This work was supported by the JST [Moonshot R&D program] under Grant Number [JPMJMS226C].
+
+--- back
 
 # References
 
