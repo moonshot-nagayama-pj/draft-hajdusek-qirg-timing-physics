@@ -772,6 +772,8 @@ Such tasks include:
 
 --- back
 
+# Entanglement Soup
+
 # Acknowledgments
 
 The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama, Akihito Soeda and Monet Tokuyama Friedrich for useful early discussions on the direction of the document.
