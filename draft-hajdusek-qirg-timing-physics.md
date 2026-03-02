@@ -780,7 +780,7 @@ Such tasks include:
 # Acknowledgments
 
 The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama, Akihito Soeda and Monet Tokuyama Friedrich for useful early discussions on the direction of the document.
-This work was supported by the JST \[Moonshot R&D program\] under Grant Number \[JPMJMS226C\].
+This work was supported by the JST Moonshot R&D program under Grant Number JPMJMS226C.
 
 --- back
 
