@@ -479,9 +479,7 @@ Detection efficiency affects the rate at which entanglement can be distributed.
 * **Recovery time:** Denoted by $$\tau_recovery$$ and also known as 'dead' time. It is the time duration following an absorption of a photon during which the detector is unable to reliably detect another photon. Recovery time affects the maximum detection rate. If the source of photons has low efficiency, the clock rate does not need to be limited by the recovery time, as majority of the trials will not produce a photon. This could also be the case if the probability of losing the photon is high (either due to loss in fiber or due to low system detection efficiency $$\eta_sde$$). On the other hand, if the photon source is highly efficient, it is important to ensure that the separation between the wavepackets is longer than $$\tau_recovery$$ to ensure effcient use of the generated photons.
 * **Dark count rate:** SPDs have a finite chance to produce an output electric signal even in the absence of a photon. This may be caused by materials properties of the detector, biasing conditions, or external noise. It is usually given in Hz (counts per second). Dark counts decrease the fidelity of the distributed entangled states.
 * **Timing jitter:** Denoted by $$J_timing$$.
-Describes the variation in time between the photon being absorbed and the output electric signal being generated. A few example profiles are shown in the Figure below taken from [Hadfield's review](https://www.nature.com/articles/nphoton.2009.230).
-
-<artwork type="svg" src="Figures/timing-jitter.svg"></artwork>
+Describes the variation in time between the photon being absorbed and the output electric signal being generated.
 
 The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
 
