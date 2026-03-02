@@ -676,8 +676,7 @@ The idea behind measurements in arbitrary basis
 is to choose the angles for the waveplates such that the following transformation is achieved:
 
 ~~~math
-U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi\rangle & \rightarrow |H\rangle, \\
-U_{HWP}(\alpha_{HWP})U_{QWP}(\alpha_{QWP}) |\psi^{\perp}\rangle \rightarrow |V\rangle
+U_{HWP}U_{QWP} |\psi\rangle & \rightarrow |H\rangle, \quad U_{HWP}U_{QWP}|\psi^{\perp}\rangle \rightarrow |V\rangle
 ~~~
 
 Settings for the three Pauli bases are summarized in the table below.
