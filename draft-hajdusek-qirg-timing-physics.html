@@ -1264,10 +1264,10 @@ Application-layer developers will not need the low-level physics presented here.
             <p id="section-toc.1-1.9.1"><a href="#section-9" class="auto internal xref">9</a>.  <a href="#name-host-side-application-level" class="internal xref">Host-side Application-level Tasks</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-background-tasks" class="internal xref">Background Tasks</a></p>
+            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
-            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-background-tasks" class="internal xref">Background Tasks</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
             <p id="section-toc.1-1.12.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-references" class="internal xref">References</a></p>
@@ -9296,33 +9296,33 @@ The first approach is the <em>crossbar switch</em> with all-to-all connectivity.
 <p id="section-9-4">All of the above except those marked real-time and near-real time are almost entirely insensitive to timing issues, except as necessary for the end-to-end service to meet the users' needs. If allocated resources sit unused for extensive periods of time, the service delivery of the network as a whole may be negatively impacted; introduction of proper pricing or admission control may be needed to resolve such issues.<a href="#section-9-4" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="background-tasks">
+<div id="acknowledgments">
 <section id="section-10">
-      <h2 id="name-background-tasks">
-<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-background-tasks" class="section-name selfRef">Background Tasks</a>
+      <h2 id="name-acknowledgments">
+<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="section-10-1">Network operations include a number of tasks that monitor and maintain the integrity and performance of the network. In the case of a quantum network, uses of the quantum portion of the network can often be deferred until the network is idle or pre-scheduled time slots arrive, in order to minimize the impact on application requests.  Once the quantum operations are begun, of course, they are subject to all of the constraints listed above, but the accompanying classical calculation and inter-node reconciliation can proceed in the background.<a href="#section-10-1" class="pilcrow">¶</a></p>
-<p id="section-10-2">Such tasks include:<a href="#section-10-2" class="pilcrow">¶</a></p>
-<ul class="normal">
-<li class="normal" id="section-10-3.1">
-          <p id="section-10-3.1.1"><strong>Link monitoring</strong>: Each link must be monitored continuously in order to inform routing (below) and RuleSet creation during connection setup.  Reconstruction of the link density matrix and entanglement success rates involve classical information sharing between the two nodes at opposite ends of the link. This information must be shared reliably but does not have hard real-time constraints, as so is well suited to transmission over a reliable protocol such as TCP without concern for delays. The required classical information is the outcomes of measurements of the quantum portion of the link. That data can be collected from entangled states specifically assigned to the link monitoring task.  It can also be collected from application-targeted uses of the link, provided that appropriate coordination can be achieved and connection privacy maintained.<a href="#section-10-3.1.1" class="pilcrow">¶</a></p>
-</li>
-        <li class="normal" id="section-10-3.2">
-          <p id="section-10-3.2.1"><strong>Routing</strong>: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.<a href="#section-10-3.2.1" class="pilcrow">¶</a></p>
-</li>
-        <li class="normal" id="section-10-3.3">
-          <p id="section-10-3.3.1"><strong>Malicious use monitoring</strong>: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.<a href="#section-10-3.3.1" class="pilcrow">¶</a></p>
-</li>
-      </ul>
+<p id="section-10-1">The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama, Akihito Soeda and Monet Tokuyama Friedrich for useful early discussions on the direction of the document.
+This work was supported by the JST [Moonshot R&amp;D program] under Grant Number [JPMJMS226C].<a href="#section-10-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="acknowledgments">
+<div id="background-tasks">
 <section id="section-11">
-      <h2 id="name-acknowledgments">
-<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
+      <h2 id="name-background-tasks">
+<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-background-tasks" class="section-name selfRef">Background Tasks</a>
       </h2>
-<p id="section-11-1">The authors would like to thank Andrew Todd for crucial help in building the document, and Shota Nagayama, Akihito Soeda and Monet Tokuyama Friedrich for useful early discussions on the direction of the document.
-This work was supported by the JST [Moonshot R&amp;D program] under Grant Number [JPMJMS226C].<a href="#section-11-1" class="pilcrow">¶</a></p>
+<p id="section-11-1">Network operations include a number of tasks that monitor and maintain the integrity and performance of the network. In the case of a quantum network, uses of the quantum portion of the network can often be deferred until the network is idle or pre-scheduled time slots arrive, in order to minimize the impact on application requests.  Once the quantum operations are begun, of course, they are subject to all of the constraints listed above, but the accompanying classical calculation and inter-node reconciliation can proceed in the background.<a href="#section-11-1" class="pilcrow">¶</a></p>
+<p id="section-11-2">Such tasks include:<a href="#section-11-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-11-3.1">
+          <p id="section-11-3.1.1"><strong>Link monitoring</strong>: Each link must be monitored continuously in order to inform routing (below) and RuleSet creation during connection setup.  Reconstruction of the link density matrix and entanglement success rates involve classical information sharing between the two nodes at opposite ends of the link. This information must be shared reliably but does not have hard real-time constraints, as so is well suited to transmission over a reliable protocol such as TCP without concern for delays. The required classical information is the outcomes of measurements of the quantum portion of the link. That data can be collected from entangled states specifically assigned to the link monitoring task.  It can also be collected from application-targeted uses of the link, provided that appropriate coordination can be achieved and connection privacy maintained.<a href="#section-11-3.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-11-3.2">
+          <p id="section-11-3.2.1"><strong>Routing</strong>: Creation and update of routing tables at each node is an ordinary, distributed classical task that shares the information collected about links as above. The expected completion time of this tasks should be quick enough that the network converges to provide seamless service upon topology changes.  Unless nodes are mobile, propagation and recalculation of such changes at the level of seconds should be acceptable.<a href="#section-11-3.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-11-3.3">
+          <p id="section-11-3.3.1"><strong>Malicious use monitoring</strong>: It is known that a hijacked or malfunctioning repeater can be used to impede the overall service of the network or even to partition the network. It is also known that QKD-derived monitoring of the network using randomly selected measurement bases on a portion of the network capacity can serve as a detection mechanism for this malicious behavior.<a href="#section-11-3.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
 </section>
 </div>
 <div id="references">
