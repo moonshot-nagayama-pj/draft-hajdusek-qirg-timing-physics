@@ -115,7 +115,9 @@ There are four possible cases that may occur:
 
 This figure shows these cases:
 
-<artwork type="svg" src="Figures-BW/HOM-bw.svg"></artwork>
+<artwork type="svg">
+{::include Figures-BW/HOM-bw.svg}
+</artwork>
 
 The input state can be expressed as
 
