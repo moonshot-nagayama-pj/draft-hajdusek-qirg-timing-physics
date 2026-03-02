@@ -26,7 +26,7 @@ About This Document
 
    Discussion of this document takes place on the Quantum Internet
    Research Group RG mailing list (mailto:qirg@irtf.org), which is
-   archived at https://mailarchive.ietf.org/arch/browse/qirg/.
+   archived at https://datatracker.ietf.org/rg/qirg/documents/.
    Subscribe at https://www.ietf.org/mailman/listinfo/qirg/.
 
    Source for this draft and an issue tracker can be found at
