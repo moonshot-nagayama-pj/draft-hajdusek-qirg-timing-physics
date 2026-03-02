@@ -485,7 +485,6 @@ Describes the variation in time between the photon being absorbed and the output
 
 The table below shows the above characteristics for a [SNSPD](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
 
-
 | Wavelength | 800 nm | 1550 nm |
 | ---------- | ------ | ------- |
 | System detection efficiency | > 90% | > 90% |
@@ -655,7 +654,13 @@ General pure state of a polarization-encoded qubit can be written as
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 The table below summarizes this equivalence.
 
-<artwork type="svg" src="Figures/polarization-table.svg"></artwork>
+| Qubit basis | Polarization basis | Polarization states |
+| ---------- | ------ | ------- |
+| Z | linear | $$|H\rangle$$ |
+| X | diagonal | 20 ns |
+| Y | circular | < 1 Hz |
+
+<!-- <artwork type="svg" src="Figures/polarization-table.svg"></artwork> -->
 
 The Figure below shows the Poincaré sphere along with the position of the polarization states.
 
