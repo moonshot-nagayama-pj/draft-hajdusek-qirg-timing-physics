@@ -255,7 +255,7 @@ Table of Contents
    *  Case D: photon in mode a is transmitted, while photon in mode b is
       reflected.
 
-   This figure shows these cases:
+   This figure shows these cases (Figures-BW/HOM-bw.svg):
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -423,7 +423,8 @@ Table of Contents
    its maximum of 1.  On the other hand, when the photons are fully
    distinguishable and their polarization vectors are orthogonal,
    visibility vanishes.  The visibility and the probability of a
-   coincidence detection are both displayed in the figure below.
+   coincidence detection are both displayed in the figure below
+   (Figures-matplotlib/visibility-polarization.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -490,11 +491,11 @@ Table of Contents
    ⌡
 
    Two input photons become distinguishable if their respective spectral
-   amplitude functions are not equal.  We resctrict our discussion to
+   amplitude functions are not equal.  We restrict our discussion to
    Gaussian spectral amplitude functions but the same methods generalize
    to arbitrary photons.  The two photons may have different central
    frequencies or different standard deviations, as shown in the
-   Figure below.
+   Figure below (Figures-matplotlib/distinguishability-spectral.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -660,7 +661,8 @@ Table of Contents
                   b  a                        b  a
 
    The probability of coincidence and corresponding visibility for both
-   Cases are shown in the Figure below.
+   Cases are shown in the Figure below (Figures-matplotlib/visibility-
+   spectral.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -676,7 +678,8 @@ Table of Contents
    diminishing the visibility of the HOM interference.  If the times of
    arrival are too different as shown in the Figure below, the
    probability of a coincidence detection will reach its maximum value
-   of 1/2, and the visibility will vanish.
+   of 1/2, and the visibility will vanish (Figures-matplotlib/
+   distinguishability-temporal.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -732,7 +735,8 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
     c   2
 
    The figure below displays the visibility and probability of
-   coincidence for this case.
+   coincidence for this case (Figures-matplotlib/visibility-
+   temporal.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -986,7 +990,8 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
         ⟂            ⟂    2          †    2             †
    Pr(|ϕ ⟩;|ψ⟩) = |⟨ϕ |ψ⟩|  = |⟨1| U  |ψ⟩|  = Pr(|1⟩; U  |ψ⟩)
 
-   This is pictured in the Figure below.
+   This is pictured in the Figure below (Figures-BW/measurement-1qubit-
+   bw.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -1001,7 +1006,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    unitary is the Hermitian conjugate of the unitary that creates a Bell
    pair when the qubits are both initialized in |0〉, as shown in the
    Figure below, where we have dropped the Z label indicating the
-   measurement basis.
+   measurement basis (Figures-BW/measurement-2qubit-bw.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -1075,7 +1080,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    then get detected by the detectors placed in the output paths of the
    PBS.  Horizontal polarization gets transmitted through the PBS, while
    vertical polarization gets reflected.  This setup is shown in the
-   figure below.
+   figure below (Figures-BW/measurement-polarization-bw.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -1181,7 +1186,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    Bell State Analyzers (BSA) and route input pairs of photons to the
    desired BSA, where they undergo measurement in the Bell basis
    (https://ieeexplore.ieee.org/document/10821447).  These approaches
-   are pictured in the figure below.
+   are pictured in the figure below (Figures-BW/optical-switch-bw.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -1206,7 +1211,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    issue of arrival time delay arises in the case of integrated switches
    used in paired-egress BSA pools.  The propagation delay introduced by
    the switching fabric depends on the design of the switch, as
-   demonstrated in figure below.
+   demonstrated in figure below (Figures-BW/time-delay-bw.svg).
 
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
@@ -1373,16 +1378,16 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    The authors would like to thank Andrew Todd for crucial help in
    building the document, and Shota Nagayama, Akihito Soeda and Monet
    Tokuyama Friedrich for useful early discussions on the direction of
-   the document.  This work was supported by the JST [Moonshot R&D
-   program] under Grant Number [JPMJMS226C].
+   the document.  This work was supported by the JST Moonshot R&D
+   program under Grant Number JPMJMS226C.
 
 11.  Acknowledgments
 
    The authors would like to thank Andrew Todd for crucial help in
    building the document, and Shota Nagayama, Akihito Soeda and Monet
    Tokuyama Friedrich for useful early discussions on the direction of
-   the document.  This work was supported by the JST [Moonshot R&D
-   program] under Grant Number [JPMJMS226C].
+   the document.  This work was supported by the JST Moonshot R&D
+   program under Grant Number JPMJMS226C.
 
 Appendix A.  References
 
