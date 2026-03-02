@@ -1084,8 +1084,10 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    Poincaré sphere.  The action of the waveplates is captured by the
    corresponding unitary operations:
 
-   U   (α) =
-    QWP
+             ⎡    2       2               ⎤
+             ⎢ cos α+ isin α (1-i)cosαsinα⎥
+   U   (α) = ⎢                  2      2  ⎥
+    QWP      ⎣ (1-i)cosαsinα sin α+icos α ⎦
 
    The idea behind measurements in arbitrary basis
 
