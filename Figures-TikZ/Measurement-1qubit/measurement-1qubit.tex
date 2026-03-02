@@ -1,0 +1,33 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[compat=0.6]{yquant}
+\usetikzlibrary{quotes}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+\useyquantlanguage{groups}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \begin{scope}
+    \begin{yquant}[operator/separation=1cm]
+        qubit {$|\psi\rangle$} q;
+        measure q;
+        \yquantset{operator/separation=2mm}
+    \end{yquant}
+    \end{scope}
+
+    \begin{scope}[xshift=125]
+    \begin{yquant}[operator/separation=0.5cm]
+        qubit {$|\psi\rangle$} q;
+        box {$U ^{\dagger}$} q;
+        measure q;
+        \yquantset{operator/separation=2mm}
+    \end{yquant}
+    \end{scope}
+
+\end{tikzpicture}
+
+\end{document}

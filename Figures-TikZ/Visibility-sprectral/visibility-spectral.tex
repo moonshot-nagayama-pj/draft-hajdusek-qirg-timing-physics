@@ -1,0 +1,75 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings,
+decorations.pathmorphing,
+arrows,
+positioning,
+calc,
+patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\pgfplotsset{
+    tick label style={font=\sffamily},
+    every axis label/.append style={font=\sffamily},
+    legend style={font=\sffamily},
+    title style={font=\sffamily}
+}
+
+\begin{document}
+
+\definecolor{myRed}{RGB}{204,0,0}
+\definecolor{myBlue}{RGB}{0,102,204}
+
+\begin{tikzpicture}
+
+  \begin{scope}
+  \begin{axis}[
+    height=6cm,
+    width=10cm,
+    domain=-6:6,
+    samples=101,
+    ymin=-0.1,
+    ymax=1.25,
+    xlabel={Central frequency mismatch},
+    xtick={-6,-4,-2,0,2,4,6},
+    xticklabels={-6,-4,-2,0,2,4,6},
+    ytick={0,0.5,1},
+    yticklabels={0,0.5,1},
+    title={HOM interference for Case A},
+    legend entries={visibility,coincidence prob.},
+    legend columns=2,
+    legend style={/tikz/every even column/.append style={column sep=0.5cm}}]
+
+  \addplot [black, very thick, smooth] {1-(1-exp(-x^2/2))};
+  \addplot [black, very thick, smooth, dashed] {0.5*(1-exp(-x^2/2))};
+
+  \end{axis}
+  \end{scope}
+
+  \begin{scope}[yshift=-210]
+  \begin{axis}[
+    height=6cm,
+    width=10cm,
+    domain=0:8,
+    samples=101,
+    ymin=-0.1,
+    ymax=1.25,
+    xlabel={Ratio of standard deviations},
+    xtick={-6,-4,-2,0,2,4,6},
+    xticklabels={-6,-4,-2,0,2,4,6},
+    ytick={0,0.5,1},
+    yticklabels={0,0.5,1},
+    title={HOM interference for Case B},
+    legend entries={visibility,coincidence prob.},
+    legend columns=2,
+    legend style={/tikz/every even column/.append style={column sep=0.5cm}}]
+
+  \addplot [black, very thick, smooth] {2*x/(1+x^2)};
+  \addplot [black, very thick, smooth, dashed] {0.5-x/(1+x^2)};
+
+  \end{axis}
+  \end{scope}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,19 @@
+{
+  "config": {
+    "code-block-style": { "style": "fenced" },
+    "code-fence-style": { "style": "tilde" },
+    "emphasis-style": { "style": "underscore" },
+    "heading-style": { "style": "atx" },
+    "hr-style": { "style": "---" },
+    "line-length": false,
+    "no-alt-text": false,
+    "no-trailing-spaces": { "br_spaces": 0, "list_item_empty_lines": true, "strict": true },
+    "ol-prefix": { "style": "one" },
+    "single-h1": false,
+    "strong-style": { "style": "asterisk" },
+    "table-column-style": { "aligned_delimiter": true, "style": "compact" },
+    "table-pipe-style": { "style": "leading_and_trailing" },
+    "ul-indent": { "indent": 4 },
+    "ul-style": { "style": "sublist" }
+  }
+}

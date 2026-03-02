@@ -43,14 +43,14 @@ jobs:
 
     - name: "Build Drafts"
       id: build
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       with:
         token: ${{ github.token }}
 
     - name: "Fix Lints"
       id: fix-lint
       if: always() && steps.build.outcome == 'failure'
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       with:
         make: fix-lint
 
@@ -65,7 +65,7 @@ jobs:
         token: ${{ github.token }}
 
     - name: "Update GitHub Pages"
-      uses: martinthomson/i-d-template@v1
+      uses: martinthomson/i-d-template@v1m
       if: ${{ github.event_name == 'push' }}
       with:
         make: gh-pages

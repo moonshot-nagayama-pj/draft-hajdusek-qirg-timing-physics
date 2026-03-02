@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{quantikz2}
+
+
+\begin{document}
+
+\begin{quantikz}
+\lstick[2]{$|\psi\rangle$} &
+\ctrl{1}\gategroup[2,steps=2,style={dashed,rounded
+corners, inner
+xsep=2pt},background,label style={label
+position=below,anchor=north,yshift=-0.2cm}]{$U^{\dagger}$} & \gate{H} & \meter{} \\
+& \targ{} & & \meter{}
+\end{quantikz}
+
+\end{document}

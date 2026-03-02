@@ -1,0 +1,90 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings,
+decorations.pathmorphing,
+arrows,
+positioning,
+calc,
+patterns}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\usepackage{helvet}
+\usepackage[eulergreek]{sansmath}
+\pgfplotsset{compat=1.18}
+\pgfplotsset{
+    tick label style={font=\sansmath\sffamily},
+    every axis label/.append style={font=\sansmath\sffamily},
+    legend style={font=\sansmath\sffamily},
+    title style={font=\sansmath\sffamily}
+}
+
+\begin{document}
+
+\pgfmathdeclarefunction{dnorm}{2}{%
+  \pgfmathparse{exp(-((x-#1)^2)/#2)}%
+}
+
+\definecolor{myRed}{RGB}{204,0,0}
+\definecolor{myBlue}{RGB}{0,102,204}
+
+\def\meanA{-1.5}
+\def\meanB{1.5}
+\def\varA{4}
+\def\varB{4}
+
+\def\meanC{-7.5}
+\def\meanD{7.5}
+\def\varC{4}
+\def\varD{4}
+
+\begin{tikzpicture}
+
+  \begin{scope}
+  \begin{axis}[
+    domain=-15:15,
+    samples=101,
+    ticks=none,
+    hide y axis,
+    axis x line*=bottom,
+    xlabel={Time},
+    axis line style={thick, -latex},
+    title={partially distinguishable},
+    height=5cm,
+    width=10cm]
+
+  \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanA,\varA)};
+  \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanB,\varB)};
+  % \addplot[black, thick, latex-latex] coordinates {(\meanB,1.05) (\meanA,1.05)} node[midway, above] {$\tau$};
+  \addplot [
+    pattern=north west lines,
+    pattern color=black,
+    draw=none,
+    domain=-5:5,
+    stack plots=y] {min(dnorm(\meanA,\varA),dnorm(\meanB,\varB)) } \closedcycle;
+
+  \end{axis}
+  \end{scope}
+
+  \begin{scope}[yshift=-170]
+  \begin{axis}[
+    domain=-15:15,
+    samples=101,
+    ticks=none,
+    hide y axis,
+    axis x line*=bottom,
+    xlabel={Time},
+    axis line style={thick, -latex},
+    title={fully distinguishable},
+    height=5cm,
+    width=10cm]
+
+  \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanC,\varC)};
+  \addplot [black, very thick, smooth, name path global=first] {dnorm(\meanD,\varD)};
+  % \addplot[black, thick, latex-latex] coordinates {(\meanD,1.05) (\meanC,1.05)} node[midway, above] {$\tau$};
+
+  \end{axis}
+  \end{scope}
+
+\end{tikzpicture}
+
+\end{document}
