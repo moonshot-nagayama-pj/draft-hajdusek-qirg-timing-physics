@@ -684,7 +684,7 @@ Settings for the three Pauli bases are summarized in the table below.
 | Measurement basis | HWP | QWP |
 | ---------- | ------ | ------- |
 | linear (Z) | 0 | 0 |
-| diagonal (X) | Pi/8 | Pi/4 |
+| diagonal (X) | $$\pi/8$$ | Pi/4 |
 | circular (Y) | 0 | Pi/4 |
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
