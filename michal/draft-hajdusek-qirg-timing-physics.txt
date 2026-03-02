@@ -784,12 +784,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
 
    *  *Timing jitter:* Denoted by J_timing.  Describes the variation in
       time between the photon being absorbed and the output electric
-      signal being generated.  A few example profiles are shown in the
-      Figure below taken from Hadfield's review
-      (https://www.nature.com/articles/nphoton.2009.230).
-
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics.html)
+      signal being generated.
 
    The table below shows the above characteristics for a SNSPD
    (https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-
