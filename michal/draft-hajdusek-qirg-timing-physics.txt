@@ -1077,8 +1077,18 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    computational basis, and can be visualized with the help of the
    *Poincaré sphere*. The table below summarizes this equivalence.
 
-   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
-   draft-hajdusek-qirg-timing-physics.html)
+     +=============+====================+==============+============+
+     | Qubit basis | Polarization basis | Polarization |            |
+     |             |                    | states       |            |
+     +=============+====================+==============+============+
+     | Z           | linear             | $$           | H\rangle$$ |
+     +-------------+--------------------+--------------+------------+
+     | X           | diagonal           | 20 ns        |            |
+     +-------------+--------------------+--------------+------------+
+     | Y           | circular           | < 1 Hz       |            |
+     +-------------+--------------------+--------------+------------+
+
+                                 Table 2
 
    The Figure below shows the Poincaré sphere along with the position of
    the polarization states.
