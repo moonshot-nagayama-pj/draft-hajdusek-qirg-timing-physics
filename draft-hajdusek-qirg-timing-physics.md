@@ -655,7 +655,13 @@ This is directly equivalent to expressing the qubit state in the computational b
 Polarization of light is manipulated by waveplates.
 Waveplate rotated by an angle $$\alpha$$ (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of $$2\alpha$$ with the horizontal state $$|H\rangle$$ in the horizontal plane.
 Half waveplate rotates the polarization state by an angle $$\pi$$, while a quarter waveplate rotates by an angle $$\pi/2$$ in the Poincaré sphere.
-The action of the waveplates is captured by the corresponding unitary operations:
+The action of the half waveplate is captured by the corresponding unitary operations in linear polarization basis:
+
+~~~math
+U_{\text{HWP}}(\alpha) = \begin{bmatrix} \cos2\alpha & \sin2\alpha \\ \sin2\alpha & -\cos2\alpha \end{bmatrix}
+~~~
+
+Unitary matrix representing the action of a quarter waveplate in linear polarization basis:
 
 ~~~math
 U_{\text{QWP}}(\alpha) = \begin{bmatrix} \cos^2\alpha + i\sin^2\alpha & (1-i)\cos\alpha\sin\alpha \\ (1-i)\cos\alpha\sin\alpha & \sin^2\alpha +i\cos^2\alpha \end{bmatrix}
