@@ -5,7 +5,7 @@
 Quantum Internet Research Group                              M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 3 September 2026                                   2 March 2026
+Expires: 4 September 2026                                   3 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 September 2026.
+   This Internet-Draft will expire on 4 September 2026.
 
 Copyright Notice
 
@@ -179,7 +179,7 @@ Table of Contents
    *  *Interferometric stabilization:* photon wavepacket overlap,
       technology dependent, roughly nanoseconds.
 
-   *  *Detector timing windoes:* opening and closing of detector timing
+   *  *Detector timing windows:* opening and closing of detector timing
       windows, detector recovery time: nanoseconds to microseconds.
 
    *  *Measurement basis selection (if required in BSA):* performance
@@ -1328,7 +1328,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
       entanglement success rates involve classical information sharing
       between the two nodes at opposite ends of the link.  This
       information must be shared reliably but does not have hard real-
-      time constraints, as so is well suited to transmission over a
+      time constraints, so is well suited to transmission over a
       reliable protocol such as TCP without concern for delays.  The
       required classical information is the outcomes of measurements of
       the quantum portion of the link.  That data can be collected from
