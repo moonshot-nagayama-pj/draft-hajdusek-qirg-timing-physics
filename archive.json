@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-01T00:31:26.697318+00:00",
+  "timestamp": "2026-03-03T00:28:58.516256+00:00",
   "repo": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
   "labels": [
     {
@@ -50,5 +50,118 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDORI9qr87HORUd",
+      "title": "First draft of Quantum TIming Regimes",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/1",
+      "state": "MERGED",
+      "author": "mhajdusek",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-03-02T03:59:24Z",
+      "updatedAt": "2026-03-02T04:00:28Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "main",
+      "baseRefOid": "9a682e1977e60e012e6f2641e4c80dd755cf8e53",
+      "headRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "michal",
+      "headRefOid": "116e6b1b97029dd2ba020c1fd5d147285eee959b",
+      "closedAt": "2026-03-02T04:00:28Z",
+      "mergedAt": "2026-03-02T04:00:28Z",
+      "mergedBy": "mhajdusek",
+      "mergeCommit": {
+        "oid": "65de00b698053c2190b0b55654bae84da0025aa3"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDORI9qr87HPOKV",
+      "title": "New draft, includes Acknowledgments",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/2",
+      "state": "MERGED",
+      "author": "mhajdusek",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-03-02T05:52:57Z",
+      "updatedAt": "2026-03-02T05:55:23Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "main",
+      "baseRefOid": "456e6a37d279257fefb61fdf8fbd157e5883df4b",
+      "headRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "michal",
+      "headRefOid": "79245e4b7f1311a5d0a14418d4c892f559647127",
+      "closedAt": "2026-03-02T05:55:23Z",
+      "mergedAt": "2026-03-02T05:55:23Z",
+      "mergedBy": "mhajdusek",
+      "mergeCommit": {
+        "oid": "4781caca72d5163fd04d371ba2771f30b8d83a25"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDORI9qr87HQBb4",
+      "title": "Try one figure in different style",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/3",
+      "state": "MERGED",
+      "author": "rdviii",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Trying ::include...",
+      "createdAt": "2026-03-02T07:08:40Z",
+      "updatedAt": "2026-03-02T11:00:30Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "main",
+      "baseRefOid": "4781caca72d5163fd04d371ba2771f30b8d83a25",
+      "headRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "rdv-svg-testing",
+      "headRefOid": "0de6899a26156af929e7cb5dd8aba9a8db5b2477",
+      "closedAt": "2026-03-02T11:00:30Z",
+      "mergedAt": "2026-03-02T11:00:30Z",
+      "mergedBy": "mhajdusek",
+      "mergeCommit": {
+        "oid": "9f1b813e35dec553016d5744f71495056aab2aec"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDORI9qr87HUgBF",
+      "title": "Michal no figures",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/4",
+      "state": "MERGED",
+      "author": "mhajdusek",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-03-02T12:36:49Z",
+      "updatedAt": "2026-03-02T12:37:44Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "main",
+      "baseRefOid": "9f1b813e35dec553016d5744f71495056aab2aec",
+      "headRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "michal-no-figures",
+      "headRefOid": "3c41cb395645c1cbd38cb281039c91f8144b14bb",
+      "closedAt": "2026-03-02T12:37:44Z",
+      "mergedAt": "2026-03-02T12:37:44Z",
+      "mergedBy": "mhajdusek",
+      "mergeCommit": {
+        "oid": "427000c2adcafbc7a10ccaf69ad89fb0f0f7f3c4"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
