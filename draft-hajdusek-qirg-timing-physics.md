@@ -71,7 +71,7 @@ The range of time scales of interest extends from ensuring the sub-wavelength st
 Summary of timing regimes:
 
 * **Interferometric stabilization:** photon wavepacket overlap, technology dependent, roughly nanoseconds.
-* **Detector timing windoes:** opening and closing of detector timing windows, detector recovery time: nanoseconds to microseconds.
+* **Detector timing windows:** opening and closing of detector timing windows, detector recovery time: nanoseconds to microseconds.
 * **Measurement basis selection (if required in BSA):** performance will constrain entanglement attempt rate.
 * **Optical switch control:** switching of trains of wave packets.
 * **Pre-configured event-driven tasks:** timing-triggered or measurement-triggered execution of quantum circuits, microseconds
@@ -695,7 +695,7 @@ Settings for the three Pauli bases are summarized in the table below.
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
-Therefore, for a rotation of 45 degrees, the motor requires areound 4.5s.
+Therefore, for a rotation of 45 degrees, the motor requires around 4.5s.
 During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.
 
 # Optical Switch Control
