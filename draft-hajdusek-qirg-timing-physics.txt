@@ -5,7 +5,7 @@
 Quantum Internet Research Group                              M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 3 September 2026                                   2 March 2026
+Expires: 6 September 2026                                   5 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 September 2026.
+   This Internet-Draft will expire on 6 September 2026.
 
 Copyright Notice
 
@@ -179,7 +179,7 @@ Table of Contents
    *  *Interferometric stabilization:* photon wavepacket overlap,
       technology dependent, roughly nanoseconds.
 
-   *  *Detector timing windoes:* opening and closing of detector timing
+   *  *Detector timing windows:* opening and closing of detector timing
       windows, detector recovery time: nanoseconds to microseconds.
 
    *  *Measurement basis selection (if required in BSA):* performance
@@ -1094,7 +1094,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    waveplates and coordination with the detectors.  The waveplates can
    be rotated by a motorized rotator device, which can be adjusted at a
    rate of around 1 degree per 100ms.  Therefore, for a rotation of 45
-   degrees, the motor requires areound 4.5s.  During the rotation
+   degrees, the motor requires around 4.5s.  During the rotation
    interval, any results obtained from the detectors must be discarded
    as they correspond to measurements in an undesired basis.
 
