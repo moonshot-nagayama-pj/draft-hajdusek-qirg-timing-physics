@@ -695,7 +695,7 @@ Settings for the three Pauli bases are summarized in the table below.
 
 Changing the basis of measurement requires mechanical rotation of the waveplates and coordination with the detectors.
 The waveplates can be rotated by a motorized rotator device, which can be adjusted at a rate of around 1 degree per 100ms.
-Therefore, for a rotation of 45 degrees, the motor requires areound 4.5s.
+Therefore, for a rotation of 45 degrees, the motor requires around 4.5s.
 During the rotation interval, any results obtained from the detectors must be discarded as they correspond to measurements in an undesired basis.
 
 # Optical Switch Control
