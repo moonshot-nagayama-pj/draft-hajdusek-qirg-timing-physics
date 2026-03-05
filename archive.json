@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-03T00:28:58.516256+00:00",
+  "timestamp": "2026-03-05T00:28:39.204181+00:00",
   "repo": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
   "labels": [
     {
@@ -160,6 +160,32 @@
       "mergeCommit": {
         "oid": "427000c2adcafbc7a10ccaf69ad89fb0f0f7f3c4"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDORI9qr87H5Nah",
+      "title": "Fix 2 typos",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/5",
+      "state": "OPEN",
+      "author": "amar-ox",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-03-04T14:29:36Z",
+      "updatedAt": "2026-03-04T14:29:37Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "main",
+      "baseRefOid": "427000c2adcafbc7a10ccaf69ad89fb0f0f7f3c4",
+      "headRepository": "amar-ox/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "patch-1",
+      "headRefOid": "5b27226b353741c952ab77360ddcbfb8bfcabaee",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
