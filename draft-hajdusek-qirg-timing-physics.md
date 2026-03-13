@@ -657,7 +657,7 @@ The ion is illuminated by light tuned to resonate with the transition $$|g\rangl
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state $$|g\rangle$$.
 If no fluorescence is observed, the ion is measured in the excited state $$|e\rangle$$.
 Hypothetically a single fluorescent photon would be sufficient, however, the fluorescent photons are only rarely captured into the measurement apparatus (typically involving lenses and a camera) and observed, and stray photons are also often captured, so a relatively long **integration time** is used to confirm the fluorescence with high probability.  (Solid-state systems such as quantum dots and superconducting qubits also need relatively long integration times in their measurement processes.)
-Combined with laser pulses that apply a single-qubit rotation, measurement of a **single ion in an arbitrary basis** can be performed in [1-2 ms] {{Krutyanskiy23}}.
+Combined with laser pulses that apply a single-qubit rotation, measurement of a **single ion in an arbitrary basis** can be performed in 1-2 ms {{Krutyanskiy23}}.
 
 The **CNOT gate** can be applied in two different ways.
 The original proposal is due to Cirac and Zoller {{Cirac95}}, where the ions needed to be cooled to their collective motional ground state first.
