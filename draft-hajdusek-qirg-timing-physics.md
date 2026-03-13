@@ -39,6 +39,8 @@ author:
 normative:
 
 informative:
+  RFC9340:
+  HOM: DOI.10.1103/PhysRevLett.59.2044
 ...
 ---
 
@@ -96,7 +98,7 @@ Some of these can only be achieved using high-quality hardware, while others are
 # Interferometric Stabilization
 
 Entanglement distribution in quantum networks is performed by entanglement swapping (ES) on photonic qubits.
-Central to photonic ES is the [Hong-Ou-Mandel (HOM) interference](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044), regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
+Central to photonic ES is the Hong-Ou-Mandel (HOM) interference {{HOM}}, regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
 We begin by introducing the notation used, giving a brief overview of the effect, as well as discussing how to quantify the effect.
 We then continue with a discussion of the requirements that must be satisfied in order to observe the effect.
 This section follows quite closely this excellent [tutorial](https://arxiv.org/abs/1711.00080).
