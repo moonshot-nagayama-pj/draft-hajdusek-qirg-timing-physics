@@ -63,6 +63,7 @@ informative:
   Altepeter04: DOI.10.1007/978-3-540-44481-7_4
   Drost16: DOI.10.1364/JOCN.8.000331
   Koyama24: DOI.10.1109/QCE60285.2024.00219
+  Bienfang25: DOI.10.6028/NIST.IR.8486r1
 ...
 ---
 
@@ -197,7 +198,7 @@ where $$P_i$$, for $$i=c,d$$, are the projection operators representing a detect
 For completely indistinguishable input photons that undergo the full HOM interference, we have $$p_c=0$$.
 On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value $$p_c=1/2$$.
 
-An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$, defined via the probability of a coincidence detection,
+An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$ {{Bienfang25}}, defined via the probability of a coincidence detection,
 
 ~~~math
 V = \frac{p_c ^{\text{max}} - p _c ^{\text{min}}}{p _c^{\text{max}}} = 1 - 2 p _c ^{\text{min}}
@@ -805,25 +806,3 @@ The authors would like to thank Andrew Todd for crucial help in building the doc
 This work was supported by the JST Moonshot R&D program under Grant Number JPMJMS226C.
 
 --- back
-
-# References
-
-## Normative
-
-## Informative
-
-~~~text
-* Single Quantum, [Datasheet](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
-* D. Nadlinger, Device-independent key distribution between trapped-ion quantum network nodes, DPhil Thesis, [Oxford University (2022)](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
-* D. Leibfried, R. Blatt, C. Monroe, and D. Wineland, Quantum dynamics of single trapped ions, [_Rev. Mod. Phys._ **75**, 281 (2003)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
-* C. Gardiner, and P. Zoller, The Quantum World of Ultra-Cold Atoms and Light: The Physics of Quantum-Optical Devices, [Imperial College Press, (2015)](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163).
-* J.I. Cirac, and P. Zoller, Quantum Computations with Cold Trapped Ions, [_Phys. Rev. Lett._ **74**, 4091 (1995)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091).
-* F. Schmidt-Kaler _et. al._, Realization of the Cirac–Zoller controlled-NOT quantum gate, [_Nature_ **422**, 408 (2003)](https://www.nature.com/articles/nature01494).
-* K. Molmer, and A. Sorensen, Multiparticle Entanglement of Hot Trapped Ions, [_Phys. Rev. Lett._ **82**, 1835 (1999)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835).
-* J. Benhelm _et al._, Towards fault-tolerant quantum computing with trapped ions, [_Nature Physics_ **4** 463 (2008)](https://www.nature.com/articles/nphys961).
-* J. Altepeter, D.F.V. James, and P.G. Kwiat, Qubit quantum state tomography, [_Lecture Notes in Physics_ **649**, 113 (2004)](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4).
-* B. E. A. Saleh, and M. C. Teich, Fundamentals of Photonics, [John Wiley & Sons, (2019)](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748).
-* R. J. Drost, T. J. Moore, and M. Brodsky, Switching Networks for Pairwise-Entanglement Distribution, [_Journal of Optical Communications and Networking_, **8**, 331 (2016)](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&id=340335).
-* M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [_arXiv:2405.09860_ (2024)](https://arxiv.org/abs/2405.09860).
-* Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
-~~~
