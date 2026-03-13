@@ -5,7 +5,7 @@
 Quantum Internet Research Group                              M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 6 September 2026                                   5 March 2026
+Expires: 14 September 2026                                 13 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 6 September 2026.
+   This Internet-Draft will expire on 14 September 2026.
 
 Copyright Notice
 
@@ -107,6 +107,7 @@ Table of Contents
    9.  Host-side Application-level Tasks
    10. Background Tasks
    11. Acknowledgments
+   12. Informative References
    Appendix A.  References
      A.1.  Normative
      A.2.  Informative
@@ -227,15 +228,14 @@ Table of Contents
 
    Entanglement distribution in quantum networks is performed by
    entanglement swapping (ES) on photonic qubits.  Central to photonic
-   ES is the Hong-Ou-Mandel (HOM) interference
-   (https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044),
-   regardless of the photonic qubit encoding or of the particular
-   protocol implementing photonic ES.  We begin by introducing the
-   notation used, giving a brief overview of the effect, as well as
-   discussing how to quantify the effect.  We then continue with a
-   discussion of the requirements that must be satisfied in order to
-   observe the effect.  This section follows quite closely this
-   excellent tutorial (https://arxiv.org/abs/1711.00080).
+   ES is the Hong-Ou-Mandel (HOM) interference [HOM], regardless of the
+   photonic qubit encoding or of the particular protocol implementing
+   photonic ES.  We begin by introducing the notation used, giving a
+   brief overview of the effect, as well as discussing how to quantify
+   the effect.  We then continue with a discussion of the requirements
+   that must be satisfied in order to observe the effect.  This section
+   follows quite closely this excellent tutorial (https://arxiv.org/
+   abs/1711.00080).
 
 3.1.  Hong-Ou-Mandel interference
 
@@ -1359,6 +1359,21 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    Tokuyama Friedrich for useful early discussions on the direction of
    the document.  This work was supported by the JST Moonshot R&D
    program under Grant Number JPMJMS226C.
+
+12.  Informative References
+
+   [HOM]      Hong, C., Ou, Z., and L. Mandel, "Measurement of
+              subpicosecond time intervals between two photons by
+              interference", American Physical Society (APS), Physical
+              Review Letters vol. 59, no. 18, pp. 2044-2046,
+              DOI 10.1103/physrevlett.59.2044, November 1987,
+              <https://doi.org/10.1103/physrevlett.59.2044>.
+
+   [RFC9340]  Kozlowski, W., Wehner, S., Van Meter, R., Rijsman, B.,
+              Cacciapuoti, A. S., Caleffi, M., and S. Nagayama,
+              "Architectural Principles for a Quantum Internet",
+              RFC 9340, DOI 10.17487/RFC9340, March 2023,
+              <https://www.rfc-editor.org/rfc/rfc9340>.
 
 Appendix A.  References
 
