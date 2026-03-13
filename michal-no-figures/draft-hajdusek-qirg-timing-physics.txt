@@ -992,7 +992,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    superconducting qubits also need relatively long integration times in
    their measurement processes.)  Combined with laser pulses that apply
    a single-qubit rotation, measurement of a *single ion in an arbitrary
-   basis* can be performed in [1-2 ms] [Krutyanskiy23].
+   basis* can be performed in 1-2 ms [Krutyanskiy23].
 
    The *CNOT gate* can be applied in two different ways.  The original
    proposal is due to Cirac and Zoller [Cirac95], where the ions needed
