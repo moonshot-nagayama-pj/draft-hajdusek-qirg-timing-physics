@@ -10,7 +10,7 @@
 <meta content="
        Entangling quantum networks build on new physical mechanisms to distribute quantum entanglement among a set of nodes over a set of links.
 To design a complete network protocol stack with proper division of responsibilities into layers, hardware and protocol engineers must share an understanding of those physical mechanisms and use a common vocabulary.
-This document bridges the abstract concepts described in RFC 9340 and the underlying physics to engineering concerns such as timing constraints on arrival of photons and exchange of supporting classical messages.
+This document bridges the abstract concepts described in   and the underlying physics to engineering concerns such as timing constraints on arrival of photons and exchange of supporting classical messages.
 The equations presented here will serve as reference points for architectural decisions in future documents, allowing future documents to deal directly in code without complex mathematics.
 Application-layer developers will not need the low-level physics presented here. 
     " name="description">
@@ -1056,7 +1056,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hajdušek &amp; Van Meter</td>
-<td class="center">Expires 7 September 2026</td>
+<td class="center">Expires 14 September 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1069,12 +1069,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-hajdusek-qirg-timing-physics-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-03-06" class="published">6 March 2026</time>
+<time datetime="2026-03-13" class="published">13 March 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-09-07">7 September 2026</time></dd>
+<dd class="expires"><time datetime="2026-09-14">14 September 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1093,7 +1093,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">Entangling quantum networks build on new physical mechanisms to distribute quantum entanglement among a set of nodes over a set of links.
 To design a complete network protocol stack with proper division of responsibilities into layers, hardware and protocol engineers must share an understanding of those physical mechanisms and use a common vocabulary.
-This document bridges the abstract concepts described in RFC 9340 and the underlying physics to engineering concerns such as timing constraints on arrival of photons and exchange of supporting classical messages.
+This document bridges the abstract concepts described in <span>[<a href="#RFC9340" class="cite xref">RFC9340</a>]</span> and the underlying physics to engineering concerns such as timing constraints on arrival of photons and exchange of supporting classical messages.
 The equations presented here will serve as reference points for architectural decisions in future documents, allowing future documents to deal directly in code without complex mathematics.
 Application-layer developers will not need the low-level physics presented here.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
@@ -1132,7 +1132,7 @@ Application-layer developers will not need the low-level physics presented here.
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 7 September 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 14 September 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1270,18 +1270,10 @@ Application-layer developers will not need the low-level physics presented here.
             <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
-            <p id="section-toc.1-1.12.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-references" class="internal xref">References</a></p>
-<ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12.2.1">
-                <p id="section-toc.1-1.12.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-normative" class="internal xref">Normative</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12.2.2">
-                <p id="section-toc.1-1.12.2.2.1"><a href="#appendix-A.2" class="auto internal xref">A.2</a>.  <a href="#name-informative" class="internal xref">Informative</a></p>
-</li>
-            </ul>
+            <p id="section-toc.1-1.12.1"><a href="#section-12" class="auto internal xref">12</a>. <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13">
-            <p id="section-toc.1-1.13.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.13.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1377,10 +1369,10 @@ Application-layer developers will not need the low-level physics presented here.
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-interferometric-stabilizati" class="section-name selfRef">Interferometric Stabilization</a>
       </h2>
 <p id="section-3-1">Entanglement distribution in quantum networks is performed by entanglement swapping (ES) on photonic qubits.
-Central to photonic ES is the <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044">Hong-Ou-Mandel (HOM) interference</a>, regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
+Central to photonic ES is the Hong-Ou-Mandel (HOM) interference <span>[<a href="#Hong87" class="cite xref">Hong87</a>]</span>, regardless of the photonic qubit encoding or of the particular protocol implementing photonic ES.
 We begin by introducing the notation used, giving a brief overview of the effect, as well as discussing how to quantify the effect.
 We then continue with a discussion of the requirements that must be satisfied in order to observe the effect.
-This section follows quite closely this excellent <a href="https://arxiv.org/abs/1711.00080">tutorial</a>.<a href="#section-3-1" class="pilcrow">¶</a></p>
+This section follows quite closely this excellent tutorial <span>[<a href="#Drago24" class="cite xref">Drago24</a>]</span>.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <div id="hong-ou-mandel-interference">
 <section id="section-3.1">
         <h3 id="name-hong-ou-mandel-interference">
@@ -1895,7 +1887,7 @@ This probability is defined as<a href="#section-3.1-16" class="pilcrow">¶</a></
 <p id="section-3.1-18">where <span class="contact-name">P_i</span>, for <span class="contact-name">i=c,d</span>, are the projection operators representing a detection of a single photon in output mode <span class="contact-name">i</span> of the BS.
 For completely indistinguishable input photons that undergo the full HOM interference, we have <span class="contact-name">p_c=0</span>.
 On the other hand, for fully distinguishable photons, the probability of a coincidence detection attains its maximum value <span class="contact-name">p_c=1/2</span>.<a href="#section-3.1-18" class="pilcrow">¶</a></p>
-<p id="section-3.1-19">An often-used measure that quantifies the degree of HOM interference is the <strong>visibility</strong> <span class="contact-name">V</span>, defined via the probability of a coincidence detection,<a href="#section-3.1-19" class="pilcrow">¶</a></p>
+<p id="section-3.1-19">An often-used measure that quantifies the degree of HOM interference is the <strong>visibility</strong> <span class="contact-name">V</span> <span>[<a href="#Bienfang25" class="cite xref">Bienfang25</a>]</span>, defined via the probability of a coincidence detection,<a href="#section-3.1-19" class="pilcrow">¶</a></p>
 <div id="section-3.1-20">
           <div class="alignLeft art-svg artwork" id="section-3.1-20.1">
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="6.176ex" role="img" viewBox="0 -1652.5 12053.3 2659.1" width="27.995ex">
@@ -1972,7 +1964,7 @@ We observe that the visibility varies from <span class="contact-name">V=0</span>
 Consider the case when the input photons <span class="contact-name">a</span>, <span class="contact-name">b</span> are entangled with auxiliary systems <span class="contact-name">s_1</span> and <span class="contact-name">s_2</span>, respectively.
 The BSA performs ES by measuring the input photons, entangling systems <span class="contact-name">s_1</span> and <span class="contact-name">s_2</span> in the process.
 Fidelity of the new entangled pair is directly proportional to the visibility <span class="contact-name">V</span> of the HOM interference.
-Non-ideal HOM interference can be modelled as a <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">two-qubit dephasing</a>,<a href="#section-3.1-22" class="pilcrow">¶</a></p>
+Non-ideal HOM interference can be modelled as a two-qubit dephasing <span>[<a href="#Krutyanskiy23" class="cite xref">Krutyanskiy23</a>]</span>,<a href="#section-3.1-22" class="pilcrow">¶</a></p>
 <div id="section-3.1-23">
           <div class="alignLeft art-svg artwork" id="section-3.1-23.1">
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="3.509ex" role="img" viewBox="0 -1078.4 15201.6 1510.9" width="35.307ex">
@@ -2765,7 +2757,7 @@ However, the polarization drift must be tracked regardless because it affects th
 It is therefore important to characterize the polarization drift at the BSA at regular intervals and compensate for it.
 This can be done at the nodes generating the photon pairs at the cost of the BSA having to communicate polarization drift results to the ends nodes.
 Or it can be compensated for directly at the BSA using waveplates at the cost of increased complexity of the BSA.
-In <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">Krutyanskiy et.al.</a>, polarization drift characterization and compensation at the BSA takes a few minutes and is performed every 20 minutes.<a href="#section-3.2.1-3" class="pilcrow">¶</a></p>
+In <span>[<a href="#Krutyanskiy23" class="cite xref">Krutyanskiy23</a>]</span>, polarization drift characterization and compensation at the BSA takes a few minutes and is performed every 20 minutes.<a href="#section-3.2.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -4896,7 +4888,7 @@ The probability of coincidence and the corresponding visibility are given by<a h
       </h2>
 <p id="section-4-1">In this section, we discuss how properties of single-photon detectors (SPDs) affect the timing regimes in quantum networks.
 An ideal SPD generates an electrical signal after absorbing a photon, and generates no signal in the absence of a photon.
-This is not always true for <a href="https://www.nature.com/articles/nphoton.2009.230">real-world SPDs</a>.<a href="#section-4-1" class="pilcrow">¶</a></p>
+This is not always true for <span>[<a href="#Hadfield09" class="cite xref">Hadfield09</a>]</span>.<a href="#section-4-1" class="pilcrow">¶</a></p>
 <div id="detector-basics">
 <section id="section-4.1">
         <h3 id="name-detector-basics">
@@ -5231,7 +5223,7 @@ We refer to the minimum separation between the photons as the <strong>separation
 </div>
 </div>
 <p id="section-4.3-6">The above discussion assumes that the photons can be generated nearly on-demand.
-This is a fair assumption in the case of quantum memories based on <a href="https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366">trapped ions</a>.
+This is a fair assumption in the case of quantum memories based on <span>[<a href="#Nadlinger22" class="cite xref">Nadlinger22</a>]</span>.
 Here, the memory must be first initialized by cooling it to its ground state, a process which takes &lt;1ms.
 The memory is then excited by a laser pulse of approximately 50 microseconds that generates a photon.<a href="#section-4.3-6" class="pilcrow">¶</a></p>
 <p id="section-4.3-7">In the case of memory-less link architectures, the picture is slightly different.
@@ -5625,21 +5617,21 @@ We are mainly concerned with giving an overview of the different measurement met
           <h4 id="name-trapped-ions">
 <a href="#section-5.2.1" class="section-number selfRef">5.2.1. </a><a href="#name-trapped-ions" class="section-name selfRef">Trapped ions</a>
           </h4>
-<p id="section-5.2.1-1">Trapped ions possess <a href="https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281">two degrees of freedom</a>.
+<p id="section-5.2.1-1">Trapped ions possess two degrees of freedom <span>[<a href="#Leibfried03" class="cite xref">Leibfried03</a>]</span>.
 The first one is the motional degree of freedom, resulting from the ion oscillating around its equilibrium position in the trap.
 The second one is the internal degree of freedom, represented by the ground state <span class="contact-name">|g〉</span> and the excited state <span class="contact-name">|e〉</span>.
 It is the latter degree of freedom which is used to encode a qubit and hence acts as a quantum memory.<a href="#section-5.2.1-1" class="pilcrow">¶</a></p>
-<p id="section-5.2.1-2">Measurement in the <strong>Pauli Z</strong> basis is performed by <strong>electron shelving</strong> via the use of a third atomic level <span class="contact-name">|r〉</span>, with much shorter life time than the <a href="https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163">excited state</a> <span class="contact-name">|e〉</span>, <span class="contact-name">τ_e ≫ τ_r</span>.
+<p id="section-5.2.1-2">Measurement in the <strong>Pauli Z</strong> basis is performed by <strong>electron shelving</strong> via the use of a third atomic level <span class="contact-name">|r〉</span>, with much shorter life time than the excited state  <span class="contact-name">|e〉</span>, <span class="contact-name">τ_e ≫ τ_r</span>.
 The ion is illuminated by light tuned to resonate with the transition <span class="contact-name">|g〉 &lt;−&gt;|r〉</span>, represented by the red straight arrow in the Figure above.
 If fluorescence is immediately observed, this corresponds to measuring the ion in the ground state <span class="contact-name">|g〉</span>.
 If no fluorescence is observed, the ion is measured in the excited state <span class="contact-name">|e〉</span>.
 Hypothetically a single fluorescent photon would be sufficient, however, the fluorescent photons are only rarely captured into the measurement apparatus (typically involving lenses and a camera) and observed, and stray photons are also often captured, so a relatively long <strong>integration time</strong> is used to confirm the fluorescence with high probability.  (Solid-state systems such as quantum dots and superconducting qubits also need relatively long integration times in their measurement processes.)
-Combined with laser pulses that apply a single-qubit rotation, measurement of a <strong>single ion in an arbitrary basis</strong> can be performed in <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">1-2 ms</a>.<a href="#section-5.2.1-2" class="pilcrow">¶</a></p>
+Combined with laser pulses that apply a single-qubit rotation, measurement of a <strong>single ion in an arbitrary basis</strong> can be performed in 1-2 ms <span>[<a href="#Krutyanskiy23" class="cite xref">Krutyanskiy23</a>]</span>.<a href="#section-5.2.1-2" class="pilcrow">¶</a></p>
 <p id="section-5.2.1-3">The <strong>CNOT gate</strong> can be applied in two different ways.
-The original proposal is due to <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091">Cirac and Zoller</a>, where the ions needed to be cooled to their collective motional ground state first.
-This approach was demonstrated experimentally using <a href="https://www.nature.com/articles/nature01494">calcium ions</a>.
+The original proposal is due to Cirac and Zoller <span>[<a href="#Cirac95" class="cite xref">Cirac95</a>]</span>, where the ions needed to be cooled to their collective motional ground state first.
+This approach was demonstrated experimentally using calcium ions <span>[<a href="#Schmidt-Kaller03" class="cite xref">Schmidt-Kaller03</a>]</span>.
 Execution of the gate took around 600 microseconds, with the achieved fidelity being less than 0.8.
-The second approach is due to <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835">Molmer and Sorensen</a>, and is more robust against motional excitation.
+The second approach is due to Molmer and Sorensen <span>[<a href="#Molmer99" class="cite xref">Molmer99</a>]</span>, and is more robust against motional excitation.
 This led to high-fidelity demonstrations of <span class="contact-name">&gt;0.99</span>, and gate times of around 50 microseconds.<a href="#section-5.2.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -5650,7 +5642,7 @@ This led to high-fidelity demonstrations of <span class="contact-name">&gt;0.99<
         <h3 id="name-measurements-on-photonic-qu">
 <a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-measurements-on-photonic-qu" class="section-name selfRef">Measurements on photonic qubits</a>
         </h3>
-<p id="section-5.3-1">Measurement of polarization-encoded photonic qubits can be performed with the aid of a <strong>polarizing beam splitter</strong> (PBS), a <strong>half waveplate</strong> (HWP), a <strong>quarter waveplate</strong> (QWP), and <a href="https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4">two detectors</a> (one detector is enough in fact but less efficient).
+<p id="section-5.3-1">Measurement of polarization-encoded photonic qubits can be performed with the aid of a <strong>polarizing beam splitter</strong> (PBS), a <strong>half waveplate</strong> (HWP), a <strong>quarter waveplate</strong> (QWP), and two detectors <span>[<a href="#Altepeter04" class="cite xref">Altepeter04</a>]</span> (one detector is enough in fact but less efficient).
 The idea is the same as in the case of measurements performed on stationary qubits discussed above.
 Setting the HWP and QWP at particular angles applies the unitary <span class="contact-name">U ^{†}</span> that picks the basis of the measurement, while the PBS filters out vertical and horizontal polarizations that then get detected by the detectors placed in the output paths of the PBS.
 Horizontal polarization gets transmitted through the PBS, while vertical polarization gets reflected.<a href="#section-5.3-1" class="pilcrow">¶</a></p>
@@ -6099,15 +6091,15 @@ In the context of timing regimes, we will focus on the following characteristics
 </li>
       </ul>
 <p id="section-6-3">Two approaches to switching are of relevance to our discussion.
-The first approach is the <em>crossbar switch</em> with all-to-all connectivity. Such an <span class="contact-name">N× N</span> switch can be reconfigured to accomodate all possible <span class="contact-name">N!</span> permutations of input-output pairs. One usual implementation of a crossbar switch is using <strong>microelectromechanical systems (MEMS)</strong> relying on small movable parts such as popup micromirrors, rotating prisms or <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748">spinning holographic disks</a>. MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.<a href="#section-6-3" class="pilcrow">¶</a></p>
-<p id="section-6-4">Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible <span class="contact-name">N!</span> input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a <a href="https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&amp;id=340335">connection</a>. Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the <a href="https://ieeexplore.ieee.org/document/10821447">Bell basis</a>.<a href="#section-6-4" class="pilcrow">¶</a></p>
+The first approach is the <em>crossbar switch</em> with all-to-all connectivity. Such an <span class="contact-name">N× N</span> switch can be reconfigured to accomodate all possible <span class="contact-name">N!</span> permutations of input-output pairs. One usual implementation of a crossbar switch is using <strong>microelectromechanical systems (MEMS)</strong> relying on small movable parts such as popup micromirrors, rotating prisms or spinning holographic disks. MEMS have usually low insertion loss and crosstalk, however due to their mechanical nature they suffer from slow switching times, which range from 10 microseconds to 10 miliseconds.<a href="#section-6-3" class="pilcrow">¶</a></p>
+<p id="section-6-4">Crossbar switches are important in classical switching networks and are use in classical control systems in some quantum technologies. In the context of quantum networks, it is often not necessary for the switch to be able satisfy all possible <span class="contact-name">N!</span> input-output permutations.  For example, the switch can be placed behind a pool of entangled photon pair sources (EPPS) in order to route entangled photons towards end nodes requesting a connection <span>[<a href="#Drost16" class="cite xref">Drost16</a>]</span>. Or the switch can be placed before a pool of Bell State Analyzers (BSA) and route input pairs of photons to the desired BSA, where they undergo measurement in the Bell basis <span>[<a href="#Koyama24" class="cite xref">Koyama24</a>]</span>.<a href="#section-6-4" class="pilcrow">¶</a></p>
 <p id="section-6-5">Both of these designs consider a <span class="contact-name">2× 2</span> switch as the basic building block, which is implemented with <strong>integrated photonics</strong> and controlled electro-optically. Applied electric fields are used to alter the refractive index of the material (such as lithium niobate) to change the state of the switch from a BAR state to a CROSS state. Switching times for electro-optical switches are much faster, varying from 10 nanoseconds to 10 microseconds.<a href="#section-6-5" class="pilcrow">¶</a></p>
 <p id="section-6-6">The optical switch introduces a <strong>propagation time delay</strong>. For some MEMS switches, this delay can be as low as <a href="https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf">25 nanoseconds</a>. In general, this delay time varies with the choice of input-output ports. This variation is probably insignificant in most classical contexts, but any delay between the arrival times of photon pairs at the same BSA may result in decreased visibility further lowering the fidelity of the post-measurement state. The issue of arrival time delay arises in the case of integrated switches used in paired-egress BSA pools. The propagation delay introduced by the switching fabric depends on the design of the switch.<a href="#section-6-6" class="pilcrow">¶</a></p>
-<p id="section-6-7">An example where time delays arise is the triangular switch design, introduced by <a href="https://ieeexplore.ieee.org/document/10821447">Koyama et.al.</a>. Photons entering the switch from different ports need to traverse vastly different number of switching points.
+<p id="section-6-7">An example where time delays arise is the triangular switch design, introduced by Koyama et.al. <span>[<a href="#Koyama24" class="cite xref">Koyama24</a>]</span>. Photons entering the switch from different ports need to traverse vastly different number of switching points.
 
 The significance of this time delay ultimately depends on the type of photons used. Photons with longer envelopes, such as those emitted from trapped ions, may be more robust to the propagation time delays introduced by the optical switch. Photons with very short envelopes, such as the ones originating from an SPDC source, are expected to be very susceptible to any propagation time delays.<a href="#section-6-7" class="pilcrow">¶</a></p>
 <p id="section-6-8">In order to compensate for the propagation time delay, and ensure acceptable visibility at the BSAs, it is neccesary to adjust the path length of the photons with <strong>optical delay lines</strong> (ODLs). For small enough optical switches, it may be possible to characterize the propagation time delays for given photon pairs assigned to a particular BSA prior to the opration of the switch. This would allow the ODLs to be set to precomputed configurations based on the connection request patterns. This approach will most likely not scale, at least in its general form, to larger optical switches.<a href="#section-6-8" class="pilcrow">¶</a></p>
-<p id="section-6-9">Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their <strong>polarization</strong> changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803">230m</a>, data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took <strong>several minutes</strong>. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.<a href="#section-6-9" class="pilcrow">¶</a></p>
+<p id="section-6-9">Further complication that arises during the operation of the switch is also related to maintaining indistinguishability of the photons. As the photons traverse the switching points, their <strong>polarization</strong> changes leading to a decrease in the visibility of HOM interference at the BSA. This polarization drift must be characterized and compensated if acceptable levels of visibility are to be maintained. Polarization drift characterization and compensation is a regular step in modern experiments in quantum communications. For example, in the Innsbruck demonstration of remote-entanglement generation over 230m <span>[<a href="#Krutyanskiy23" class="cite xref">Krutyanskiy23</a>]</span>, data acquisition was stopped every 20 minutes in order to correct for the polarizaiton drift. This process took <strong>several minutes</strong>. In the worst case scenario, this process needs to take place after every reconfiguration of the optical switch leading to severely limited multiplexing capabilities.<a href="#section-6-9" class="pilcrow">¶</a></p>
 <p id="section-6-10">Finally, given a set of connection requests, the optical switch must compute the state of all switch points to <strong>route</strong> the photons correctly. The reconfigurably non-blocking designs proposed in <code>[15]</code> come with efficient routing algorithms that achieve this. Given the need for path-length adjustment with ODLs and polarization drift correction, it is expected that computing the configuration of all switching points will not be the bottleneck during operation of the optical switch.<a href="#section-6-10" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -6198,50 +6190,73 @@ The significance of this time delay ultimately depends on the type of photons us
 This work was supported by the JST Moonshot R&amp;D program under Grant Number JPMJMS226C.<a href="#section-11-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="references">
-<section id="appendix-A">
-      <h2 id="name-references">
-<a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-references" class="section-name selfRef">References</a>
+<div id="sec-informative-references">
+<section id="section-12">
+      <h2 id="name-informative-references">
+<a href="#section-12" class="section-number selfRef">12. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
       </h2>
-<div id="normative">
-<section id="appendix-A.1">
-        <h3 id="name-normative">
-<a href="#appendix-A.1" class="section-number selfRef">A.1. </a><a href="#name-normative" class="section-name selfRef">Normative</a>
-      </h3>
-</section>
-</div>
-<div id="informative">
-<section id="appendix-A.2">
-        <h3 id="name-informative">
-<a href="#appendix-A.2" class="section-number selfRef">A.2. </a><a href="#name-informative" class="section-name selfRef">Informative</a>
-        </h3>
-<div class="lang-text sourcecode" id="appendix-A.2-1">
-<pre>
-* C.K. Hong, Z.Y. Ou, and L. Mandel, Measurement of subpicosecond time intervals between two photons by interference, [_Phys. Rev. Lett._ **59**, 2044 (1987)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.2044).
-* A. M. Branczyk, Hong-Ou-Mandel Interference, [_arXiv:1711.00080_ (2017)](https://arxiv.org/abs/1711.00080).
-* V. Krutyanskiy _et al._, Entanglement of Trapped-Ion Qubits Separated by 230 Meters, [_Phys. Rev. Lett._ **130**, 050803](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.050803) (2023).
-* R. H. Hadfield, Single-photon detectors for optical quantum information applications, [_Nature Photonics_ **3**, 696](https://www.nature.com/articles/nphoton.2009.230) (2009).
-* Single Quantum, [Datasheet](https://singlequantum.com/wp-content/uploads/2022/12/SQ-General-Brochure.pdf).
-* D. Nadlinger, Device-independent key distribution between trapped-ion quantum network nodes, DPhil Thesis, [Oxford University (2022)](https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366).
-* D. Leibfried, R. Blatt, C. Monroe, and D. Wineland, Quantum dynamics of single trapped ions, [_Rev. Mod. Phys._ **75**, 281 (2003)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.281).
-* C. Gardiner, and P. Zoller, The Quantum World of Ultra-Cold Atoms and Light: The Physics of Quantum-Optical Devices, [Imperial College Press, (2015)](https://www.amazon.co.jp/Quantum-World-Ultra-Cold-Atoms-Light/dp/1783266163).
-* J.I. Cirac, and P. Zoller, Quantum Computations with Cold Trapped Ions, [_Phys. Rev. Lett._ **74**, 4091 (1995)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4091).
-* F. Schmidt-Kaler _et. al._, Realization of the Cirac–Zoller controlled-NOT quantum gate, [_Nature_ **422**, 408 (2003)](https://www.nature.com/articles/nature01494).
-* K. Molmer, and A. Sorensen, Multiparticle Entanglement of Hot Trapped Ions, [_Phys. Rev. Lett._ **82**, 1835 (1999)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.1835).
-* J. Benhelm _et al._, Towards fault-tolerant quantum computing with trapped ions, [_Nature Physics_ **4** 463 (2008)](https://www.nature.com/articles/nphys961).
-* J. Altepeter, D.F.V. James, and P.G. Kwiat, Qubit quantum state tomography, [_Lecture Notes in Physics_ **649**, 113 (2004)](https://link.springer.com/chapter/10.1007/978-3-540-44481-7_4).
-* B. E. A. Saleh, and M. C. Teich, Fundamentals of Photonics, [John Wiley &amp; Sons, (2019)](https://onlinelibrary.wiley.com/doi/book/10.1002/0471213748).
-* R. J. Drost, T. J. Moore, and M. Brodsky, Switching Networks for Pairwise-Entanglement Distribution, [_Journal of Optical Communications and Networking_, **8**, 331 (2016)](https://opg.optica.org/jocn/fulltext.cfm?uri=jocn-8-5-331&amp;id=340335).
-* M. Koyama, C. Yun, A. Taherkhani, N. Benchasattabuse, B. O. Sane, M. Hajdušek, S. Nagayama, R. Van Meter, Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools, [_arXiv:2405.09860_ (2024)](https://arxiv.org/abs/2405.09860).
-* Polatis Series 6000i Instrument Optical Matrix Switch, [https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf](https://www.viavisolutions.com/en-us/literature/polatis-series-6000-osm-network-switch-module-data-sheets-en.pdf).
-</pre><a href="#appendix-A.2-1" class="pilcrow">¶</a>
-</div>
-</section>
-</div>
+<dl class="references">
+<dt id="Altepeter04">[Altepeter04]</dt>
+      <dd>
+<span class="refAuthor">Altepeter, J.</span>, <span class="refAuthor">James, D.</span>, and <span class="refAuthor">P. Kwiat</span>, <span class="refTitle">"4 Qubit Quantum State Tomography"</span>, <span class="refContent">Springer Berlin Heidelberg</span>, <span class="seriesInfo">Lecture Notes in Physics pp. 113-145</span>, <span class="seriesInfo">DOI 10.1007/978-3-540-44481-7_4</span>, <span class="seriesInfo">ISBN ["9783540223290", "9783540444817"]</span>, <time datetime="2004-08" class="refDate">August 2004</time>, <span>&lt;<a href="https://doi.org/10.1007/978-3-540-44481-7_4">https://doi.org/10.1007/978-3-540-44481-7_4</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Bienfang25">[Bienfang25]</dt>
+      <dd>
+<span class="refAuthor">Bienfang, J.</span>, <span class="refAuthor">Gerrits, T.</span>, <span class="refAuthor">Kuo, P.</span>, <span class="refAuthor">Migdall, A.</span>, <span class="refAuthor">Polyakov, S.</span>, and <span class="refAuthor">O. Slattery</span>, <span class="refTitle">"Single-photon Sources and Detectors Dictionary"</span>, <span class="refContent">National Institute of Standards and Technology</span>, <span class="seriesInfo">DOI 10.6028/nist.ir.8486r1</span>, <time datetime="2025-08" class="refDate">August 2025</time>, <span>&lt;<a href="https://doi.org/10.6028/nist.ir.8486r1">https://doi.org/10.6028/nist.ir.8486r1</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Cirac95">[Cirac95]</dt>
+      <dd>
+<span class="refAuthor">Cirac, J.</span> and <span class="refAuthor">P. Zoller</span>, <span class="refTitle">"Quantum Computations with Cold Trapped Ions"</span>, <span class="refContent">American Physical Society (APS)</span>, <span class="seriesInfo">Physical Review Letters vol. 74, no. 20, pp. 4091-4094</span>, <span class="seriesInfo">DOI 10.1103/physrevlett.74.4091</span>, <time datetime="1995-05" class="refDate">May 1995</time>, <span>&lt;<a href="https://doi.org/10.1103/physrevlett.74.4091">https://doi.org/10.1103/physrevlett.74.4091</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Drago24">[Drago24]</dt>
+      <dd>
+<span class="refAuthor">Drago, C.</span> and <span class="refAuthor">A. Brańczyk</span>, <span class="refTitle">"Hong–Ou–Mandel interference: a spectral–temporal analysis"</span>, <span class="refContent">Canadian Science Publishing</span>, <span class="seriesInfo">Canadian Journal of Physics vol. 102, no. 8, pp. 411-421</span>, <span class="seriesInfo">DOI 10.1139/cjp-2023-0312</span>, <time datetime="2024-08" class="refDate">August 2024</time>, <span>&lt;<a href="https://doi.org/10.1139/cjp-2023-0312">https://doi.org/10.1139/cjp-2023-0312</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Drost16">[Drost16]</dt>
+      <dd>
+<span class="refAuthor">Drost, R.</span>, <span class="refAuthor">Moore, T.</span>, and <span class="refAuthor">M. Brodsky</span>, <span class="refTitle">"Switching Networks for Pairwise-Entanglement Distribution"</span>, <span class="refContent">Optica Publishing Group</span>, <span class="seriesInfo">Journal of Optical Communications and Networking vol. 8, no. 5, pp. 331</span>, <span class="seriesInfo">DOI 10.1364/jocn.8.000331</span>, <time datetime="2016-04" class="refDate">April 2016</time>, <span>&lt;<a href="https://doi.org/10.1364/jocn.8.000331">https://doi.org/10.1364/jocn.8.000331</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Hadfield09">[Hadfield09]</dt>
+      <dd>
+<span class="refAuthor">Hadfield, R.</span>, <span class="refTitle">"Single-photon detectors for optical quantum information applications"</span>, <span class="refContent">Springer Science and Business Media LLC</span>, <span class="seriesInfo">Nature Photonics vol. 3, no. 12, pp. 696-705</span>, <span class="seriesInfo">DOI 10.1038/nphoton.2009.230</span>, <time datetime="2009-12" class="refDate">December 2009</time>, <span>&lt;<a href="https://doi.org/10.1038/nphoton.2009.230">https://doi.org/10.1038/nphoton.2009.230</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Hong87">[Hong87]</dt>
+      <dd>
+<span class="refAuthor">Hong, C.</span>, <span class="refAuthor">Ou, Z.</span>, and <span class="refAuthor">L. Mandel</span>, <span class="refTitle">"Measurement of subpicosecond time intervals between two photons by interference"</span>, <span class="refContent">American Physical Society (APS)</span>, <span class="seriesInfo">Physical Review Letters vol. 59, no. 18, pp. 2044-2046</span>, <span class="seriesInfo">DOI 10.1103/physrevlett.59.2044</span>, <time datetime="1987-11" class="refDate">November 1987</time>, <span>&lt;<a href="https://doi.org/10.1103/physrevlett.59.2044">https://doi.org/10.1103/physrevlett.59.2044</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Koyama24">[Koyama24]</dt>
+      <dd>
+<span class="refAuthor">Koyama, M.</span>, <span class="refAuthor">Yun, C.</span>, <span class="refAuthor">Taherkhani, A.</span>, <span class="refAuthor">Benchasattabuse, N.</span>, <span class="refAuthor">Sane, B.</span>, <span class="refAuthor">Hajdušek, M.</span>, <span class="refAuthor">Nagayama, S.</span>, and <span class="refAuthor">R. Meter</span>, <span class="refTitle">"Optimal Switching Networks for Paired-Egress Bell State Analyzer Pools"</span>, <span class="refContent">IEEE</span>, <span class="seriesInfo">2024 IEEE International Conference on Quantum Computing and Engineering (QCE) pp. 1897-1907</span>, <span class="seriesInfo">DOI 10.1109/qce60285.2024.00219</span>, <time datetime="2024-09" class="refDate">September 2024</time>, <span>&lt;<a href="https://doi.org/10.1109/qce60285.2024.00219">https://doi.org/10.1109/qce60285.2024.00219</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Krutyanskiy23">[Krutyanskiy23]</dt>
+      <dd>
+<span class="refAuthor">Krutyanskiy, V.</span>, <span class="refAuthor">Galli, M.</span>, <span class="refAuthor">Krcmarsky, V.</span>, <span class="refAuthor">Baier, S.</span>, <span class="refAuthor">Fioretto, D.</span>, <span class="refAuthor">Pu, Y.</span>, <span class="refAuthor">Mazloom, A.</span>, <span class="refAuthor">Sekatski, P.</span>, <span class="refAuthor">Canteri, M.</span>, <span class="refAuthor">Teller, M.</span>, <span class="refAuthor">Schupp, J.</span>, <span class="refAuthor">Bate, J.</span>, <span class="refAuthor">Meraner, M.</span>, <span class="refAuthor">Sangouard, N.</span>, <span class="refAuthor">Lanyon, B.</span>, and <span class="refAuthor">T. Northup</span>, <span class="refTitle">"Entanglement of Trapped-Ion Qubits Separated by 230 Meters"</span>, <span class="refContent">American Physical Society (APS)</span>, <span class="seriesInfo">Physical Review Letters vol. 130, no. 5</span>, <span class="seriesInfo">DOI 10.1103/physrevlett.130.050803</span>, <time datetime="2023-02" class="refDate">February 2023</time>, <span>&lt;<a href="https://doi.org/10.1103/physrevlett.130.050803">https://doi.org/10.1103/physrevlett.130.050803</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Leibfried03">[Leibfried03]</dt>
+      <dd>
+<span class="refAuthor">Leibfried, D.</span>, <span class="refAuthor">Blatt, R.</span>, <span class="refAuthor">Monroe, C.</span>, and <span class="refAuthor">D. Wineland</span>, <span class="refTitle">"Quantum dynamics of single trapped ions"</span>, <span class="refContent">American Physical Society (APS)</span>, <span class="seriesInfo">Reviews of Modern Physics vol. 75, no. 1, pp. 281-324</span>, <span class="seriesInfo">DOI 10.1103/revmodphys.75.281</span>, <time datetime="2003-03" class="refDate">March 2003</time>, <span>&lt;<a href="https://doi.org/10.1103/revmodphys.75.281">https://doi.org/10.1103/revmodphys.75.281</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Molmer99">[Molmer99]</dt>
+      <dd>
+<span class="refAuthor">Mølmer, K.</span> and <span class="refAuthor">A. Sørensen</span>, <span class="refTitle">"Multiparticle Entanglement of Hot Trapped Ions"</span>, <span class="refContent">American Physical Society (APS)</span>, <span class="seriesInfo">Physical Review Letters vol. 82, no. 9, pp. 1835-1838</span>, <span class="seriesInfo">DOI 10.1103/physrevlett.82.1835</span>, <time datetime="1999-03" class="refDate">March 1999</time>, <span>&lt;<a href="https://doi.org/10.1103/physrevlett.82.1835">https://doi.org/10.1103/physrevlett.82.1835</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Nadlinger22">[Nadlinger22]</dt>
+      <dd>
+<span class="refAuthor">Nadlinger, D.</span>, <span class="refTitle">"Device-independent key distribution between trapped-ion quantum network nodes"</span>, <span class="seriesInfo">DPhil Thesis, University of Oxford</span>, <time datetime="2022" class="refDate">2022</time>, <span>&lt;<a href="https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366">https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC9340">[RFC9340]</dt>
+      <dd>
+<span class="refAuthor">Kozlowski, W.</span>, <span class="refAuthor">Wehner, S.</span>, <span class="refAuthor">Van Meter, R.</span>, <span class="refAuthor">Rijsman, B.</span>, <span class="refAuthor">Cacciapuoti, A. S.</span>, <span class="refAuthor">Caleffi, M.</span>, and <span class="refAuthor">S. Nagayama</span>, <span class="refTitle">"Architectural Principles for a Quantum Internet"</span>, <span class="seriesInfo">RFC 9340</span>, <span class="seriesInfo">DOI 10.17487/RFC9340</span>, <time datetime="2023-03" class="refDate">March 2023</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc9340">https://www.rfc-editor.org/rfc/rfc9340</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Schmidt-Kaller03">[Schmidt-Kaller03]</dt>
+    <dd>
+<span class="refAuthor">Schmidt-Kaler, F.</span>, <span class="refAuthor">Häffner, H.</span>, <span class="refAuthor">Riebe, M.</span>, <span class="refAuthor">Gulde, S.</span>, <span class="refAuthor">Lancaster, G.</span>, <span class="refAuthor">Deuschle, T.</span>, <span class="refAuthor">Becher, C.</span>, <span class="refAuthor">Roos, C.</span>, <span class="refAuthor">Eschner, J.</span>, and <span class="refAuthor">R. Blatt</span>, <span class="refTitle">"Realization of the Cirac–Zoller controlled-NOT quantum gate"</span>, <span class="refContent">Springer Science and Business Media LLC</span>, <span class="seriesInfo">Nature vol. 422, no. 6930, pp. 408-411</span>, <span class="seriesInfo">DOI 10.1038/nature01494</span>, <time datetime="2003-03" class="refDate">March 2003</time>, <span>&lt;<a href="https://doi.org/10.1038/nature01494">https://doi.org/10.1038/nature01494</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="authors-addresses">
-<section id="appendix-B">
+<section id="appendix-A">
       <h2 id="name-authors-addresses">
 <a href="#name-authors-addresses" class="section-name selfRef">Authors' Addresses</a>
       </h2>
