@@ -42,7 +42,7 @@ informative:
   RFC9340:
   HOM: DOI.10.1103/PhysRevLett.59.2044
   HOM-tutorial: DOI.10.1139/cjp-2023-0312
-  ent203meters: DOI.10.1103/PhysRevLett.130.050803
+  ent230meters: DOI.10.1103/PhysRevLett.130.050803
   detector-review: DOI.10.1038/nphoton.2009.230
   ions-thesis:
     target: https://ora.ox.ac.uk/objects/uuid:604c53b9-8df8-4e45-8103-10fd81eb3366
