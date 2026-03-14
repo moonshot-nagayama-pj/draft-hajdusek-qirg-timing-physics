@@ -146,7 +146,7 @@ There are four possible cases that may occur:
 The input state can be expressed as
 
 ~~~math
-|\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab}
+|\psi \rangle _{ab} = a ^{\dagger} _j b ^{\dagger} _k | 0 \rangle _{ab},
 ~~~
 
 where the daggered operators represent bosonic creation operators, which create a single photon in the corresponding input port of the BS.
@@ -159,28 +159,28 @@ For example, $$j$$ and $$k$$ could represent
 * arrival time,
 * transverse spatial mode.
 
-Action of the BS on the input modes is the following:
+Action of the BS on the input modes is the following,
 
 ~~~math
-a ^{\dagger} -> \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} -> \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
+a ^{\dagger} -> \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} -> \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}.
 ~~~
 
 The output state of the two photons is
 
 ~~~math
-|\psi\rangle _{cd} = ( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} ) |0\rangle _{cd}
+|\psi\rangle _{cd} = ( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} ) |0\rangle _{cd}.
 ~~~
 
-For a 50:50 BS when $$r=1/2$$:
+For a 50:50 BS when $$r=1/2$$, we have
 
 ~~~math
-|\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
+|\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}.
 ~~~
 
 From this expression, we can see that when $$j=k$$, in other words when the input photons are indistinguishable, the output state has the following form,
 
 ~~~math
-|\psi\rangle _{cd} = \frac{1}{\sqrt{2}} ( |2\rangle_c - |2\rangle_d )
+|\psi\rangle _{cd} = \frac{1}{\sqrt{2}} ( |2\rangle_c - |2\rangle_d ).
 ~~~
 
 The probability amplitudes for the cases where both input photons are transmitted or both reflected (Cases B and C in the figure above) interfere destructively.
@@ -191,7 +191,7 @@ In order to quantify the effect that distinguishability has on HOM interference,
 This probability is defined as
 
 ~~~math
-p _c = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd}
+p _c = \langle \psi | _{cd} P_c \otimes P_d | \psi \rangle _{cd}.
 ~~~
 
 where $$P_i$$, for $$i=c,d$$, are the projection operators representing a detection of a single photon in output mode $$i$$ of the BS.
@@ -201,7 +201,7 @@ On the other hand, for fully distinguishable photons, the probability of a coinc
 An often-used measure that quantifies the degree of HOM interference is the **visibility** $$V$$ {{Bienfang25}}, defined via the probability of a coincidence detection,
 
 ~~~math
-V = \frac{p_c ^{\text{max}} - p _c ^{\text{min}}}{p _c^{\text{max}}} = 1 - 2 p _c ^{\text{min}}
+V = \frac{p_c ^{\text{max}} - p _c ^{\text{min}}}{p _c^{\text{max}}} = 1 - 2 p _c ^{\text{min}},
 ~~~
 
 where we used the fact that the maximum probability of a coincidence detection is $$1/2$$.
@@ -214,7 +214,7 @@ Fidelity of the new entangled pair is directly proportional to the visibility $$
 Non-ideal HOM interference can be modelled as a two-qubit dephasing {{Krutyanskiy23}},
 
 ~~~math
-\rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}}
+\rho _{s _1 s _2} = V \times \rho _{s _1 s _2} ^{\text{no-deph}} + (1 - V) \times \rho _{s _1 s _2} ^{\text{deph}},
 ~~~
 
 where superscript no-deph denotes a density matrix resulting from an ideal ES at the BSA with unit visibility of the HOM interference, and superscript deph denotes a fully dephased state obtained by setting all off-diagonal elements of the density matrix to zero.
@@ -229,7 +229,7 @@ Here, $$H$$ denotes horizontal polarization and $$V$$ denotes vertical polarizat
 The output state of the two photons is
 
 ~~~math
-| \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right)
+| \psi \rangle _{cd} = \frac{1}{2} \left( |1;H\rangle _c |1;V\rangle _c + |1;V\rangle _c |1;H\rangle _d - |1;H\rangle _c |1;V\rangle _d - |1;H\rangle _d |1;V\rangle _d \right).
 ~~~
 
 We can observe that maximum probbility of coincidence is $$1/2$$.
@@ -238,32 +238,32 @@ In general, the two input photons will have polarizations given by two unit vect
 The output state can be written as
 
 ~~~math
-|\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right)
+|\psi\rangle _{cd} = \frac{1}{2} \left( |1;\epsilon\rangle_c |1;\epsilon'\rangle_c + |1;\epsilon'\rangle_c |1;\epsilon\rangle_d - |1;\epsilon\rangle_c |1;\epsilon'\rangle_d - |1;\epsilon\rangle_d |1;\epsilon'\rangle_d \right).
 ~~~
 
 The projection operators corresponding to a detection even at detector $$i$$ ($i=a,b$) are given by
 
 ~~~math
-P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i
+P _i = |1;\epsilon\rangle _i \langle 1;\epsilon| _i + |1;\epsilon'\rangle _i \langle 1;\epsilon'| _i.
 ~~~
 
 Either an $$\epsilon$$-polarized or an $$\epsilon'$$-polarized photon is detected in the output mode $$i$$.
 The probability of coincidence is then
 
 ~~~math
-p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta
+p _{\text{co}} = \langle\psi| _{cd} P _c \otimes P _d |\psi\rangle _{cd} = \frac{1}{2} \left( 1 - \left| \langle\epsilon'|\epsilon\rangle \right| ^2 \right) = \frac{1}{2} \sin^2\theta,
 ~~~
 
 where the overlap between the polarization unit vectors is parametrized by $$\theta$$, and can be written as
 
 ~~~math
-\langle\epsilon'|\epsilon\rangle = \cos\theta
+\langle\epsilon'|\epsilon\rangle = \cos\theta.
 ~~~
 
 We can define the corresponding visibility as a function of the angle between the two polarization vectors,
 
 ~~~math
-V(\theta) = 1 - 2 p_{\text{c}} = \cos^2\theta
+V(\theta) = 1 - 2 p_{\text{c}} = \cos^2\theta.
 ~~~
 
 When the photons have identical polarization, the visibility reaches its maximum of 1.
@@ -285,7 +285,7 @@ In the context of quantum networking, a much more common scenario is that of two
 The two pairs are in the following initial state,
 
 ~~~math
-|\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right)
+|\psi\rangle_{a_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{a_1a_2} + e^{i\theta_1} |VH\rangle_{a_1a_2} \right), \qquad |\psi\rangle_{b_1b_2} = \frac{1}{\sqrt{2}}\left( |HV\rangle_{b_1b_2} + e^{i\theta_2} |VH\rangle_{b_1b_2} \right),
 ~~~
 
 where $$\theta_1$$ and $$\theta_2$$ represent the polarization drift induced in the single-mode fiber.
@@ -301,10 +301,10 @@ In {{Krutyanskiy23}}, polarization drift characterization and compensation at th
 ## Spectral distinguishability
 
 Another important source of distinguishability in HOM interference is the spectral property of the input photons.
-The photon wave packet of a photon can be represented by its **spectral amplitude function** $$\phi(\omega)$$ that satifies the normalization condition:
+The photon wave packet of a photon can be represented by its **spectral amplitude function** $$\phi(\omega)$$ that satifies the normalization condition,
 
 ~~~math
-\int d\omega |\phi(\omega)|^2=1
+\int d\omega |\phi(\omega)|^2=1.
 ~~~
 
 Two input photons become distinguishable if their respective spectral amplitude functions are not equal.
@@ -322,33 +322,33 @@ We begin the discussion by focusing on pure states of the input photons first.
 Single-photon state with a spectral amplitude function $$\phi(\omega)$$ is a superposition written as
 
 ~~~math
-|1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a
+|1;\phi\rangle_a = \int d\omega \phi(\omega) a ^{\dagger}(\omega) |0\rangle_a,
 ~~~
 
 where creation operator creates a photon in the BS input mode $$a$$ with frequency $$\omega$$.
 Two input photons with arbitrary spectral functions $$\phi$$ and $$\varphi$$ are described by
 
 ~~~math
-|\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0 \rangle _{ab}
+|\psi \rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) |0 \rangle _{ab}.
 ~~~
 
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is frequency-independent.
 Applying the same transformation rules for the creation operators, the output state of the two photons is
 
 ~~~math
-|\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}
+|\psi \rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 ~~~
 
 The projection operators corresponding to a detection event in output mode $$c$$ and output mode $$d$$ are given by
 
 ~~~math
-P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega)
+P _c = \int d\omega c ^{\dagger}(\omega) |0\rangle_c\langle0|_c c (\omega),\quad P _d = \int d\omega d ^{\dagger}(\omega) |0\rangle _d\langle0| _d d(\omega).
 ~~~
 
 The probability of a coincidence detection is then
 
 ~~~math
-p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2)
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1) \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2).
 ~~~
 
 The form of this expression is the same as the one in subsection on polarization above, where the probability of a coincidence detection depended on the overlap between the polarization vectors $$\epsilon$$ and $$\epsilon'$$.
@@ -362,24 +362,24 @@ Previous discussion of pure states can be extended to include mixed states of th
 Such states will inevitably arise due to imperfections in the preparation procedure and due to the input photons being entangled with other degrees of freedom.
 These can include other photons or quantum memories.
 
-The mixed state of an input photon is described by the following density matrix:
+Mixed state of an input photon is described by the following density matrix,
 
 ~~~math
-\rho_a = \sum_k u_k |1;\phi_k\rangle_a\langle1;\phi_k|_a, \quad \sum_k u_k=1
+\rho_a = \sum_k u_k |1;\phi_k\rangle_a\langle1;\phi_k|_a, \quad \sum_k u_k=1.
 ~~~
 
 where the state of the photon is a mixture of pure single-photon states with spectral amplitude function $$\phi_k(\omega)$$, weighted by probability $$u_k$$.
 The two-photon input state can be written as
 
 ~~~math
-\rho ^{\text{in}} _{ab} = \sum _{kk'} u_k v _{k'} |1;\phi_k\rangle_a |1;\varphi _{k'}\rangle_b \langle 1;\phi_k|_a \langle 1;\varphi _{k'}|_b
+\rho ^{\text{in}} _{ab} = \sum _{kk'} u_k v _{k'} |1;\phi_k\rangle_a |1;\varphi _{k'}\rangle_b \langle 1;\phi_k|_a \langle 1;\varphi _{k'}|_b.
 ~~~
 
 It is not necessary to repeat the entire calculation we did for pure states.
-Due to linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$:
+Due to linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$,
 
 ~~~math
-p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2)
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2).
 ~~~
 
 ### Example 1: Gaussian wave packets
@@ -388,13 +388,13 @@ In this example, we consider input photons with Gaussian spectral amplitude func
 The spectral amplitude functions are given by
 
 ~~~math
-\phi_i(\omega) = \frac{1}{\pi^{1/4}\sqrt{\sigma_i}} e ^{-\frac{(\omega-\bar{\omega}_i)^2}{2\sigma^2_i}},\quad\text{for } i=a,b
+\phi_i(\omega) = \frac{1}{\pi^{1/4}\sqrt{\sigma_i}} e ^{-\frac{(\omega-\bar{\omega}_i)^2}{2\sigma^2_i}},\quad\text{for } i=a,b.
 ~~~
 
 The probability of a coincidence detection is then
 
 ~~~math
-p _{\text{c}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}
+p _{\text{c}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}.
 ~~~
 
 **Case A (different central frequencies)**
@@ -402,7 +402,7 @@ p _{\text{c}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^
 We assume that the two spectral amplitude functions have the same standard deviation, which simplifies the expression for the probability of a coincidence detection to
 
 ~~~math
-p _{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right)
+p _{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}} \right).
 ~~~
 
 We observe that for identical photons, the probability of a coincidence detection vanishes.
@@ -410,7 +410,7 @@ For fully distinguishable wave packets, when the difference between central freq
 The visibility as a function of the difference between the central frequencies is
 
 ~~~math
-V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}
+V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{2\sigma^2}}.
 ~~~
 
 **Case B (different standard deviations)**
@@ -418,7 +418,7 @@ V(\bar{\omega}_a-\bar{\omega}_b) = e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{
 The spectral amplitude functions have the same central frequencies, which gives the following expression for the probability of coincidence and visibility,
 
 ~~~math
-p_{\text{c}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}
+p_{\text{c}} = \frac{1}{2} - \frac{\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}, \quad V(\sigma_b/\sigma_a) = \frac{2\sigma_b/\sigma_a}{1 + (\sigma_b/\sigma_a)^2}.
 ~~~
 
 <!-- The probability of coincidence and corresponding visibility for both Cases are shown in the Figure below (Figures-matplotlib/visibility-spectral.svg). -->
@@ -434,35 +434,35 @@ Even for photons with identical spectral amplitude functions, different arrival 
 
 <!-- <artwork type="svg" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjQwNXB0IiBoZWlnaHQ9IjQzMy4yMTE4NzVwdCIgdmlld0JveD0iMCAwIDQwNSA0MzMuMjExODc1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiA8bWV0YWRhdGE+CiAgPHJkZjpSREYgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICA8Y2M6V29yaz4KICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiLz4KICAgIDxkYzpkYXRlPjIwMjYtMDMtMDFUMjI6MDQ6MDguNTI1MTQzPC9kYzpkYXRlPgogICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICA8ZGM6Y3JlYXRvcj4KICAgICA8Y2M6QWdlbnQ+CiAgICAgIDxkYzp0aXRsZT5NYXRwbG90bGliIHYzLjcuMSwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy88L2RjOnRpdGxlPgogICAgIDwvY2M6QWdlbnQ+CiAgICA8L2RjOmNyZWF0b3I+CiAgIDwvY2M6V29yaz4KICA8L3JkZjpSREY+CiA8L21ldGFkYXRhPgogPGRlZnM+CiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4qe3N0cm9rZS1saW5lam9pbjogcm91bmQ7IHN0cm9rZS1saW5lY2FwOiBidXR0fTwvc3R5bGU+CiA8L2RlZnM+CiA8ZyBpZD0iZmlndXJlXzEiPgogIDxnIGlkPSJwYXRjaF8xIj4KICAgPHBhdGggZD0iTSAwIDQzMy4yMTE4NzUgCkwgNDA1IDQzMy4yMTE4NzUgCkwgNDA1IDAgCkwgMCAwIApMIDAgNDMzLjIxMTg3NSAKegoiIHN0eWxlPSJmaWxsOiBub25lIi8+CiAgPC9nPgogIDxnIGlkPSJheGVzXzEiPgogICA8ZyBpZD0icGF0Y2hfMiI+CiAgICA8cGF0aCBkPSJNIDcuMiAxNzcuNTUwMTI1IApMIDM5Ny44IDE3Ny41NTAxMjUgCkwgMzk3LjggMjIuMzE4MTI1IApMIDcuMiAyMi4zMTgxMjUgCkwgNy4yIDE3Ny41NTAxMjUgCnoKIiBzdHlsZT0iZmlsbDogbm9uZSIvPgogICA8L2c+CiAgIDxnIGlkPSJQb2x5Q29sbGVjdGlvbl8xIj4KICAgIDxwYXRoIGQ9Ik0gMjQuOTU0NTQ1IDE3MC40OTQxMjUgCkwgMjQuOTU0NTQ1IDE3MC40OTQxMjUgCkwgMjYuNzMgMTcwLjQ5NDEyNSAKTCAyOC41MDU0NTUgMTcwLjQ5NDEyNSAKTCAzMC4yODA5MDkgMTcwLjQ5NDEyNSAKTCAzMi4wNTYzNjQgMTcwLjQ5NDEyNSAKTCAzMy44MzE4MTggMTcwLjQ5NDEyNSAKTCAzNS42MDcyNzMgMTcwLjQ5NDEyNSAKTCAzNy4zODI3MjcgMTcwLjQ5NDEyNSAKTCAzOS4xNTgxODIgMTcwLjQ5NDEyNSAKTCA0MC45MzM2MzYgMTcwLjQ5NDEyNSAKTCA0Mi43MDkwOTEgMTcwLjQ5NDEyNSAKTCA0NC40ODQ1NDUgMTcwLjQ5NDEyNSAKTCA0Ni4yNiAxNzAuNDk0MTI1IApMIDQ4LjAzNTQ1NSAxNzAuNDk0MTI1IApMIDQ5LjgxMDkwOSAxNzAuNDk0MTI1IApMIDUxLjU4NjM2NCAxNzAuNDk0MTI1IApMIDUzLjM2MTgxOCAxNzAuNDk0MTI1IApMIDU1LjEzNzI3MyAxNzAuNDk0MTI1IApMIDU2LjkxMjcyNyAxNzAuNDk0MTI1IApMIDU4LjY4ODE4MiAxNzAuNDk0MTI1IApMIDYwLjQ2MzYzNiAxNzAuNDk0MTI1IApMIDYyLjIzOTA5MSAxNzAuNDk0MTI1IApMIDY0LjAxNDU0NSAxNzAuNDk0MTI1IApMIDY1Ljc5IDE3MC40OTQxMjUgCkwgNjcuNTY1NDU1IDE3MC40OTQxMjUgCkwgNjkuMzQwOTA5IDE3MC40OTQxMjUgCkwgNzEuMTE2MzY0IDE3MC40OTQxMjUgCkwgNzIuODkxODE4IDE3MC40OTQxMjUgCkwgNzQuNjY3MjczIDE3MC40OTQxMjUgCkwgNzYuNDQyNzI3IDE3MC40OTQxMjUgCkwgNzguMjE4MTgyIDE3MC40OTQxMjUgCkwgNzkuOTkzNjM2IDE3MC40OTQxMjUgCkwgODEuNzY5MDkxIDE3MC40OTQxMjUgCkwgODMuNTQ0NTQ1IDE3MC40OTQxMjUgCkwgODUuMzIgMTcwLjQ5NDEyNSAKTCA4Ny4wOTU0NTUgMTcwLjQ5NDEyNSAKTCA4OC44NzA5MDkgMTcwLjQ5NDEyNSAKTCA5MC42NDYzNjQgMTcwLjQ5NDEyNSAKTCA5Mi40MjE4MTggMTcwLjQ5NDEyNSAKTCA5NC4xOTcyNzMgMTcwLjQ5NDEyNSAKTCA5NS45NzI3MjcgMTcwLjQ5NDEyNSAKTCA5Ny43NDgxODIgMTcwLjQ5NDEyNSAKTCA5OS41MjM2MzYgMTcwLjQ5NDEyNSAKTCAxMDEuMjk5MDkxIDE3MC40OTQxMjUgCkwgMTAzLjA3NDU0NSAxNzAuNDk0MTI1IApMIDEwNC44NSAxNzAuNDk0MTI1IApMIDEwNi42MjU0NTUgMTcwLjQ5NDEyNSAKTCAxMDguNDAwOTA5IDE3MC40OTQxMjUgCkwgMTEwLjE3NjM2NCAxNzAuNDk0MTI1IApMIDExMS45NTE4MTggMTcwLjQ5NDEyNSAKTCAxMTMuNzI3MjczIDE3MC40OTQxMjUgCkwgMTE1LjUwMjcyNyAxNzAuNDk0MTI1IApMIDExNy4yNzgxODIgMTcwLjQ5NDEyNCAKTCAxMTkuMDUzNjM2IDE3MC40OTQxMjMgCkwgMTIwLjgyOTA5MSAxNzAuNDk0MTIyIApMIDEyMi42MDQ1NDUgMTcwLjQ5NDExOSAKTCAxMjQuMzggMTcwLjQ5NDExNCAKTCAxMjYuMTU1NDU1IDE3MC40OTQxMDYgCkwgMTI3LjkzMDkwOSAxNzAuNDk0MDkgCkwgMTI5LjcwNjM2NCAxNzAuNDk0MDYzIApMIDEzMS40ODE4MTggMTcwLjQ5NDAxNSAKTCAxMzMuMjU3MjczIDE3MC40OTM5MzMgCkwgMTM1LjAzMjcyNyAxNzAuNDkzNzkzIApMIDEzNi44MDgxODIgMTcwLjQ5MzU1OCAKTCAxMzguNTgzNjM2IDE3MC40OTMxNjkgCkwgMTQwLjM1OTA5MSAxNzAuNDkyNTMgCkwgMTQyLjEzNDU0NSAxNzAuNDkxNDk0IApMIDE0My45MSAxNzAuNDg5ODMzIApMIDE0NS42ODU0NTUgMTcwLjQ4NzIwMiAKTCAxNDcuNDYwOTA5IDE3MC40ODMwODMgCkwgMTQ5LjIzNjM2NCAxNzAuNDc2NzA5IApMIDE1MS4wMTE4MTggMTcwLjQ2Njk2NSAKTCAxNTIuNzg3MjczIDE3MC40NTIyNDMgCkwgMTU0LjU2MjcyNyAxNzAuNDMwMjYyIApMIDE1Ni4zMzgxODIgMTcwLjM5NzgzNSAKTCAxNTguMTEzNjM2IDE3MC4zNTA1NjcgCkwgMTU5Ljg4OTA5MSAxNzAuMjgyNDg5IApMIDE2MS42NjQ1NDUgMTcwLjE4NTYxOSAKTCAxNjMuNDQgMTcwLjA0OTQ0IApMIDE2NS4yMTU0NTUgMTY5Ljg2MDMyIApMIDE2Ni45OTA5MDkgMTY5LjYwMDg3NiAKTCAxNjguNzY2MzY0IDE2OS4yNDkzMTIgCkwgMTcwLjU0MTgxOCAxNjguNzc4Nzg2IApMIDE3Mi4zMTcyNzMgMTY4LjE1Njg1IApMIDE3NC4wOTI3MjcgMTY3LjM0NTA0NCAKTCAxNzUuODY4MTgyIDE2Ni4yOTg3MzggCkwgMTc3LjY0MzYzNiAxNjQuOTY3MzE2IApMIDE3OS40MTkwOTEgMTYzLjI5NDgxMiAKTCAxODEuMTk0NTQ1IDE2MS4yMjEwOTEgCkwgMTgyLjk3IDE1OC42ODM2NjUgCkwgMTg0Ljc0NTQ1NSAxNTUuNjIwMTg2IApMIDE4Ni41MjA5MDkgMTUxLjk3MTYzNiAKTCAxODguMjk2MzY0IDE0Ny42ODYxNDIgCkwgMTkwLjA3MTgxOCAxNDIuNzIzMzEyIApMIDE5MS44NDcyNzMgMTM3LjA1ODg4IApMIDE5My42MjI3MjcgMTMwLjY4OTQwMSAKTCAxOTUuMzk4MTgyIDEyMy42MzY2NDggCkwgMTk3LjE3MzYzNiAxMTUuOTUxMzMyIApMIDE5OC45NDkwOTEgMTA3LjcxNTc1NSAKTCAyMDAuNzI0NTQ1IDk5LjA0NTAwNSAKTCAyMDIuNSA5MC4wODYzNzMgCkwgMjA0LjI3NTQ1NSA5OS4wNDUwMDUgCkwgMjA2LjA1MDkwOSAxMDcuNzE1NzU1IApMIDIwNy44MjYzNjQgMTE1Ljk1MTMzMiAKTCAyMDkuNjAxODE4IDEyMy42MzY2NDggCkwgMjExLjM3NzI3MyAxMzAuNjg5NDAxIApMIDIxMy4xNTI3MjcgMTM3LjA1ODg4IApMIDIxNC45MjgxODIgMTQyLjcyMzMxMiAKTCAyMTYuNzAzNjM2IDE0Ny42ODYxNDIgCkwgMjE4LjQ3OTA5MSAxNTEuOTcxNjM2IApMIDIyMC4yNTQ1NDUgMTU1LjYyMDE4NiAKTCAyMjIuMDMgMTU4LjY4MzY2NSAKTCAyMjMuODA1NDU1IDE2MS4yMjEwOTEgCkwgMjI1LjU4MDkwOSAxNjMuMjk0ODEyIApMIDIyNy4zNTYzNjQgMTY0Ljk2NzMxNiAKTCAyMjkuMTMxODE4IDE2Ni4yOTg3MzggCkwgMjMwLjkwNzI3MyAxNjcuMzQ1MDQ0IApMIDIzMi42ODI3MjcgMTY4LjE1Njg1IApMIDIzNC40NTgxODIgMTY4Ljc3ODc4NiAKTCAyMzYuMjMzNjM2IDE2OS4yNDkzMTIgCkwgMjM4LjAwOTA5MSAxNjkuNjAwODc2IApMIDIzOS43ODQ1NDUgMTY5Ljg2MDMyIApMIDI0MS41NiAxNzAuMDQ5NDQgCkwgMjQzLjMzNTQ1NSAxNzAuMTg1NjE5IApMIDI0NS4xMTA5MDkgMTcwLjI4MjQ4OSAKTCAyNDYuODg2MzY0IDE3MC4zNTA1NjcgCkwgMjQ4LjY2MTgxOCAxNzAuMzk3ODM1IApMIDI1MC40MzcyNzMgMTcwLjQzMDI2MiAKTCAyNTIuMjEyNzI3IDE3MC40NTIyNDMgCkwgMjUzLjk4ODE4MiAxNzAuNDY2OTY1IApMIDI1NS43NjM2MzYgMTcwLjQ3NjcwOSAKTCAyNTcuNTM5MDkxIDE3MC40ODMwODMgCkwgMjU5LjMxNDU0NSAxNzAuNDg3MjAyIApMIDI2MS4wOSAxNzAuNDg5ODMzIApMIDI2Mi44NjU0NTUgMTcwLjQ5MTQ5NCAKTCAyNjQuNjQwOTA5IDE3MC40OTI1MyAKTCAyNjYuNDE2MzY0IDE3MC40OTMxNjkgCkwgMjY4LjE5MTgxOCAxNzAuNDkzNTU4IApMIDI2OS45NjcyNzMgMTcwLjQ5Mzc5MyAKTCAyNzEuNzQyNzI3IDE3MC40OTM5MzMgCkwgMjczLjUxODE4MiAxNzAuNDk0MDE1IApMIDI3NS4yOTM2MzYgMTcwLjQ5NDA2MyAKTCAyNzcuMDY5MDkxIDE3MC40OTQwOSAKTCAyNzguODQ0NTQ1IDE3MC40OTQxMDYgCkwgMjgwLjYyIDE3MC40OTQxMTQgCkwgMjgyLjM5NTQ1NSAxNzAuNDk0MTE5IApMIDI4NC4xNzA5MDkgMTcwLjQ5NDEyMiAKTCAyODUuOTQ2MzY0IDE3MC40OTQxMjMgCkwgMjg3LjcyMTgxOCAxNzAuNDk0MTI0IApMIDI4OS40OTcyNzMgMTcwLjQ5NDEyNSAKTCAyOTEuMjcyNzI3IDE3MC40OTQxMjUgCkwgMjkzLjA0ODE4MiAxNzAuNDk0MTI1IApMIDI5NC44MjM2MzYgMTcwLjQ5NDEyNSAKTCAyOTYuNTk5MDkxIDE3MC40OTQxMjUgCkwgMjk4LjM3NDU0NSAxNzAuNDk0MTI1IApMIDMwMC4xNSAxNzAuNDk0MTI1IApMIDMwMS45MjU0NTUgMTcwLjQ5NDEyNSAKTCAzMDMuNzAwOTA5IDE3MC40OTQxMjUgCkwgMzA1LjQ3NjM2NCAxNzAuNDk0MTI1IApMIDMwNy4yNTE4MTggMTcwLjQ5NDEyNSAKTCAzMDkuMDI3MjczIDE3MC40OTQxMjUgCkwgMzEwLjgwMjcyNyAxNzAuNDk0MTI1IApMIDMxMi41NzgxODIgMTcwLjQ5NDEyNSAKTCAzMTQuMzUzNjM2IDE3MC40OTQxMjUgCkwgMzE2LjEyOTA5MSAxNzAuNDk0MTI1IApMIDMxNy45MDQ1NDUgMTcwLjQ5NDEyNSAKTCAzMTkuNjggMTcwLjQ5NDEyNSAKTCAzMjEuNDU1NDU1IDE3MC40OTQxMjUgCkwgMzIzLjIzMDkwOSAxNzAuNDk0MTI1IApMIDMyNS4wMDYzNjQgMTcwLjQ5NDEyNSAKTCAzMjYuNzgxODE4IDE3MC40OTQxMjUgCkwgMzI4LjU1NzI3MyAxNzAuNDk0MTI1IApMIDMzMC4zMzI3MjcgMTcwLjQ5NDEyNSAKTCAzMzIuMTA4MTgyIDE3MC40OTQxMjUgCkwgMzMzLjg4MzYzNiAxNzAuNDk0MTI1IApMIDMzNS42NTkwOTEgMTcwLjQ5NDEyNSAKTCAzMzcuNDM0NTQ1IDE3MC40OTQxMjUgCkwgMzM5LjIxIDE3MC40OTQxMjUgCkwgMzQwLjk4NTQ1NSAxNzAuNDk0MTI1IApMIDM0Mi43NjA5MDkgMTcwLjQ5NDEyNSAKTCAzNDQuNTM2MzY0IDE3MC40OTQxMjUgCkwgMzQ2LjMxMTgxOCAxNzAuNDk0MTI1IApMIDM0OC4wODcyNzMgMTcwLjQ5NDEyNSAKTCAzNDkuODYyNzI3IDE3MC40OTQxMjUgCkwgMzUxLjYzODE4MiAxNzAuNDk0MTI1IApMIDM1My40MTM2MzYgMTcwLjQ5NDEyNSAKTCAzNTUuMTg5MDkxIDE3MC40OTQxMjUgCkwgMzU2Ljk2NDU0NSAxNzAuNDk0MTI1IApMIDM1OC43NCAxNzAuNDk0MTI1IApMIDM2MC41MTU0NTUgMTcwLjQ5NDEyNSAKTCAzNjIuMjkwOTA5IDE3MC40OTQxMjUgCkwgMzY0LjA2NjM2NCAxNzAuNDk0MTI1IApMIDM2NS44NDE4MTggMTcwLjQ5NDEyNSAKTCAzNjcuNjE3MjczIDE3MC40OTQxMjUgCkwgMzY5LjM5MjcyNyAxNzAuNDk0MTI1IApMIDM3MS4xNjgxODIgMTcwLjQ5NDEyNSAKTCAzNzIuOTQzNjM2IDE3MC40OTQxMjUgCkwgMzc0LjcxOTA5MSAxNzAuNDk0MTI1IApMIDM3Ni40OTQ1NDUgMTcwLjQ5NDEyNSAKTCAzNzguMjcgMTcwLjQ5NDEyNSAKTCAzODAuMDQ1NDU1IDE3MC40OTQxMjUgCkwgMzgwLjA0NTQ1NSAxNzAuNDk0MTI1IApMIDM4MC4wNDU0NTUgMTcwLjQ5NDEyNSAKTCAzNzguMjcgMTcwLjQ5NDEyNSAKTCAzNzYuNDk0NTQ1IDE3MC40OTQxMjUgCkwgMzc0LjcxOTA5MSAxNzAuNDk0MTI1IApMIDM3Mi45NDM2MzYgMTcwLjQ5NDEyNSAKTCAzNzEuMTY4MTgyIDE3MC40OTQxMjUgCkwgMzY5LjM5MjcyNyAxNzAuNDk0MTI1IApMIDM2Ny42MTcyNzMgMTcwLjQ5NDEyNSAKTCAzNjUuODQxODE4IDE3MC40OTQxMjUgCkwgMzY0LjA2NjM2NCAxNzAuNDk0MTI1IApMIDM2Mi4yOTA5MDkgMTcwLjQ5NDEyNSAKTCAzNjAuNTE1NDU1IDE3MC40OTQxMjUgCkwgMzU4Ljc0IDE3MC40OTQxMjUgCkwgMzU2Ljk2NDU0NSAxNzAuNDk0MTI1IApMIDM1NS4xODkwOTEgMTcwLjQ5NDEyNSAKTCAzNTMuNDEzNjM2IDE3MC40OTQxMjUgCkwgMzUxLjYzODE4MiAxNzAuNDk0MTI1IApMIDM0OS44NjI3MjcgMTcwLjQ5NDEyNSAKTCAzNDguMDg3MjczIDE3MC40OTQxMjUgCkwgMzQ2LjMxMTgxOCAxNzAuNDk0MTI1IApMIDM0NC41MzYzNjQgMTcwLjQ5NDEyNSAKTCAzNDIuNzYwOTA5IDE3MC40OTQxMjUgCkwgMzQwLjk4NTQ1NSAxNzAuNDk0MTI1IApMIDMzOS4yMSAxNzAuNDk0MTI1IApMIDMzNy40MzQ1NDUgMTcwLjQ5NDEyNSAKTCAzMzUuNjU5MDkxIDE3MC40OTQxMjUgCkwgMzMzLjg4MzYzNiAxNzAuNDk0MTI1IApMIDMzMi4xMDgxODIgMTcwLjQ5NDEyNSAKTCAzMzAuMzMyNzI3IDE3MC40OTQxMjUgCkwgMzI4LjU1NzI3MyAxNzAuNDk0MTI1IApMIDMyNi43ODE4MTggMTcwLjQ5NDEyNSAKTCAzMjUuMDA2MzY0IDE3MC40OTQxMjUgCkwgMzIzLjIzMDkwOSAxNzAuNDk0MTI1IApMIDMyMS40NTU0NTUgMTcwLjQ5NDEyNSAKTCAzMTkuNjggMTcwLjQ5NDEyNSAKTCAzMTcuOTA0NTQ1IDE3MC40OTQxMjUgCkwgMzE2LjEyOTA5MSAxNzAuNDk0MTI1IApMIDMxNC4zNTM2MzYgMTcwLjQ5NDEyNSAKTCAzMTIuNTc4MTgyIDE3MC40OTQxMjUgCkwgMzEwLjgwMjcyNyAxNzAuNDk0MTI1IApMIDMwOS4wMjcyNzMgMTcwLjQ5NDEyNSAKTCAzMDcuMjUxODE4IDE3MC40OTQxMjUgCkwgMzA1LjQ3NjM2NCAxNzAuNDk0MTI1IApMIDMwMy43MDA5MDkgMTcwLjQ5NDEyNSAKTCAzMDEuOTI1NDU1IDE3MC40OTQxMjUgCkwgMzAwLjE1IDE3MC40OTQxMjUgCkwgMjk4LjM3NDU0NSAxNzAuNDk0MTI1IApMIDI5Ni41OTkwOTEgMTcwLjQ5NDEyNSAKTCAyOTQuODIzNjM2IDE3MC40OTQxMjUgCkwgMjkzLjA0ODE4MiAxNzAuNDk0MTI1IApMIDI5MS4yNzI3MjcgMTcwLjQ5NDEyNSAKTCAyODkuNDk3MjczIDE3MC40OTQxMjUgCkwgMjg3LjcyMTgxOCAxNzAuNDk0MTI1IApMIDI4NS45NDYzNjQgMTcwLjQ5NDEyNSAKTCAyODQuMTcwOTA5IDE3MC40OTQxMjUgCkwgMjgyLjM5NTQ1NSAxNzAuNDk0MTI1IApMIDI4MC42MiAxNzAuNDk0MTI1IApMIDI3OC44NDQ1NDUgMTcwLjQ5NDEyNSAKTCAyNzcuMDY5MDkxIDE3MC40OTQxMjUgCkwgMjc1LjI5MzYzNiAxNzAuNDk0MTI1IApMIDI3My41MTgxODIgMTcwLjQ5NDEyNSAKTCAyNzEuNzQyNzI3IDE3MC40OTQxMjUgCkwgMjY5Ljk2NzI3MyAxNzAuNDk0MTI1IApMIDI2OC4xOTE4MTggMTcwLjQ5NDEyNSAKTCAyNjYuNDE2MzY0IDE3MC40OTQxMjUgCkwgMjY0LjY0MDkwOSAxNzAuNDk0MTI1IApMIDI2Mi44NjU0NTUgMTcwLjQ5NDEyNSAKTCAyNjEuMDkgMTcwLjQ5NDEyNSAKTCAyNTkuMzE0NTQ1IDE3MC40OTQxMjUgCkwgMjU3LjUzOTA5MSAxNzAuNDk0MTI1IApMIDI1NS43NjM2MzYgMTcwLjQ5NDEyNSAKTCAyNTMuOTg4MTgyIDE3MC40OTQxMjUgCkwgMjUyLjIxMjcyNyAxNzAuNDk0MTI1IApMIDI1MC40MzcyNzMgMTcwLjQ5NDEyNSAKTCAyNDguNjYxODE4IDE3MC40OTQxMjUgCkwgMjQ2Ljg4NjM2NCAxNzAuNDk0MTI1IApMIDI0NS4xMTA5MDkgMTcwLjQ5NDEyNSAKTCAyNDMuMzM1NDU1IDE3MC40OTQxMjUgCkwgMjQxLjU2IDE3MC40OTQxMjUgCkwgMjM5Ljc4NDU0NSAxNzAuNDk0MTI1IApMIDIzOC4wMDkwOTEgMTcwLjQ5NDEyNSAKTCAyMzYuMjMzNjM2IDE3MC40OTQxMjUgCkwgMjM0LjQ1ODE4MiAxNzAuNDk0MTI1IApMIDIzMi42ODI3MjcgMTcwLjQ5NDEyNSAKTCAyMzAuOTA3MjczIDE3MC40OTQxMjUgCkwgMjI5LjEzMTgxOCAxNzAuNDk0MTI1IApMIDIyNy4zNTYzNjQgMTcwLjQ5NDEyNSAKTCAyMjUuNTgwOTA5IDE3MC40OTQxMjUgCkwgMjIzLjgwNTQ1NSAxNzAuNDk0MTI1IApMIDIyMi4wMyAxNzAuNDk0MTI1IApMIDIyMC4yNTQ1NDUgMTcwLjQ5NDEyNSAKTCAyMTguNDc5MDkxIDE3MC40OTQxMjUgCkwgMjE2LjcwMzYzNiAxNzAuNDk0MTI1IApMIDIxNC45MjgxODIgMTcwLjQ5NDEyNSAKTCAyMTMuMTUyNzI3IDE3MC40OTQxMjUgCkwgMjExLjM3NzI3MyAxNzAuNDk0MTI1IApMIDIwOS42MDE4MTggMTcwLjQ5NDEyNSAKTCAyMDcuODI2MzY0IDE3MC40OTQxMjUgCkwgMjA2LjA1MDkwOSAxNzAuNDk0MTI1IApMIDIwNC4yNzU0NTUgMTcwLjQ5NDEyNSAKTCAyMDIuNSAxNzAuNDk0MTI1IApMIDIwMC43MjQ1NDUgMTcwLjQ5NDEyNSAKTCAxOTguOTQ5MDkxIDE3MC40OTQxMjUgCkwgMTk3LjE3MzYzNiAxNzAuNDk0MTI1IApMIDE5NS4zOTgxODIgMTcwLjQ5NDEyNSAKTCAxOTMuNjIyNzI3IDE3MC40OTQxMjUgCkwgMTkxLjg0NzI3MyAxNzAuNDk0MTI1IApMIDE5MC4wNzE4MTggMTcwLjQ5NDEyNSAKTCAxODguMjk2MzY0IDE3MC40OTQxMjUgCkwgMTg2LjUyMDkwOSAxNzAuNDk0MTI1IApMIDE4NC43NDU0NTUgMTcwLjQ5NDEyNSAKTCAxODIuOTcgMTcwLjQ5NDEyNSAKTCAxODEuMTk0NTQ1IDE3MC40OTQxMjUgCkwgMTc5LjQxOTA5MSAxNzAuNDk0MTI1IApMIDE3Ny42NDM2MzYgMTcwLjQ5NDEyNSAKTCAxNzUuODY4MTgyIDE3MC40OTQxMjUgCkwgMTc0LjA5MjcyNyAxNzAuNDk0MTI1IApMIDE3Mi4zMTcyNzMgMTcwLjQ5NDEyNSAKTCAxNzAuNTQxODE4IDE3MC40OTQxMjUgCkwgMTY4Ljc2NjM2NCAxNzAuNDk0MTI1IApMIDE2Ni45OTA5MDkgMTcwLjQ5NDEyNSAKTCAxNjUuMjE1NDU1IDE3MC40OTQxMjUgCkwgMTYzLjQ0IDE3MC40OTQxMjUgCkwgMTYxLjY2NDU0NSAxNzAuNDk0MTI1IApMIDE1OS44ODkwOTEgMTcwLjQ5NDEyNSAKTCAxNTguMTEzNjM2IDE3MC40OTQxMjUgCkwgMTU2LjMzODE4MiAxNzAuNDk0MTI1IApMIDE1NC41NjI3MjcgMTcwLjQ5NDEyNSAKTCAxNTIuNzg3MjczIDE3MC40OTQxMjUgCkwgMTUxLjAxMTgxOCAxNzAuNDk0MTI1IApMIDE0OS4yMzYzNjQgMTcwLjQ5NDEyNSAKTCAxNDcuNDYwOTA5IDE3MC40OTQxMjUgCkwgMTQ1LjY4NTQ1NSAxNzAuNDk0MTI1IApMIDE0My45MSAxNzAuNDk0MTI1IApMIDE0Mi4xMzQ1NDUgMTcwLjQ5NDEyNSAKTCAxNDAuMzU5MDkxIDE3MC40OTQxMjUgCkwgMTM4LjU4MzYzNiAxNzAuNDk0MTI1IApMIDEzNi44MDgxODIgMTcwLjQ5NDEyNSAKTCAxMzUuMDMyNzI3IDE3MC40OTQxMjUgCkwgMTMzLjI1NzI3MyAxNzAuNDk0MTI1IApMIDEzMS40ODE4MTggMTcwLjQ5NDEyNSAKTCAxMjkuNzA2MzY0IDE3MC40OTQxMjUgCkwgMTI3LjkzMDkwOSAxNzAuNDk0MTI1IApMIDEyNi4xNTU0NTUgMTcwLjQ5NDEyNSAKTCAxMjQuMzggMTcwLjQ5NDEyNSAKTCAxMjIuNjA0NTQ1IDE3MC40OTQxMjUgCkwgMTIwLjgyOTA5MSAxNzAuNDk0MTI1IApMIDExOS4wNTM2MzYgMTcwLjQ5NDEyNSAKTCAxMTcuMjc4MTgyIDE3MC40OTQxMjUgCkwgMTE1LjUwMjcyNyAxNzAuNDk0MTI1IApMIDExMy43MjcyNzMgMTcwLjQ5NDEyNSAKTCAxMTEuOTUxODE4IDE3MC40OTQxMjUgCkwgMTEwLjE3NjM2NCAxNzAuNDk0MTI1IApMIDEwOC40MDA5MDkgMTcwLjQ5NDEyNSAKTCAxMDYuNjI1NDU1IDE3MC40OTQxMjUgCkwgMTA0Ljg1IDE3MC40OTQxMjUgCkwgMTAzLjA3NDU0NSAxNzAuNDk0MTI1IApMIDEwMS4yOTkwOTEgMTcwLjQ5NDEyNSAKTCA5OS41MjM2MzYgMTcwLjQ5NDEyNSAKTCA5Ny43NDgxODIgMTcwLjQ5NDEyNSAKTCA5NS45NzI3MjcgMTcwLjQ5NDEyNSAKTCA5NC4xOTcyNzMgMTcwLjQ5NDEyNSAKTCA5Mi40MjE4MTggMTcwLjQ5NDEyNSAKTCA5MC42NDYzNjQgMTcwLjQ5NDEyNSAKTCA4OC44NzA5MDkgMTcwLjQ5NDEyNSAKTCA4Ny4wOTU0NTUgMTcwLjQ5NDEyNSAKTCA4NS4zMiAxNzAuNDk0MTI1IApMIDgzLjU0NDU0NSAxNzAuNDk0MTI1IApMIDgxLjc2OTA5MSAxNzAuNDk0MTI1IApMIDc5Ljk5MzYzNiAxNzAuNDk0MTI1IApMIDc4LjIxODE4MiAxNzAuNDk0MTI1IApMIDc2LjQ0MjcyNyAxNzAuNDk0MTI1IApMIDc0LjY2NzI3MyAxNzAuNDk0MTI1IApMIDcyLjg5MTgxOCAxNzAuNDk0MTI1IApMIDcxLjExNjM2NCAxNzAuNDk0MTI1IApMIDY5LjM0MDkwOSAxNzAuNDk0MTI1IApMIDY3LjU2NTQ1NSAxNzAuNDk0MTI1IApMIDY1Ljc5IDE3MC40OTQxMjUgCkwgNjQuMDE0NTQ1IDE3MC40OTQxMjUgCkwgNjIuMjM5MDkxIDE3MC40OTQxMjUgCkwgNjAuNDYzNjM2IDE3MC40OTQxMjUgCkwgNTguNjg4MTgyIDE3MC40OTQxMjUgCkwgNTYuOTEyNzI3IDE3MC40OTQxMjUgCkwgNTUuMTM3MjczIDE3MC40OTQxMjUgCkwgNTMuMzYxODE4IDE3MC40OTQxMjUgCkwgNTEuNTg2MzY0IDE3MC40OTQxMjUgCkwgNDkuODEwOTA5IDE3MC40OTQxMjUgCkwgNDguMDM1NDU1IDE3MC40OTQxMjUgCkwgNDYuMjYgMTcwLjQ5NDEyNSAKTCA0NC40ODQ1NDUgMTcwLjQ5NDEyNSAKTCA0Mi43MDkwOTEgMTcwLjQ5NDEyNSAKTCA0MC45MzM2MzYgMTcwLjQ5NDEyNSAKTCAzOS4xNTgxODIgMTcwLjQ5NDEyNSAKTCAzNy4zODI3MjcgMTcwLjQ5NDEyNSAKTCAzNS42MDcyNzMgMTcwLjQ5NDEyNSAKTCAzMy44MzE4MTggMTcwLjQ5NDEyNSAKTCAzMi4wNTYzNjQgMTcwLjQ5NDEyNSAKTCAzMC4yODA5MDkgMTcwLjQ5NDEyNSAKTCAyOC41MDU0NTUgMTcwLjQ5NDEyNSAKTCAyNi43MyAxNzAuNDk0MTI1IApMIDI0Ljk1NDU0NSAxNzAuNDk0MTI1IAp6CiIgY2xpcC1wYXRoPSJ1cmwoI3AzYmE3OTMwOGRhKSIgc3R5bGU9ImZpbGw6IHVybCgjaDkxOTI3OWMwNzMpIi8+CiAgIDwvZz4KICAgPGcgaWQ9Im1hdHBsb3RsaWIuYXhpc18xIj4KICAgIDxnIGlkPSJ0ZXh0XzEiPgogICAgIDwhLS0gVGltZSAtLT4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODcuODE5Njg3IDE5MC42NjgyNSkgc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8ZGVmcz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTU0IiBkPSJNIC0xOSA0NjY2IApMIDM5MjggNDY2NiAKTCAzOTI4IDQxMzQgCkwgMjI3MiA0MTM0IApMIDIyNzIgMCAKTCAxNjM4IDAgCkwgMTYzOCA0MTM0IApMIC0xOSA0MTM0IApMIC0xOSA0NjY2IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTY5IiBkPSJNIDYwMyAzNTAwIApMIDExNzggMzUwMCAKTCAxMTc4IDAgCkwgNjAzIDAgCkwgNjAzIDM1MDAgCnoKTSA2MDMgNDg2MyAKTCAxMTc4IDQ4NjMgCkwgMTE3OCA0MTM0IApMIDYwMyA0MTM0IApMIDYwMyA0ODYzIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTZkIiBkPSJNIDMzMjggMjgyOCAKUSAzNTQ0IDMyMTYgMzg0NCAzNDAwIApRIDQxNDQgMzU4NCA0NTUwIDM1ODQgClEgNTA5NyAzNTg0IDUzOTQgMzIwMSAKUSA1NjkxIDI4MTkgNTY5MSAyMTEzIApMIDU2OTEgMCAKTCA1MTEzIDAgCkwgNTExMyAyMDk0IApRIDUxMTMgMjU5NyA0OTM0IDI4NDAgClEgNDc1NiAzMDg0IDQzOTEgMzA4NCAKUSAzOTQ0IDMwODQgMzY4NCAyNzg3IApRIDM0MjUgMjQ5MSAzNDI1IDE5NzggCkwgMzQyNSAwIApMIDI4NDcgMCAKTCAyODQ3IDIwOTQgClEgMjg0NyAyNjAwIDI2NjkgMjg0MiAKUSAyNDkxIDMwODQgMjExOSAzMDg0IApRIDE2NzggMzA4NCAxNDE4IDI3ODYgClEgMTE1OSAyNDg4IDExNTkgMTk3OCAKTCAxMTU5IDAgCkwgNTgxIDAgCkwgNTgxIDM1MDAgCkwgMTE1OSAzNTAwIApMIDExNTkgMjk1NiAKUSAxMzU2IDMyNzggMTYzMSAzNDMxIApRIDE5MDYgMzU4NCAyMjg0IDM1ODQgClEgMjY2NiAzNTg0IDI5MzMgMzM5MCAKUSAzMjAwIDMxOTcgMzMyOCAyODI4IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTY1IiBkPSJNIDM1OTcgMTg5NCAKTCAzNTk3IDE2MTMgCkwgOTUzIDE2MTMgClEgOTkxIDEwMTkgMTMxMSA3MDggClEgMTYzMSAzOTcgMjIwMyAzOTcgClEgMjUzNCAzOTcgMjg0NSA0NzggClEgMzE1NiA1NTkgMzQ2MyA3MjIgCkwgMzQ2MyAxNzggClEgMzE1MyA0NyAyODI4IC0yMiAKUSAyNTAzIC05MSAyMTY5IC05MSAKUSAxMzMxIC05MSA4NDIgMzk2IApRIDM1MyA4ODQgMzUzIDE3MTYgClEgMzUzIDI1NzUgODE3IDMwNzkgClEgMTI4MSAzNTg0IDIwNjkgMzU4NCAKUSAyNzc1IDM1ODQgMzE4NiAzMTI5IApRIDM1OTcgMjY3NSAzNTk3IDE4OTQgCnoKTSAzMDIyIDIwNjMgClEgMzAxNiAyNTM0IDI3NTggMjgxNSAKUSAyNTAwIDMwOTcgMjA3NSAzMDk3IApRIDE1OTQgMzA5NyAxMzA1IDI4MjUgClEgMTAxNiAyNTUzIDk3MiAyMDU5IApMIDMwMjIgMjA2MyAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDwvZGVmcz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy01NCIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY5IiB4PSI1Ny45NTg5ODQiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02ZCIgeD0iODUuNzQyMTg4Ii8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjUiIHg9IjE4My4xNTQyOTciLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9Im1hdHBsb3RsaWIuYXhpc18yIi8+CiAgIDxnIGlkPSJsaW5lMmRfMSI+CiAgICA8cGF0aCBkPSJNIDI0Ljk1NDU0NSAxNzAuNDk0MTI1IApMIDEyMC44MjkwOTEgMTcwLjM5NzgzNSAKTCAxMjYuMTU1NDU1IDE3MC4xODU2MTkgCkwgMTI5LjcwNjM2NCAxNjkuODYwMzIgCkwgMTMzLjI1NzI3MyAxNjkuMjQ5MzEyIApMIDEzNS4wMzI3MjcgMTY4Ljc3ODc4NiAKTCAxMzYuODA4MTgyIDE2OC4xNTY4NSAKTCAxMzguNTgzNjM2IDE2Ny4zNDUwNDQgCkwgMTQwLjM1OTA5MSAxNjYuMjk4NzM4IApMIDE0Mi4xMzQ1NDUgMTY0Ljk2NzMxNiAKTCAxNDMuOTEgMTYzLjI5NDgxMiAKTCAxNDUuNjg1NDU1IDE2MS4yMjEwOTEgCkwgMTQ3LjQ2MDkwOSAxNTguNjgzNjY1IApMIDE0OS4yMzYzNjQgMTU1LjYyMDE4NiAKTCAxNTEuMDExODE4IDE1MS45NzE2MzYgCkwgMTUyLjc4NzI3MyAxNDcuNjg2MTQyIApMIDE1NC41NjI3MjcgMTQyLjcyMzMxMiAKTCAxNTYuMzM4MTgyIDEzNy4wNTg4OCAKTCAxNTguMTEzNjM2IDEzMC42ODk0MDEgCkwgMTU5Ljg4OTA5MSAxMjMuNjM2NjQ4IApMIDE2MS42NjQ1NDUgMTE1Ljk1MTMzMiAKTCAxNjUuMjE1NDU1IDk5LjA0NTAwNSAKTCAxNzIuMzE3MjczIDYzLjM3MDI4IApMIDE3NC4wOTI3MjcgNTUuMjQzMzI5IApMIDE3NS44NjgxODIgNDcuODg2OTQ0IApMIDE3Ny42NDM2MzYgNDEuNTIwMTU2IApMIDE3OS40MTkwOTEgMzYuMzQwNTAxIApMIDE4MS4xOTQ1NDUgMzIuNTEzODcgCkwgMTgyLjk3IDMwLjE2NTY5NyAKTCAxODQuNzQ1NDU1IDI5LjM3NDEyNSAKTCAxODYuNTIwOTA5IDMwLjE2NTY5NyAKTCAxODguMjk2MzY0IDMyLjUxMzg3IApMIDE5MC4wNzE4MTggMzYuMzQwNTAxIApMIDE5MS44NDcyNzMgNDEuNTIwMTU2IApMIDE5My42MjI3MjcgNDcuODg2OTQ0IApMIDE5NS4zOTgxODIgNTUuMjQzMzI5IApMIDE5Ny4xNzM2MzYgNjMuMzcwMjggCkwgMjAwLjcyNDU0NSA4MS4wMTY3NjkgCkwgMjA2LjA1MDkwOSAxMDcuNzE1NzU1IApMIDIwNy44MjYzNjQgMTE1Ljk1MTMzMiAKTCAyMDkuNjAxODE4IDEyMy42MzY2NDggCkwgMjExLjM3NzI3MyAxMzAuNjg5NDAxIApMIDIxMy4xNTI3MjcgMTM3LjA1ODg4IApMIDIxNC45MjgxODIgMTQyLjcyMzMxMiAKTCAyMTYuNzAzNjM2IDE0Ny42ODYxNDIgCkwgMjE4LjQ3OTA5MSAxNTEuOTcxNjM2IApMIDIyMC4yNTQ1NDUgMTU1LjYyMDE4NiAKTCAyMjIuMDMgMTU4LjY4MzY2NSAKTCAyMjMuODA1NDU1IDE2MS4yMjEwOTEgCkwgMjI1LjU4MDkwOSAxNjMuMjk0ODEyIApMIDIyNy4zNTYzNjQgMTY0Ljk2NzMxNiAKTCAyMjkuMTMxODE4IDE2Ni4yOTg3MzggCkwgMjMwLjkwNzI3MyAxNjcuMzQ1MDQ0IApMIDIzMi42ODI3MjcgMTY4LjE1Njg1IApMIDIzNC40NTgxODIgMTY4Ljc3ODc4NiAKTCAyMzYuMjMzNjM2IDE2OS4yNDkzMTIgCkwgMjM5Ljc4NDU0NSAxNjkuODYwMzIgCkwgMjQzLjMzNTQ1NSAxNzAuMTg1NjE5IApMIDI0OC42NjE4MTggMTcwLjM5NzgzNSAKTCAyNTkuMzE0NTQ1IDE3MC40ODcyMDIgCkwgMzM3LjQzNDU0NSAxNzAuNDk0MTI1IApMIDM4MC4wNDU0NTUgMTcwLjQ5NDEyNSAKTCAzODAuMDQ1NDU1IDE3MC40OTQxMjUgCiIgY2xpcC1wYXRoPSJ1cmwoI3AzYmE3OTMwOGRhKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogIzAwMDAwMDsgc3Ryb2tlLXdpZHRoOiAxLjU7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgPC9nPgogICA8ZyBpZD0ibGluZTJkXzIiPgogICAgPHBhdGggZD0iTSAyNC45NTQ1NDUgMTcwLjQ5NDEyNSAKTCAxNTYuMzM4MTgyIDE3MC4zOTc4MzUgCkwgMTYxLjY2NDU0NSAxNzAuMTg1NjE5IApMIDE2NS4yMTU0NTUgMTY5Ljg2MDMyIApMIDE2OC43NjYzNjQgMTY5LjI0OTMxMiAKTCAxNzAuNTQxODE4IDE2OC43Nzg3ODYgCkwgMTcyLjMxNzI3MyAxNjguMTU2ODUgCkwgMTc0LjA5MjcyNyAxNjcuMzQ1MDQ0IApMIDE3NS44NjgxODIgMTY2LjI5ODczOCAKTCAxNzcuNjQzNjM2IDE2NC45NjczMTYgCkwgMTc5LjQxOTA5MSAxNjMuMjk0ODEyIApMIDE4MS4xOTQ1NDUgMTYxLjIyMTA5MSAKTCAxODIuOTcgMTU4LjY4MzY2NSAKTCAxODQuNzQ1NDU1IDE1NS42MjAxODYgCkwgMTg2LjUyMDkwOSAxNTEuOTcxNjM2IApMIDE4OC4yOTYzNjQgMTQ3LjY4NjE0MiAKTCAxOTAuMDcxODE4IDE0Mi43MjMzMTIgCkwgMTkxLjg0NzI3MyAxMzcuMDU4ODggCkwgMTkzLjYyMjcyNyAxMzAuNjg5NDAxIApMIDE5NS4zOTgxODIgMTIzLjYzNjY0OCAKTCAxOTcuMTczNjM2IDExNS45NTEzMzIgCkwgMjAwLjcyNDU0NSA5OS4wNDUwMDUgCkwgMjA3LjgyNjM2NCA2My4zNzAyOCAKTCAyMDkuNjAxODE4IDU1LjI0MzMyOSAKTCAyMTEuMzc3MjczIDQ3Ljg4Njk0NCAKTCAyMTMuMTUyNzI3IDQxLjUyMDE1NiAKTCAyMTQuOTI4MTgyIDM2LjM0MDUwMSAKTCAyMTYuNzAzNjM2IDMyLjUxMzg3IApMIDIxOC40NzkwOTEgMzAuMTY1Njk3IApMIDIyMC4yNTQ1NDUgMjkuMzc0MTI1IApMIDIyMi4wMyAzMC4xNjU2OTcgCkwgMjIzLjgwNTQ1NSAzMi41MTM4NyAKTCAyMjUuNTgwOTA5IDM2LjM0MDUwMSAKTCAyMjcuMzU2MzY0IDQxLjUyMDE1NiAKTCAyMjkuMTMxODE4IDQ3Ljg4Njk0NCAKTCAyMzAuOTA3MjczIDU1LjI0MzMyOSAKTCAyMzIuNjgyNzI3IDYzLjM3MDI4IApMIDIzNi4yMzM2MzYgODEuMDE2NzY5IApMIDI0MS41NiAxMDcuNzE1NzU1IApMIDI0My4zMzU0NTUgMTE1Ljk1MTMzMiAKTCAyNDUuMTEwOTA5IDEyMy42MzY2NDggCkwgMjQ2Ljg4NjM2NCAxMzAuNjg5NDAxIApMIDI0OC42NjE4MTggMTM3LjA1ODg4IApMIDI1MC40MzcyNzMgMTQyLjcyMzMxMiAKTCAyNTIuMjEyNzI3IDE0Ny42ODYxNDIgCkwgMjUzLjk4ODE4MiAxNTEuOTcxNjM2IApMIDI1NS43NjM2MzYgMTU1LjYyMDE4NiAKTCAyNTcuNTM5MDkxIDE1OC42ODM2NjUgCkwgMjU5LjMxNDU0NSAxNjEuMjIxMDkxIApMIDI2MS4wOSAxNjMuMjk0ODEyIApMIDI2Mi44NjU0NTUgMTY0Ljk2NzMxNiAKTCAyNjQuNjQwOTA5IDE2Ni4yOTg3MzggCkwgMjY2LjQxNjM2NCAxNjcuMzQ1MDQ0IApMIDI2OC4xOTE4MTggMTY4LjE1Njg1IApMIDI2OS45NjcyNzMgMTY4Ljc3ODc4NiAKTCAyNzEuNzQyNzI3IDE2OS4yNDkzMTIgCkwgMjc1LjI5MzYzNiAxNjkuODYwMzIgCkwgMjc4Ljg0NDU0NSAxNzAuMTg1NjE5IApMIDI4NC4xNzA5MDkgMTcwLjM5NzgzNSAKTCAyOTQuODIzNjM2IDE3MC40ODcyMDIgCkwgMzcyLjk0MzYzNiAxNzAuNDk0MTI1IApMIDM4MC4wNDU0NTUgMTcwLjQ5NDEyNSAKTCAzODAuMDQ1NDU1IDE3MC40OTQxMjUgCiIgY2xpcC1wYXRoPSJ1cmwoI3AzYmE3OTMwOGRhKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogIzAwMDAwMDsgc3Ryb2tlLXdpZHRoOiAxLjU7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgPC9nPgogICA8ZyBpZD0icGF0Y2hfMyI+CiAgICA8cGF0aCBkPSJNIDcuMiAxNzcuNTUwMTI1IApMIDM5Ny44IDE3Ny41NTAxMjUgCiIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogIzAwMDAwMDsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lam9pbjogbWl0ZXI7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8yIj4KICAgIDwhLS0gUGFydGlhbGx5IGRpc3Rpbmd1aXNoYWJsZSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMS4wNDY1NjIgMTYuMzE4MTI1KSBzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTUwIiBkPSJNIDEyNTkgNDE0NyAKTCAxMjU5IDIzOTQgCkwgMjA1MyAyMzk0IApRIDI0OTQgMjM5NCAyNzM0IDI2MjIgClEgMjk3NSAyODUwIDI5NzUgMzI3MiAKUSAyOTc1IDM2OTEgMjczNCAzOTE5IApRIDI0OTQgNDE0NyAyMDUzIDQxNDcgCkwgMTI1OSA0MTQ3IAp6Ck0gNjI4IDQ2NjYgCkwgMjA1MyA0NjY2IApRIDI4MzggNDY2NiAzMjM5IDQzMTEgClEgMzY0MSAzOTU2IDM2NDEgMzI3MiAKUSAzNjQxIDI1ODEgMzIzOSAyMjI4IApRIDI4MzggMTg3NSAyMDUzIDE4NzUgCkwgMTI1OSAxODc1IApMIDEyNTkgMCAKTCA2MjggMCAKTCA2MjggNDY2NiAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTYxIiBkPSJNIDIxOTQgMTc1OSAKUSAxNDk3IDE3NTkgMTIyOCAxNjAwIApRIDk1OSAxNDQxIDk1OSAxMDU2IApRIDk1OSA3NTAgMTE2MSA1NzAgClEgMTM2MyAzOTEgMTcwOSAzOTEgClEgMjE4OCAzOTEgMjQ3NyA3MzAgClEgMjc2NiAxMDY5IDI3NjYgMTYzMSAKTCAyNzY2IDE3NTkgCkwgMjE5NCAxNzU5IAp6Ck0gMzM0MSAxOTk3IApMIDMzNDEgMCAKTCAyNzY2IDAgCkwgMjc2NiA1MzEgClEgMjU2OSAyMTMgMjI3NSA2MSAKUSAxOTgxIC05MSAxNTU2IC05MSAKUSAxMDE5IC05MSA3MDEgMjExIApRIDM4NCA1MTMgMzg0IDEwMTkgClEgMzg0IDE2MDkgNzc5IDE5MDkgClEgMTE3NSAyMjA5IDE5NTkgMjIwOSAKTCAyNzY2IDIyMDkgCkwgMjc2NiAyMjY2IApRIDI3NjYgMjY2MyAyNTA1IDI4ODAgClEgMjI0NCAzMDk3IDE3NzIgMzA5NyAKUSAxNDcyIDMwOTcgMTE4NyAzMDI1IApRIDkwMyAyOTUzIDY0MSAyODA5IApMIDY0MSAzMzQxIApRIDk1NiAzNDYzIDEyNTMgMzUyMyAKUSAxNTUwIDM1ODQgMTgzMSAzNTg0IApRIDI1OTEgMzU4NCAyOTY2IDMxOTAgClEgMzM0MSAyNzk3IDMzNDEgMTk5NyAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTcyIiBkPSJNIDI2MzEgMjk2MyAKUSAyNTM0IDMwMTkgMjQyMCAzMDQ1IApRIDIzMDYgMzA3MiAyMTY5IDMwNzIgClEgMTY4MSAzMDcyIDE0MjAgMjc1NSAKUSAxMTU5IDI0MzggMTE1OSAxODQ0IApMIDExNTkgMCAKTCA1ODEgMCAKTCA1ODEgMzUwMCAKTCAxMTU5IDM1MDAgCkwgMTE1OSAyOTU2IApRIDEzNDEgMzI3NSAxNjMxIDM0MjkgClEgMTkyMiAzNTg0IDIzMzggMzU4NCAKUSAyMzk3IDM1ODQgMjQ2OSAzNTc2IApRIDI1NDEgMzU2OSAyNjI4IDM1NTMgCkwgMjYzMSAyOTYzIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtNzQiIGQ9Ik0gMTE3MiA0NDk0IApMIDExNzIgMzUwMCAKTCAyMzU2IDM1MDAgCkwgMjM1NiAzMDUzIApMIDExNzIgMzA1MyAKTCAxMTcyIDExNTMgClEgMTE3MiA3MjUgMTI4OSA2MDMgClEgMTQwNiA0ODEgMTc2NiA0ODEgCkwgMjM1NiA0ODEgCkwgMjM1NiAwIApMIDE3NjYgMCAKUSAxMTAwIDAgODQ3IDI0OCAKUSA1OTQgNDk3IDU5NCAxMTUzIApMIDU5NCAzMDUzIApMIDE3MiAzMDUzIApMIDE3MiAzNTAwIApMIDU5NCAzNTAwIApMIDU5NCA0NDk0IApMIDExNzIgNDQ5NCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTZjIiBkPSJNIDYwMyA0ODYzIApMIDExNzggNDg2MyAKTCAxMTc4IDAgCkwgNjAzIDAgCkwgNjAzIDQ4NjMgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy03OSIgZD0iTSAyMDU5IC0zMjUgClEgMTgxNiAtOTUwIDE1ODQgLTExNDAgClEgMTM1MyAtMTMzMSA5NjYgLTEzMzEgCkwgNTA2IC0xMzMxIApMIDUwNiAtODUwIApMIDg0NCAtODUwIApRIDEwODEgLTg1MCAxMjEyIC03MzcgClEgMTM0NCAtNjI1IDE1MDMgLTIwNiAKTCAxNjA2IDU2IApMIDE5MSAzNTAwIApMIDgwMCAzNTAwIApMIDE4OTQgNzYzIApMIDI5ODggMzUwMCAKTCAzNTk3IDM1MDAgCkwgMjA1OSAtMzI1IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMjAiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTY0IiBkPSJNIDI5MDYgMjk2OSAKTCAyOTA2IDQ4NjMgCkwgMzQ4MSA0ODYzIApMIDM0ODEgMCAKTCAyOTA2IDAgCkwgMjkwNiA1MjUgClEgMjcyNSAyMTMgMjQ0OCA2MSAKUSAyMTcyIC05MSAxNzg0IC05MSAKUSAxMTUwIC05MSA3NTEgNDE1IApRIDM1MyA5MjIgMzUzIDE3NDcgClEgMzUzIDI1NzIgNzUxIDMwNzggClEgMTE1MCAzNTg0IDE3ODQgMzU4NCAKUSAyMTcyIDM1ODQgMjQ0OCAzNDMyIApRIDI3MjUgMzI4MSAyOTA2IDI5NjkgCnoKTSA5NDcgMTc0NyAKUSA5NDcgMTExMyAxMjA4IDc1MiAKUSAxNDY5IDM5MSAxOTI1IDM5MSAKUSAyMzgxIDM5MSAyNjQzIDc1MiAKUSAyOTA2IDExMTMgMjkwNiAxNzQ3IApRIDI5MDYgMjM4MSAyNjQzIDI3NDIgClEgMjM4MSAzMTAzIDE5MjUgMzEwMyAKUSAxNDY5IDMxMDMgMTIwOCAyNzQyIApRIDk0NyAyMzgxIDk0NyAxNzQ3IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtNzMiIGQ9Ik0gMjgzNCAzMzk3IApMIDI4MzQgMjg1MyAKUSAyNTkxIDI5NzggMjMyOCAzMDQwIApRIDIwNjYgMzEwMyAxNzg0IDMxMDMgClEgMTM1NiAzMTAzIDExNDIgMjk3MiAKUSA5MjggMjg0MSA5MjggMjU3OCAKUSA5MjggMjM3OCAxMDgxIDIyNjQgClEgMTIzNCAyMTUwIDE2OTcgMjA0NyAKTCAxODk0IDIwMDMgClEgMjUwNiAxODcyIDI3NjQgMTYzMyAKUSAzMDIyIDEzOTQgMzAyMiA5NjYgClEgMzAyMiA0NzggMjYzNiAxOTMgClEgMjI1MCAtOTEgMTU3NSAtOTEgClEgMTI5NCAtOTEgOTg5IC0zNiAKUSA2ODQgMTkgMzQ3IDEyOCAKTCAzNDcgNzIyIApRIDY2NiA1NTYgOTc1IDQ3MyAKUSAxMjg0IDM5MSAxNTg4IDM5MSAKUSAxOTk0IDM5MSAyMjEyIDUzMCAKUSAyNDMxIDY2OSAyNDMxIDkyMiAKUSAyNDMxIDExNTYgMjI3MyAxMjgxIApRIDIxMTYgMTQwNiAxNTgxIDE1MjIgCkwgMTM4MSAxNTY5IApRIDg0NyAxNjgxIDYwOSAxOTE0IApRIDM3MiAyMTQ3IDM3MiAyNTUzIApRIDM3MiAzMDQ3IDcyMiAzMzE1IApRIDEwNzIgMzU4NCAxNzE2IDM1ODQgClEgMjAzNCAzNTg0IDIzMTUgMzUzNyAKUSAyNTk3IDM0OTEgMjgzNCAzMzk3IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtNmUiIGQ9Ik0gMzUxMyAyMTEzIApMIDM1MTMgMCAKTCAyOTM4IDAgCkwgMjkzOCAyMDk0IApRIDI5MzggMjU5MSAyNzQ0IDI4MzcgClEgMjU1MCAzMDg0IDIxNjMgMzA4NCAKUSAxNjk3IDMwODQgMTQyOCAyNzg3IApRIDExNTkgMjQ5MSAxMTU5IDE5NzggCkwgMTE1OSAwIApMIDU4MSAwIApMIDU4MSAzNTAwIApMIDExNTkgMzUwMCAKTCAxMTU5IDI5NTYgClEgMTM2NiAzMjcyIDE2NDUgMzQyOCAKUSAxOTI1IDM1ODQgMjI5MSAzNTg0IApRIDI4OTQgMzU4NCAzMjAzIDMyMTEgClEgMzUxMyAyODM4IDM1MTMgMjExMyAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTY3IiBkPSJNIDI5MDYgMTc5MSAKUSAyOTA2IDI0MTYgMjY0OCAyNzU5IApRIDIzOTEgMzEwMyAxOTI1IDMxMDMgClEgMTQ2MyAzMTAzIDEyMDUgMjc1OSAKUSA5NDcgMjQxNiA5NDcgMTc5MSAKUSA5NDcgMTE2OSAxMjA1IDgyNSAKUSAxNDYzIDQ4MSAxOTI1IDQ4MSAKUSAyMzkxIDQ4MSAyNjQ4IDgyNSAKUSAyOTA2IDExNjkgMjkwNiAxNzkxIAp6Ck0gMzQ4MSA0MzQgClEgMzQ4MSAtNDU5IDMwODQgLTg5NSAKUSAyNjg4IC0xMzMxIDE4NjkgLTEzMzEgClEgMTU2NiAtMTMzMSAxMjk3IC0xMjg2IApRIDEwMjggLTEyNDEgNzc1IC0xMTQ3IApMIDc3NSAtNTg4IApRIDEwMjggLTcyNSAxMjc1IC03OTAgClEgMTUyMiAtODU2IDE3NzggLTg1NiAKUSAyMzQ0IC04NTYgMjYyNSAtNTYxIApRIDI5MDYgLTI2NiAyOTA2IDMzMSAKTCAyOTA2IDYxNiAKUSAyNzI4IDMwNiAyNDUwIDE1MyAKUSAyMTcyIDAgMTc4NCAwIApRIDExNDEgMCA3NDcgNDkwIApRIDM1MyA5ODEgMzUzIDE3OTEgClEgMzUzIDI2MDMgNzQ3IDMwOTMgClEgMTE0MSAzNTg0IDE3ODQgMzU4NCAKUSAyMTcyIDM1ODQgMjQ1MCAzNDMxIApRIDI3MjggMzI3OCAyOTA2IDI5NjkgCkwgMjkwNiAzNTAwIApMIDM0ODEgMzUwMCAKTCAzNDgxIDQzNCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTc1IiBkPSJNIDU0NCAxMzgxIApMIDU0NCAzNTAwIApMIDExMTkgMzUwMCAKTCAxMTE5IDE0MDMgClEgMTExOSA5MDYgMTMxMiA2NTcgClEgMTUwNiA0MDkgMTg5NCA0MDkgClEgMjM1OSA0MDkgMjYyOSA3MDYgClEgMjkwMCAxMDAzIDI5MDAgMTUxNiAKTCAyOTAwIDM1MDAgCkwgMzQ3NSAzNTAwIApMIDM0NzUgMCAKTCAyOTAwIDAgCkwgMjkwMCA1MzggClEgMjY5MSAyMTkgMjQxNCA2NCAKUSAyMTM4IC05MSAxNzcyIC05MSAKUSAxMTY5IC05MSA4NTYgMjg0IApRIDU0NCA2NTkgNTQ0IDEzODEgCnoKTSAxOTkxIDM1ODQgCkwgMTk5MSAzNTg0IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtNjgiIGQ9Ik0gMzUxMyAyMTEzIApMIDM1MTMgMCAKTCAyOTM4IDAgCkwgMjkzOCAyMDk0IApRIDI5MzggMjU5MSAyNzQ0IDI4MzcgClEgMjU1MCAzMDg0IDIxNjMgMzA4NCAKUSAxNjk3IDMwODQgMTQyOCAyNzg3IApRIDExNTkgMjQ5MSAxMTU5IDE5NzggCkwgMTE1OSAwIApMIDU4MSAwIApMIDU4MSA0ODYzIApMIDExNTkgNDg2MyAKTCAxMTU5IDI5NTYgClEgMTM2NiAzMjcyIDE2NDUgMzQyOCAKUSAxOTI1IDM1ODQgMjI5MSAzNTg0IApRIDI4OTQgMzU4NCAzMjAzIDMyMTEgClEgMzUxMyAyODM4IDM1MTMgMjExMyAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTYyIiBkPSJNIDMxMTYgMTc0NyAKUSAzMTE2IDIzODEgMjg1NSAyNzQyIApRIDI1OTQgMzEwMyAyMTM4IDMxMDMgClEgMTY4MSAzMTAzIDE0MjAgMjc0MiAKUSAxMTU5IDIzODEgMTE1OSAxNzQ3IApRIDExNTkgMTExMyAxNDIwIDc1MiAKUSAxNjgxIDM5MSAyMTM4IDM5MSAKUSAyNTk0IDM5MSAyODU1IDc1MiAKUSAzMTE2IDExMTMgMzExNiAxNzQ3IAp6Ck0gMTE1OSAyOTY5IApRIDEzNDEgMzI4MSAxNjE3IDM0MzIgClEgMTg5NCAzNTg0IDIyNzggMzU4NCAKUSAyOTE2IDM1ODQgMzMxNCAzMDc4IApRIDM3MTMgMjU3MiAzNzEzIDE3NDcgClEgMzcxMyA5MjIgMzMxNCA0MTUgClEgMjkxNiAtOTEgMjI3OCAtOTEgClEgMTg5NCAtOTEgMTYxNyA2MSAKUSAxMzQxIDIxMyAxMTU5IDUyNSAKTCAxMTU5IDAgCkwgNTgxIDAgCkwgNTgxIDQ4NjMgCkwgMTE1OSA0ODYzIApMIDExNTkgMjk2OSAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgPC9kZWZzPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNTAiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTYxIiB4PSI1NS44MDI3MzQiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTcyIiB4PSIxMTcuMDgyMDMxIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03NCIgeD0iMTU4LjE5NTMxMiIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjkiIHg9IjE5Ny40MDQyOTciLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTYxIiB4PSIyMjUuMTg3NSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNmMiIHg9IjI4Ni40NjY3OTciLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTZjIiB4PSIzMTQuMjUiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTc5IiB4PSIzNDIuMDMzMjAzIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yMCIgeD0iNDAxLjIxMjg5MSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjQiIHg9IjQzMyIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjkiIHg9IjQ5Ni40NzY1NjIiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTczIiB4PSI1MjQuMjU5NzY2Ii8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03NCIgeD0iNTc2LjM1OTM3NSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjkiIHg9IjYxNS41NjgzNTkiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTZlIiB4PSI2NDMuMzUxNTYyIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02NyIgeD0iNzA2LjczMDQ2OSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNzUiIHg9Ijc3MC4yMDcwMzEiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY5IiB4PSI4MzMuNTg1OTM4Ii8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03MyIgeD0iODYxLjM2OTE0MSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjgiIHg9IjkxMy40Njg3NSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjEiIHg9Ijk3Ni44NDc2NTYiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTYyIiB4PSIxMDM4LjEyNjk1MyIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNmMiIHg9IjExMDEuNjAzNTE2Ii8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02NSIgeD0iMTEyOS4zODY3MTkiLz4KICAgIDwvZz4KICAgPC9nPgogIDwvZz4KICA8ZyBpZD0iYXhlc18yIj4KICAgPGcgaWQ9InBhdGNoXzQiPgogICAgPHBhdGggZD0iTSA3LjIgNDEwLjM5ODEyNSAKTCAzOTcuOCA0MTAuMzk4MTI1IApMIDM5Ny44IDI1NS4xNjYxMjUgCkwgNy4yIDI1NS4xNjYxMjUgCkwgNy4yIDQxMC4zOTgxMjUgCnoKIiBzdHlsZT0iZmlsbDogbm9uZSIvPgogICA8L2c+CiAgIDxnIGlkPSJtYXRwbG90bGliLmF4aXNfMyI+CiAgICA8ZyBpZD0idGV4dF8zIj4KICAgICA8IS0tIFRpbWUgLS0+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTg3LjgxOTY4NyA0MjMuNTE2MjUpIHNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy01NCIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY5IiB4PSI1Ny45NTg5ODQiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02ZCIgeD0iODUuNzQyMTg4Ii8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjUiIHg9IjE4My4xNTQyOTciLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9Im1hdHBsb3RsaWIuYXhpc180Ii8+CiAgIDxnIGlkPSJsaW5lMmRfMyI+CiAgICA8cGF0aCBkPSJNIDI0Ljk1NDU0NSA0MDMuMzQyMDE1IApMIDQ5LjgxMDkwOSA0MDMuMjQ1ODM1IApMIDU1LjEzNzI3MyA0MDMuMDMzNjE5IApMIDU4LjY4ODE4MiA0MDIuNzA4MzIgCkwgNjIuMjM5MDkxIDQwMi4wOTczMTIgCkwgNjQuMDE0NTQ1IDQwMS42MjY3ODYgCkwgNjUuNzkgNDAxLjAwNDg1IApMIDY3LjU2NTQ1NSA0MDAuMTkzMDQ0IApMIDY5LjM0MDkwOSAzOTkuMTQ2NzM4IApMIDcxLjExNjM2NCAzOTcuODE1MzE2IApMIDcyLjg5MTgxOCAzOTYuMTQyODEyIApMIDc0LjY2NzI3MyAzOTQuMDY5MDkxIApMIDc2LjQ0MjcyNyAzOTEuNTMxNjY1IApMIDc4LjIxODE4MiAzODguNDY4MTg2IApMIDc5Ljk5MzYzNiAzODQuODE5NjM2IApMIDgxLjc2OTA5MSAzODAuNTM0MTQyIApMIDgzLjU0NDU0NSAzNzUuNTcxMzEyIApMIDg1LjMyIDM2OS45MDY4OCAKTCA4Ny4wOTU0NTUgMzYzLjUzNzQwMSAKTCA4OC44NzA5MDkgMzU2LjQ4NDY0OCAKTCA5MC42NDYzNjQgMzQ4Ljc5OTMzMiAKTCA5NC4xOTcyNzMgMzMxLjg5MzAwNSAKTCAxMDEuMjk5MDkxIDI5Ni4yMTgyOCAKTCAxMDMuMDc0NTQ1IDI4OC4wOTEzMjkgCkwgMTA0Ljg1IDI4MC43MzQ5NDQgCkwgMTA2LjYyNTQ1NSAyNzQuMzY4MTU2IApMIDEwOC40MDA5MDkgMjY5LjE4ODUwMSAKTCAxMTAuMTc2MzY0IDI2NS4zNjE4NyAKTCAxMTEuOTUxODE4IDI2My4wMTM2OTcgCkwgMTEzLjcyNzI3MyAyNjIuMjIyMTI1IApMIDExNS41MDI3MjcgMjYzLjAxMzY5NyAKTCAxMTcuMjc4MTgyIDI2NS4zNjE4NyAKTCAxMTkuMDUzNjM2IDI2OS4xODg1MDEgCkwgMTIwLjgyOTA5MSAyNzQuMzY4MTU2IApMIDEyMi42MDQ1NDUgMjgwLjczNDk0NCAKTCAxMjQuMzggMjg4LjA5MTMyOSAKTCAxMjYuMTU1NDU1IDI5Ni4yMTgyOCAKTCAxMjkuNzA2MzY0IDMxMy44NjQ3NjkgCkwgMTM1LjAzMjcyNyAzNDAuNTYzNzU1IApMIDEzNi44MDgxODIgMzQ4Ljc5OTMzMiAKTCAxMzguNTgzNjM2IDM1Ni40ODQ2NDggCkwgMTQwLjM1OTA5MSAzNjMuNTM3NDAxIApMIDE0Mi4xMzQ1NDUgMzY5LjkwNjg4IApMIDE0My45MSAzNzUuNTcxMzEyIApMIDE0NS42ODU0NTUgMzgwLjUzNDE0MiAKTCAxNDcuNDYwOTA5IDM4NC44MTk2MzYgCkwgMTQ5LjIzNjM2NCAzODguNDY4MTg2IApMIDE1MS4wMTE4MTggMzkxLjUzMTY2NSAKTCAxNTIuNzg3MjczIDM5NC4wNjkwOTEgCkwgMTU0LjU2MjcyNyAzOTYuMTQyODEyIApMIDE1Ni4zMzgxODIgMzk3LjgxNTMxNiAKTCAxNTguMTEzNjM2IDM5OS4xNDY3MzggCkwgMTU5Ljg4OTA5MSA0MDAuMTkzMDQ0IApMIDE2MS42NjQ1NDUgNDAxLjAwNDg1IApMIDE2My40NCA0MDEuNjI2Nzg2IApMIDE2NS4yMTU0NTUgNDAyLjA5NzMxMiAKTCAxNjguNzY2MzY0IDQwMi43MDgzMiAKTCAxNzIuMzE3MjczIDQwMy4wMzM2MTkgCkwgMTc3LjY0MzYzNiA0MDMuMjQ1ODM1IApMIDE4OC4yOTYzNjQgNDAzLjMzNTIwMiAKTCAyNjYuNDE2MzY0IDQwMy4zNDIxMjUgCkwgMzgwLjA0NTQ1NSA0MDMuMzQyMTI1IApMIDM4MC4wNDU0NTUgNDAzLjM0MjEyNSAKIiBjbGlwLXBhdGg9InVybCgjcDRjODQxZTgzZWYpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDAwMDAwOyBzdHJva2Utd2lkdGg6IDEuNTsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICA8L2c+CiAgIDxnIGlkPSJsaW5lMmRfNCI+CiAgICA8cGF0aCBkPSJNIDI0Ljk1NDU0NSA0MDMuMzQyMTI1IApMIDIyNy4zNTYzNjQgNDAzLjI0NTgzNSAKTCAyMzIuNjgyNzI3IDQwMy4wMzM2MTkgCkwgMjM2LjIzMzYzNiA0MDIuNzA4MzIgCkwgMjM5Ljc4NDU0NSA0MDIuMDk3MzEyIApMIDI0MS41NiA0MDEuNjI2Nzg2IApMIDI0My4zMzU0NTUgNDAxLjAwNDg1IApMIDI0NS4xMTA5MDkgNDAwLjE5MzA0NCAKTCAyNDYuODg2MzY0IDM5OS4xNDY3MzggCkwgMjQ4LjY2MTgxOCAzOTcuODE1MzE2IApMIDI1MC40MzcyNzMgMzk2LjE0MjgxMiAKTCAyNTIuMjEyNzI3IDM5NC4wNjkwOTEgCkwgMjUzLjk4ODE4MiAzOTEuNTMxNjY1IApMIDI1NS43NjM2MzYgMzg4LjQ2ODE4NiAKTCAyNTcuNTM5MDkxIDM4NC44MTk2MzYgCkwgMjU5LjMxNDU0NSAzODAuNTM0MTQyIApMIDI2MS4wOSAzNzUuNTcxMzEyIApMIDI2Mi44NjU0NTUgMzY5LjkwNjg4IApMIDI2NC42NDA5MDkgMzYzLjUzNzQwMSAKTCAyNjYuNDE2MzY0IDM1Ni40ODQ2NDggCkwgMjY4LjE5MTgxOCAzNDguNzk5MzMyIApMIDI3MS43NDI3MjcgMzMxLjg5MzAwNSAKTCAyNzguODQ0NTQ1IDI5Ni4yMTgyOCAKTCAyODAuNjIgMjg4LjA5MTMyOSAKTCAyODIuMzk1NDU1IDI4MC43MzQ5NDQgCkwgMjg0LjE3MDkwOSAyNzQuMzY4MTU2IApMIDI4NS45NDYzNjQgMjY5LjE4ODUwMSAKTCAyODcuNzIxODE4IDI2NS4zNjE4NyAKTCAyODkuNDk3MjczIDI2My4wMTM2OTcgCkwgMjkxLjI3MjcyNyAyNjIuMjIyMTI1IApMIDI5My4wNDgxODIgMjYzLjAxMzY5NyAKTCAyOTQuODIzNjM2IDI2NS4zNjE4NyAKTCAyOTYuNTk5MDkxIDI2OS4xODg1MDEgCkwgMjk4LjM3NDU0NSAyNzQuMzY4MTU2IApMIDMwMC4xNSAyODAuNzM0OTQ0IApMIDMwMS45MjU0NTUgMjg4LjA5MTMyOSAKTCAzMDMuNzAwOTA5IDI5Ni4yMTgyOCAKTCAzMDcuMjUxODE4IDMxMy44NjQ3NjkgCkwgMzEyLjU3ODE4MiAzNDAuNTYzNzU1IApMIDMxNC4zNTM2MzYgMzQ4Ljc5OTMzMiAKTCAzMTYuMTI5MDkxIDM1Ni40ODQ2NDggCkwgMzE3LjkwNDU0NSAzNjMuNTM3NDAxIApMIDMxOS42OCAzNjkuOTA2ODggCkwgMzIxLjQ1NTQ1NSAzNzUuNTcxMzEyIApMIDMyMy4yMzA5MDkgMzgwLjUzNDE0MiAKTCAzMjUuMDA2MzY0IDM4NC44MTk2MzYgCkwgMzI2Ljc4MTgxOCAzODguNDY4MTg2IApMIDMyOC41NTcyNzMgMzkxLjUzMTY2NSAKTCAzMzAuMzMyNzI3IDM5NC4wNjkwOTEgCkwgMzMyLjEwODE4MiAzOTYuMTQyODEyIApMIDMzMy44ODM2MzYgMzk3LjgxNTMxNiAKTCAzMzUuNjU5MDkxIDM5OS4xNDY3MzggCkwgMzM3LjQzNDU0NSA0MDAuMTkzMDQ0IApMIDMzOS4yMSA0MDEuMDA0ODUgCkwgMzQwLjk4NTQ1NSA0MDEuNjI2Nzg2IApMIDM0Mi43NjA5MDkgNDAyLjA5NzMxMiAKTCAzNDYuMzExODE4IDQwMi43MDgzMiAKTCAzNDkuODYyNzI3IDQwMy4wMzM2MTkgCkwgMzU1LjE4OTA5MSA0MDMuMjQ1ODM1IApMIDM2NS44NDE4MTggNDAzLjMzNTIwMiAKTCAzODAuMDQ1NDU1IDQwMy4zNDIwMTUgCkwgMzgwLjA0NTQ1NSA0MDMuMzQyMDE1IAoiIGNsaXAtcGF0aD0idXJsKCNwNGM4NDFlODNlZikiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICMwMDAwMDA7IHN0cm9rZS13aWR0aDogMS41OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgIDwvZz4KICAgPGcgaWQ9InBhdGNoXzUiPgogICAgPHBhdGggZD0iTSA3LjIgNDEwLjM5ODEyNSAKTCAzOTcuOCA0MTAuMzk4MTI1IAoiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICMwMDAwMDA7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWpvaW46IG1pdGVyOyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfNCI+CiAgICA8IS0tIEZ1bGx5IGRpc3Rpbmd1aXNoYWJsZSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0MS4zMTAzMTMgMjQ5LjE2NjEyNSkgc2NhbGUoMC4xMiAtMC4xMikiPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy00NiIgZD0iTSA2MjggNDY2NiAKTCAzMzA5IDQ2NjYgCkwgMzMwOSA0MTM0IApMIDEyNTkgNDEzNCAKTCAxMjU5IDI3NTkgCkwgMzEwOSAyNzU5IApMIDMxMDkgMjIyOCAKTCAxMjU5IDIyMjggCkwgMTI1OSAwIApMIDYyOCAwIApMIDYyOCA0NjY2IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICA8L2RlZnM+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00NiIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNzUiIHg9IjUyLjAxOTUzMSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNmMiIHg9IjExNS4zOTg0MzgiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTZjIiB4PSIxNDMuMTgxNjQxIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03OSIgeD0iMTcwLjk2NDg0NCIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMjAiIHg9IjIzMC4xNDQ1MzEiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY0IiB4PSIyNjEuOTMxNjQxIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02OSIgeD0iMzI1LjQwODIwMyIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNzMiIHg9IjM1My4xOTE0MDYiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTc0IiB4PSI0MDUuMjkxMDE2Ii8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02OSIgeD0iNDQ0LjUiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTZlIiB4PSI0NzIuMjgzMjAzIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02NyIgeD0iNTM1LjY2MjEwOSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNzUiIHg9IjU5OS4xMzg2NzIiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY5IiB4PSI2NjIuNTE3NTc4Ii8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03MyIgeD0iNjkwLjMwMDc4MSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjgiIHg9Ijc0Mi40MDAzOTEiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTYxIiB4PSI4MDUuNzc5Mjk3Ii8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02MiIgeD0iODY3LjA1ODU5NCIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNmMiIHg9IjkzMC41MzUxNTYiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY1IiB4PSI5NTguMzE4MzU5Ii8+CiAgICA8L2c+CiAgIDwvZz4KICA8L2c+CiA8L2c+CiA8ZGVmcz4KICA8Y2xpcFBhdGggaWQ9InAzYmE3OTMwOGRhIj4KICAgPHJlY3QgeD0iNy4yIiB5PSIyMi4zMTgxMjUiIHdpZHRoPSIzOTAuNiIgaGVpZ2h0PSIxNTUuMjMyIi8+CiAgPC9jbGlwUGF0aD4KICA8Y2xpcFBhdGggaWQ9InA0Yzg0MWU4M2VmIj4KICAgPHJlY3QgeD0iNy4yIiB5PSIyNTUuMTY2MTI1IiB3aWR0aD0iMzkwLjYiIGhlaWdodD0iMTU1LjIzMiIvPgogIDwvY2xpcFBhdGg+CiA8L2RlZnM+CiA8ZGVmcz4KICA8cGF0dGVybiBpZD0iaDkxOTI3OWMwNzMiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiI+CiAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI3MyIgaGVpZ2h0PSI3MyIgZmlsbD0iI2ZmZmZmZiIvPgogICA8cGF0aCBkPSJNIC0zNiAzNiAKTCAzNiAtMzYgCk0gLTMwIDQyIApMIDQyIC0zMCAKTSAtMjQgNDggCkwgNDggLTI0IApNIC0xOCA1NCAKTCA1NCAtMTggCk0gLTEyIDYwIApMIDYwIC0xMiAKTSAtNiA2NiAKTCA2NiAtNiAKTSAwIDcyIApMIDcyIDAgCk0gNiA3OCAKTCA3OCA2IApNIDEyIDg0IApMIDg0IDEyIApNIDE4IDkwIApMIDkwIDE4IApNIDI0IDk2IApMIDk2IDI0IApNIDMwIDEwMiAKTCAxMDIgMzAgCk0gMzYgMTA4IApMIDEwOCAzNiAKIiBzdHlsZT0iZmlsbDogIzAwMDAwMDsgc3Ryb2tlOiAjMDAwMDAwOyBzdHJva2Utd2lkdGg6IDEuMDsgc3Ryb2tlLWxpbmVjYXA6IGJ1dHQ7IHN0cm9rZS1saW5lam9pbjogbWl0ZXIiLz4KICA8L3BhdHRlcm4+CiA8L2RlZnM+Cjwvc3ZnPgo="></artwork> -->
 
-Without loss of generality we assume that photon $$b$$ is delayed by a time $$\tau$$, which transforms its creation operator,
+Without loss of generality, we assume that photon $$b$$ is delayed by a time $$\tau$$, which transforms its creation operator,
 
 ~~~math
-b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}
+b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}.
 ~~~
 
 Two input photons with arbitrary spectral functions $$\phi$$ and $$\varphi$$, with photon $$b$$ arriving late, are described by
 
 ~~~math
-|\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}
+|\psi\rangle _{ab} = |1;\phi\rangle_a |1;\varphi\rangle_b = \int d\omega_1 \phi(\omega_1) a ^{\dagger}(\omega_1) \int d\omega_2 \varphi(\omega_2) b ^{\dagger}(\omega_2) e^{-i\omega_2\tau} |0\rangle _{ab}.
 ~~~
 
 We assume that the BS acts on the different frequency modes independently, and that the reflectivity is also frequency-independent.
 Applying the same transformation rules for the input creation operators, the output state of the two photons is
 
 ~~~math
-|\psi\rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) e^{-i\omega_2\tau} \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}
+|\psi\rangle _{cd} = \frac{1}{2} \int d\omega_1 \phi(\omega_1) \int d\omega_2 \varphi(\omega_2) e^{-i\omega_2\tau} \left[ c ^{\dagger}(\omega_1) c ^{\dagger}(\omega_2) + c ^{\dagger}(\omega_2) d ^{\dagger}(\omega_1) - c ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) - d ^{\dagger}(\omega_1) d ^{\dagger}(\omega_2) \right] |0\rangle _{cd}.
 ~~~
 
 For pure input states, the probability of a coincidence detection is
 
 ~~~math
-p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau}
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2}\int d\omega_1\phi^\ast(\omega_1)\varphi(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi^\ast(\omega_2) \phi(\omega_2) e^{i\omega_2\tau},
 ~~~
 
 while for mixed states is can be generalized to the following form,
 
 ~~~math
-p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}
+p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u_k v _{k'} \int d\omega_1\phi_k^\ast(\omega_1)\varphi _{k'}(\omega_1)e^{-i\omega_1\tau} \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2) e^{i\omega_2\tau}.
 ~~~
 
 ### Example: Gaussian wave packets
@@ -471,7 +471,7 @@ Consider two identical pure Gaussian wavepackets that arrive at the BS with a ti
 The probability of coincidence and the corresponding visibility are given by
 
 ~~~math
-p_{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}
+p_{\text{c}} = \frac{1}{2} \left( 1 - e^{-\frac{1}{2}\sigma^2\tau^2} \right), \quad V(\tau) = e^{-\frac{1}{2}\sigma ^{2} \tau^{2}}.
 ~~~
 
 <!-- The figure below displays the visibility and probability of coincidence for this case (Figures-matplotlib/visibility-temporal.svg). -->
@@ -497,13 +497,13 @@ Finally, the probability that an electric signal is generated upon successful ab
 The overall _system detection efficiency_ is given by the product of these three,
 
 ~~~math
-\eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
+\eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}.
 ~~~
 
 The _device detection efficiency_ is given by
 
 ~~~math
-\eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
+\eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}.
 ~~~
 
 Detection efficiency affects the rate at which entanglement can be distributed.
@@ -554,7 +554,7 @@ The size of the separation time depends on the following:
 General (conservative) separation time should therefore be set to
 
 ~~~math
-T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}
+T_{\text{separation}} \ge T_{\text{photon}} + J_{\text{emission}} + J_{\text{timing}}.
 ~~~
 
 The above discussion assumes that the photons can be generated nearly on-demand.
@@ -590,39 +590,39 @@ We will first discuss quantum measurements in general before discussing concrete
 For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
 Consider a general state of the qubit, $$|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$$.
 Measurement in an arbitrary basis $$M$$ projects $$|\psi\rangle$$ onto one of the eigenvectors of $$M$$.
-Probabilities of the two possible measurement outcomes are given by the squared modula of the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$.
+Probabilities of the two possible measurement outcomes are given by the squared modula of the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$,
 
 ~~~math
-\text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
+\text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2.
 ~~~
 
 It is often difficult to directly measure the qubit in an arbitrary basis when it comes to real-world implementation.
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $$Z$$ basis, which can usually be implemented in a straightforward way.
 This approach greatly simplifies the implementation of arbitrary measurements.
 
-Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$:
+Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$,
 
 ~~~math
-M = U Z U ^{\dagger}
+M = U Z U ^{\dagger}.
 ~~~
 
 This means the unitary $$U$$ relates the eigenvectors of the two observables,
 
 ~~~math
-|\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle
+|\phi\rangle = U |0\rangle, \quad\text{and}\quad |\phi^{\perp}\rangle = U |1\rangle.
 ~~~
 
 We can perform measurement in the $$M$$ basis by applying adjoint of $$U$$ to the initial state $$|\psi\rangle$$, and then measuring it in the Pauli $$Z$$ basis.
 This can be easily verified by rewriting the above probabilities corresponding to the two measurement outcomes,
 
 ~~~math
-\text{Pr}(|\phi\rangle;|\psi\rangle) = |\langle\phi|\psi\rangle|^2 = |\langle0| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|0\rangle; U ^{\dagger}|\psi\rangle)
+\text{Pr}(|\phi\rangle;|\psi\rangle) = |\langle\phi|\psi\rangle|^2 = |\langle0| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|0\rangle; U ^{\dagger}|\psi\rangle),
 ~~~
 
 and
 
 ~~~math
-\text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle) = |\langle\phi^{\perp}|\psi\rangle|^2 = |\langle1| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|1\rangle; U ^{\dagger}|\psi\rangle)
+\text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle) = |\langle\phi^{\perp}|\psi\rangle|^2 = |\langle1| U ^{\dagger}|\psi\rangle|^2 = \text{Pr}(|1\rangle; U ^{\dagger}|\psi\rangle).
 ~~~
 
 <!-- This is pictured in the Figure below (Figures-BW/measurement-1qubit-bw.svg). -->
@@ -679,35 +679,35 @@ Horizontal polarization gets transmitted through the PBS, while vertical polariz
 General pure state of a polarization-encoded qubit can be written as
 
 ~~~math
-|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle
+|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle.
 ~~~
 
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 Polarization of light is manipulated by waveplates.
 Waveplate rotated by an angle $$\alpha$$ (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of $$2\alpha$$ with the horizontal state $$|H\rangle$$ in the horizontal plane.
 Half waveplate rotates the polarization state by an angle $$\pi$$, while a quarter waveplate rotates by an angle $$\pi/2$$ in the Poincaré sphere.
-The action of the half waveplate is captured by the corresponding unitary operations in linear polarization basis:
+The action of the half waveplate is captured by the corresponding unitary operations in linear polarization basis,
 
 ~~~math
-U_{\text{HWP}}(\alpha) = \begin{bmatrix} \cos2\alpha & \sin2\alpha \\ \sin2\alpha & -\cos2\alpha \end{bmatrix}
+U_{\text{HWP}}(\alpha) = \begin{bmatrix} \cos2\alpha & \sin2\alpha \\ \sin2\alpha & -\cos2\alpha \end{bmatrix}.
 ~~~
 
-Unitary matrix representing the action of a quarter waveplate in linear polarization basis:
+Unitary matrix representing the action of a quarter waveplate in linear polarization basis is given by
 
 ~~~math
-U_{\text{QWP}}(\alpha) = \begin{bmatrix} \cos^2\alpha + i\sin^2\alpha & (1-i)\cos\alpha\sin\alpha \\ (1-i)\cos\alpha\sin\alpha & \sin^2\alpha +i\cos^2\alpha \end{bmatrix}
+U_{\text{QWP}}(\alpha) = \begin{bmatrix} \cos^2\alpha + i\sin^2\alpha & (1-i)\cos\alpha\sin\alpha \\ (1-i)\cos\alpha\sin\alpha & \sin^2\alpha +i\cos^2\alpha \end{bmatrix}.
 ~~~
 
-The idea behind measurements in arbitrary basis
+The idea behind measurements in arbitrary basis,
 
 ~~~math
-\{|\psi\rangle, |\psi^{\perp}\rangle\}
+\{|\psi\rangle, |\psi^{\perp}\rangle\},
 ~~~
 
-is to choose the angles for the waveplates such that the following transformation is achieved:
+is to choose the angles for the waveplates such that the following transformation is achieved,
 
 ~~~math
-U_{HWP}U_{QWP} |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}U_{QWP}|\psi^{\perp}\rangle \rightarrow |V\rangle
+U_{HWP}U_{QWP} |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}U_{QWP}|\psi^{\perp}\rangle \rightarrow |V\rangle.
 ~~~
 
 Settings for the three Pauli bases are summarized in the table below.
