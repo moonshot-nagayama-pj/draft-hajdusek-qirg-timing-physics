@@ -65,7 +65,6 @@ informative:
   Koyama24: DOI.10.1109/QCE60285.2024.00219
   Bienfang25: DOI.10.6028/NIST.IR.8486r1
 ...
----
 
 --- abstract
 
