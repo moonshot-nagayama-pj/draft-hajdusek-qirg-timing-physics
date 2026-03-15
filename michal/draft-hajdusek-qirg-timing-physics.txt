@@ -251,6 +251,9 @@ Table of Contents
    *  Case D: photon in mode a is transmitted, while photon in mode b is
       reflected.
 
+   scheme-id = -1 - scheme-number
+   scheme-number = -1 - scheme-id
+
    The input state can be expressed as
 
              †     †
