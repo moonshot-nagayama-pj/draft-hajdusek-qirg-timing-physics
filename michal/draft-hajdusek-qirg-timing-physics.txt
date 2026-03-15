@@ -5,7 +5,7 @@
 Quantum Internet Research Group                              M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 15 September 2026                                 14 March 2026
+Expires: 16 September 2026                                 15 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 15 September 2026.
+   This Internet-Draft will expire on 16 September 2026.
 
 Copyright Notice
 
@@ -254,7 +254,7 @@ Table of Contents
    The input state can be expressed as
 
              †     †
-   |ψ⟩   = a     b     | 0 ⟩  ,
+   |ψ⟩   = a     b     | 0 ⟩
       ab       j     k      ab
 
    where the daggered operators represent bosonic creation operators,
@@ -276,18 +276,18 @@ Table of Contents
    Action of the BS on the input modes is the following,
 
      †     ┌───┐   †    ┌─┐   †        †     ┌─┐   †    ┌───┐   †
-   a   -> ╲│1-r  c   + ╲│r  d  ,     b   -> ╲│r  c   - ╲│1-r  d  .
+   a   -> ╲│1-r  c   + ╲│r  d  ,     b   -> ╲│r  c   - ╲│1-r  d
 
    The output state of the two photons is
 
            ┌──────┐   †     †         †     †             †     †      ┌──────┐   †     †
-|ψ⟩   = ( ╲│r(1-r)  c     c     + r c     d     - (1-r) c     d     - ╲│r(1-r)  d     d     ) |0⟩  .
+|ψ⟩   = ( ╲│r(1-r)  c     c     + r c     d     - (1-r) c     d     - ╲│r(1-r)  d     d     ) |0⟩
    cd                   j     k         k     j             j     k                 j     k      cd
 
    For a 50:50 BS when r=1/2, we have
 
         1 ⎛   †     †       †     †       †     †       †     †   ⎞
-|ψ⟩   = ─ ⎜ c     c     + c     d     - c     d     - d     d     ⎟ |0⟩  .
+|ψ⟩   = ─ ⎜ c     c     + c     d     - c     d     - d     d     ⎟ |0⟩
    cd   2 ⎝     j     k       k     j       j     k       j     k ⎠    cd
 
    From this expression, we can see that when j=k, in other words when
@@ -311,7 +311,7 @@ Table of Contents
    c, and the other photon in output mode d.  This probability is
    defined as
 
-   p   = ⟨ψ|    P  ⊗P  | ψ⟩  .
+   p   = ⟨ψ|    P  ⊗P  | ψ⟩
      c       cd  c   d     cd
 
    where P_i, for i=c,d, are the projection operators representing a
@@ -328,7 +328,7 @@ Table of Contents
           max       min
        p      - p
         c         c                 min
-   V = ──────────────── = 1 - 2 p      ,
+   V = ──────────────── = 1 - 2 p
               max                 c
             p
               c
@@ -349,7 +349,7 @@ Table of Contents
    [Krutyanskiy23],
 
                           no-deph                     deph
-   ρ        = V ×ρ                + (1 - V) ×ρ            ,
+   ρ        = V ×ρ                + (1 - V) ×ρ
     s   s         s   s                       s   s
       1   2         1   2                       1   2
 
@@ -372,7 +372,7 @@ Table of Contents
    of the two photons is
 
          1
-| ψ⟩   = ─ ⎛ |1;H⟩  |1;V⟩  + |1;V⟩  |1;H⟩  - |1;H⟩  |1;V⟩  - |1;H⟩  |1;V⟩  ⎞.
+| ψ⟩   = ─ ⎛ |1;H⟩  |1;V⟩  + |1;V⟩  |1;H⟩  - |1;H⟩  |1;V⟩  - |1;H⟩  |1;V⟩  ⎞
     cd   2 ⎝      c      c        c      d        c      d        d      d ⎠
 
    We can observe that maximum probbility of coincidence is 1/2.
@@ -381,32 +381,32 @@ Table of Contents
    two unit vectors, j=ε and k=ε'.  The output state can be written as
 
         1
-|ψ⟩   = ─ ⎛ |1;ϵ⟩  |1;ϵ′⟩  + |1;ϵ′⟩  |1;ϵ⟩  - |1;ϵ⟩  |1;ϵ′⟩  - |1;ϵ⟩  |1;ϵ′⟩  ⎞.
+|ψ⟩   = ─ ⎛ |1;ϵ⟩  |1;ϵ′⟩  + |1;ϵ′⟩  |1;ϵ⟩  - |1;ϵ⟩  |1;ϵ′⟩  - |1;ϵ⟩  |1;ϵ′⟩  ⎞
    cd   2 ⎝      c       c         c      d        c       d        d       d ⎠
 
    The projection operators corresponding to a detection even at
    detector i ($i=a,b$) are given by
 
-   P   = |1;ϵ⟩  ⟨1;ϵ|   + |1;ϵ′⟩  ⟨1;ϵ′|  .
+   P   = |1;ϵ⟩  ⟨1;ϵ|   + |1;ϵ′⟩  ⟨1;ϵ′|
      i        i       i         i        i
 
    Either an ε-polarized or an ε'-polarized photon is detected in the
    output mode i.  The probability of coincidence is then
 
                                   1 ⎛              2 ⎞   1    2
-   p    = ⟨ψ|    P   ⊗P   |ψ⟩   = ─ ⎝ 1 - ⎢ ⟨ϵ′|ϵ⟩⎢  ⎠ = ─ sin θ,
+   p    = ⟨ψ|    P   ⊗P   |ψ⟩   = ─ ⎝ 1 - ⎢ ⟨ϵ′|ϵ⟩⎢  ⎠ = ─ sin θ
      co       cd   c    d    cd   2                      2
 
    where the overlap between the polarization unit vectors is
    parametrized by θ, and can be written as
 
-   ⟨ϵ′|ϵ⟩= cosθ.
+   ⟨ϵ′|ϵ⟩= cosθ
 
    We can define the corresponding visibility as a function of the angle
    between the two polarization vectors,
 
                         2
-   V(θ) = 1 - 2 p  = cos θ.
+   V(θ) = 1 - 2 p  = cos θ
                  c
 
    When the photons have identical polarization, the visibility reaches
@@ -441,7 +441,7 @@ Table of Contents
 
               ⎛             iθ           ⎞                    ⎛             iθ           ⎞
            1  ⎜               1          ⎟                 1  ⎜               2          ⎟
-|ψ⟩     = ────⎜ |HV⟩     + e    |VH⟩     ⎟,     |ψ⟩     = ────⎜ |HV⟩     + e    |VH⟩     ⎟,
+|ψ⟩     = ────⎜ |HV⟩     + e    |VH⟩     ⎟,     |ψ⟩     = ────⎜ |HV⟩     + e    |VH⟩     ⎟
    a b     ┌─┐⎜     a a             a a  ⎟         b b     ┌─┐⎜     b b             b b  ⎟
     1 2   ╲│2 ⎝      1 2             1 2 ⎠          1 2   ╲│2 ⎝      1 2             1 2 ⎠
 
@@ -470,7 +470,7 @@ Table of Contents
    ϕ(ω) that satifies the normalization condition,
 
    ⌠         2
-   ⎮ dω|ϕ(ω)| =1.
+   ⎮ dω|ϕ(ω)| =1
    ⌡
 
    Two input photons become distinguishable if their respective spectral
@@ -490,16 +490,16 @@ Table of Contents
    function ϕ(ω) is a superposition written as
 
             ⌠          †
-   |1;ϕ⟩  = ⎮ dωϕ(ω) a  (ω) |0⟩ ,
+   |1;ϕ⟩  = ⎮ dωϕ(ω) a  (ω) |0⟩
         a   ⌡                  a
 
    where creation operator creates a photon in the BS input mode a with
    frequency ω. Two input photons with arbitrary spectral functions ϕ
    and φ are described by
 
-                         ⌠             †     ⌠             †
- |ψ⟩   = |1;ϕ⟩  |1;𝜑⟩  = ⎮ dω  ϕ(ω ) a  (ω ) ⎮ dω  𝜑(ω ) b  (ω ) |0 ⟩  .
-    ab        a      b   ⌡   1    1       1  ⌡   2    2       2      ab
+                          ⌠             †     ⌠             †
+  |ψ⟩   = |1;ϕ⟩  |1;𝜑⟩  = ⎮ dω  ϕ(ω ) a  (ω ) ⎮ dω  𝜑(ω ) b  (ω ) |0 ⟩
+     ab        a      b   ⌡   1    1       1  ⌡   2    2       2      ab
 
    We assume that the BS acts on the different frequency modes
    independently, and that the reflectivity is frequency-independent.
@@ -507,20 +507,20 @@ Table of Contents
    the output state of the two photons is
 
         1 ⌠           ⌠           ⎡   †       †         †       †         †       †         †       †     ⎤
-|ψ⟩   = ─ ⎮ dω  ϕ(ω ) ⎮ dω  𝜑(ω ) ⎢ c  (ω ) c  (ω ) + c  (ω ) d  (ω ) - c  (ω ) d  (ω ) - d  (ω ) d  (ω ) ⎥ |0⟩  .
+|ψ⟩   = ─ ⎮ dω  ϕ(ω ) ⎮ dω  𝜑(ω ) ⎢ c  (ω ) c  (ω ) + c  (ω ) d  (ω ) - c  (ω ) d  (ω ) - d  (ω ) d  (ω ) ⎥ |0⟩
    cd   2 ⌡   1    1  ⌡   2    2  ⎣      1       2         2       1         1       2         1       2  ⎦    cd
 
    The projection operators corresponding to a detection event in output
    mode c and output mode d are given by
 
          ⌠     †                            ⌠     †
-   P   = ⎮ dωc  (ω) |0⟩ ⟨0|  c (ω),   P   = ⎮ dωd  (ω) |0⟩ ⟨0|   d(ω).
+   P   = ⎮ dωc  (ω) |0⟩ ⟨0|  c (ω),   P   = ⎮ dωd  (ω) |0⟩ ⟨0|   d(ω)
      c   ⌡             c   c            d   ⌡             d    d
 
    The probability of a coincidence detection is then
 
          1   1⌠     ∗          ⌠      ∗
-   p   = ─ - ─⎮ dω ϕ (ω )𝜑(ω ) ⎮ dω  𝜑 (ω ) ϕ(ω ).
+   p   = ─ - ─⎮ dω ϕ (ω )𝜑(ω ) ⎮ dω  𝜑 (ω ) ϕ(ω )
      c   2   2⌡   1    1    1  ⌡   2     2     2
 
    The form of this expression is the same as the one in subsection on
@@ -545,7 +545,7 @@ Table of Contents
    matrix,
 
         ⎲                       ⎲
-   ρ  = ⎳ u  |1;ϕ ⟩ ⟨1;ϕ | ,    ⎳ u =1.
+   ρ  = ⎳ u  |1;ϕ ⟩ ⟨1;ϕ | ,    ⎳ u =1
     a   k  k     k a    k a     k  k
 
    where the state of the photon is a mixture of pure single-photon
@@ -553,7 +553,7 @@ Table of Contents
    probability u_k.  The two-photon input state can be written as
 
     in       ⎲
-   ρ      =  ⎳  u  v    |1;ϕ ⟩  |1;𝜑  ⟩  ⟨1;ϕ |  ⟨1;𝜑  | .
+   ρ      =  ⎳  u  v    |1;ϕ ⟩  |1;𝜑  ⟩  ⟨1;ϕ |  ⟨1;𝜑  |
        ab   kk′  k   k′     k a     k′ b     k a     k′ b
 
    It is not necessary to repeat the entire calculation we did for pure
@@ -562,7 +562,7 @@ Table of Contents
    pure-state coincidence probabilities weighted by u_k and v'_k,
 
          1   1  ⎲           ⌠     ∗            ⌠      ∗
-   p   = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω ).
+   p   = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω )
      c   2   2 kk′   k   k′ ⌡   1 k  1  k′  1  ⌡   2  k′  2   k  2
 
 3.3.3.  Example 1: Gaussian wave packets
@@ -577,12 +577,12 @@ Table of Contents
                              2
                            2σ
                1             i
-   ϕ (ω) = ────────── e         ,  for  i=a,b.
+   ϕ (ω) = ────────── e         ,  for  i=a,b
     i       1/4  ┌──┐
            π   ╲ │σ
                 ╲│ i
 
-   The probability of a coincidence detection is then
+   The probability of a coincidence detection is
 
                              2
                       (ω̅ -ω̅ )
@@ -591,7 +591,7 @@ Table of Contents
                         2  2
               σ σ      σ +σ
          1     a b      a  b
-   p   = ─ -─────── e         .
+   p   = ─ -─────── e
      c   2   2    2
             σ  + σ
              a    b
@@ -608,7 +608,7 @@ Table of Contents
            ⎜      -──────── ⎟
            ⎜           2    ⎟
          1 ⎜         2σ     ⎟
-   p   = ─ ⎝ 1 - e          ⎠.
+   p   = ─ ⎝ 1 - e          ⎠
      c   2
 
    We observe that for identical photons, the probability of a
@@ -623,7 +623,7 @@ Table of Contents
                -────────
                     2
                   2σ
-   V(ω̅ -ω̅ ) = e         .
+   V(ω̅ -ω̅ ) = e
       a  b
 
    *Case B (different standard deviations)*
@@ -634,7 +634,7 @@ Table of Contents
 
                σ /σ                        2σ /σ
         1       b  a                         b  a
-   p  = ─ - ────────────,    V(σ /σ ) = ────────────.
+   p  = ─ - ────────────,    V(σ /σ ) = ────────────
     c   2              2        b  a               2
             1 + (σ /σ )                 1 + (σ /σ )
                   b  a                        b  a
@@ -653,14 +653,14 @@ Table of Contents
    time τ, which transforms its creation operator,
 
      †       †     -iωτ
-   b  (ω) →b  (ω) e    .
+   b  (ω) →b  (ω) e
 
    Two input photons with arbitrary spectral functions ϕ and φ, with
    photon b arriving late, are described by
 
                                                                  -iω τ
                         ⌠             †     ⌠             †         2
-|ψ⟩   = |1;ϕ⟩  |1;𝜑⟩  = ⎮ dω  ϕ(ω ) a  (ω ) ⎮ dω  𝜑(ω ) b  (ω ) e      |0⟩  .
+|ψ⟩   = |1;ϕ⟩  |1;𝜑⟩  = ⎮ dω  ϕ(ω ) a  (ω ) ⎮ dω  𝜑(ω ) b  (ω ) e      |0⟩
    ab        a      b   ⌡   1    1       1  ⌡   2    2       2            ab
 
    We assume that the BS acts on the different frequency modes
@@ -670,21 +670,21 @@ Table of Contents
 
                                    -iω τ
         1 ⌠           ⌠               2  ⎡   †       †         †       †         †       †         †       †     ⎤
-|ψ⟩   = ─ ⎮ dω  ϕ(ω ) ⎮ dω  𝜑(ω ) e      ⎢ c  (ω ) c  (ω ) + c  (ω ) d  (ω ) - c  (ω ) d  (ω ) - d  (ω ) d  (ω ) ⎥ |0⟩  .
+|ψ⟩   = ─ ⎮ dω  ϕ(ω ) ⎮ dω  𝜑(ω ) e      ⎢ c  (ω ) c  (ω ) + c  (ω ) d  (ω ) - c  (ω ) d  (ω ) - d  (ω ) d  (ω ) ⎥ |0⟩
    cd   2 ⌡   1    1  ⌡   2    2         ⎣      1       2         2       1         1       2         1       2  ⎦    cd
 
    For pure input states, the probability of a coincidence detection is
 
                                -iω τ                     iω τ
          1   1⌠     ∗             1  ⌠      ∗              2
-   p   = ─ - ─⎮ dω ϕ (ω )𝜑(ω )e      ⎮ dω  𝜑 (ω ) ϕ(ω ) e    ,
+   p   = ─ - ─⎮ dω ϕ (ω )𝜑(ω )e      ⎮ dω  𝜑 (ω ) ϕ(ω ) e
      c   2   2⌡   1    1    1        ⌡   2     2     2
 
    while for mixed states is can be generalized to the following form,
 
                                            -iω τ                       iω τ
       1   1  ⎲          ⌠     ∗               1  ⌠      ∗                2
-p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (ω ) ϕ (ω ) e    .
+p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (ω ) ϕ (ω ) e
   c   2   2 kk′  k   k′ ⌡   1 k  1  k′  1        ⌡   2  k′  2   k  2
 
 3.4.1.  Example: Gaussian wave packets
@@ -696,7 +696,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
           ⎛       1 2 2 ⎞              1 2  2
           ⎜      -─σ τ  ⎟             -─σ  τ
         1 ⎜       2     ⎟              2
-   p  = ─ ⎝ 1 - e       ⎠,    V(τ) = e       .
+   p  = ─ ⎝ 1 - e       ⎠,    V(τ) = e
     c   2
 
 4.  Detector Timing Windows
@@ -846,7 +846,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
 
    General (conservative) separation time should therefore be set to
 
-   T           ≥T       + J         + J      .
+   T           ≥T       + J         + J
     separation   photon    emission    timing
 
    The above discussion assumes that the photons can be generated nearly
@@ -912,7 +912,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    the observable M,
 
                       2          ⟂          ⟂    2
-   Pr(|ϕ⟩;|ψ⟩)=|⟨ϕ|ψ⟩| ,    Pr(|ϕ ⟩;|ψ⟩)=|⟨ϕ |ψ⟩| .
+   Pr(|ϕ⟩;|ψ⟩)=|⟨ϕ|ψ⟩| ,    Pr(|ϕ ⟩;|ψ⟩)=|⟨ϕ |ψ⟩|
 
    It is often difficult to directly measure the qubit in an arbitrary
    basis when it comes to real-world implementation.  In such a case,
@@ -925,13 +925,13 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    U,
 
              †
-   M = U Z U  .
+   M = U Z U
 
    This means the unitary U relates the eigenvectors of the two
    observables,
 
                          ⟂
-   |ϕ⟩= U |0⟩,   and   |ϕ ⟩= U |1⟩.
+   |ϕ⟩= U |0⟩,   and   |ϕ ⟩= U |1⟩
 
    We can perform measurement in the M basis by applying adjoint of U to
    the initial state |ψ〉, and then measuring it in the Pauli Z basis.
@@ -939,12 +939,12 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    corresponding to the two measurement outcomes,
 
                         2          †    2             †
-   Pr(|ϕ⟩;|ψ⟩) = |⟨ϕ|ψ⟩|  = |⟨0| U  |ψ⟩|  = Pr(|0⟩; U  |ψ⟩),
+   Pr(|ϕ⟩;|ψ⟩) = |⟨ϕ|ψ⟩|  = |⟨0| U  |ψ⟩|  = Pr(|0⟩; U  |ψ⟩)
 
    and
 
         ⟂            ⟂    2          †    2             †
-   Pr(|ϕ ⟩;|ψ⟩) = |⟨ϕ |ψ⟩|  = |⟨1| U  |ψ⟩|  = Pr(|1⟩; U  |ψ⟩).
+   Pr(|ϕ ⟩;|ψ⟩) = |⟨ϕ |ψ⟩|  = |⟨1| U  |ψ⟩|  = Pr(|1⟩; U  |ψ⟩)
 
 5.1.2.  Two-qubit measurements
 
@@ -1036,7 +1036,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    corresponding unitary operations in linear polarization basis,
 
              ⎡ cos2α  sin2α⎤
-   U   (α) = ⎣ sin2α -cos2α⎦.
+   U   (α) = ⎣ sin2α -cos2α⎦
     HWP
 
    Unitary matrix representing the action of a quarter waveplate in
@@ -1044,19 +1044,19 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
 
              ⎡    2       2               ⎤
              ⎢ cos α+ isin α (1-i)cosαsinα⎥
-   U   (α) = ⎢                  2      2  ⎥.
+   U   (α) = ⎢                  2      2  ⎥
     QWP      ⎣ (1-i)cosαsinα sin α+icos α ⎦
 
    The idea behind measurements in arbitrary basis,
 
            ⟂
-   {|ψ⟩, |ψ ⟩},
+   {|ψ⟩, |ψ ⟩}
 
    is to choose the angles for the waveplates such that the following
    transformation is achieved,
 
                                   ⟂
-   U   U    |ψ⟩→|H⟩,    U   U   |ψ ⟩→|V⟩.
+   U   U    |ψ⟩→|H⟩,    U   U   |ψ ⟩→|V⟩
     HWP QWP              HWP QWP
 
    Settings for the three Pauli bases are summarized in the table below.
