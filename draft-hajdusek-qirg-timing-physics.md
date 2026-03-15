@@ -140,8 +140,10 @@ There are four possible cases that may occur:
 
 <!-- This figure shows these cases (Figures-BW/HOM-bw.svg): -->
 
-<figure title="HOM interference of two photons at a beamsplitter"><artset><artwork  type="svg">
-<svg
+<figure title="HOM interference of two photons at a beamsplitter">
+ <artset>
+  <artwork  type="svg">
+   <svg
    width="566.96301pt"
    height="147.9355pt"
    viewBox="0 0 566.96301 147.9355"
@@ -859,6 +861,7 @@ There are four possible cases that may occur:
     </clipPath>
   </defs>
 </svg>
+</artwork>
 <artwork type="ascii-art">
 Artwork only available as SVG (PDF and HTML)
 </artwork></artset></figure>
