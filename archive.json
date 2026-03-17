@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-15T00:33:15.662626+00:00",
+  "timestamp": "2026-03-17T00:28:38.955048+00:00",
   "repo": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
   "labels": [
     {
@@ -299,6 +299,34 @@
       "mergedBy": "mhajdusek",
       "mergeCommit": {
         "oid": "11afde3288fb3ed93d4000b95681aaacb5658bd2"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDORI9qr87Kvm7N",
+      "title": "New kramdown rfc svg support",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/10",
+      "state": "MERGED",
+      "author": "cabo",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Try to stay sane with multiple included SVG graphics",
+      "createdAt": "2026-03-15T17:57:20Z",
+      "updatedAt": "2026-03-16T00:45:05Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "main",
+      "baseRefOid": "ca47683be9849cca874a76eed4fa353e5f942b85",
+      "headRepository": "cabo/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "new-kramdown-rfc-svg-support",
+      "headRefOid": "a6a952f48b5d577954e3593653eca66d3835d42e",
+      "closedAt": "2026-03-16T00:45:05Z",
+      "mergedAt": "2026-03-16T00:45:05Z",
+      "mergedBy": "mhajdusek",
+      "mergeCommit": {
+        "oid": "30c9b87b22d4409fc40353c9a69d08c3e7a929ad"
       },
       "comments": [],
       "reviews": []
