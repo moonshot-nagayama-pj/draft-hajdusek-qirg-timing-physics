@@ -161,7 +161,7 @@ For example, $$j$$ and $$k$$ could represent
 * arrival time,
 * transverse spatial mode.
 
-Action of the BS on the input modes is the following:
+Action of the BS on the input modes is the following,
 
 ~~~math
 a ^{\dagger} -> \sqrt{1-r} c ^{\dagger} + \sqrt{r} d ^{\dagger}, \qquad b ^{\dagger} -> \sqrt{r} c ^{\dagger} - \sqrt{1-r} d ^{\dagger}
@@ -173,7 +173,7 @@ The output state of the two photons is
 |\psi\rangle _{cd} = ( \sqrt{r(1-r)} c ^{\dagger} _{j} c ^{\dagger} _{k} + r c ^{\dagger} _{k} d ^{\dagger} _{j} - (1-r) c ^{\dagger} _{j} d ^{\dagger} _{k} - \sqrt{r(1-r)} d ^{\dagger} _{j} d ^{\dagger} _{k} ) |0\rangle _{cd}
 ~~~
 
-For a 50:50 BS when $$r=1/2$$:
+For a 50:50 BS when $$r=1/2$$, we have
 
 ~~~math
 |\psi\rangle _{cd} = \frac{1}{2} \left( c ^{\dagger} _{j} c ^{\dagger} _{k} + c ^{\dagger} _{k} d ^{\dagger} _{j} - c ^{\dagger} _{j} d ^{\dagger} _{k} - d ^{\dagger} _{j} d ^{\dagger} _{k} \right) |0\rangle _{cd}
@@ -182,7 +182,7 @@ For a 50:50 BS when $$r=1/2$$:
 From this expression, we can see that when $$j=k$$, in other words when the input photons are indistinguishable, the output state has the following form,
 
 ~~~math
-|\psi\rangle _{cd} = \frac{1}{\sqrt{2}} ( |2\rangle_c - |2\rangle_d )
+|\psi\rangle _{cd} = \frac{1}{\sqrt{2}} ( |2\rangle_c - |2\rangle_d ).
 ~~~
 
 The probability amplitudes for the cases where both input photons are transmitted or both reflected (Cases B and C in the figure above) interfere destructively.
@@ -307,7 +307,7 @@ In {{Krutyanskiy23}}, polarization drift characterization and compensation at th
 ## Spectral distinguishability
 
 Another important source of distinguishability in HOM interference is the spectral property of the input photons.
-The photon wave packet of a photon can be represented by its **spectral amplitude function** $$\phi(\omega)$$ that satifies the normalization condition:
+The photon wave packet of a photon can be represented by its **spectral amplitude function** $$\phi(\omega)$$ that satifies the normalization condition,
 
 ~~~math
 \int d\omega |\phi(\omega)|^2=1
@@ -370,7 +370,7 @@ Previous discussion of pure states can be extended to include mixed states of th
 Such states will inevitably arise due to imperfections in the preparation procedure and due to the input photons being entangled with other degrees of freedom.
 These can include other photons or quantum memories.
 
-The mixed state of an input photon is described by the following density matrix:
+Mixed state of an input photon is described by the following density matrix,
 
 ~~~math
 \rho_a = \sum_k u_k |1;\phi_k\rangle_a\langle1;\phi_k|_a, \quad \sum_k u_k=1
@@ -384,7 +384,7 @@ The two-photon input state can be written as
 ~~~
 
 It is not necessary to repeat the entire calculation we did for pure states.
-Due to linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$:
+Due to linearity of quantum mechanics, we can immediately write the expression for the probability of coincidence as a sum of pure-state coincidence probabilities weighted by $$u_k$$ and $$v'_k$$,
 
 ~~~math
 p _{\text{c}} = \frac{1}{2} - \frac{1}{2} \sum _{kk'} u _k v _{k'} \int d\omega_1\phi^\ast_k(\omega_1)\varphi _{k'}(\omega_1) \int d\omega_2 \varphi _{k'}^\ast(\omega_2) \phi_k(\omega_2)
@@ -399,7 +399,7 @@ The spectral amplitude functions are given by
 \phi_i(\omega) = \frac{1}{\pi^{1/4}\sqrt{\sigma_i}} e ^{-\frac{(\omega-\bar{\omega}_i)^2}{2\sigma^2_i}},\quad\text{for } i=a,b
 ~~~
 
-The probability of a coincidence detection is then
+The probability of a coincidence detection is
 
 ~~~math
 p _{\text{c}} = \frac{1}{2} -\frac{\sigma_a\sigma_b}{\sigma_a^2 + \sigma_b^2} e^{-\frac{(\bar{\omega}_a-\bar{\omega}_b)^2}{\sigma_a^2+\sigma_b^2}}
@@ -446,7 +446,7 @@ Even for photons with identical spectral amplitude functions, different arrival 
 {::include-xml-data Figures-matplotlib/distinguishability-temporal.svg}
 ></artwork>
 
-Without loss of generality we assume that photon $$b$$ is delayed by a time $$\tau$$, which transforms its creation operator,
+Without loss of generality, we assume that photon $$b$$ is delayed by a time $$\tau$$, which transforms its creation operator,
 
 ~~~math
 b ^{\dagger}(\omega) \rightarrow b ^{\dagger}(\omega) e^{-i\omega\tau}
@@ -511,13 +511,13 @@ Finally, the probability that an electric signal is generated upon successful ab
 The overall _system detection efficiency_ is given by the product of these three,
 
 ~~~math
-\eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}
+\eta_{\text{sde}} = \eta_{\text{coupling}} \times \eta_{\text{absorption}} \times \eta_{\text{registering}}.
 ~~~
 
 The _device detection efficiency_ is given by
 
 ~~~math
-\eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}
+\eta_{\text{dde}} = \eta_{\text{absorption}} \times \eta_{\text{registering}}.
 ~~~
 
 Detection efficiency affects the rate at which entanglement can be distributed.
@@ -604,7 +604,7 @@ We will first discuss quantum measurements in general before discussing concrete
 For simplicity, we begin with measurements on a single qubit before generalizing to two qubit measurements.
 Consider a general state of the qubit, $$|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$$.
 Measurement in an arbitrary basis $$M$$ projects $$|\psi\rangle$$ onto one of the eigenvectors of $$M$$.
-Probabilities of the two possible measurement outcomes are given by the squared modula of the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$.
+Probabilities of the two possible measurement outcomes are given by the squared modula of the overlaps between the initial state $$|\psi\rangle$$ and the eigenvectors of the observable $$M$$,
 
 ~~~math
 \text{Pr}(|\phi\rangle;|\psi\rangle)=|\langle\phi|\psi\rangle|^2, \quad \text{Pr}(|\phi^{\perp}\rangle;|\psi\rangle)=|\langle\phi^{\perp}|\psi\rangle|^2
@@ -614,7 +614,7 @@ It is often difficult to directly measure the qubit in an arbitrary basis when i
 In such a case, the qubit needs to be pre-rotated by an appropriate unitary operation, and then measured in the $$Z$$ basis, which can usually be implemented in a straightforward way.
 This approach greatly simplifies the implementation of arbitrary measurements.
 
-Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$:
+Consider that the observable $$M$$ is related to the Pauli $$Z$$ by unitary $$U$$,
 
 ~~~math
 M = U Z U ^{\dagger}
@@ -699,32 +699,32 @@ Horizontal polarization gets transmitted through the PBS, while vertical polariz
 General pure state of a polarization-encoded qubit can be written as
 
 ~~~math
-|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle
+|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|H\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|V\rangle.
 ~~~
 
 This is directly equivalent to expressing the qubit state in the computational basis, and can be visualized with the help of the **Poincaré sphere**.
 Polarization of light is manipulated by waveplates.
 Waveplate rotated by an angle $$\alpha$$ (zero is aligned with the horizontal axis) rotates the polarization state around an axis, located at an angle of $$2\alpha$$ with the horizontal state $$|H\rangle$$ in the horizontal plane.
 Half waveplate rotates the polarization state by an angle $$\pi$$, while a quarter waveplate rotates by an angle $$\pi/2$$ in the Poincaré sphere.
-The action of the half waveplate is captured by the corresponding unitary operations in linear polarization basis:
+The action of the half waveplate is captured by the corresponding unitary operations in linear polarization basis,
 
 ~~~math
 U_{\text{HWP}}(\alpha) = \begin{bmatrix} \cos2\alpha & \sin2\alpha \\ \sin2\alpha & -\cos2\alpha \end{bmatrix}
 ~~~
 
-Unitary matrix representing the action of a quarter waveplate in linear polarization basis:
+Unitary matrix representing the action of a quarter waveplate in linear polarization basis is given by
 
 ~~~math
 U_{\text{QWP}}(\alpha) = \begin{bmatrix} \cos^2\alpha + i\sin^2\alpha & (1-i)\cos\alpha\sin\alpha \\ (1-i)\cos\alpha\sin\alpha & \sin^2\alpha +i\cos^2\alpha \end{bmatrix}
 ~~~
 
-The idea behind measurements in arbitrary basis
+The idea behind measurements in arbitrary basis,
 
 ~~~math
 \{|\psi\rangle, |\psi^{\perp}\rangle\}
 ~~~
 
-is to choose the angles for the waveplates such that the following transformation is achieved:
+is to choose the angles for the waveplates such that the following transformation is achieved,
 
 ~~~math
 U_{HWP}U_{QWP} |\psi\rangle \rightarrow |H\rangle, \quad U_{HWP}U_{QWP}|\psi^{\perp}\rangle \rightarrow |V\rangle
