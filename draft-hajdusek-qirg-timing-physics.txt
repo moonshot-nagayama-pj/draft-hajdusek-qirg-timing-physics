@@ -5,7 +5,7 @@
 Quantum Internet Research Group                              M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 19 September 2026                                 18 March 2026
+Expires: 20 September 2026                                 19 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 September 2026.
+   This Internet-Draft will expire on 20 September 2026.
 
 Copyright Notice
 
@@ -276,7 +276,7 @@ Table of Contents
 
    *  transverse spatial mode.
 
-   Action of the BS on the input modes is the following:
+   Action of the BS on the input modes is the following,
 
      †     ┌───┐   †    ┌─┐   †        †     ┌─┐   †    ┌───┐   †
    a   -> ╲│1-r  c   + ╲│r  d  ,     b   -> ╲│r  c   - ╲│1-r  d
@@ -287,7 +287,7 @@ Table of Contents
 |ψ⟩   = ( ╲│r(1-r)  c     c     + r c     d     - (1-r) c     d     - ╲│r(1-r)  d     d     ) |0⟩
    cd                   j     k         k     j             j     k                 j     k      cd
 
-   For a 50:50 BS when r=1/2:
+   For a 50:50 BS when r=1/2, we have
 
         1 ⎛   †     †       †     †       †     †       †     †   ⎞
 |ψ⟩   = ─ ⎜ c     c     + c     d     - c     d     - d     d     ⎟ |0⟩
@@ -298,7 +298,7 @@ Table of Contents
    following form,
 
             1
-   |ψ⟩   = ──── ( |2⟩  - |2⟩  )
+   |ψ⟩   = ──── ( |2⟩  - |2⟩  ).
       cd    ┌─┐      c      d
            ╲│2
 
@@ -473,7 +473,7 @@ Table of Contents
    Another important source of distinguishability in HOM interference is
    the spectral property of the input photons.  The photon wave packet
    of a photon can be represented by its *spectral amplitude function*
-   ϕ(ω) that satifies the normalization condition:
+   ϕ(ω) that satifies the normalization condition,
 
    ⌠         2
    ⎮ dω|ϕ(ω)| =1
@@ -550,8 +550,8 @@ Table of Contents
    photons being entangled with other degrees of freedom.  These can
    include other photons or quantum memories.
 
-   The mixed state of an input photon is described by the following
-   density matrix:
+   Mixed state of an input photon is described by the following density
+   matrix,
 
         ⎲                       ⎲
    ρ  = ⎳ u  |1;ϕ ⟩ ⟨1;ϕ | ,    ⎳ u =1
@@ -568,7 +568,7 @@ Table of Contents
    It is not necessary to repeat the entire calculation we did for pure
    states.  Due to linearity of quantum mechanics, we can immediately
    write the expression for the probability of coincidence as a sum of
-   pure-state coincidence probabilities weighted by u_k and v'_k:
+   pure-state coincidence probabilities weighted by u_k and v'_k,
 
          1   1  ⎲           ⌠     ∗            ⌠      ∗
    p   = ─ - ─  ⎳  u   v    ⎮ dω ϕ (ω )𝜑  (ω ) ⎮ dω  𝜑  (ω ) ϕ (ω )
@@ -591,7 +591,7 @@ Table of Contents
            π   ╲ │σ
                 ╲│ i
 
-   The probability of a coincidence detection is then
+   The probability of a coincidence detection is
 
                              2
                       (ω̅ -ω̅ )
@@ -664,7 +664,7 @@ Table of Contents
    (Artwork only available as SVG: see https://www.ietf.org/archive/id/
    draft-hajdusek-qirg-timing-physics-latest.html)
 
-   Without loss of generality we assume that photon b is delayed by a
+   Without loss of generality, we assume that photon b is delayed by a
    time τ, which transforms its creation operator,
 
      †       †     -iωτ
@@ -747,12 +747,12 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
       efficiency_, η_registering.  The overall _system detection
       efficiency_ is given by the product of these three,
 
-   η    = η         ×η           ×η
+   η    = η         ×η           ×η           .
     sde    coupling   absorption   registering
 
    The _device detection efficiency_ is given by
 
-   η    = η           ×η
+   η    = η           ×η           .
     dde    absorption   registering
 
    Detection efficiency affects the rate at which entanglement can be
@@ -927,7 +927,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    projects |ψ〉 onto one of the eigenvectors of M.  Probabilities of the
    two possible measurement outcomes are given by the squared modula of
    the overlaps between the initial state |ψ〉 and the eigenvectors of
-   the observable M.
+   the observable M,
 
                       2          ⟂          ⟂    2
    Pr(|ϕ⟩;|ψ⟩)=|⟨ϕ|ψ⟩| ,    Pr(|ϕ ⟩;|ψ⟩)=|⟨ϕ |ψ⟩|
@@ -940,7 +940,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    simplifies the implementation of arbitrary measurements.
 
    Consider that the observable M is related to the Pauli Z by unitary
-   U:
+   U,
 
              †
    M = U Z U
@@ -1048,7 +1048,7 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    General pure state of a polarization-encoded qubit can be written as
 
            ⎛θ⎞      iϕ   ⎛θ⎞
-   |ψ⟩= cos⎜─⎟|H⟩+ e  sin⎜─⎟|V⟩
+   |ψ⟩= cos⎜─⎟|H⟩+ e  sin⎜─⎟|V⟩.
            ⎝2⎠           ⎝2⎠
 
    This is directly equivalent to expressing the qubit state in the
@@ -1060,27 +1060,27 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    horizontal plane.  Half waveplate rotates the polarization state by
    an angle π, while a quarter waveplate rotates by an angle π/2 in the
    Poincaré sphere.  The action of the half waveplate is captured by the
-   corresponding unitary operations in linear polarization basis:
+   corresponding unitary operations in linear polarization basis,
 
              ⎡ cos2α  sin2α⎤
    U   (α) = ⎣ sin2α -cos2α⎦
     HWP
 
    Unitary matrix representing the action of a quarter waveplate in
-   linear polarization basis:
+   linear polarization basis is given by
 
              ⎡    2       2               ⎤
              ⎢ cos α+ isin α (1-i)cosαsinα⎥
    U   (α) = ⎢                  2      2  ⎥
     QWP      ⎣ (1-i)cosαsinα sin α+icos α ⎦
 
-   The idea behind measurements in arbitrary basis
+   The idea behind measurements in arbitrary basis,
 
            ⟂
    {|ψ⟩, |ψ ⟩}
 
    is to choose the angles for the waveplates such that the following
-   transformation is achieved:
+   transformation is achieved,
 
                                   ⟂
    U   U    |ψ⟩→|H⟩,    U   U   |ψ ⟩→|V⟩
