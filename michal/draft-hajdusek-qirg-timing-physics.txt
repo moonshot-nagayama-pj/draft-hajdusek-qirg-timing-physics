@@ -5,7 +5,7 @@
 Quantum Internet Research Group                              M. Hajdušek
 Internet-Draft                                              R. Van Meter
 Intended status: Informational                           Keio University
-Expires: 16 September 2026                                 15 March 2026
+Expires: 20 September 2026                                 19 March 2026
 
 
   Timing Regimes in Quantum Networks and their Physical Underpinnings
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 16 September 2026.
+   This Internet-Draft will expire on 20 September 2026.
 
 Copyright Notice
 
@@ -251,8 +251,8 @@ Table of Contents
    *  Case D: photon in mode a is transmitted, while photon in mode b is
       reflected.
 
-   scheme-id = -1 - scheme-number
-   scheme-number = -1 - scheme-id
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
    The input state can be expressed as
 
@@ -417,6 +417,9 @@ Table of Contents
    distinguishable and their polarization vectors are orthogonal,
    visibility vanishes.
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
+
    Ensuring that the two input photons are indistinguishable in their
    polarization degree of freedom is critical for proper operation of
    the BSA.  Care must be therefore taken to characterize the photons
@@ -481,6 +484,9 @@ Table of Contents
    Gaussian spectral amplitude functions but the same methods generalize
    to arbitrary photons.  The two photons may have different central
    frequencies or different standard deviations.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
    In this subsection, we analyze the requirements in terms of the
    photonic spectral amplitude function that lead to high visibility of
@@ -642,6 +648,9 @@ Table of Contents
             1 + (σ /σ )                 1 + (σ /σ )
                   b  a                        b  a
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
+
 3.4.  Wave Packet Overlap
 
    So far we have assumed that the two input photons arrive at the BS at
@@ -651,6 +660,9 @@ Table of Contents
    identical spectral amplitude functions, different arrival times
    result in decreased overlap between the photons' wave packets,
    diminishing the visibility of the HOM interference.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
    Without loss of generality, we assume that photon b is delayed by a
    time τ, which transforms its creation operator,
@@ -701,6 +713,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
         1 ⎜       2     ⎟              2
    p  = ─ ⎝ 1 - e       ⎠,    V(τ) = e
     c   2
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
 4.  Detector Timing Windows
 
@@ -949,6 +964,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
         ⟂            ⟂    2          †    2             †
    Pr(|ϕ ⟩;|ψ⟩) = |⟨ϕ |ψ⟩|  = |⟨1| U  |ψ⟩|  = Pr(|1⟩; U  |ψ⟩)
 
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
+
 5.1.2.  Two-qubit measurements
 
    The same principle of changing the measurement basis can be
@@ -958,6 +976,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    interested in performing measurements in the Bell basis.  Required
    unitary is the Hermitian conjugate of the unitary that creates a Bell
    pair when the qubits are both initialized in |0〉.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
 5.2.  Measurements on quantum memories
 
@@ -1020,6 +1041,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    polarizations that then get detected by the detectors placed in the
    output paths of the PBS.  Horizontal polarization gets transmitted
    through the PBS, while vertical polarization gets reflected.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
    General pure state of a polarization-encoded qubit can be written as
 
@@ -1120,6 +1144,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    input pairs of photons to the desired BSA, where they undergo
    measurement in the Bell basis [Koyama24].
 
+   <artwork type="svg" {::include-xml-data Figures-BW/optical-switch-
+   bw.svg ></artwork>
+
    Both of these designs consider a 2× 2 switch as the basic building
    block, which is implemented with *integrated photonics* and
    controlled electro-optically.  Applied electric fields are used to
@@ -1140,6 +1167,9 @@ p   = ─ - ─  ⎳  u  v    ⎮ dω ϕ (ω )𝜑  (ω )e      ⎮ dω  𝜑  (
    in the case of integrated switches used in paired-egress BSA pools.
    The propagation delay introduced by the switching fabric depends on
    the design of the switch.
+
+   (Artwork only available as SVG: see https://www.ietf.org/archive/id/
+   draft-hajdusek-qirg-timing-physics-latest.html)
 
    An example where time delays arise is the triangular switch design,
    introduced by Koyama et.al.  [Koyama24].  Photons entering the switch
