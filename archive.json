@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-19T00:30:26.880791+00:00",
+  "timestamp": "2026-03-22T00:30:27.061314+00:00",
   "repo": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 12,
+      "id": "I_kwDORI9qr870YJMD",
+      "title": "Missing diagram",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/issues/12",
+      "state": "OPEN",
+      "author": "martinthomson",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "See https://moonshot-nagayama-pj.github.io/draft-hajdusek-qirg-timing-physics/draft-hajdusek-qirg-timing-physics.html#section-6-5\n\nIt appears to be presenting the raw kramdown-rfc code.  Probably an easy fix.",
+      "createdAt": "2026-03-19T07:53:34Z",
+      "updatedAt": "2026-03-19T07:53:34Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
@@ -327,6 +344,34 @@
       "mergedBy": "mhajdusek",
       "mergeCommit": {
         "oid": "30c9b87b22d4409fc40353c9a69d08c3e7a929ad"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDORI9qr87LtO72",
+      "title": "Merge main into michal",
+      "url": "https://github.com/moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics/pull/11",
+      "state": "MERGED",
+      "author": "mhajdusek",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-03-19T00:39:02Z",
+      "updatedAt": "2026-03-19T00:43:17Z",
+      "baseRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "baseRefName": "michal",
+      "baseRefOid": "19036ffc1c15799a8160bd2e12890d97fb11742c",
+      "headRepository": "moonshot-nagayama-pj/draft-hajdusek-qirg-timing-physics",
+      "headRefName": "main",
+      "headRefOid": "32fcea98a951f23fc2bd7b5a77905eda84f9c2e1",
+      "closedAt": "2026-03-19T00:43:16Z",
+      "mergedAt": "2026-03-19T00:43:16Z",
+      "mergedBy": "mhajdusek",
+      "mergeCommit": {
+        "oid": "8df3fe3f78b571f8cec9a3869146f3922d0878a5"
       },
       "comments": [],
       "reviews": []
